@@ -1,0 +1,7 @@
+default_pre_build &&
+
+sedit 's:)/sbin:)/usr/sbin:g' Makefile &&
+sedit 's:)/bin:)/usr/bin:g' Makefile &&
+sedit 's:)/lib:)/usr/lib:g' Makefile
+
+exit 1

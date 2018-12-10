@@ -1,0 +1,26 @@
+          MODULE=man
+         VERSION=1.6g
+          SOURCE=$MODULE-$VERSION.tar.gz
+         SOURCE2=$MODULE-1.6e-manpaths-makewhatis.patch
+         SOURCE3=$MODULE-1.6e-trim-dup-manpaths.patch
+   SOURCE_URL[0]=http://primates.ximian.com/~flucifredi/$MODULE
+   SOURCE_URL[1]=http://www.ibiblio.org/pub/Linux/apps/doctools/$MODULE
+     SOURCE2_URL=$PATCH_URL
+     SOURCE3_URL=$PATCH_URL
+      SOURCE_VFY=sha256:ccdcb8c3f4e0080923d7e818f0e4a202db26c46415eaef361387c20995b8959f
+     SOURCE2_VFY=sha256:baadf0a80bf371508598668b00a79997c5badf5d2a0abee70f69199c04f37dd5
+     SOURCE3_VFY=sha256:be89efd1a0a10bc84f57704f7390ffc12fd50da88b09dda016ca29b1f0f49c79
+        WEB_SITE=http://primates.ximian.com/~flucifredi/man
+         ENTERED=20010922
+         UPDATED=20110102
+           SHORT="Displays the on-line manual pages"
+           PSAFE="no"
+
+cat << EOF
+This package provides the man command.
+This utility is the primary way of examining the on-line help files
+(manual pages). Other utilities provided include the whatis and
+apropos commands for searching the manual page database, the manpath
+utility for determining the manual page search path, and the
+maintenance utilities mandb, catman and zsoelim.
+EOF

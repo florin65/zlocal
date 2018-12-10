@@ -1,0 +1,13 @@
+          MODULE=wipe
+         VERSION=2.3.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/$MODULE/
+      SOURCE_VFY=sha256:463916370f9b35bb34419c2c0ae3dc4c0a471db32e8595afa1d14c0337b61aa0
+        WEB_SITE=http://wipe.sf.net/
+         ENTERED=20051222
+         UPDATED=20100622
+           SHORT="More or less securely wipe data from files or devices"
+
+cat << EOF
+Wipe is a secure file wiping utility.
+EOF

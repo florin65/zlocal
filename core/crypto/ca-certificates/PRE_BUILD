@@ -1,0 +1,4 @@
+default_pre_build &&
+
+sedit "s:/usr/sbin:/usr/bin:" sbin/Makefile &&
+sedit "s:c_rehash \.:( \0 || openssl certhash . ):;/run-parts/s: -- : :" sbin/update-ca-certificates

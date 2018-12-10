@@ -1,0 +1,20 @@
+           MODULE=rpmunpack
+          VERSION=0
+           SOURCE=$MODULE.tar.gz
+          SOURCE2=rpm2cpio
+          SOURCE3=rpmunpack_lzma-2.patch
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE
+       SOURCE_URL=http://www.ibiblio.org/pub/Linux/utils/package
+      SOURCE2_URL=$PATCH_URL
+      SOURCE3_URL=$PATCH_URL
+       SOURCE_VFY=sha256:4f2e97bdf5cecab2675c63d764b4cf403eb421f887e5abc1e6e41c4767b50ec8
+      SOURCE2_VFY=sha256:9b4ae8d6c3285a4cd457cc3a30f319b5a8cc7442474d770cd77e86b984a8cfe3
+      SOURCE3_VFY=sha256:ca916436a70cef35e660037faed5307de76b9690e39f83197e54ac8f34d78a45
+         WEB_SITE=unknown
+          ENTERED=20011017
+          UPDATED=20100417
+            SHORT="Program to extract an archive from a RPM file"
+
+cat << EOF
+This program converts rpm archives to cpio archives for cpio or afio.
+EOF

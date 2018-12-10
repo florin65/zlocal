@@ -1,0 +1,14 @@
+            MODULE=kernel-headers
+           VERSION=4.19.8
+            SOURCE=kernel-headers-$VERSION.tar.bz2
+  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/kernel-headers-$VERSION
+        SOURCE_URL=$MIRROR_URL
+        SOURCE_VFY=sha256:
+          WEB_SITE=http://www.lunar-linux.org/
+           ENTERED=20040226
+           UPDATED=20181209
+            SHORT="Sanitized kernel headers for userspace"
+
+cat << EOF
+Sanitized kernel headers for userspace. The 32 bits version.
+EOF

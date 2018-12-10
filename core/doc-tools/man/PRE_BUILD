@@ -1,0 +1,13 @@
+default_pre_build &&
+
+if [ "$UCODE" == "y" ]; then
+  # Example:  man top | grep -B1 "two help"
+  # which should show an apostrophe, rather than "<B4>"
+  sedit "s:nroff -Tlatin1:nroff:" configure
+fi &&
+
+sedit "s:/sbin:/bin:" configure &&
+
+# DO NOT REMOVE THESE PATCHES, consult Ratler for info
+patch_it $SOURCE2 1 &&
+patch_it $SOURCE3 1

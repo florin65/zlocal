@@ -1,0 +1,8 @@
+depends %SSL
+
+optional_depends libidn2 "" "" "for IDN/IRIs 2.x support"
+
+optional_depends gettext "--enable-nls" "--disable-nls" "for NLS support"
+optional_depends libidn  "--enable-iri" "--disable-iri" "for IDN/IRIs support"
+
+#optional_depends libpsl  "--with-libpsl" "--without-libpsl" "for cookie ckecking support"

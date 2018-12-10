@@ -1,0 +1,16 @@
+          MODULE=ccache
+         VERSION=3.5
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://samba.org/ftp/$MODULE
+      SOURCE_VFY=sha256:bdd44b72ae4506a2e2deef9fefb15c606a474bbca7658cd2be26105155eec012
+        WEB_SITE=http://ccache.samba.org
+         ENTERED=20020701
+         UPDATED=20181017
+           SHORT="A compiler cache"
+
+cat << EOF
+ccache is a compiler cache. It acts as a caching pre-processor to C/C++
+compilers, using the -E compiler switch and a hash to detect when a
+compilation can be satisfied from cache. This often results in a 5 to 10
+times speedup in common compilations.
+EOF

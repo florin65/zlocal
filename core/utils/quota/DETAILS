@@ -1,0 +1,15 @@
+          MODULE=quota
+         VERSION=4.00
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-tools
+   SOURCE_URL=$SFORGE_URL/linuxquota
+     SOURCE_VFY=sha256:eb2b045f58b98299edc568b8607b95b10735b4a131fa5196f41c89b51fb409ba
+       WEB_SITE=http://sourceforge.net/projects/linuxquota
+         ENTERED=20030820
+         UPDATED=20120719
+           SHORT="The quota tool"
+
+cat << EOF
+Tools and patches for the Linux Diskquota system as part of the
+Linux kernel.
+EOF

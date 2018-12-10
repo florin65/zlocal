@@ -1,0 +1,4 @@
+default_pre_build &&
+
+sedit 's:$(SBINDIR):/usr/sbin:' Makefile &&
+sedit 's:$(MANDIR):/usr/share/man:' Makefile

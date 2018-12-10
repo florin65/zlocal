@@ -5,9 +5,9 @@ A good part of my zlocal repo for Lunar Linux
 
 ## Instructions
 
-1. start by installing openrc along with dbus by running:
+1. Start by installing `openrc` along with `elogind` (which pulls in `eudev`) and `dbus` by running:
 ```
-lin -rc openrc dbus
+lin -rc openrc elogind dbus
 ```
 
 2. Move all binaries into `/usr/bin`:

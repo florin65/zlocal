@@ -2,3 +2,24 @@
 A good part of my zlocal repo for Lunar Linux
 
 ## Attention!!! It's still WIP.
+
+## Instructions
+
+1. start by installing openrc along with dbus by running:
+```
+lin -rc openrc dbus
+```
+
+2. Move all binaries into `/usr/bin`:
+```
+mv -f /bin/* /sbin/* /usr/sbin/* /usr/bin
+```
+
+3. Make symlinks to `/usr/bin` to emulate the classic file system
+```
+ln -sf /usr/bin /bin
+ln -sf /usr/bin /sbin
+ln -sf /usr/bin /usr/sbin
+```
+
+## To be continued...

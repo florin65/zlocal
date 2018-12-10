@@ -1,5 +1,0 @@
-depends cmake
-depends rustc
-depends setconf
-
-optional_depends llvm "" "" "for compiling C source code with clang"

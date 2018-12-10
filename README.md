@@ -1,2 +1,2 @@
 # zlocal
-My zlocal repo for Lunar Linux
+A good part of my zlocal repo for Lunar Linux

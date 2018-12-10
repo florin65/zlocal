@@ -1,0 +1,4 @@
+default_pre_build &&
+
+#the dvi documentation fails to build with current texlive
+sedit 's/$(DVI)/#/' doc/Makefile.in

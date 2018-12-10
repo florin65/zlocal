@@ -5,17 +5,23 @@ A good part of my zlocal repo for Lunar Linux
 
 ## Instructions
 
-1. Start by installing `openrc` along with `elogind` (which pulls in `eudev`) and `dbus` by running:
+1. Install the repo into your zlocal with:
+```
+cd /var/lib/lunar/moonbase/zlocal
+git clone https://github.com/Florin65/zlocal.git moonbase-openrc
+```
+
+2. Start by installing `openrc` along with `elogind` (which pulls in `eudev`) and `dbus` by running:
 ```
 lin -rc openrc elogind dbus
 ```
 
-2. Move all binaries into `/usr/bin`:
+3. Move all binaries into `/usr/bin`:
 ```
 mv -f /bin/* /sbin/* /usr/sbin/* /usr/bin
 ```
 
-3. Make symlinks to `/usr/bin` to emulate the classic file system
+4. Make symlinks to `/usr/bin` to emulate the classic file system
 ```
 ln -sf /usr/bin /bin
 ln -sf /usr/bin /sbin

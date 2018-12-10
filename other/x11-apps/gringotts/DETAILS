@@ -1,0 +1,15 @@
+          MODULE=gringotts
+         VERSION=1.2.10
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://sourceforge.net/projects/gringotts.berlios/files/
+      SOURCE_VFY=sha256:19784f68f76b211d076124c74d2f5ca5a156e4af7ed32d72a1ba45547782179d
+        WEB_SITE=https://github.com/shlomif/gringotts/
+         ENTERED=20160327
+         UPDATED=20160327
+           SHORT="Secure notes manager"
+
+cat << EOF
+Gringotts is a secure notes manager for Linux and other UNIX-like systems.
+It is based on libgringotts, which provides a backend for managing the data
+files on the disk.
+EOF

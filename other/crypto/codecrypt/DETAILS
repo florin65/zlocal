@@ -1,0 +1,16 @@
+          MODULE=codecrypt
+         VERSION=1.7.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/exaexa/codecrypt/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:f7ac2ce7fb49735575916ce8a3044d2fc827fb079051709c1bf6254dba60bfc2
+        WEB_SITE=http://e-x-a.org/codecrypt/
+         ENTERED=20160430
+         UPDATED=20160430
+           SHORT="Post-quantum cryptography tool"
+
+cat << EOF
+This is a GnuPG-like unix program for encryption and signing that uses only
+quantum-computer-resistant algorithms:
+  McEliece cryptosystem (compact QC-MDPC variant) for encryption
+  Hash-based Merkle tree algorithm (FMTSeq variant) for digital signatures
+EOF

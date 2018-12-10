@@ -1,0 +1,15 @@
+          MODULE=vim-kolor
+         VERSION=1.4.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/zeis/vim-kolor/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:f297313538760ba23579d80c9f830f6e6c588189fbb6c03c89dbb95e1ee52aac
+        WEB_SITE=http://github.com/zeis/vim-kolor/
+         ENTERED=20170306
+         UPDATED=20170306
+           SHORT="Vim color scheme with high text readability"
+
+cat << EOF
+Colorful Vim color scheme with 256 color terminal support.
+Designed for high readability and optimal visibility of every element, and to
+be eye comfortable as well.
+EOF

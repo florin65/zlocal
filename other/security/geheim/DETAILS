@@ -1,0 +1,14 @@
+          MODULE=geheim
+         VERSION=0.1.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/malte70/$MODULE/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:e3153bcd7ccbeb7ed37446073f6a61c3ecc2afd7ddbb4950a6b45ee441a5dbcc
+        WEB_SITE=http://malte-bublitz.de/geheim/
+         ENTERED=20150623
+         UPDATED=20150623
+           SHORT="Simple password manager"
+
+cat << EOF
+Simple password manager which tries to follow the Unix principles, written in
+Bash and using Tar and GnuPG to store passwords.
+EOF

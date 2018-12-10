@@ -1,0 +1,14 @@
+          MODULE=vim-colorscheme-despacio
+         VERSION=5.0.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Despacio-$VERSION
+ SOURCE_URL_FULL=http://github.com/AlessandroYorba/Despacio/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:ac03acf6d1b2206b6c4c1f8397798bf78327aa207ac882d4268587db088f4a74
+        WEB_SITE=http://github.com/AlessandroYorba/Despacio/
+         ENTERED=20170430
+         UPDATED=20170030
+           SHORT="A Vim colorscheme"
+
+cat << EOF
+A dark low-contrast Vim colorscheme for terminal Vim and GUI Vim.
+EOF

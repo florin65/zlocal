@@ -1,0 +1,18 @@
+          MODULE=redo-sh
+         VERSION=2.0.0
+          SOURCE=redo-v$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/redo-$VERSION
+      SOURCE_URL=http://daten.dieweltistgarnichtso.net/src/
+      SOURCE_VFY=sha256:25add9413c6506df42b86fe88c14ab7edfb762b53dbcf7b133b6bc516f1ea734
+        WEB_SITE=http://news.dieweltistgarnichtso.net/bin/redo-sh.html
+         ENTERED=20170331
+         UPDATED=20170331
+           SHORT="Redo implementation in Bourne Shell"
+
+cat << EOF
+Redo is a build system for software packages that does incremental builds, i.e.
+if the package is built and then some of its source files are changed, the build
+system will only re-run that part of the build procedure that is necessary
+to re-build the changed parts of the package.
+Redo-sh is an implementation of redo in Bourne Shell (bash).
+EOF

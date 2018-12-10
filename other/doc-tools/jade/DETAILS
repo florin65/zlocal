@@ -1,0 +1,18 @@
+          MODULE=jade
+         VERSION=1.2.1
+       DEB_PATCH=47.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+         SOURCE2=${MODULE}_$VERSION-$DEB_PATCH.diff.gz
+      SOURCE_URL=ftp://ftp.jclark.com/pub/$MODULE/
+     SOURCE2_URL=http://ftp.debian.org/debian/pool/main/j/$MODULE/
+      SOURCE_VFY=sha256:84e2f8a2a87aab44f86a46b71405d4f919b219e4c73e03a83ab6c746a674b187
+     SOURCE2_VFY=sha256:8e94486898e3503308805f856a65ba5b499a6f21994151270aa743de48305464
+        WEB_SITE=http://www.jclark.com/jade/
+         ENTERED=20151225
+         UPDATED=20151225
+           SHORT="James Clark's DSSSL Engine"
+
+cat << EOF
+Jade is an implementation of the DSSSL style language.
+EOF
+

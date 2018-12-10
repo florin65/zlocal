@@ -1,0 +1,4 @@
+default_pre_build &&
+
+sedit '/^override/d' Makefile &&
+sedit 's/^\(PREFIX=\/usr\)\/local/\1/' Makefile

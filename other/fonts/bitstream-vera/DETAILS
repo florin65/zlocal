@@ -1,0 +1,15 @@
+          MODULE=bitstream-vera
+         VERSION=1.10
+          SOURCE=ttf-$MODULE-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/ttf-$MODULE-$VERSION
+   SOURCE_URL[0]=$GNOME_URL/sources/ttf-bitstream-vera/$VERSION/
+   SOURCE_URL[1]=http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/$VERSION/
+     SOURCE_VFY=sha256:db5b27df7bbb318036ebdb75acd3e98f1bd6eb6608fb70a67d478cd243d178dc
+        WEB_SITE=http://www.gnome.org/fonts
+         ENTERED=20030218
+         UPDATED=20030418
+           SHORT="Fonts with a better looking, given to the Gnome Team"
+
+cat << EOF
+Fonts with a better looking, given to the Gnome Team.
+EOF

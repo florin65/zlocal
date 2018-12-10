@@ -1,0 +1,7 @@
+depends openssl
+depends sqlite
+depends zlib
+
+optional_depends tcl \
+                 "--with-tcl=/usr --with-tcl-private-stubs=1" "" \
+                 "for Tcl support"

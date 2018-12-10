@@ -1,0 +1,15 @@
+          MODULE=havana
+         VERSION=1.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/warszawskie-kroje/havana/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:0d61a322f1e8f061a85e12a77fb6f3dbf5161670634c0d179c7ae29c3af7c7c5
+        WEB_SITE=http://kroje.org/en/fonts/havana/
+         ENTERED=20180224
+         UPDATED=20180224
+           SHORT="Font inspired by Warsaw neon signs before 1989"
+
+cat << EOF
+Havana font is inspired by Warsaw neon signs from before 1989. Just like the
+lettering of that period, the “Havava” design is detail oriented, coherent and
+sophisticated. 
+EOF

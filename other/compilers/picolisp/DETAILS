@@ -1,0 +1,15 @@
+          MODULE=picolisp
+         VERSION=18.9.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/taij33n/picolisp/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:757b68b04c48a8f31d13a9d22d280435637884a8f12dcccc620a4fbb98b0c607
+        WEB_SITE=https://github.com/taij33n/picolisp/
+         ENTERED=20171001
+         UPDATED=20180905
+           SHORT="Fast and tiny 64-bit Lisp interpreter"
+
+cat << EOF
+Very fast and tiny 64-bit Lisp interpreter: object-oriented, dynamic and
+functional. Comes with a database, prolog-engine, coroutines, namespaces
+and native function calls.
+EOF

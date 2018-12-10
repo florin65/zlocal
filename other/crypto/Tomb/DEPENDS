@@ -1,0 +1,15 @@
+depends python-six
+
+# -- neded at runtime
+depends bc
+depends zsh
+depends e2fsprogs
+depends cryptsetup
+depends gnupg2
+
+optional_depends libgcrypt ""  ""  "for extensions to improve password security"
+optional_depends sudo      ""  ""  "sudo support for regular users"
+optional_depends wipe      ""  ""  "support for secure file deletion"
+optional_depends pinentry  ""  ""  "support for pins and passphrases entry"
+optional_depends steghide  ""  ""  "use steghide to put keys in a jpeg image"
+optional_depends qrencode  ""  ""  "for paper backups of keys"

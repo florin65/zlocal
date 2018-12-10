@@ -1,0 +1,18 @@
+          MODULE=openafs-driver
+         VERSION=1.6.22
+          SOURCE=openafs-$VERSION-src.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/openafs-$VERSION
+      SOURCE_URL=http://www.openafs.org/dl/openafs/$VERSION
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.openafs.org/
+         ENTERED=20031216
+         UPDATED=20171206
+      MAINTAINER="ratler@lunar-linux.org"
+           SHORT="OpenAFS kernel module"
+PSAFE="no"
+
+cat << EOF
+OpenAFS is a distributed filesystem allowing cross-platform sharing of
+files among multiple computers.  Facilities are provided for access
+control, authentication, backup and administrative management.
+EOF

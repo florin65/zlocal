@@ -1,0 +1,14 @@
+          MODULE=vim-table-mode
+         VERSION=4.6.7
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/dhruvasagar/vim-table-mode/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:e6267fe3643e86213cf134e5f0c070dc8822c25a8f88966a33dd841cb51eb0dd
+        WEB_SITE=http://github.com/dhruvasagar/vim-table-mode/
+         ENTERED=20160425
+         UPDATED=20161221
+           SHORT="Vim Table Mode for instant table creation"
+
+cat << EOF
+An awesome automatic table creator & formatter allowing one to create neat
+tables as you type.
+EOF

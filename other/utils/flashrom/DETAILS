@@ -1,0 +1,20 @@
+          MODULE=flashrom
+         VERSION=1.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=https://download.flashrom.org/releases/
+      SOURCE_VFY=sha256:3702fa215ba5fb5af8e54c852d239899cfa1389194c1e51cb2a170c4dc9dee64
+        WEB_SITE=http://www.flashrom.org/
+         ENTERED=20180105
+         UPDATED=20180105
+           SHORT="Utility for reading, writing, erasing and verifying flash ROM chips"
+
+cat << EOF
+flashrom is a utility for detecting, reading, writing, verifying and erasing
+flash chips. It is often used to flash BIOS/EFI/coreboot/firmware images
+in-system using a supported mainboard, but it also supports flashing of network
+cards (NICs), SATA controller cards, and other external devices which can
+program flash chips.
+It supports a wide range of flash chips (most commonly found in SOIC8, DIP8,
+SOIC16, WSON8, PLCC32, DIP32, TSOP32, and TSOP40 packages), which use various
+protocols such as LPC, FWH, parallel flash, or SPI.
+EOF

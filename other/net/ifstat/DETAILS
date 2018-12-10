@@ -1,0 +1,16 @@
+          MODULE=ifstat
+         VERSION=1.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://gael.roualland.free.fr/ifstat/
+      SOURCE_VFY=sha256:8599063b7c398f9cfef7a9ec699659b25b1c14d2bc0f535aed05ce32b7d9f507
+        WEB_SITE=http://gael.roualland.free.fr/ifstat/
+         ENTERED=20180501
+         UPDATED=20180501
+           SHORT="A tool to report network interfaces bandwith"
+
+cat << EOF
+fstat is a tool to report network interfaces bandwith just like vmstat/iostat
+do for other system counters. 
+ifstat gathers these statistics from the kernel internal counters, which is
+highly operating system dependent.
+EOF

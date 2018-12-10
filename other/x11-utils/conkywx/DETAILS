@@ -1,0 +1,14 @@
+          MODULE=conkywx
+         VERSION=7
+          SOURCE=${MODULE}_$VERSION.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${MODULE}_$VERSION
+      SOURCE_URL=http://bitbucket.org/plikhari/conkywx_pub/downloads/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://bitbucket.org/plikhari/conkywx_pub/
+         ENTERED=20150930
+         UPDATED=20180721
+           SHORT="The conky weather program"
+
+cat << EOF
+conkywx displays weather infos from multiple sources using conky.
+EOF

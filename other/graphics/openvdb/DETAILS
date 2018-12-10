@@ -1,0 +1,19 @@
+          MODULE=openvdb
+         VERSION=3.2.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/dreamworksanimation/openvdb/archive/v$VERSION.tar.gz
+     SOURCE_VFY=sha256:d4b6eb63a2c1c62ca449399f3d7789638fde655c32a977b50717b727420a634b
+        WEB_SITE=http://github.com/dreamworksanimation/openvdb/
+         ENTERED=20160930
+         UPDATED=20160930
+           SHORT="A set of tools for sparse volumetric data"
+
+cat << EOF
+A large suite of tools for the efficient storage and manipulation of sparse
+volumetric data discretized on three-dimensional grids.
+OpenVDB is an open source C++ library comprising a novel hierarchical data
+structure and a large suite of tools for the efficient storage and manipulation
+of sparse volumetric data discretized on three-dimensional grids. It is
+developed and maintained by DreamWorks Animation for use in volumetric
+applications typically encountered in feature film production.
+EOF

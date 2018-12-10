@@ -1,0 +1,2 @@
+cp -f $SOURCE_CACHE/$SOURCE /usr/src
+gzip -df /usr/src/$SOURCE

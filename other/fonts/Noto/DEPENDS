@@ -1,0 +1,2 @@
+depends encodings
+depends mkfontdir

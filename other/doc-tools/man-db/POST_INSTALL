@@ -1,0 +1,2 @@
+echo "Create an initial database if needed"
+mandb --quiet

@@ -1,0 +1,13 @@
+      MODULE=kochi-substitute
+     VERSION=20030809
+      SOURCE=$MODULE-$VERSION.tar.bz2
+  SOURCE_URL=http://osdn.dl.sourceforge.jp/efont/5411/
+  SOURCE_VFY=sha256:f4d69b24538833bf7e2c4de5e01713b3f1440960a6cc2a5993cb3c68cd23148c
+    WEB_SITE=http://wiki.fdiary.net/font
+     ENTERED=20050206
+     UPDATED=20050206
+       SHORT="Japanese fonts"
+
+cat << EOF
+Some basic fonts for Japanese.
+EOF

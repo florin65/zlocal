@@ -1,0 +1,10 @@
+          MODULE=openrc-lm_sensors
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20180121
+         UPDATED=20180121
+           SHORT="OpenRC lm_sensors init script"
+
+cat << EOF
+OpenRC lm_sensors init script.
+EOF

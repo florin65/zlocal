@@ -1,0 +1,14 @@
+          MODULE=vim-indent-object
+         VERSION=1.1.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/michaeljsmith/vim-indent-object/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/michaeljsmith/vim-indent-object/
+         ENTERED=20170430
+         UPDATED=20170430
+           SHORT="Text objects based on indent levels"
+
+cat << EOF
+Vim plugin that defines a new text object representing lines of code at the same
+indent level. Useful for python/vim scripts, etc.
+EOF

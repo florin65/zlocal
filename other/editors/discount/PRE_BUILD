@@ -1,0 +1,4 @@
+default_pre_build &&
+
+sedit 's/m 444/m 644/g' configure.inc
+sedit '1375d' configure.inc

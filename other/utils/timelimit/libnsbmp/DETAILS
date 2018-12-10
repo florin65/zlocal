@@ -1,0 +1,17 @@
+          MODULE=libnsbmp
+         VERSION=0.1.4
+          SOURCE=$MODULE-$VERSION-src.tar.gz
+      SOURCE_URL=http://download.netsurf-browser.org/libs/releases/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.netsurf-browser.org/projects/libnsbmp/
+         ENTERED=20141227
+         UPDATED=20161127
+           SHORT="A decoding library for BMP and ICO image file formats"
+
+cat <<EOF
+Libnsbmp is a decoding library for BMP and ICO image file formats, written in C.
+Features:
+  Decodes BMP files
+  Decodes ICO files
+  Example usage demonstration.
+EOF

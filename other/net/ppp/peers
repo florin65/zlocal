@@ -1,0 +1,6 @@
+noauth
+/dev/modem
+115200
+defaultroute
+usepeerdns
+connect "/usr/bin/chat -v -e -f /etc/ppp/chat/isp"

@@ -1,0 +1,13 @@
+          MODULE=dep
+         VERSION=0.5.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/golang/dep/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:65c31c8d51513dfabd25f1f37ecd22a38ab3bcdd5893bdf10f54941250e4f19d
+        WEB_SITE=https://golang.github.io/dep/
+         ENTERED=20181116
+         UPDATED=20181116
+           SHORT="Dependency management for Go"
+
+cat << EOF
+dep is a dependency management tool for Go.
+EOF

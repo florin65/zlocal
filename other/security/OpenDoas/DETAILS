@@ -1,0 +1,16 @@
+          MODULE=OpenDoas
+         VERSION=6.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/Duncaen/OpenDoas/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:59b5ce734591e0e5142f9cb27aaa56a4d5ce470d1f7ad85e9679cd91d2dd2058
+        WEB_SITE=http://github.com/Duncaen/OpenDoas/
+         ENTERED=20160903
+         UPDATED=20171021
+           SHORT="Run commands as super user or another user"
+
+cat << EOF
+A portable version of the OpenBSD `doas` command. doas is a minimal
+replacement for the venerable sudo. The doas program has a simpler
+configuration file and is quite small, keeping the code tiny and, one
+hopes, secure. The doas command first appeared in OpenBSD 5.8.
+EOF

@@ -1,0 +1,3 @@
+if module_installed openrc-openvpn; then
+   lrm openrc-openvpn
+fi

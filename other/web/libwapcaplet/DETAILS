@@ -1,0 +1,15 @@
+          MODULE=libwapcaplet
+         VERSION=0.4.0
+          SOURCE=$MODULE-$VERSION-src.tar.gz
+      SOURCE_URL=http://download.netsurf-browser.org/libs/releases/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.netsurf-browser.org/projects/libwapcaplet/
+         ENTERED=20150321
+         UPDATED=20161127
+           SHORT="String internment library with rapid string comparison"
+
+cat <<EOF
+LibWapcaplet is a string internment library, written in C.
+It provides reference counted string interment and rapid string comparison
+functionality.
+EOF

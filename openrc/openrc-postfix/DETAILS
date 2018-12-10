@@ -1,0 +1,10 @@
+          MODULE=openrc-postfix
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20180304
+         UPDATED=20180304
+           SHORT="OpenRC postfix init script"
+
+cat << EOF
+OpenRC postfix init script.
+EOF

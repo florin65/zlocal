@@ -1,0 +1,25 @@
+          MODULE=libnsfb
+         VERSION=0.1.2
+          SOURCE=$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$VERSION
+      SOURCE_URL=git://git.netsurf-browser.org/libnsfb.git
+#      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.netsurf-browser.org/projects/libnsfb/
+         ENTERED=20141227
+         UPDATED=20141227
+           SHORT="A framebuffer abstraction library"
+
+cat <<EOF
+LibNSFB is a framebuffer abstraction library, written in C.
+The overall idea of the library is to provide a generic abstraction to a linear
+section of memory which corresponds to a visible array of pixel elements on a
+display device. Different colour depths are supported and the library provides
+routines for tasks such as drawing onto the framebuffer and rectangle copy
+operations.
+LibNSFB currently supports the following as framebuffer providers:
+  Linux framebuffer
+  X
+  SDL
+  VNC
+  ABLE framebuffer.
+EOF

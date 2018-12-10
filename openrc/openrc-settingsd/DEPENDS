@@ -1,0 +1,2 @@
+depends libdaemon
+depends openrc-dbus

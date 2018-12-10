@@ -1,0 +1,14 @@
+          MODULE=LinLibertineTTF
+         VERSION=5.3.0
+         RELDATE=2012_07_02
+          SOURCE=${MODULE}_${VERSION}_$RELDATE.tgz
+      SOURCE_URL=http://downloads.sourceforge.net/project/linuxlibertine/linuxlibertine/$VERSION/
+      SOURCE_VFY=sha256:24a593a949808d976850131a953c0c0d7a72299531dfbb348191964cc038d75d
+        WEB_SITE=http://linuxlibertine.sourceforge.net/
+         ENTERED=20150927
+         UPDATED=20150727
+           SHORT="Libertine fonts"
+
+cat << EOF
+Libertine fonts.
+EOF

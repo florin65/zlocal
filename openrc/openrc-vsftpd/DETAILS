@@ -1,0 +1,10 @@
+          MODULE=openrc-vsftpd
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20180121
+         UPDATED=20180121
+           SHORT="OpenRC vsftpd init script"
+
+cat << EOF
+OpenRC vsftpd init script.
+EOF

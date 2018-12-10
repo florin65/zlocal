@@ -1,0 +1,16 @@
+          MODULE=amp
+         VERSION=0.5.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/jmacdonald/amp/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:e1f22a829205cf44f8c3fcf5660dbdb9a3c5a1f64b92c67dcdb75a30ad7e5a60
+        WEB_SITE=https://github.com/jmacdonald/amp/
+         ENTERED=20181125
+         UPDATED=20181125
+           SHORT="A modal text editor for the terminal"
+
+cat << EOF
+Heavily inspired by Vi/Vim.
+Amp aims to take the core interaction model of Vim, simplify it, and bundle in
+the essential features required for a modern text editor.
+Written with heart in Rust.
+EOF

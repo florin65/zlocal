@@ -1,0 +1,3 @@
+if module_installed openrc-saslauthd; then
+   lrm openrc-saslauthd
+fi

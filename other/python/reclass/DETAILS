@@ -1,0 +1,33 @@
+          MODULE=reclass
+         VERSION=1.4.1
+          SOURCE=${MODULE}_$VERSION.orig.tar.gz
+      SOURCE_URL=http://debian.c3sl.ufpr.br/debian/pool/main/r/$MODULE/
+      SOURCE_VFY=sha256:0b05d573da506d3bfdb79fd2a8cbb424614e69ec7102f6693186db8a941305bc
+        WEB_SITE=http://reclass.pantsfullofunix.net/
+         ENTERED=20170409
+         UPDATED=20170409
+           SHORT="Recursive external node classification"
+
+cat << EOF
+reclass is an “external node classifier” (ENC) as can be used with automation
+tools, such as Puppet, Salt, and Ansible. It is also a stand-alone tool for
+merging data sources recursively.
+The purpose of an ENC is to allow a system administrator to maintain an
+inventory of nodes to be managed, completely separately from the configuration
+of the automation tool. Usually, the external node classifier completely
+replaces the tool-specific inventory.
+
+With respect to the configuration management tool, the ENC then fulfills two
+jobs:
+  - it provides information about groups of nodes and group memberships
+  - it gives access to node-specific information, such as variables
+
+reclass allows you to define your nodes through class inheritance, while always
+able to override details further up the tree (i.e. in more specific nodes).
+Think of classes as feature sets, as commonalities between nodes, or as tags.
+Add to that the ability to nest classes (multiple inheritance is allowed,
+well-defined, and encouraged), and you can assemble your infrastructure from
+smaller bits, eliminating duplication and exposing all important parameters to a
+single location, logically organised. And if that isn’t enough, reclass lets you
+reference other parameters in the very hierarchy you are currently assembling.
+EOF

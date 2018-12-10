@@ -1,0 +1,15 @@
+          MODULE=vim-emmet
+         VERSION=git
+          SOURCE=emmet.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/emmet-$MODULE
+      SOURCE_URL=http://github.com/mattn/emmet-vim/archive/
+      SOURCE_VFY=sha256:76d9ad49cd8924b43af2f131a0724d62c1b372eaf409a37c6de45aa3dc8eeaac
+        WEB_SITE=http://github.com/mattn/emmet-vim/
+         ENTERED=20170319
+         UPDATED=20170319
+           SHORT="Emmet for vim"
+
+cat << EOF
+emmet-vim is a vim plug-in which provides support for expanding abbreviations
+similar to emmet.
+EOF

@@ -1,0 +1,18 @@
+Here's a sample PAM configuration file that employs pam_ssh. You could use it just for one service (e.g., install it as /etc/pam.d/xdm), but I usually install it as system-auth-ssh and use it for multiple services with pam_stack.
+
+#%PAM-1.0
+
+auth     required   /lib/security/pam_env.so
+auth     sufficient /lib/security/pam_ssh.so
+auth     sufficient /lib/security/pam_unix.so try_first_pass likeauth nullok
+auth     required   /lib/security/pam_deny.so
+
+account  required   /lib/security/pam_unix.so
+
+password required   /lib/security/pam_cracklib.so retry=3
+password sufficient /lib/security/pam_unix.so nullok md5 shadow use_authtok
+password required   /lib/security/pam_deny.so
+
+session  required   /lib/security/pam_limits.so
+session  sufficient /lib/security/pam_ssh.so
+session  required   /lib/security/pam_unix.so

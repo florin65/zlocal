@@ -1,0 +1,13 @@
+          MODULE=passed
+         VERSION=0.0.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/jreinert/passed/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:e2e2865ca5783e91cb570d44a22250cc211a38a06bcd9adfeb27866b393f0ee2
+        WEB_SITE=http://github.com/jreinert/passed/
+         ENTERED=20160430
+         UPDATED=20160430
+           SHORT="A simple script to modify password store entries"
+
+cat << EOF
+A simple script to modify password store entries with sed commands.
+EOF

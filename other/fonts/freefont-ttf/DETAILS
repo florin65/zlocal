@@ -1,0 +1,16 @@
+          MODULE=freefont-ttf
+         VERSION=20120503
+          SOURCE=$MODULE-$VERSION.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/freefont-$VERSION
+      SOURCE_URL=$GNU_URL/freefont/
+      SOURCE_VFY=sha256:7c85baf1bf82a1a1845d1322112bc6ca982221b484e3b3925022e25b5cae89af
+        WEB_SITE=http://www.nongnu.org/freefont/
+         ENTERED=20150927
+         UPDATED=20150927
+           SHORT="Free outline fonts covering the Unicode character set"
+
+cat << EOF
+GNU FreeFont is a free family of scalable outline fonts, suitable for general use
+on computers and for desktop publishing. It is Unicode-encoded for compatibility
+with all modern operating systems.
+EOF

@@ -1,0 +1,21 @@
+          MODULE=Fennel
+         VERSION=0.1.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/bakpakin/Fennel/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:2235832b75cb362f8ba453d7124bf5c1330602e0849b5c3353e6ea71f73a0e29
+        WEB_SITE=https://github.com/bakpakin/Fennel/
+         ENTERED=20181130
+         UPDATED=20181207
+           SHORT="A Lua Lisp language"
+
+cat << EOF
+Fennel (formerly fnl) is a lisp that compiles to Lua. It aims to be easy to use,
+expressive, and has almost zero overhead compared to handwritten Lua.
+  Full Lua compatibility - You can use any function or library from Lua.
+  Zero overhead - Compiled code should be just as or more efficient than
+               and-written Lua.
+  Compile-time macros - Ship compiled code with no runtime dependency on Fennel.
+  Embeddable - Fennel is a one-file library as well as an executable.
+               Embed it in other programs to support runtime extensibility and
+               interactive development.
+EOF

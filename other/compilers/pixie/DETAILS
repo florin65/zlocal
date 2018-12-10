@@ -1,0 +1,25 @@
+          MODULE=pixie
+         VERSION=0.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/pixie-lang/pixie/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:a920042f23dd57ad32b8d4648bb7f574ebb4111d286450b164957352a026dd7f
+        WEB_SITE=http://github.com/pixie-lang/pixie/
+         ENTERED=20151029
+         UPDATED=20151029
+           SHORT="A small, fast, native lisp with 'magical' powers"
+
+cat << EOF
+Pixie is a lightweight lisp suitable for both general use as well as shell
+scripting. The language is still in a "pre-alpha" phase and as such changes
+fairly quickly. The standard library is heavily inspired by Clojure as well
+as several other functional programming languages. It is written in RPython
+and as such supports a fairly fast GC and an amazingly fast tracing JIT.
+Some planned and implemented features:
+  - Immutable datastructures
+  - Protocols first implementation
+  - Transducers at-the-bottom (most primitives are based off of reduce)
+  - A "good enough" JIT (implemented, tuning still a WIP, but not bad
+    performance today)
+  - Easy FFI
+  - Pattern matching (TODO).
+EOF

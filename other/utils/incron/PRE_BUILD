@@ -1,0 +1,3 @@
+default_pre_build &&
+
+sedit 's:/usr/sbin:/usr/bin:g' Makefile

@@ -1,0 +1,14 @@
+          MODULE=duktape
+         VERSION=2.2.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://duktape.org/
+      SOURCE_VFY=sha256:62f72206427633077cb02e7ccd2599ace4d254db409334593b86d262c0d50c14
+        WEB_SITE=http://duktape.org/
+         ENTERED=20161127
+         UPDATED=20180327
+           SHORT="Embeddable Javascript engine"
+
+cat <<EOF
+Duktape is an embeddable Javascript engine, with a focus on portability and
+compact footprint.
+EOF

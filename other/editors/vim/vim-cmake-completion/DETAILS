@@ -1,0 +1,13 @@
+          MODULE=vim-cmake-completion
+         VERSION=1.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/richq/vim-cmake-completion/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:d68272c4db23928d4b5c6510e1f7eb6175f03d1933f7d776460136f4b8e2295c
+        WEB_SITE=http://github.com/richq/vim-cmake-completion/
+         ENTERED=20170325
+         UPDATED=20170325
+           SHORT="Vim plugin for CMake omnicompletion"
+
+cat << EOF
+Vim plugin for CMake omnicompletion.
+EOF

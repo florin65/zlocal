@@ -1,0 +1,5 @@
+depends iptables
+depends openssh
+depends six
+
+optional_depends Sphinx "" "" "for man page install"

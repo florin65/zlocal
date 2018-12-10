@@ -1,0 +1,10 @@
+          MODULE=openrc-distcc
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20181101
+         UPDATED=2018101
+           SHORT="OpenRC distcc init script"
+
+cat << EOF
+OpenRC distcc init script.
+EOF

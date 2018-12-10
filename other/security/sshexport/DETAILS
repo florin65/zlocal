@@ -1,0 +1,17 @@
+          MODULE=sshexport
+         VERSION=2.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.catb.org/~esr/sshexport/
+      SOURCE_VFY=sha256:ee4412fa4ee4dbe6d77125273352b8aed4d4666b03f713c384a7bca482610d12
+        WEB_SITE=http://www.catb.org/~esr/sshexport/
+         ENTERED=20160120
+         UPDATED=20160120
+           SHORT="Set up password-less SSH logins"
+
+cat << EOF
+This script tries to export ssh public keys to specified sites. It will walk you
+through generating key pairs if it doesn't find any to export. It handles all
+the fiddly details like making sure local and remote permissions are correct,
+and tells you what it's doing if it has to change anything. Unlike some competing
+tools, you only have to enter your password once.
+EOF

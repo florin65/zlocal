@@ -1,0 +1,13 @@
+          MODULE=radvd
+         VERSION=2.14
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://www.litech.org/radvd/dist/
+      SOURCE_VFY=sha256:f8133114821544c62207de8026c627086461b88650b7811b5a9c5f17fb0a4191
+        WEB_SITE=http://www.litech.org/radvd/
+         ENTERED=20131109
+         UPDATED=20160706
+           SHORT="IPv6 Router Advertisement Daemon"
+
+cat <<EOF
+IPv6 Router Advertisement Daemon.
+EOF

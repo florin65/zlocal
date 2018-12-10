@@ -1,0 +1,13 @@
+          MODULE=wavemon
+         VERSION=0.8.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/uoaerg/wavemon/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:c9ea57da4f8161401bcaaca17b37bcdf16ffb88baad2370afed2e15a7f71af73
+        WEB_SITE=http://github.com/uoaerg/wavemon/
+         ENTERED=20170101
+         UPDATED=20170101
+           SHORT="Ncurses-based monitoring application for wireless network devices"
+
+cat << EOF
+wavemon is an ncurses-based monitoring application for wireless network devices.
+EOF

@@ -1,0 +1,10 @@
+          MODULE=openrc-syslog-ng
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20180114
+         UPDATED=20180114
+           SHORT="OpenRC syslog-ng init script"
+
+cat << EOF
+OpenRC syslog-ng init script.
+EOF

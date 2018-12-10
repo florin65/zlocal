@@ -1,0 +1,17 @@
+          MODULE=lshw
+         VERSION=B.02.17
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://ezix.org/software/files/
+      SOURCE_VFY=sha256:eb9cc053fa0f1e78685cb695596e73931bfb55d2377e3bc3b8b94aff4c5a489c
+        WEB_SITE=http://ezix.org/project/wiki/HardwareLiSter
+         ENTERED=20090202
+         UPDATED=20120414
+           SHORT="Detailed information on the hardware configuration of the machine"
+
+cat << EOF
+lshw (Hardware Lister) is a small tool to provide detailed information
+on the hardware configuration of the machine. It can report exact
+memory configuration, firmware version, mainboard configuration,
+CPU version and speed, cache configuration, bus speed, etc.
+on DMI-capable x86 or EFI (IA-64) systems and on some PowerPC machines.
+EOF

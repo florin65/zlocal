@@ -1,0 +1,15 @@
+          MODULE=secure-delete
+         VERSION=3.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://zerocount.net/hosted/
+      SOURCE_VFY=sha256:a9d846d1dce3f1bdf13bbb306e8596bc1f263198a086f6beecd90ccf7bddf8d5
+        WEB_SITE=http://www.thc.org/
+         ENTERED=20171229
+         UPDATED=20171229
+           SHORT="Secure file, disk, swap, memory erasure utilities"
+
+cat <<EOF
+This is the best secure data deletion toolkit! If you overwrite a file for 10+
+times, it can still be recovered. These tools can wipe files, free disk space,
+swap and memory.
+EOF

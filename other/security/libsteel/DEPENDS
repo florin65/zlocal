@@ -1,0 +1,3 @@
+depends libmcrypt
+depends mhash
+depends sqlite

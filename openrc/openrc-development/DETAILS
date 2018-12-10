@@ -1,0 +1,12 @@
+          MODULE=openrc-development
+         VERSION=2018
+        WEB_SITE=http://lunar-linux.org
+         ENTERED=20060120
+         UPDATED=20180211
+           SHORT="A profile for development services with OpenRC"
+         PROFILE=yes
+
+cat << EOF
+A profile for development services with OpenRC.
+EOF
+

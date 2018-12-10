@@ -1,0 +1,3 @@
+if module_installed openrc-thermald; then
+   lrm openrc-thermald
+fi

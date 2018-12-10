@@ -1,0 +1,20 @@
+depends expat
+depends pkgconf
+depends autoconf-archive
+
+optional_depends libX11 \
+                "--with-x --enable-x11-autolaunch" \
+                "--without-x" \
+                "for X support"
+
+optional_depends doxygen \
+                 "--enable-doxygen-docs" \
+                 "--disable-doxygen-docs" \
+                 "for Doxygen documentation support" n
+
+optional_depends xmlto \
+                 "--enable-xml-docs" \
+                 "--disable-xml-docs" \
+                 "for XML documentation support" n
+
+optional_depends docbook-xsl "" "" "for XSL documentation support" n

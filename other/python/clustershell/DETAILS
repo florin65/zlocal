@@ -1,0 +1,23 @@
+          MODULE=clustershell
+         VERSION=1.8
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/cea-hpc/clustershell/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:ad5a13e2d107b4095229810c35365e22ea94dfd2baf4fdcfcc68ce58ee37cee3
+        WEB_SITE=https://cea-hpc.github.io/clustershell/
+            TYPE=python3
+         ENTERED=20180303
+         UPDATED=20180303
+           SHORT="Python framework for efficient cluster administration"
+
+cat << EOF
+ClusterShell is an event-driven open source Python library, designed to run
+local or distant commands in parallel on server farms or on large Linux
+clusters. No need to reinvent the wheel: you can use ClusterShell as a building
+block to create cluster aware administration scripts and system applications in
+Python.
+It will take care of common issues encountered on HPC clusters, such as
+operating on groups of nodes, running distributed commands using optimized
+execution algorithms, as well as gathering results and merging identical
+outputs, or retrieving return codes. ClusterShell takes advantage of existing
+remote shell facilities already installed on your systems, like SSH.
+EOF

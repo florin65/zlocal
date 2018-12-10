@@ -1,0 +1,13 @@
+          MODULE=libfilteraudio
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=git+https://github.com/irungentoo/libfilteraudio
+#      SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/irungentoo/filter_audio/
+         ENTERED=20160218
+         UPDATED=20160218
+           SHORT="An easy to use audio filtering library"
+
+cat << EOF
+Lightweight audio filtering library made from webrtc code.
+EOF

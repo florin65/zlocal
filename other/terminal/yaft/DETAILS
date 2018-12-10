@@ -1,0 +1,21 @@
+          MODULE=yaft
+         VERSION=0.2.9
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/uobikiemukot/yaft/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:80f7e6937ff0a34f77859c684d6f8e23c55d696e0bac4ac8b2f11f785db0374c
+        WEB_SITE=http://github.com/uobikiemukot/yaft/
+         ENTERED=20150925
+         UPDATED=20150925
+           SHORT="Yet Another Framebuffer Terminal"
+
+cat << EOF
+Yet Another Framebuffer Terminal (aka "yaft") is simple terminal emulator for
+minimalist. Features:
+  various framebuffer types (8/15/16/24/32bpp)
+  compatible with vt102 and Linux console (detail)
+  UTF-8 encoding and UCS2 gylphs
+  256 colors (same as xterm)
+  wallpaper
+  DRCS (DECDLD/DRCSMMv1) (experimental)
+  sixel (experimental).
+EOF

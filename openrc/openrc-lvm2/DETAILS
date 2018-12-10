@@ -1,0 +1,10 @@
+          MODULE=openrc-lvm2
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20180121
+         UPDATED=20180121
+           SHORT="OpenRC LVM2 init script"
+
+cat << EOF
+OpenRC LVM2 init script.
+EOF

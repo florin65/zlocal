@@ -1,0 +1,8 @@
+depends openrc-acpid
+depends openrc-alsa-utils
+depends openrc-avahi
+depends openrc-xdm
+depends openrc-bluez
+depends openrc-connman
+depends openrc-wpa_supplicant
+depends openrc-elogind

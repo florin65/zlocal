@@ -1,0 +1,15 @@
+          MODULE=incron
+         VERSION=0.5.12
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/ar-/incron/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:cce80bd723bafce59f35464f2f851d02707e32efa102e2b941ed0e42bdd38f91
+        WEB_SITE=http://github.com/ar-/incron/
+         ENTERED=20160501
+         UPDATED=20160501
+           SHORT="cron-like daemon which handles filesystem events"
+
+cat << EOF
+This program is the "inotify cron" system. It consist of a daemon and a table
+manipulator. You can use it a similar way as the regular cron. The difference
+is that the inotify cron handles filesystem events rather than time periods.
+EOF

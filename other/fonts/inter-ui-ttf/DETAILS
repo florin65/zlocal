@@ -1,0 +1,21 @@
+          MODULE=inter-ui-ttf
+         VERSION=2.5
+          SOURCE=Inter-UI-$VERSION.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/inter-$VERSION
+      SOURCE_URL=https://github.com/rsms/inter/releases/download/v$VERSION/
+      SOURCE_VFY=sha256:0a8a74623d254fa6dbf92ef8c564e310727013b2a2cf701f76f448568f7d05e7
+        WEB_SITE=https://github.com/rsms/inter/
+         ENTERED=20180222
+         UPDATED=20180222
+         ARCHIVE=off
+           SHORT="The Inter UI font family"
+
+cat << EOF
+Inter UI is a typeface specially designed for user interfaces with focus on
+high legibility of small-to-medium sized text on computer screens.
+The family features a tall x-height to aid in readability of mixed-case and
+lower-case text. Several OpenType features are provided as well, like
+contextual alternates that adjusts punctuation depending on the shape of
+surrounding glyphs, slashed zero for when you need to disambiguate "0" from
+"o", tabular numbers, etc.
+EOF

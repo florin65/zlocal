@@ -1,0 +1,13 @@
+          MODULE=iwd
+         VERSION=0.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://www.kernel.org/pub/linux/network/wireless/
+      SOURCE_VFY=sha256:607a8e67909c56091eaa8f4f253c356c2c3f5d05b38535fc6c54c0fcf22f4bab
+        WEB_SITE=https://git.kernel.org/cgit/network/wireless/iwd.git/
+         ENTERED=20180216
+         UPDATED=20180728
+           SHORT="Internet Wireless Daemon"
+
+cat << EOF
+Internet Wireless Daemon is a wpa_supplicant replacement developed by Intel.
+EOF

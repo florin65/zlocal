@@ -1,0 +1,16 @@
+          MODULE=doas
+         VERSION=6.0p2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/slicer69/doas/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:5afff34eaa4d9bf65ebe861f57056a97f9ea6ce61f6d3d1a25e69bcfadd33c46
+        WEB_SITE=http://github.com/slicer69/doas/
+         ENTERED=20160903
+         UPDATED=20171021
+           SHORT="Execute commands as another user"
+
+cat << EOF
+The doas utility executes the given command as another user.
+The doas program has a simpler configuration file and is quite small,
+keeping the code tiny and, one hopes, secure. The doas command first
+appeared in OpenBSD 5.8.
+EOF

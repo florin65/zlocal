@@ -1,0 +1,13 @@
+          MODULE=mbr
+         VERSION=1.1.11
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.chiark.greenend.org.uk/~neilt/mbr/
+      SOURCE_VFY=sha256:c188692955763602e211be585b94c4e4d0fbe7b49fb12a6cd80ae06ccd421f55
+        WEB_SITE=http://www.chiark.greenend.org.uk/~neilt/mbr/
+         ENTERED=20160422
+         UPDATED=20160422
+           SHORT="A replacement master boot record"
+
+cat << EOF
+Master Boot Loader for the x86 PC.
+EOF

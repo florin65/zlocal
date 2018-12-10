@@ -1,0 +1,3 @@
+depends flex
+depends libevent
+depends %OSSL

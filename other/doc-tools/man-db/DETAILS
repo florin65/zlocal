@@ -1,0 +1,16 @@
+          MODULE=man-db
+         VERSION=2.8.3
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://download-mirror.savannah.gnu.org/releases/$MODULE/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.nongnu.org/man-db/
+         ENTERED=20150911
+         UPDATED=20180405
+           SHORT="A utility for reading man pages"
+
+cat << EOF
+man-db is an implementation of the standard Unix documentation system accessed
+using the man command.
+It uses a Berkeley db database in place of the traditional flat-text whatis
+databases.
+EOF

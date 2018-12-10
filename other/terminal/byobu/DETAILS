@@ -1,0 +1,19 @@
+          MODULE=byobu
+         VERSION=5.124
+          SOURCE=${MODULE}_$VERSION.orig.tar.gz
+      SOURCE_URL=https://launchpad.net/$MODULE/trunk/$VERSION/+download/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://byobu.org/
+         ENTERED=20170101
+         UPDATED=20180223
+           SHORT="Enhanced profile and useful notifications for tmux/screen"
+
+cat << EOF
+Byobu is an open source text-based window manager and terminal multiplexer.
+It was originally designed to provide elegant enhancements to the otherwise
+functional, plain, practical GNU Screen.
+Byobu now includes an enhanced profiles, convenient keybindings, configuration
+utilities, and toggle-able system status notifications for both the GNU Screen
+window manager and the more modern Tmux terminal multiplexer, and works on most
+Linux, BSD, and Mac distributions.
+EOF

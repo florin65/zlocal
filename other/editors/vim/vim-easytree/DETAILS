@@ -1,0 +1,18 @@
+          MODULE=vim-easytree
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=git+https://github.com/troydm/easytree.vim
+#     SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/troydm/easytree.vim/
+         ENTERED=20160430
+         UPDATED=20160430
+           SHORT="A simple tree file manager for vim"
+
+cat << EOF
+easytree.vim - is a simple tree file manager for vim. It's approach to a file
+management and takes a more traditional vim yank/paste file copy/paste/delete
+approach It's also more simpler in it's functionality and has much less features
+compared to other file managers.
+It's goal is to be as fast and as minimalistic as possible.
+Just the right tool for just the right task 
+EOF

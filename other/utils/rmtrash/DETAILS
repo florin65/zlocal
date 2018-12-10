@@ -1,0 +1,14 @@
+          MODULE=rmtrash
+         VERSION=1.12
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/PhrozenByte/rmtrash/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:23a39883c2706a105ba291b3eaf0d10119f40aedfd58abe2b302ec2c97280353
+        WEB_SITE=https://github.com/PhrozenByte/rmtrash
+         ENTERED=20180126
+         UPDATED=20180126
+           SHORT="trash-put made compatible to GNUs rm and rmdir"
+
+cat << EOF
+Put files (and directories) in trash using the trash-put command in a way that
+is, otherwise as trash-put itself, compatible to GNUs rm and rmdir.
+EOF

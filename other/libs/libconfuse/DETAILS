@@ -1,0 +1,18 @@
+          MODULE=libconfuse
+         VERSION=3.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/martinh/libconfuse/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:0c5970868aca9cb6faa31310340efb2b380eef77759fc1d33c8e37fd108e3935
+        WEB_SITE=http://github.com/martinh/libconfuse/
+         ENTERED=20170207
+         UPDATED=20170207
+           SHORT="C-library for parsing configuration files"
+
+cat << EOF
+libConfuse is a configuration file parser library written in C. It supports
+sections and (lists of) values (strings, integers, floats, booleans or other
+sections), as well as some other features (such as single/double-quoted
+strings, environment variable expansion, functions and nested include
+statements). It makes it very easy to add configuration file capability to a
+program using a simple API.
+EOF

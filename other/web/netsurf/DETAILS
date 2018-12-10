@@ -1,0 +1,17 @@
+          MODULE=netsurf
+         VERSION=3.7
+          SOURCE=$MODULE-$VERSION-src.tar.gz
+         SOURCE2=NetSurf.svg
+      SOURCE_URL=http://download.netsurf-browser.org/$MODULE/releases/source/
+     SOURCE2_URL=http://source.netsurf-browser.org/art.git/plain/logo/emblem/
+      SOURCE_VFY=sha256:
+     SOURCE2_VFY=sha256:0b8ef911f7154079d16791167cd905f0df8eed00bf97aecb5edf1cf4915757c2
+        WEB_SITE=http://www.netsurf-browser.org/
+         ENTERED=20150321
+         UPDATED=20171031
+           SHORT="A lightweight and fast web browser"
+
+cat << EOF
+NetSurf is a multi-platform web browser for RISC OS, UNIX-like platforms
+(including Linux), Mac OS X, and more.
+EOF

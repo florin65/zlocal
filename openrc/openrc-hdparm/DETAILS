@@ -1,0 +1,10 @@
+          MODULE=openrc-hdparm
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20181101
+         UPDATED=20181101
+           SHORT="OpenRC hdparm init script"
+
+cat << EOF
+OpenRC hdparm init script.
+EOF

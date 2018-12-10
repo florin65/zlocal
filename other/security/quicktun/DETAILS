@@ -1,0 +1,20 @@
+          MODULE=quicktun
+         VERSION=2.2.4
+          SOURCE=$MODULE-$VERSION.tgz
+      SOURCE_URL=http://oss.ucis.nl/quicktun/src/
+      SOURCE_VFY=sha256:652383d30f4a1ac2d42500e676f4c8590efaeea21a1e40a3ad1c332aa2ba3a0c
+        WEB_SITE=http://wiki.ucis.nl/QuickTun
+         ENTERED=20171229
+         UPDATED=20171229
+           SHORT="Simple and secure VPN software"
+
+cat << EOF
+QuickTun is probably the simplest VPN tunnel software ever, yet it's very secure.
+It relies on the NaCl encryption library.
+QuickTun uses the curve25519xsalsa20poly1305 crypto-box functionality of the NaCl
+library for secure public-key encryption.
+And that's about all QuickTun does; encrypting and sending data. No fancy
+features which would only lead to bloating the binary. In fact, QuickTun itself
+has only a few hundred lines of pure C code, making it dead simple to maintain,
+analyze, debug and fix.
+EOF

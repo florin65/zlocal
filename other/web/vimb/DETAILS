@@ -1,0 +1,18 @@
+          MODULE=vimb
+         VERSION=3.3.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/fanglingsu/vimb/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:5c6fe39b1b2ca18a342bb6683f7fd5b139ead53903f57dd9eecd5a1074576d6c
+        WEB_SITE=https://fanglingsu.github.io/vimb/
+         ENTERED=20180618
+         UPDATED=20181130
+        SHORT="The vim like browser"
+
+cat << EOF
+Vimb is a fast and lightweight vim like web browser based on the webkit web
+browser engine and the GTK toolkit. Vimb is modal like the great vim editor and
+also easily configurable during runtime. Vimb is mostly keyboard driven and does
+not detract you from your daily work.
+If your are familiar with vim or have some experience with pentadactyl the use
+of vimb would be a breeze, if not we missed our target.
+EOF

@@ -1,0 +1,14 @@
+          MODULE=vim-badwolf
+         VERSION=1.6.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/badwolf-$VERSION
+ SOURCE_URL_FULL=http://github.com/sjl/badwolf/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:91672ac28714aa1d620e3491a1fec05677dbaafa390339de529b5e99ad9bc853
+        WEB_SITE=http://github.com/sjl/badwolf/
+         ENTERED=20170319
+         UPDATED=20170319
+           SHORT="A Vim color scheme"
+
+cat << EOF
+A color scheme for Vim.
+EOF

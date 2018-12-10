@@ -1,0 +1,14 @@
+          MODULE=nsgenbind
+         VERSION=0.4
+          SOURCE=$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$VERSION
+      SOURCE_URL=git://git.netsurf-browser.org/nsgenbind.git
+#      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.netsurf-browser.org/
+         ENTERED=20141227
+         UPDATED=20161127
+           SHORT="NetSurf javascript binding generator"
+
+cat <<EOF
+NetSurf javascript binding generator.
+EOF

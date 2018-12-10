@@ -1,0 +1,14 @@
+          MODULE=vim-nerdcommenter
+         VERSION=2.5.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/nerdcommenter-$VERSION
+ SOURCE_URL_FULL=https://github.com/scrooloose/nerdcommenter/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:58e5497cff1dad3ed201b26e97f5820733c7e31135811c0ef9e197cf927b5816
+        WEB_SITE=https://github.com/scrooloose/nerdcommenter/
+         ENTERED=20171114
+         UPDATED=20171114
+           SHORT="Plugin for easy commenting of code for many filetypes"
+
+cat << EOF
+Vim plugin for intensely orgasmic commenting.
+EOF

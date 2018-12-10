@@ -1,0 +1,18 @@
+          MODULE=pam_ssh
+         VERSION=2.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/pam-ssh/
+      SOURCE_VFY=sha256:55fbe8488d59cff05a77523b4afc2e2a8d1ba35d93546f1828ec48e20e2600cb
+        WEB_SITE=http://pam-ssh.sourceforge.net/
+         ENTERED=20180510
+         UPDATED=20180510
+           SHORT="PAM module providing single sign-on behavior for SSH"
+
+cat <<EOF
+This PAM module provides single sign-on behavior for SSH. The user types an SSH
+passphrase when logging in (probably to GDM, KDM, or XDM) and is authenticated
+if the passphrase successfully decrypts the user's SSH private key. In the PAM
+session phase, an ssh-agent process is started and keys are added.
+For the entire session, the user can SSH to other hosts that accept key
+authentication without typing any passwords.
+EOF

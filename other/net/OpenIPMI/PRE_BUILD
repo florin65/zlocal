@@ -1,0 +1,6 @@
+default_pre_build &&
+
+sed \
+    -e '/Requires:/s/pthread//' \
+    -e '/Libs:/s/$/ -lpthread/' \
+    -i OpenIPMIpthread.pc.in

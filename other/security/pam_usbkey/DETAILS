@@ -1,0 +1,17 @@
+          MODULE=pam_usbkey
+         VERSION=1.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/ColumPaget/pam_usbkey/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:aa3c598f4ad49d2e912bb7db67c9b6a4bb11597b83c992b3778e84745eb5e858
+        WEB_SITE=http://github.com/ColumPaget/pam_usbkey/
+         ENTERED=20170409
+         UPDATED=20170409
+           SHORT="A pam module that uses usbkeys as an authentication token"
+
+cat <<EOF
+pam_usbkey is a linux Pluggable Authentications Module to implement login using
+usb keys as access tokens. It can be configured to allow passwordless login to
+certain user accounts if a USB key is plugged into the system (if you're crazy)
+or can be used as an extra requirement to login, or perhaps to 'su', used in
+combination with the usual password.
+EOF

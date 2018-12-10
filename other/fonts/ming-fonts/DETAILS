@@ -1,0 +1,15 @@
+          MODULE=ming-fonts
+         VERSION=1.00
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/ming
+      SOURCE_VFY=sha256:0b38226931d4b470024b65e84d5790377db0a308ca61cfeb3550b38a5195a5e0
+        WEB_SITE=http://www.libming.org/
+         ENTERED=20090511
+         UPDATED=20090511
+           SHORT="Bitstream Vera font converted for ming"
+
+cat << EOF
+This contains the Bitstream Vera font family, a high quality font family
+suitable for commercial grade end user applications, converted into FDB
+format for use directly from Ming.
+EOF

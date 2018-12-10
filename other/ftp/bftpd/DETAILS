@@ -1,0 +1,22 @@
+          MODULE=bftpd
+         VERSION=5.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE
+      SOURCE_URL=$SFORGE_URL/$MODULE/
+      SOURCE_VFY=sha256:177b905e9da308d7b341cabef315c909e0e0ca3c44e63d1e9c74fdf396c64fe1
+        WEB_SITE=http://bftpd.sourceforge.net/
+         ENTERED=20170923
+         UPDATED=20181107
+           SHORT="Small, easy-to-configure FTP server"
+
+cat << EOF
+The Bftpd program is a small, flexible FTP server which is designed to work
+out of the box with little or no configuration required
+Most users in home and small office environments can simply install Bftp
+without any manual configuration, Bftpd will automatically attempt to work as
+smoothly and securely as possible. Bftpd can work in a wide variety of
+environments, including on desktops, servers, embedded devices and media
+centres.
+The service can be configured to run in read-only file systems, suitable for
+live CDs and demo discs. 
+EOF

@@ -1,0 +1,8 @@
+depends git
+depends netsurf-buildsystem
+
+optional_depends SDL      "" "" "for SDL backend support"
+optional_depends libxcb   "" "" "for X backend support"
+optional_depends tightvnc "" "" "for VNC backend support"
+
+#optional_depends wayland "" "" "for Wayland backend platform support"

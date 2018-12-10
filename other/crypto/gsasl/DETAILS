@@ -1,0 +1,16 @@
+          MODULE=gsasl
+         VERSION=1.8.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$GNU_URL/$MODULE/
+      SOURCE_VFY=sha256:310262d1ded082d1ceefc52d6dad265c1decae8d84e12b5947d9b1dd193191e5
+        WEB_SITE=http://josefsson.org/gsasl/
+         ENTERED=20161127
+         UPDATED=20161127
+           SHORT="Simple Authentication and Security Layer framework"
+
+cat << EOF
+GNU SASL is an implementation of the Simple Authentication and Security Layer
+framework and a few common SASL mechanisms. SASL is used by network servers
+(e.g., IMAP, SMTP) to request authentication from clients, and in clients to
+authenticate against servers.
+EOF

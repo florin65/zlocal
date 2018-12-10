@@ -1,0 +1,14 @@
+          MODULE=GentiumPlus
+         VERSION=5.000
+          SOURCE=$MODULE-$VERSION.zip
+ SOURCE_URL_FULL="https://scripts.sil.org/cms/scripts/render_download.php?format=file&media_id=${SOURCE}&filename=$SOURCE"
+      SOURCE_VFY=sha256:335911f17bd2de4e43742e1d0367cfeff19a90abf7ed604f100a42705042e154
+        WEB_SITE=http://scripts.sil.org/Gentium/
+         ENTERED=20170422
+         UPDATED=20170422
+           SHORT="Wide range of Latin-based alphabets"
+ARCHIVE=off
+
+cat << EOF
+
+EOF

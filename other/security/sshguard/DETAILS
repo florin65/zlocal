@@ -1,0 +1,21 @@
+          MODULE=sshguard
+         VERSION=2.2.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/$MODULE/
+      SOURCE_VFY=sha256:2aff07fee6ec33e4ffd5411916b75189977af1d77b86dac5f3834dd3aa3656c2
+        WEB_SITE=http://www.sshguard.net/
+         ENTERED=20160927
+         UPDATED=20180718
+           SHORT="Brute force detector for SSH, Exim, VSFTPD and more"
+
+cat << EOF
+sshguard protects hosts from brute-force attacks against SSH and other services.
+It aggregates system logs and blocks repeat offenders using one of several
+firewall backends, including iptables, ipfw, and pf.
+sshguard can read log messages from standard input (suitable for piping from
+syslog) or monitor one or more log files. Log messages are parsed, line-by-line,
+for recognized patterns. If an attack, such as several login failures within a
+few seconds, is detected, the offending IP is blocked. Offenders are unblocked
+after a set interval, but can be semi-permanently banned using the blacklist
+option.
+EOF

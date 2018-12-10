@@ -1,0 +1,15 @@
+          MODULE=vim-autoclose
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=git+http://github.com/townk/vim-autoclose
+#      SOURCE_VFY=sha256:d4448c8b2aa46d1d02825b989d34b1eb247eca0813a3a4e7e5b93b430a325105
+        WEB_SITE=https://github.com/townk/vim-autoclose/
+         ENTERED=20180701
+         UPDATED=20180701
+           SHORT="Autoclose characters in pair"
+
+cat << EOF
+This plugin for Vim enable an auto-close chars feature for you. For instance if
+you type an '(', ``autoclose`` will automatically insert a ')' and put the
+cursor between than. 
+EOF

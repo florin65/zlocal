@@ -1,0 +1,10 @@
+          MODULE=openrc-acpid
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20180313
+         UPDATED=20180313
+           SHORT="OpenRC acpid init script"
+
+cat << EOF
+OpenRC acpid init script.
+EOF

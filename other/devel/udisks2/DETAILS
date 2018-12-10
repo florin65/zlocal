@@ -1,0 +1,21 @@
+          MODULE=udisks2
+         VERSION=2.8.1
+          SOURCE=udisks-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/udisks-udisks-$VERSION
+      SOURCE_URL=http://github.com/storaged-project/udisks/archive/
+      SOURCE_VFY=sha256:7c524d09e36e49025aff10f63a680e84e18a82d82a987f6772858b6c1d9a2230
+        WEB_SITE=https://www.freedesktop.org/wiki/Software/udisks/
+         ENTERED=20120411
+         UPDATED=20180929
+           SHORT="Enumerates power devices and listens to device events"
+
+cat << EOF
+Udisks is an abstraction for enumerating power devices,
+listening to device events and querying history and statistics.
+Any application or service on the system can access this
+service via the system message bus.
+
+Supports creating LUKS 2 encrypted devices and other LUKS-related enhancements.
+
+It is a replacement for udisks. It it NOT backwards compatible.
+EOF

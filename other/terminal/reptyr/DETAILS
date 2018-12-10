@@ -1,0 +1,17 @@
+          MODULE=reptyr
+         VERSION=0.6.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$MODULE-$VERSION
+      SOURCE_URL=http://github.com/nelhage/reptyr/archive/
+      SOURCE_VFY=sha256:c73de510eeedc37a0aac63ea4be9a3c841bbbda029232f871b15d53733a0ee1e
+        WEB_SITE=http://github.com/nelhage/reptyr/
+         ENTERED=20170227
+         UPDATED=20170227
+           SHORT="Reparent a running program to a new terminal"
+
+cat << EOF
+reptyr is a utility for taking an existing running program and attaching it to
+a new terminal. Started a long-running process over ssh, but have to leave and
+don't want to interrupt it? Just start a screen, use reptyr to grab it, and
+then kill the ssh session and head on home.
+EOF

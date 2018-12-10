@@ -1,0 +1,3 @@
+depends fuse
+depends curl
+depends libxml2

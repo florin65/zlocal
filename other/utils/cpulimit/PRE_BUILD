@@ -1,0 +1,4 @@
+default_pre_build &&
+
+sedit 's/#ifdef __APPLE__ || __FREEBSD__/#if defined __APPLE__ || defined __FREEBSD__/g' \
+      src/cpulimit.c tests/process_iterator_test.c

@@ -1,0 +1,18 @@
+          MODULE=sane-backends
+         VERSION=1.0.27
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-1.0.25
+ SOURCE_URL_FULL=https://alioth.debian.org/frs/download.php/file/4146
+      SOURCE_VFY=sha256:a4d7ba8d62b2dea702ce76be85699940992daf3f44823ddc128812da33dc6e2c
+       WEB_SITE=http://www.sane-project.org
+         ENTERED=20020412
+         UPDATED=20170523
+           SHORT="Universal scanner interface"
+
+cat << EOF
+SANE stands for "Scanner Access Now Easy" and is an application
+programming interface (API) that provides standardized access to any
+raster image scanner hardware (flatbed scanner, hand-held scanner,
+video and still-cameras, frame-grabbers, etc.).
+sane-backends is the collection of scanner interface libraries.
+EOF

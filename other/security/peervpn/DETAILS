@@ -1,0 +1,20 @@
+          MODULE=peervpn
+         VERSION=0.044
+          TARVER=${VERSION//./-}
+          SOURCE=$MODULE-$TARVER.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$TARVER
+      SOURCE_URL=http://www.peervpn.net/files/
+      SOURCE_VFY=sha256:4402d5ce956d95ff85b8aeb455d984b9eb9c2e6a058d2580c8e90da12fed8392
+        WEB_SITE=http://www.peervpn.net/
+         ENTERED=20160405
+         UPDATED=20160405
+           SHORT="A peer-to-peer VPN"
+
+cat << EOF
+PeerVPN is a software that builds virtual ethernet networks between multiple
+computers. Such a virtual network can be useful to facilitate direct
+communication that applications like file sharing or gaming may need.
+A virtual network built by PeerVPN uses a full mesh topology. All nodes talk
+directly to each other, there is no need for a central server. If one node goes
+down, the rest of the network is unaffected.
+EOF

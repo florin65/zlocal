@@ -1,0 +1,5 @@
+depends pciutils
+depends libusb-compat
+depends libftdi1
+
+optional_depends dmidecode "" "" "for SMBIOS/DMI table decoder support"

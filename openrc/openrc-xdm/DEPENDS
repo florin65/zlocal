@@ -1,0 +1,5 @@
+depends openrc
+depends xinit
+
+optional_depends openrc-dbus "" "" "for dbus init script"
+optional_depends xdm "" "" "for xdm support"

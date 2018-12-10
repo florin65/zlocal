@@ -1,0 +1,14 @@
+          MODULE=cups-pdf
+         VERSION=3.0.1
+          SOURCE=${MODULE}_$VERSION.tar.gz
+      SOURCE_URL=http://www.cups-pdf.de/src/
+      SOURCE_VFY=sha256:738669edff7f1469fe5e411202d87f93ba25b45f332a623fb607d49c59aa9531
+        WEB_SITE=http://www.cups-pdf.de/
+         ENTERED=20170119
+         UPDATED=20170228
+           SHORT="PDF printer for cups"
+
+cat << EOF
+Is designed to produce PDF files in a heterogeneous network by providing a PDF
+printer on the central fileserver.
+EOF

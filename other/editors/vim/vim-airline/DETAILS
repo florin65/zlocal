@@ -1,0 +1,29 @@
+          MODULE=vim-airline
+         VERSION=0.8
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/vim-airline/vim-airline/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:5fb1cdcd9a760516a050bd0e3fa4cae04291cfccd2bcf58f2facbd2a07767a14
+        WEB_SITE=http://github.com/vim-airline/vim-airline/
+         ENTERED=20161111
+         UPDATED=20161111
+           SHORT="Lean & mean statusline/tabline for ViM"
+
+cat << EOF
+Lean & mean status/tabline for vim that's light as air.
+Features:
+  - Tiny core written with extensibility in mind (open/closed principle).
+  - Integrates with a variety of plugins, including: vim-bufferline, fugitive,
+    unite, ctrlp, minibufexpl, gundo, undotree, nerdtree, tagbar, vim-gitgutter,
+    vim-signify, quickfixsigns, syntastic, eclim, lawrencium, virtualenv,
+    tmuxline, taboo.vim, ctrlspace and more.
+  - Looks good with regular fonts and provides configuration points so you can
+    use unicode or powerline symbols.
+  - Optimized for speed; it loads in under a millisecond.
+  - Extensive suite of themes for popular color schemes including solarized
+    (dark and light), tomorrow (all variants), base16 (all variants), molokai,
+    jellybeans and others. Note these are now external to this plugin.
+  - Supports 7.2 as the minimum Vim version.
+  - The master branch tries to be as stable as possible, and new features are
+    merged in only after they have gone through a full regression test.
+  - Unit testing suite.
+EOF

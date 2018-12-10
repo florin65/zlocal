@@ -1,0 +1,14 @@
+          MODULE=prettyping
+         VERSION=1.0.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/denilsonsa/prettyping/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:48ff5dce1d18761c4ee3c860afd3360266f7079b8e85af9e231eb15c45247323
+        WEB_SITE=http://lsm.foobar.fi/
+         ENTERED=20181013
+         UPDATED=20181013
+           SHORT="A ping wrapper making the output prettier"
+
+cat << EOF
+A ping wrapper making the output prettier, more colorful, more compact, and
+easier to read.
+EOF

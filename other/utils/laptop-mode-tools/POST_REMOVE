@@ -1,0 +1,3 @@
+if module_installed openrc-laptop-mode-tools; then
+   lrm openrc-laptop-mode-tools
+fi

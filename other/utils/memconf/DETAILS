@@ -1,0 +1,16 @@
+          MODULE=memconf
+         VERSION=3.14
+          SOURCE=$MODULE.gz
+         SOURCE2=$MODULE.man
+      SOURCE_URL=http://www.4schmidts.com/unix/
+     SOURCE2_URL=http://www.4schmidts.com/unix/
+      SOURCE_VFY=sha256:4b6e5888156a90a9a2cb97d6f3c3528c459d8ca10245db8503b202c5deded6a1
+     SOURCE2_VFY=sha256:280dfd54625a179c9d9c96b111a63789861bcfb0300b18d7b26a08cf66716365
+        WEB_SITE=http://www.4schmidts.com/memconf.html
+         ENTERED=20171125
+         UPDATED=20171125
+           SHORT="Identify sizes of installed memory modules"
+
+cat << EOF
+Identify sizes of physically installed memory modules.
+EOF

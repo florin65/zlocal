@@ -1,0 +1,4 @@
+default_pre_build &&
+
+sedit "s:G_CONST_RETURN char *::" server/gam_node.c server/gam_node.h server/gam_subscription.c server/gam_subscription.h
+

@@ -1,0 +1,24 @@
+          MODULE=vim-recover
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=git+https://github.com/chrisbra/Recover.vim
+#     SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/chrisbra/Recover.vim/
+         ENTERED=20160430
+         UPDATED=20160430
+           SHORT="A Vim plugin to show a diff, whenever recovering a buffer"
+
+cat << EOF
+When editing files with Vim and one trips about existing swap files, it is
+hard to tell what has been changed between the swap file and the actual on
+disk version. The aim of this plugin is to have an easy way to see differences
+between the swap files and the files stored on disk.
+
+Therefore this plugin sets up an auto command that will create a diff buffer
+between the recovered file and the on-disk version of the same file. You can
+easily see what has been changed and save your recovered work back to the file
+on disk.
+
+By default this plugin is enabled. To disable it, use :RecoverPluginDisable.
+To enable this plugin again, use :RecoverPluginEnable
+EOF

@@ -1,0 +1,6 @@
+depends git
+depends fontconfig
+depends freetype2
+depends go
+depends npm
+depends python2

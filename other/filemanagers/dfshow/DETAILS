@@ -1,0 +1,14 @@
+          MODULE=dfshow
+         VERSION=0.4.6-alpha
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/roberthawdon/dfshow/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:90201a564854f77c3da67bd0b0a0b0b4e717baa12d36c9394d055f690f62f87d
+        WEB_SITE=https://github.com/roberthawdon/dfshow/
+         UPDATED=20181130
+           SHORT="An interactive directory/file browser"
+
+cat << EOF
+DF-SHOW (Directory File Show) is a Unix-like rewrite of some of the applications
+from Larry Kroeker's DF-EDIT (Directory File Editor) for MS-DOS and PC-DOS
+systems.
+EOF

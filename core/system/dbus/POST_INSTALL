@@ -1,0 +1,7 @@
+dbus-uuidgen --ensure=/etc/machine-id &&
+
+if module_installed openrc; then
+   lin -c openrc-dbus
+else
+   install -m 755 $SCRIPT_DIRECTORY/messagebus /etc/init.d/messagebus
+fi

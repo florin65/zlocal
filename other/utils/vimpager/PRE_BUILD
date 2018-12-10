@@ -1,0 +1,8 @@
+default_pre_build &&
+
+sedit "s/\r$//" vimpager &&
+sedit 's:/usr/local:/usr:' Makefile &&
+sedit 's:${PREFIX}/etc:/etc:' Makefile &&
+
+# can be removed in 2.07
+sedit '/hi/{s/ctermbg=none/ctermbg=NONE/;s/guibg=none/guibg=NONE/; s/cterm=none/cterm=NONE/; s/gui=none/gui=NONE/;}' ansiesc/autoload/AnsiEsc.vim

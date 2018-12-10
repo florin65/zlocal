@@ -1,0 +1,17 @@
+          MODULE=laptop-mode-tools
+         VERSION=1.72.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/rickysarraf/laptop-mode-tools/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:665be3b263447a2439a242f6bdf2d12936b0311f18e36da189b3c9500b74559a
+        WEB_SITE=http://github.com/rickysarraf/laptop-mode-tools/
+         ENTERED=20080806
+         UPDATED=20180206
+           SHORT="A laptop power-saving package for Linux systems"
+
+cat << EOF
+Laptop Mode Tools is a laptop power-saving package for Linux systems.
+It allows you to extend the battery life of your laptop, in several ways. It is
+the primary way to enable the Laptop Mode feature of the Linux kernel, which
+lets your hard drive spin down. In addition, it allows you to tweak a number of
+other power-related settings using a simple configuration file.
+EOF

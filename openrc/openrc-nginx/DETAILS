@@ -1,0 +1,10 @@
+          MODULE=openrc-nginx
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20181101
+         UPDATED=20181101
+           SHORT="OpenRC nginx init script"
+
+cat << EOF
+OpenRC nginx init script.
+EOF

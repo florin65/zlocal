@@ -1,0 +1,24 @@
+          MODULE=libhubbub
+         VERSION=0.3.4
+          SOURCE=$MODULE-$VERSION-src.tar.gz
+      SOURCE_URL=http://download.netsurf-browser.org/libs/releases/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.netsurf-browser.org/projects/hubbub/
+         ENTERED=20141227
+         UPDATED=20171031
+           SHORT="A HTML5 compliant parsing library"
+
+cat <<EOF
+Hubbub is an HTML5 compliant parsing library, written in C.
+The HTML5 specification defines a parsing algorithm, based on the behaviour of
+mainstream browsers, which provides instructions for how to parse all markup,
+both valid and invalid. As a result, Hubbub parses web content well.
+Features:
+  Parses HTML, good and bad
+  Simple C API
+  Fast
+  Character encoding detection
+  Well-tested (~90% test coverage)
+  Portable
+  Shared library.
+EOF

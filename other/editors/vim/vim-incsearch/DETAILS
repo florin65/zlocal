@@ -1,0 +1,30 @@
+          MODULE=vim-incsearch
+         VERSION=2.0.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/incsearch.vim-$VERSION
+ SOURCE_URL_FULL=https://github.com/haya14busa/incsearch.vim/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:bfa6ed7863ff2247e6b128cfccc78d25dac4d24402e0d3824d445bcc85df9575
+        WEB_SITE=https://github.com/haya14busa/incsearch.vim
+         ENTERED=20171229
+         UPDATED=20171229
+           SHORT="Improved incremental searching for Vim"
+
+cat << EOF
+incsearch.vim incrementally highlights ALL pattern matches unlike default
+'incsearch'. Concepts:
+
+1. Simple
+   incsearch.vim provides simple improved incremental searching.
+
+2. Comfortable
+   You can use it comfortably like the default search(/, ?). It supports all
+   modes (normal, visual, operator-pending mode), dot-repeat ., {offset} flags,
+   and so on.
+
+3. Useful
+  incsearch.vim aims to be simple, but at the same time, it offers useful
+  features.
+
+You can see all patterns that the given regular expression matches all at once
+while incremental searching.
+EOF

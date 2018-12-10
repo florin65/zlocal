@@ -1,0 +1,18 @@
+          MODULE=thermald
+         VERSION=1.7.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/thermal_daemon-$VERSION
+ SOURCE_URL_FULL=http://github.com/01org/thermal_daemon/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:2b180301b99508e7f340138c40ccbfd8a35055d707e71c81ab9a177fccda4695
+        WEB_SITE=http://01.org/linux-thermal-daemon/
+         ENTERED=20180304
+         UPDATED=20180603
+           SHORT="The Linux Thermal Daemon program"
+
+cat << EOF
+A Linux user mode daemon to system developers, reducing time to market with
+controlled thermal management using P-states, T-states, and the Intel power
+clamp driver.
+The Thermal Daemon uses the existing Linux kernel infrastructure and can be
+easily enhanced.
+EOF

@@ -1,0 +1,16 @@
+          MODULE=xonsh
+         VERSION=0.8.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/xonsh/xonsh/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:f91a9b5a71a82a6450e5a3dbeacc11ff0a9faceea4fbb241aaa3a18f7a6e6437
+        WEB_SITE=http://xon.sh/
+            TYPE=python3
+         ENTERED=20170821
+         UPDATED=20181120
+           SHORT="A Python-ish, BASHwards-compatible shell"
+
+cat << EOF
+Xonsh is a Python-powered, cross-platform, Unix-gazing shell language and
+command prompt. The language is a superset of Python 3.4+ with additional shell
+primitives that you are used to from Bash and IPython.
+EOF

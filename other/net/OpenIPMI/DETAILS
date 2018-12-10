@@ -1,0 +1,15 @@
+          MODULE=OpenIPMI
+         VERSION=2.0.22
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://sourceforge.net/projects/openipmi/files/OpenIPMI%202.0%20Library/
+      SOURCE_VFY=sha256:4988900043c35fcfa9b2bf275d6593904f6429221befb770ba6ecb5502108e55
+        WEB_SITE=http://openipmi.sourceforge.net/
+         ENTERED=20170326
+         UPDATED=20170326
+           SHORT="Full-function IPMI system"
+
+cat << EOF
+OpenIPMI is an effort to create a full-function IPMI system to allow full
+access to all IPMI information on a server and to abstract it to a level
+that will make it easy to use.
+EOF

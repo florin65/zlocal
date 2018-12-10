@@ -1,0 +1,4 @@
+depends nss
+depends readline
+depends libcap
+depends libedit

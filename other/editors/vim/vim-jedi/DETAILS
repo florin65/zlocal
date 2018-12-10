@@ -1,0 +1,14 @@
+          MODULE=vim-jedi
+         VERSION=0.9.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/jedi-vim-$VERSION
+ SOURCE_URL_FULL=https://github.com/davidhalter/jedi-vim/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:e53ef98472dd4789d5382f5082c0c25bf713264422389fca2f2a9bcddc1435d5
+        WEB_SITE=https://github.com/davidhalter/jedi-vim/
+         ENTERED=20170923
+         UPDATED=20180410
+           SHORT="Vim plugin for jedi, an awesome Python autocompletion"
+
+cat << EOF
+An awesome Python autocompletion with VIM.
+EOF

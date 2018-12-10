@@ -1,0 +1,14 @@
+          MODULE=vim-mark
+         VERSION=3.0.0
+          SOURCE=$MODULE-$VERSION.vmb.gz
+ SOURCE_URL_FULL=http://www.vim.org/scripts/download_script.php?src_id=25574
+      SOURCE_VFY=sha256:590d5ff38c30721041697462212d7114947aad1b1bb6b1ac880878adf61c6630
+        WEB_SITE=http://www.vim.org/scripts/script.php?script_id=2666
+         ENTERED=20171211
+         UPDATED=20171211
+           SHORT="Syntax highlighting and matching rules for Markdown"
+
+cat << EOF
+Syntax highlighting, matching rules and mappings for the original Markdown and
+extensions.
+EOF

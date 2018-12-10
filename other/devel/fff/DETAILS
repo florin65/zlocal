@@ -1,0 +1,18 @@
+          MODULE=fff
+         VERSION=0.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=git+https://github.com/dylanaraps/fff/
+#      SOURCE_VFY=sha256:
+        WEB_SITE=https://github.com/dylanaraps/fff/
+         ENTERED=20181029
+         UPDATED=20181029
+           SHORT="Simple and fast file manager"
+
+cat << EOF
+A simple file manager written in bash.
+  It's Fast rocket
+  Minimal (~100 lines of bash)
+  Smooth Scrolling (using vim keybindings)
+  File Operations (copy, paste, rename, cut, etc)
+  Basic Search.
+EOF

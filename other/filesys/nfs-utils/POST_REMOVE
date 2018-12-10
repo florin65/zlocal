@@ -1,0 +1,7 @@
+# Remove dangling symlinks
+cd /usr/bin &&
+rm -f mount.nfs4 umount.nfs umount.nfs4 &&
+
+if module_installed openrc-eudev; then
+   lrm openrc-eudev
+fi

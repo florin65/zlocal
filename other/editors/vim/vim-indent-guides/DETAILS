@@ -1,0 +1,13 @@
+          MODULE=vim-indent-guides
+         VERSION=1.6
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/nathanaelkane/vim-indent-guides/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:11c401fb1b23e42536238011c28027e1e2807b210686d94f5f445638bbc075fe
+        WEB_SITE=https://github.com/nathanaelkane/vim-indent-guides/
+         ENTERED=20160425
+         UPDATED=20160425
+           SHORT="A Vim plugin for visually displaying indent levels in code"
+
+cat << EOF
+Indent Guides is a plugin for visually displaying indent levels in Vim.
+EOF

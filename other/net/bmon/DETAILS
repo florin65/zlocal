@@ -1,0 +1,16 @@
+          MODULE=bmon
+         VERSION=4.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/tgraf/bmon/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:d5e503ff6b116c681ebf4d10e238604dde836dceb9c0008eb92416a96c87ca40
+        WEB_SITE=http://github.com/tgraf/bmon/
+         ENTERED=20170207
+         UPDATED=20170207
+           SHORT="Portable bandwidth monitor and rate estimator"
+
+cat << EOF
+bmon is a monitoring and debugging tool to capture networking related
+statistics and prepare them visually in a human friendly way. It features
+various output methods including an interactive curses user interface and
+a programmable text output for scripting.
+EOF

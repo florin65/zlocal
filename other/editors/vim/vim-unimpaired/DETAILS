@@ -1,0 +1,13 @@
+          MODULE=vim-unimpaired
+         VERSION=1.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/tpope/vim-unimpaired/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:64fab85e3fe94ea77fc7e20d20d4da82cb3f2ad234d0470d9c0e4566ea57a037
+        WEB_SITE=http://github.com/tpope/vim-unimpaired/
+         ENTERED=20160425
+         UPDATED=20160425
+           SHORT="Vim pairs of mappings"
+
+cat << EOF
+Complementary pairs of mappings for various common operations.
+EOF

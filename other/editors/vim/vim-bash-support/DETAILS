@@ -1,0 +1,15 @@
+          MODULE=vim-bash-support
+         VERSION=4.2.1
+          SOURCE=$MODULE-$VERSION.zip
+ SOURCE_URL_FULL=http://vim.sourceforge.net/scripts/download_script.php?src_id=21804
+      SOURCE_VFY=sha256:67aab863783dd72ba9a963b3e2c0e1754cd93795cf661fdeb5e699b1b3841742
+        WEB_SITE=http://vim.sourceforge.net/scripts/script.php?script_id=365
+         ENTERED=20160425
+         UPDATED=20160425
+           SHORT="Write and run BASH-scripts using menus and hotkeys"
+
+cat << EOF
+Write BASH-scripts by inserting comments, statements, tests, variables,
+builtins, etc. Speed up writing new scripts considerably.
+Write code und comments with a professional appearance from the beginning.
+EOF

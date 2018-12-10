@@ -1,0 +1,13 @@
+          MODULE=vim-repl
+         VERSION=1.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/khorser/vim-repl/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:06ed0db6f7525f821296eab21883921ffcc4c6e874d340770a40275bc1b2308e
+        WEB_SITE=http://github.com/khorser/vim-repl/
+         ENTERED=20160426
+         UPDATED=20160426
+           SHORT="Minimalistic REPL plugin for Vim"
+
+cat << EOF
+Minimalistic REPL plugin for Vim.
+EOF

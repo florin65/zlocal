@@ -1,0 +1,18 @@
+          MODULE=vim-exvim
+         VERSION=0.5.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/main-$VERSION
+SOURCE_URL_FULL=https://github.com/exvim/main/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:08709236e70cfa2646203c15b46b6cddbf858a866849cc3a52ff860e2efff0f3
+        WEB_SITE=http://exvim.github.io/
+         ENTERED=20160427
+         UPDATED=20160427
+           SHORT="Make the vim as an IDE like environment"
+
+cat << EOF
+exVim is a project to turn Vim into a nice programming environment.
+It introduce the project file concept (.exvim) in Vim. By editing this project
+file (.exvim) through Vim, the exVim plugins will be invoked. In this way, it
+makes you possible to apply different Vim settings, plugin settings and even
+loading plugins on demand by different projects.
+EOF

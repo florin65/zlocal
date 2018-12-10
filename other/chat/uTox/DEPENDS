@@ -1,0 +1,11 @@
+depends dbus
+depends gtk+-3
+depends desktop-file-utils
+depends fontconfig
+depends hicolor-icon-theme
+depends libXext
+depends libXrender
+depends openal
+depends v4l-utils
+depends libfilteraudio
+depends toxcore

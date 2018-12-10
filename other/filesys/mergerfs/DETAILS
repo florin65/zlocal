@@ -1,0 +1,14 @@
+          MODULE=mergerfs
+         VERSION=2.18.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/trapexit/mergerfs/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/trapexit/mergerfs/
+         ENTERED=20160920
+         UPDATED=20161219
+           SHORT="Another FUSE union filesystem"
+
+cat << EOF
+mergerfs is a union filesystem geared towards simplifying storage and
+management of files across numerous commodity storage devices.
+EOF

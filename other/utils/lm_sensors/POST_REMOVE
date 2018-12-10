@@ -1,0 +1,3 @@
+if module_installed openrc-lm_sensors; then
+   lrm openrc-lm_sensors
+fi

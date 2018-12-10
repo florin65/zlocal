@@ -1,0 +1,3 @@
+if module_installed openrc-qemu; then
+   lrm openrc-qemu
+fi

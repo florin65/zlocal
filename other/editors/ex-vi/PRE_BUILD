@@ -1,0 +1,8 @@
+default_pre_build &&
+
+./configure &&
+
+sedit 's/ucb/bin/' Makefile &&
+sedit 's/usr.local/usr/' Makefile &&
+sedit 's/= man/= share\/man/' Makefile &&
+sedit 's/= termlib/= ncurses/' Makefile

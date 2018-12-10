@@ -1,0 +1,3 @@
+if module_installed openrc-exim; then
+   lrm openrc-exim
+fi

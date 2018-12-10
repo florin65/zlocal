@@ -1,0 +1,14 @@
+          MODULE=vim-operator-flashy
+         VERSION=0.9.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/haya14busa/vim-operator-flashy/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:a8f30fd050e1838774dc1409bf59d95db547f7b74e54456199b066425d2a3a86
+        WEB_SITE=https://github.com/haya14busa/vim-operator-flashy
+         ENTERED=20171229
+         UPDATED=20171229
+           SHORT="Highlight yanked area"
+
+cat << EOF
+You can confirm that text is yanked correctly and see yanked text by
+highlighting.
+EOF

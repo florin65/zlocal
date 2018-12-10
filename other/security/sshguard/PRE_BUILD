@@ -1,0 +1,3 @@
+default_pre_build &&
+
+sedit 's|^DAYNO.*|DAYNO       [0-9]?[1-9]|' src/parser/attack_scanner.l

@@ -1,0 +1,10 @@
+          MODULE=openrc-cups
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20180404
+         UPDATED=20180404
+           SHORT="OpenRC cups init script"
+
+cat << EOF
+OpenRC cups init script.
+EOF

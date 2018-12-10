@@ -1,0 +1,13 @@
+          MODULE=libsteel
+         VERSION=2.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/nrosvall/libsteel/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:3aef6411c852c56dbf648c99bc3aaec66d2f7cb5e04e902bd77fe42e17976a7d
+        WEB_SITE=http://www.steelpasswordmanager.org/
+         ENTERED=20160430
+         UPDATED=20160430
+           SHORT="Library functions for steel password manager"
+
+cat << EOF
+Library functions for steel password manager.
+EOF

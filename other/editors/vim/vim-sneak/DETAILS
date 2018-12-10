@@ -1,0 +1,19 @@
+          MODULE=vim-sneak
+         VERSION=1.8.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/justinmk/vim-sneak/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:2905586c15fb3504fb507a8c813833dbf0dab04697a3577ee1e626565b17870b
+        WEB_SITE=https://github.com/justinmk/vim-sneak
+         ENTERED=20180326
+         UPDATED=20180326
+           SHORT="The missing motion for Vim"
+
+cat << EOF
+Jump to any location specified by two characters.
+Sneak is a powerful, reliable, yet minimal motion plugin for Vim. It works with
+multiple lines, operators (including repeat . and surround), motion-repeat (;
+and ,), keymaps, visual mode, multibyte text, and macros.
+
+Try label-mode for a minimalist alternative to EasyMotion:
+  let g:sneak#label = 1
+EOF

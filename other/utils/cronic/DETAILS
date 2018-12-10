@@ -1,0 +1,26 @@
+          MODULE=cronic
+         VERSION=3
+          SOURCE=$MODULE
+      SOURCE_URL=http://habilis.net/cronic/
+      SOURCE_VFY=sha256:25d9772e142ebdcaa72433431e26d855ae82b085709faf0d2169b3bda867aeac
+        WEB_SITE=http://habilis.net/cronic/
+         ENTERED=20161027
+         UPDATED=20161027
+           SHORT="A shell script to help control the most annoying feature of cron: unwanted emailed output"
+
+cat << EOF
+The Disease:
+0 1 * * * backup >/dev/null 2>&1
+
+The Cure:
+0 1 * * * cronic backup
+
+Cronic is a shell script to help control the most annoying feature of cron:
+unwanted emailed output, or "cram" (cron spam).
+Cronic is a small shim shell script for wrapping cron jobs so that cron only
+sends email when an error has occurred. Cronic defines an error as any non-trace
+error output or a non-zero result code. Cronic filters Bash execution traces (or
+anything matching PS4) from the error output, so jobs can be run with execution
+tracing to aid forensic debugging. Cronic has no options, it simply executes its
+arguments.
+EOF

@@ -1,0 +1,14 @@
+          MODULE=upass
+         VERSION=0.1.7
+          SOURCE=$MODULE-$VERSION.tar.gz
+#SOURCE_DIRECTORY=$BUILD_DIRECTORY/password-store-$VERSION
+ SOURCE_URL_FULL=http://github.com/Kwpolska/upass/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:
+        WEB_SITE=https://github.com/Kwpolska/upass/
+         ENTERED=20160430
+         UPDATED=20160430
+           SHORT="Console UI for pass"
+
+cat << EOF
+Console UI for pass.
+EOF

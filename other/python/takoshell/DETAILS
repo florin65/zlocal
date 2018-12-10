@@ -1,0 +1,22 @@
+          MODULE=takoshell
+         VERSION=0.2.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://takoshell.org/releases/
+      SOURCE_VFY=sha256:6116f0eb10b91a24edc2d37dd839eb4833548f0e20ce4fba3f69dd2c38635c49
+        WEB_SITE=http://takoshell.org/
+            TYPE=python3
+         ENTERED=20170821
+         UPDATED=20170821
+           SHORT="A command language and shell based on Python"
+
+cat << EOF
+tako is a command language and shell for GNU/Linux.
+tako is not "sh"-compatible, but rather is designed to provide an intuitive
+interface for common shell operations (to reduce time spent looking up how to
+do things in Bash/sed/awk).
+A short list of nice features:
+  Typed variables
+  Rich Python ecosystem directly from the shell
+  "Less weird" syntax for inline commands and scripts
+  Simple interactive interface, small codebase, low CPU usage.
+EOF

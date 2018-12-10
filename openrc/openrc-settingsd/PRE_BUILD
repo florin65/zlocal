@@ -1,0 +1,3 @@
+default_pre_build &&
+
+sedit 's|#!/sbin/runscript|#!/usr/bin/openrc-run|g' data/conf.d/openrc-settingsd

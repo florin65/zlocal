@@ -1,0 +1,18 @@
+          MODULE=afl
+         VERSION=2.52b
+          SOURCE=$MODULE-$VERSION.tgz
+      SOURCE_URL=http://lcamtuf.coredump.cx/$MODULE/releases/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://lcamtuf.coredump.cx/afl/
+         ENTERED=20151005
+         UPDATED=20180210
+           SHORT="Security-oriented fuzzer"
+
+cat << EOF
+American fuzzy lop is a security-oriented fuzzer that employs a novel type of
+compile-time instrumentation and genetic algorithms to automatically discover
+clean, interesting test cases that trigger new internal states in the targeted
+binary. This substantially improves the functional coverage for the fuzzed code.
+The compact synthesized corpora produced by the tool are also useful for seeding
+other, more labor- or resource-intensive testing regimes down the road.
+EOF

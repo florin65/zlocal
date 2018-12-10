@@ -1,0 +1,13 @@
+          MODULE=vim-multiple-cursors
+         VERSION=2.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/terryma/vim-multiple-cursors/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:754d81183d9ef2d17801f9f5518f3343f33ff199f9f602fbae93f6d43f29d9e7
+        WEB_SITE=http://github.com/terryma/vim-multiple-cursors/
+         ENTERED=20170106
+         UPDATED=20170106
+           SHORT="Multiple selections for Vim"
+
+cat << EOF
+True Sublime Text style multiple selections for Vim.
+EOF

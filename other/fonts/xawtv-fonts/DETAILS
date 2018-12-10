@@ -1,0 +1,15 @@
+          MODULE=xawtv-fonts
+         VERSION=1.1
+          SOURCE=tv-fonts-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/tv-fonts-$VERSION
+      SOURCE_URL=http://dl.bytesex.org/releases/tv-fonts/
+      SOURCE_VFY=sha256:0194dd03ac9b384951e7f5ed7d08c6fc5f6d94efcd08516732720a1a4704d9f6
+        WEB_SITE=http://bytesex.org/xawtv
+         ENTERED=20020701
+         UPDATED=20080814
+           SHORT="A font pack for xawtv"
+
+cat << EOF
+This package contains several typical tv and videotext (teletext) fonts
+to be used with xawtv.
+EOF

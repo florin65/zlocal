@@ -1,0 +1,15 @@
+          MODULE=PacVim
+         VERSION=1.1.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/jmoon018/PacVim/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:c869c5450fbafdfe8ba8a8a9bba3718775926f276f0552052dcfa090d21acb28
+        WEB_SITE=http://erikharrison.net
+         ENTERED=20180827
+         UPDATED=20180827
+           SHORT="A game that teaches you vim commands"
+
+cat << EOF
+Vim is a game that teaches you vim commands. You must move pacman (the green
+cursor) to highlight each word on the gameboard while avoiding the ghosts
+(in red).i
+EOF

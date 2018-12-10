@@ -1,0 +1,15 @@
+          MODULE=ubuntu-font-family
+         VERSION=0.80
+          SOURCE=$MODULE-$VERSION.zip
+      SOURCE_URL=http://font.ubuntu.com/download/
+      SOURCE_VFY=sha256:107170099bbc3beae8602b97a5c423525d363106c3c24f787d43e09811298e4c
+        WEB_SITE=http://font.ubuntu.com/
+         ENTERED=20110927
+         UPDATED=20150927
+           SHORT="TTF Ubuntu Font Family"
+
+cat << EOF
+The Ubuntu Font Family are a set of matching new libre/open fonts.
+The development is being funded by Canonical on behalf the wider Free Software
+community and the Ubuntu project.
+EOF

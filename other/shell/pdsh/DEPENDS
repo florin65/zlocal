@@ -1,0 +1,4 @@
+depends perl
+
+optional_depends readline "--with-readline" "" "for readline support"
+optional_depends openssh  "--with-ssh"      "" "for SSH support"

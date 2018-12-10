@@ -1,0 +1,4 @@
+default_pre_build &&
+
+# fix group in systemd tempfile
+sedit 's/man\ root/root\ root/' init/systemd/man-db.conf

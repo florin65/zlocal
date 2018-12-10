@@ -1,0 +1,16 @@
+          MODULE=editorconfig-core-c
+         VERSION=0.12.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/editorconfig/editorconfig-core-c/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:c7bd714c73f01edde583b059b51078173aa85a36fa05bb9652d35a75fe0ac372
+        WEB_SITE=http://github.com/editorconfig/editorconfig-core-c/
+         ENTERED=20170319
+         UPDATED=20170319
+           SHORT="EditorConfig core library written in C"
+
+cat << EOF
+EditorConfig makes it easy to maintain the correct coding style when switching
+between different text editors and between different projects. The EditorConfig
+project maintains a file format and plugins for various text editors which allow
+this file format to be read and used by those editors.
+EOF

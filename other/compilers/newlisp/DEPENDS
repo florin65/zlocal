@@ -1,0 +1,3 @@
+depends readline
+
+optional_depends %JAVA_SDK "" "" "for Java support"

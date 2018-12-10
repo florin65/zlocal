@@ -1,0 +1,17 @@
+          MODULE=vim-nerdtree
+         VERSION=5.0.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/nerdtree-$VERSION
+ SOURCE_URL_FULL=http://github.com/scrooloose/nerdtree/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:64ee6c672261aa5a6baafe45cfadf3affabe0b329166c75f10b84d68eaae5a3a
+        WEB_SITE=http://github.com/scrooloose/nerdtree/
+         ENTERED=20170430
+         UPDATED=20170430
+           SHORT="A tree explorer plugin for vim"
+
+cat << EOF
+The NERD tree allows you to explore your filesystem and to open files and
+directories. It presents the filesystem to you in the form of a tree which
+you manipulate with the keyboard and/or mouse. It also allows you to perform
+simple filesystem operations.
+EOF

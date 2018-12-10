@@ -1,0 +1,13 @@
+          MODULE=vim-lightline
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=git+https://github.com/itchyny/lightline.vim
+#     SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/itchyny/lightline.vim/
+         ENTERED=20160430
+         UPDATED=20160430
+           SHORT="A light and configurable statusline/tabline for Vim"
+
+cat << EOF
+A light and configurable statusline/tabline for Vim.
+EOF

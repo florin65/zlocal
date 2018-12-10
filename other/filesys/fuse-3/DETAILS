@@ -1,0 +1,17 @@
+          MODULE=fuse-3
+         VERSION=3.0
+          SOURCE=$MODULE.$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/libfuse-$MODULE.$VERSION
+      SOURCE_URL=http://github.com/libfuse/libfuse/archive/
+      SOURCE_VFY=sha256:1e26877b2038ad7ce74e1800a39e2bd2dfbd79fca06ae40bf06958f926856daa
+        WEB_SITE=http://fuse.sourceforge.net
+         ENTERED=20170711
+         UPDATED=20181128
+           SHORT="File system in userspace"
+
+cat << EOF
+Filesystem in Userspace is a simple interface for userspace programs to export a
+virtual filesystem to the Linux kernel. It also aims to provide a secure method
+for non privileged users to create and mount their own filesystem
+implementations.
+EOF

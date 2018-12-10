@@ -1,0 +1,10 @@
+          MODULE=openrc-exim
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20180114
+         UPDATED=20180114
+           SHORT="OpenRC exim init script"
+
+cat << EOF
+OpenRC exim init script.
+EOF

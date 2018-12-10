@@ -1,0 +1,3 @@
+if module_installed openrc-vsftpd; then
+   lrm openrc-vsftpd
+fi

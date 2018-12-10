@@ -1,0 +1,11 @@
+depends python
+
+optional_depends PyQt5   "" "" "for LMT GUI"
+optional_depends acpid   "" "" "for ACPI support"
+optional_depends bluez-5 "" "" "for Bluetooth support"
+optional_depends ethtool "" "" "for Ethernet support"
+optional_depends hdparm  "" "" "for hard disk power management support"
+optional_depends sdparm  "" "" "for SCSI power management support"
+optional_depends xset    "" "" "for DPMS standby support"
+
+optional_depends wireless-tools "" "" "for Wi-Fi support"

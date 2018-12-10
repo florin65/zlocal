@@ -1,0 +1,14 @@
+          MODULE=vim-assistant
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+#SOURCE_DIRECTORY=$BUILD_DIRECTORY/emmet-$MODULE
+      SOURCE_URL=git+https://github.com/alvan/vim-assistant
+#      SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/alvan/vim-assistant/
+         ENTERED=20170430
+         UPDATED=20170430
+           SHORT="Display the definition of functions, variables, etc"
+
+cat << EOF
+Display the definition of functions, variables, etc.
+EOF

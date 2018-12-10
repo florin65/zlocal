@@ -1,0 +1,16 @@
+          MODULE=syncthing
+         VERSION=0.11.26
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/syncthing/syncthing/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:d2cc72d5711c5a7d25c32951bd11680ad7d9530c2183de240287f07fe9e80ac2
+        WEB_SITE=http://syncthing.net/
+         ENTERED=20151019
+         UPDATED=20151019
+           SHORT="Continuous Replication / Cluster Synchronization Thing"
+
+cat << EOF
+Syncthing replaces proprietary sync and cloud services with something open,
+trustworthy and decentralized. Your data is your data alone and you deserve
+to choose where it is stored, if it is shared with some third party and how
+it's transmitted over the Internet.
+EOF

@@ -1,0 +1,18 @@
+          MODULE=vim-colorscheme-apprentice
+         VERSION=1.9
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Apprentice-$VERSION
+ SOURCE_URL_FULL=http://github.com/romainl/Apprentice/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:91a10101d066b8cf8483624678517053eb299c8ba9b90b9976c5cb6c840e55c4
+        WEB_SITE=http://github.com/romainl/Apprentice/
+         ENTERED=20170430
+         UPDATED=20170030
+           SHORT="A dark, low-contrast, Vim colorscheme"
+
+cat << EOF
+Apprentice is a dark, low-contrast colorscheme for Vim based on the awesome
+Sorcerer by Jeet Sukumaran. It is essentially a streamlined version of the
+original, with a reduced number of colors entirely taken from the default
+xterm palette to ensure a similar look in 256colors-ready terminal emulators
+and GUI Vim.
+EOF

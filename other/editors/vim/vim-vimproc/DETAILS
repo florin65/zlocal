@@ -1,0 +1,14 @@
+          MODULE=vim-vimproc
+         VERSION=9.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/vimproc.vim-ver.$VERSION
+SOURCE_URL_FULL=http://github.com/Shougo/vimproc.vim/archive/ver.$VERSION.tar.gz
+      SOURCE_VFY=sha256:a09bf5f7fd2e4f9cbea43b86103cd7c3997a9eb614902bb92e64f2e8296cbd78
+        WEB_SITE=http://github.com/Shougo/vimproc.vim/
+         ENTERED=20160426
+         UPDATED=20160426
+           SHORT="Interactive command execution in vim"
+
+cat << EOF
+vimproc is a great asynchronous execution library for Vim.
+EOF

@@ -1,0 +1,13 @@
+          MODULE=vimpager
+         VERSION=2.06
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/rkitover/vimpager/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:cc616d0840a6f2501704eea70de222ab662421f34b2da307e11fb62aa70bda5d
+        WEB_SITE=https://github.com/rkitover/vimpager/
+         ENTERED=20181110
+         UPDATED=20181101
+           SHORT="Use Vim as PAGER"
+
+cat << EOF
+vimpager - pager using vim and less.vim.
+EOF

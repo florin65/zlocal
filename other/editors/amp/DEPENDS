@@ -1,0 +1,5 @@
+depends cmake
+depends libxcb
+depends python2
+depends rustc
+depends git

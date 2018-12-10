@@ -1,0 +1,17 @@
+          MODULE=vim-ack
+         VERSION=1.0.9
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/ack.vim-$VERSION
+ SOURCE_URL_FULL=http://github.com/mileszs/ack.vim/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:598af55eed01886428027ea26f3f99a5029ece88c28e34c22fb94d09ac552cab
+        WEB_SITE=http://github.com/mileszs/ack.vim/
+         ENTERED=20170301
+         UPDATED=20170301
+           SHORT="Vim plugin for the Perl module / CLI script ack"
+
+cat << EOF
+This plugin was designed as a Vim frontend for the Perl module App::Ack.
+Ack can be used as a replacement for 99% of the uses of grep.
+The plugin allows you to run ack from Vim, and shows the results in a
+split window.
+EOF

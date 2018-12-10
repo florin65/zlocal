@@ -1,0 +1,17 @@
+          MODULE=pngcrush
+         VERSION=1.8.13-nolib
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/pmt
+     SOURCE_VFY=sha256:3b4eac8c5c69fe0894ad63534acedf6375b420f7038f7fc003346dd352618350
+        WEB_SITE=http://pmt.sourceforge.io/pngcrush/
+         ENTERED=20170805
+         UPDATED=20170911
+           SHORT="An optimizer for PNG"
+
+cat << EOF
+Pngcrush is an optimizer for PNG (Portable Network Graphics) files.
+Its main purpose is to reduce the size of the PNG IDAT datastream by trying
+various compression levels and PNG filter methods. It also can be used to remove
+unwanted ancillary chunks, or to add certain chunks including gAMA, tRNS, iCCP,
+and textual chunks.
+EOF

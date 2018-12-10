@@ -1,0 +1,4 @@
+depends fontconfig
+depends encodings
+depends font-util
+depends mkfontdir

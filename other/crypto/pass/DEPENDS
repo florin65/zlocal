@@ -1,0 +1,5 @@
+depends gnupg
+depends grep
+depends pwgen
+depends tree
+depends xclip

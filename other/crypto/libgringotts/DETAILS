@@ -1,0 +1,13 @@
+          MODULE=libgringotts
+         VERSION=1.2.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/gringotts.berlios/
+      SOURCE_VFY=sha256:a75e6f757b975d3da662fe7ea2d985f358f31ad2dede1a222bb4aa403d0dbfd1
+        WEB_SITE=http://sourceforge.net/projects/gringotts.berlios/
+         ENTERED=20160322
+         UPDATED=20160322
+           SHORT=""
+
+cat << EOF
+libgringotts is an encryption backend for gringotts (secure notes application).
+EOF

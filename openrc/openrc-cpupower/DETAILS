@@ -1,0 +1,10 @@
+          MODULE=openrc-cpupower
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20181101
+         UPDATED=20181101
+           SHORT="OpenRC cpupower init script"
+
+cat << EOF
+OpenRC cpupower init script.
+EOF

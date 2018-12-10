@@ -1,0 +1,20 @@
+          MODULE=pam_encfs
+         VERSION=0.1.4.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/pam-encfs-$MODULE-$VERSION
+      SOURCE_URL=http://github.com/ghostBot/pam-encfs/archive/
+      SOURCE_VFY=sha256:8f4ff741aa560a2b5a4ca27398ddec7af4e0030ee76cf21129793ec9001ccf87
+        WEB_SITE=http://github.com/ghostBot/pam-encfs/
+         ENTERED=20160914
+         UPDATED=20160914
+           SHORT="A PAM module to auto-mount encfs directories on login"
+
+cat <<EOF
+A PAM module to auto-mount encfs directories on login.
+Put pam_encfs.conf in /etc/security and modify your pam to load (for example):
+         auth required        pam_encfs.so
+and if you want to auto umount on logout:
+         session        required        pam_encfs.so
+(note that setting "encfs_default --idle=1", means it'll auto umount after 1
+minute idletime, so you can ignore this if you want to).
+EOF

@@ -1,0 +1,10 @@
+          MODULE=openrc-cronie
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20180121
+         UPDATED=20180121
+           SHORT="OpenRC cronie init script"
+
+cat << EOF
+OpenRC cronie init script.
+EOF

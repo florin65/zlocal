@@ -1,0 +1,15 @@
+          MODULE=fuseiso
+         VERSION=20070708
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:8b242e077d66cd20900c59c905ff90b4c934b0613dd5a20facb0b1260ac5fd88
+        WEB_SITE=http://sourceforge.net/projects/fuseiso/
+         ENTERED=20160429
+         UPDATED=20160429
+           SHORT="FUSE module to mount ISO filesystem images"
+
+cat << EOF
+FuseISO is a FUSE module to mount ISO filesystem images (.iso, .nrg, .bin, .mdf
+and .img files). It currently support plain ISO9660 Level 1 and 2, Rock Ridge,
+Joliet, and zisofs.
+EOF

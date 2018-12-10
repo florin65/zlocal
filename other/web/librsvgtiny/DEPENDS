@@ -1,0 +1,5 @@
+depends git
+depends gperf
+depends libdom
+depends libwapcaplet
+depends netsurf-buildsystem

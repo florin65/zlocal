@@ -1,0 +1,14 @@
+          MODULE=vim-markdown
+         VERSION=2.0.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/plasticboy/vim-markdown/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:abb9eb841c4cfb1134cab6988ca1f3c803c6f782d14290a85d0ec8e4f7e9a37a
+        WEB_SITE=http://github.com/plasticboy/vim-markdown/
+         ENTERED=20160425
+         UPDATED=20160425
+           SHORT="Syntax highlighting and matching rules for Markdown"
+
+cat << EOF
+Syntax highlighting, matching rules and mappings for the original Markdown and
+extensions.
+EOF

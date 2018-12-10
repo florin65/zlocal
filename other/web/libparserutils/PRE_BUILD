@@ -1,0 +1,4 @@
+default_pre_build &&
+
+sedit 's:-Wall::' Makefile &&
+sedit 's:_BSD_SOURCE:_DEFAULT_SOURCE:' Makefile

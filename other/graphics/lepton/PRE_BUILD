@@ -1,0 +1,3 @@
+default_pre_build &&
+
+sedit "s:emmintrin.h:immintrin.h:" src/vp8/util/memory.cc

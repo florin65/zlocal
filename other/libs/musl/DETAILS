@@ -1,0 +1,16 @@
+      MODULE=musl
+     VERSION=1.1.20
+      SOURCE=$MODULE-$VERSION.tar.gz
+  SOURCE_URL=http://www.musl-libc.org/releases/
+  SOURCE_VFY=sha256:44be8771d0e6c6b5f82dd15662eb2957c9a3173a19a8b49966ac0542bbd40d61
+    WEB_SITE=http://www.musl-libc.org/
+     ENTERED=20150918
+     UPDATED=20180907
+       SHORT="Lightweight implementation of C standard library"
+
+cat << EOF
+musl is a new standard library to power the new generation of Linux-based
+devices.
+musl is lightweight, fast, simple, free, and strives to be correct in the sense
+of standards-conformance and safety.
+EOF

@@ -1,0 +1,27 @@
+          MODULE=nemu
+         VERSION=1.4.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/PascalRD-$MODULE-1e73a64638ef
+ SOURCE_URL_FULL=https://bitbucket.org/PascalRD/$MODULE/get/v$VERSION.tar.bz2
+      SOURCE_VFY=sha256:a24d2a0115814d67669aa8cc17745ac5ed03ffffc54ce68f61b66ce5b5246fd2
+        WEB_SITE=https://bitbucket.org/PascalRD/nemu/
+         ENTERED=20180218
+         UPDATED=20180218
+           SHORT="ncurses interface for qemu"
+
+cat << EOF
+Features:
+  Install VM
+  Delete VM
+  Clone VM
+  Show VM status
+  Start/stop/shutdown/reset VM
+  Connect to VM via vnc
+  Drive snapshots
+  Full VM snapshots (experimental)
+  Show/Edit VM settings
+  USB support
+  Network via tap/macvtap interfaces
+  VirtFS support (Plan 9 host files sharing).
+  Import OVA.
+EOF

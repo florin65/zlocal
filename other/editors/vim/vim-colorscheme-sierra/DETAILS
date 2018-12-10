@@ -1,0 +1,14 @@
+          MODULE=vim-colorscheme-sierra
+         VERSION=5.0.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Sierra-$VERSION
+ SOURCE_URL_FULL=http://github.com/AlessandroYorba/Sierra/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:6fe8ddfbc4bd3223c3b6b770739c7fb733a6cd7348844e2cca85aabbeba1bc74
+        WEB_SITE=http://github.com/AlessandroYorba/Sierra/
+         ENTERED=20170430
+         UPDATED=20170030
+           SHORT="A Vim colorscheme"
+
+cat << EOF
+A dark low-contrast Vim colorscheme for terminal Vim and GUI Vim.
+EOF

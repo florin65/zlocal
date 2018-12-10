@@ -1,0 +1,3 @@
+if module_installed openrc-ntpd; then
+   lrm openrc-ntpd
+fi

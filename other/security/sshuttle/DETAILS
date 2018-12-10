@@ -1,0 +1,14 @@
+          MODULE=sshuttle
+         VERSION=0.78.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/sshuttle/sshuttle/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha257:3fa48f662b3e7b03169c8f19da28001acb903752fc745fcbc82352c03eec1979
+        WEB_SITE=https://github.com/sshuttle/sshuttle/
+         ENTERED=20171130
+         UPDATED=20180511
+           SHORT="Transparent proxy server that forwards all TCP packets over ssh"
+
+cat << EOF
+ransparent proxy server that works as a poor man's VPN. Forwards over ssh.
+Doesn't require admin. Supports DNS tunneling.
+EOF

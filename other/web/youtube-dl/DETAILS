@@ -1,0 +1,15 @@
+          MODULE=youtube-dl
+         VERSION=2018.12.03
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE
+      SOURCE_URL=http://yt-dl.org/downloads/$VERSION/
+#      SOURCE_VFY=sha256:
+        WEB_SITE=http://rg3.github.io/youtube-dl/
+         ENTERED=20150125
+         UPDATED=20181205
+           SHORT="A command-line program to download videos from YouTube"
+
+cat <<EOF
+youtube-dl is a small command-line program to download videos from YouTube.com
+and a few more sites.
+EOF

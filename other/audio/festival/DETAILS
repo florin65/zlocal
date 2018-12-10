@@ -1,0 +1,19 @@
+          MODULE=festival
+         VERSION=2.4
+          SOURCE=$MODULE-$VERSION-release.tar.gz
+      SOURCE_URL=http://www.cstr.ed.ac.uk/downloads/$MODULE/$VERSION/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.cstr.ed.ac.uk/projects/festival/
+         ENTERED=20160730
+         UPDATED=20160730
+           SHORT="A general multi-lingual speech synthesis system"
+
+cat << EOF
+Festival offers a general framework for building speech synthesis systems as
+well as including examples of various modules. As a whole it offers full tex
+to speech through a number APIs: from shell level, though a Scheme comman
+interpreter, as a C++ library, from Java, and an Emacs interface. Festival is
+multi-lingual (currently English (British and American), and Spanish) though
+English is the most advanced. Other groups release new languages for the system.
+EOF
+

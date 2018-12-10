@@ -1,0 +1,15 @@
+          MODULE=zxfer
+         VERSION=1.1.6
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/allanjude/zxfer/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/allanjude/zxfer/
+         ENTERED=20160709
+         UPDATED=20160709
+           SHORT="Transfer ZFS filesystems"
+
+cat << EOF
+A continuation of development on zxfer, a popular script for managing ZFS
+snapshot replication. It transfers ZFS filesystems, snapshots, properties,
+files and directories
+EOF

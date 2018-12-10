@@ -1,0 +1,16 @@
+          MODULE=pdnsd
+         VERSION=1.2.9a
+          SOURCE=$MODULE-$VERSION-par.tar.gz
+      SOURCE_URL=http://members.home.nl/p.a.rombouts/pdnsd/releases/
+      SOURCE_VFY=sha256:bb5835d0caa8c4b31679d6fd6a1a090b71bdf70950db3b1d0cea9cf9cb7e2a7b
+        WEB_SITE=http://members.home.nl/p.a.rombouts/pdnsd/
+         ENTERED=20160422
+         UPDATED=20160422
+           SHORT="Proxy DNS server with permanent caching"
+
+cat << EOF
+pdnsd is a proxy DNS server with permanent caching (the cache contents are
+written to hard disk on exit) that is designed to cope with unreachable or
+down DNS servers (for example in dial-in networking).
+pdnsd supports negative caching.
+EOF

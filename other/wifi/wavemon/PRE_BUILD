@@ -1,0 +1,5 @@
+default_pre_build &&
+
+# Lets forgo demos
+sedit '/^SUBDIRS/{:x;/\\$/{N;bx;};s/[ \t\n\\]*demos//;}' Makefile.in &&
+sedit "s:demos::" Makefile.in

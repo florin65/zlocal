@@ -1,0 +1,18 @@
+          MODULE=vim-delimitmate
+         VERSION=2.7
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/delimitMate-$VERSION
+ SOURCE_URL_FULL=http://github.com/raimondi/delimitMate/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:36a9ceab86ec33d0a20e312d8034295294536bfd1faf72389158feea510413af
+        WEB_SITE=http://github.com/raimondi/delimitmate/
+         ENTERED=20170112
+         UPDATED=20170112
+           SHORT="Vim insert mode auto-completion for quotes, parens, brackets, etc"
+
+cat << EOF
+This plug-in provides automatic closing of quotes, parenthesis, brackets, etc.,
+besides some other related features that should make your time in insert mode a
+little bit easier, like syntax awareness (will not insert the closing delimiter
+in comments and other configurable regions), and expansions (off by default),
+and some more.
+EOF

@@ -1,0 +1,18 @@
+          MODULE=collectl
+         VERSION=4.3.0
+          SOURCE=$MODULE-$VERSION.src.tar.gz
+      SOURCE_URL=https://sourceforge.net/projects/collectl/files/collectl/$MODULE-$VERSION
+      SOURCE_VFY=sha256:df7c7179963e05b8195519729e35eedd8ea8333a787cf9c5549b7b18228aa987
+        WEB_SITE=http://collectl.sourceforge.net/
+         ENTERED=20180120
+         UPDATED=20180120
+           SHORT="A tool for viewing and gethering system performance metrics"
+
+cat << EOF
+collectl is a very nice feature rich command-line utility that can be used to
+collect performance data that describes the current system status. Unlike most
+of the other monitoring tools, collectl does not focus in a limited number of
+system metrics, instead it can gather information on many different types of
+system resources such as cpu, disk, memory, network, sockets, tcp, inodes,
+infiniband, lustre, memory, nfs, processes, quadrics, slabs and buddyinfo.
+EOF

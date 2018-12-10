@@ -1,0 +1,27 @@
+          MODULE=dateutils
+         VERSION=0.4.5
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://bitbucket.org/hroptatyr/dateutils/downloads/
+      SOURCE_VFY=sha256:16d6a0fe7b7d49ddbb303f33538dd7304a0d4af5a0369bcbf275db6a5060cbde
+        WEB_SITE=http://hroptatyr.github.com/dateutils/
+         ENTERED=20160210
+         UPDATED=20180921
+           SHORT="Utilities and library for fast date-time calculations and conversion"
+
+cat << EOF
+Dateutils are a bunch of tools that revolve around fiddling with dates and
+times in the command line with a strong focus on use cases that arise when
+dealing with large amounts of financial data.
+Dateutils commands are prefixed with a d but otherwise resemble known unix
+commands for reasons of intuition. The only exception being strptime which
+is analogous to the libc function of the same name:
+  strptime  Command line version of the C function
+  dateadd   Add durations to dates or times
+  dateconv  Convert dates or times between calendars
+  datediff  Compute durations between dates or times
+  dategrep  Grep dates or times in input streams
+  dateround Round dates or times to “fuller” values
+  dateseq   Generate sequences of dates or times
+  datetest  Compare dates or times
+  datezone  Convert date/times to timezones in bulk
+EOF

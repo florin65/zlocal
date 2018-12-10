@@ -1,0 +1,4 @@
+depends vim
+depends python-jedi
+
+optional_depends vim-supertab "" "" "for tab completion"

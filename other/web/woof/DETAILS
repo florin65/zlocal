@@ -1,0 +1,25 @@
+          MODULE=woof
+         VERSION=20120531
+          SOURCE=$MODULE
+      SOURCE_URL=http://www.home.unix-ag.org/simon/
+      SOURCE_VFY=sha256:d84353d07f768321a1921a67193510bf292cf0213295e8c7689176f32e945572
+        WEB_SITE=http://www.home.unix-ag.org/simon/woof.html
+         ENTERED=20160227
+         UPDATED=20160227
+           SHORT="A single file webserver"
+
+cat <<EOF
+Woof (Web Offer One File) assumes that everybody has a web-browser or a
+commandline web-client installed. Woof is a small simple stupid webserver
+that can easily be invoked on a single file. Your partner can access the
+file with tools he trusts (e.g. wget). No need to enter passwords on
+keyboards where you don't know about keyboard sniffers, no need to start
+a huge lot of infrastructure, just do a
+
+     $ woof filename
+
+and tell the recipient the URL woof spits out. When he got that file, woof
+will quit and everything is done.
+And when someone wants to send you a file, woof has a switch to offer itself,
+so he can get woof and offer a file to you.
+EOF

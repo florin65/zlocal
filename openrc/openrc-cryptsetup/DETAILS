@@ -1,0 +1,10 @@
+          MODULE=openrc-cryptsetup
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20171115
+         UPDATED=20171115
+           SHORT="OpenRC cryptsetup init script"
+
+cat << EOF
+OpenRC cryptsetup  init script.
+EOF

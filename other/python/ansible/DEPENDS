@@ -1,0 +1,10 @@
+depends python-yaml
+depends python-paramiko
+depends python-jinja
+depends python-pycrypto
+depends asciidoc
+depends fakeroot
+
+optional_depends dnspython "" "" "for dig lookup"
+
+optional_depends python-pyopenssl "" "" "for openssl modules"

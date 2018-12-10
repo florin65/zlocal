@@ -1,0 +1,7 @@
+depends groff
+depends gdbm
+depends less
+depends libpipeline
+depends zlib
+
+optional_depends gzip "" "" "for gzip support"

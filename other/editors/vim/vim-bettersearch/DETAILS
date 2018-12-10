@@ -1,0 +1,19 @@
+          MODULE=vim-bettersearch
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=git+https://github.com/kenng/vim-bettersearch
+#     SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/kenng/vim-bettersearch/
+         ENTERED=20160430
+         UPDATED=20160430
+           SHORT="A vim plugin - better search function"
+
+cat << EOF
+Features offered:
+- This script is written to copy all the search result and put it to window
+  above the content.
+- The search result is 'jumpable' to the content window by just enter on that
+  particular search line
+- Search term highlight can be switched on and off
+- Search keyword can be saved to clipboard.
+EOF

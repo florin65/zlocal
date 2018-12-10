@@ -1,0 +1,6 @@
+default_pre_build &&
+
+rm -f config.{cache,status} &&
+autoreconf -fiv &&
+
+sedit 's|#ROOTDIR="/path/for/anonymous/user"|# bftpd interprets ROOTDIR="%h" (the default), as ROOTDIR="/" for the anonymous user, override it\n  ROOTDIR="/srv/ftp"|' -i bftpd.conf

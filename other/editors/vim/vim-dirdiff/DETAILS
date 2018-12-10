@@ -1,0 +1,14 @@
+          MODULE=vim-dirdiff
+         VERSION=1.1.5
+          SOURCE=$MODULE-$VERSION.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/undotree-rel_$VERSION
+  SOURCE_URL_FULL=http://www.vim.org/scripts/download_script.php?src_id=22871
+      SOURCE_VFY=sha256:b989892d0380ddf83672682e81957a44b334d5b8c776292aa6aec5ec5cdec072
+        WEB_SITE=https://github.com/will133/vim-dirdiff/
+         ENTERED=20170320
+         UPDATED=20170320
+           SHORT="A vim plugin to diff and merge two directories recursively"
+
+cat << EOF
+
+EOF

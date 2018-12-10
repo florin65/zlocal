@@ -1,0 +1,19 @@
+          MODULE=wireguard-tools
+         VERSION=0.0.20180809
+          SOURCE=WireGuard-experimental-$VERSION.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/WireGuard-experimental-$VERSION
+ SOURCE_URL_FULL=git+https://git.zx2c4.com/WireGuard/
+#      SOURCE_VFY=sha256:6ce18297bc94a5d82867ece235fb8c225bf9685293733efe1055d4c9638c509c
+        WEB_SITE=http://www.wireguard.io/
+         ENTERED=20150617
+         UPDATED=20180810
+           SHORT="Next generation secure network tunnel"
+
+cat << EOF
+WireGuard is an extremely simple yet fast and modern VPN that utilizes
+state-of-the-art cryptography. It aims to be faster, simpler, leaner,
+and more useful than IPSec, while avoiding the massive headache. It
+intends to be considerably more performant than OpenVPN. WireGuard is
+designed as a general purpose VPN for running on embedded interfaces
+and super computers alike, fit for many different circumstances.
+EOF

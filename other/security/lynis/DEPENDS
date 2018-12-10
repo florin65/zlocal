@@ -1,0 +1,2 @@
+optional_depends bash-completion "" "" "completion for bash"
+optional_depends net-tools       "" "" "for networking tests"

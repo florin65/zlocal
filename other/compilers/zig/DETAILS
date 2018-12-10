@@ -1,0 +1,14 @@
+          MODULE=zig
+         VERSION=0.3.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://s3.amazonaws.com/ziglang.org/download/$VERSION/
+      SOURCE_VFY=sha256:d70af604f3a8622f3393d93abb3e056bf60351e32d121e6fa4fe03d8d41e1f5a
+        WEB_SITE=http://ziglang.org/
+         ENTERED=20180126
+         UPDATED=20180928
+           SHORT="A programming language for robustness, optimality, and clarity"
+
+cat << EOF
+Zig is an open-source programming language designed for robustness, optimality,
+and clarity.
+EOF

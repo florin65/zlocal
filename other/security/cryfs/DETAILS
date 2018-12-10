@@ -1,0 +1,14 @@
+          MODULE=cryfs
+         VERSION=0.9.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://codeload.github.com/cryfs/$MODULE/tar.gz/$VERSION
+      SOURCE_VFY=sha256:84ecc4615ef9e563a2a9570cd90af4e755b4667958fb939a474fb112ac3eadd1
+        WEB_SITE=http://www.cryfs.org/
+         ENTERED=20160501
+         UPDATED=20160702
+           SHORT="Cryptographic filesystem for the cloud"
+
+cat << EOF
+CryFS encrypts your files, so you can safely store them anywhere. It works well
+together with cloud services like Dropbox, iCloud, OneDrive and others.
+EOF

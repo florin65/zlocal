@@ -1,0 +1,17 @@
+          MODULE=vim-diffchar
+         VERSION=8.1
+          SOURCE=$MODULE-$VERSION.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/undotree-rel_$VERSION
+  SOURCE_URL_FULL=http://www.vim.org/scripts/download_script.php?src_id=26254
+      SOURCE_VFY=sha256:d19ec89f09341144efc858c1edad57ec68d83e1f4ab8cd8d418c16343c928b07
+        WEB_SITE=http://github.com/rickhowe/diffchar.vim/
+         ENTERED=20170320
+         UPDATED=20181120
+           SHORT="Improved vim's diff mode"
+
+cat << EOF
+This plugin has been developed in order to make diff mode more useful.
+Vim highlights all the text in between the first and last different
+characters on a changed line. But this plugin will find the exact
+differences between them, character by character.
+EOF

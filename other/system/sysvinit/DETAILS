@@ -1,0 +1,16 @@
+          MODULE=sysvinit
+         VERSION=2.93
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://download.savannah.gnu.org/releases/$MODULE
+      SOURCE_VFY=sha256:472d460e233d981488509a167125a82925c8c9aba6b5608cb22598fdf326a8ff
+        WEB_SITE=http://savannah.nongnu.org/projects/sysvinit
+         ENTERED=20010922
+         UPDATED=20181125
+           SHORT="The parent process of all processes"
+
+cat << EOF
+Init is the parent of all processes. Its primary role is to create processes
+from a script stored in the file /etc/inittab. This package also contains
+well-known and used utilities like reboot, shutdown, killall, poweroff,
+tellinit, sulogin, wall, etc.
+EOF

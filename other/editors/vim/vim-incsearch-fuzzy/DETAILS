@@ -1,0 +1,12 @@
+          MODULE=vim-incsearch-fuzzy
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=git+https://github.com/haya14busa/incsearch-fuzzy.vim
+        WEB_SITE=https://github.com/haya14busa/incsearch-fuzzy.vim
+         ENTERED=20171229
+         UPDATED=20171229
+           SHORT="Improved fuzzy incremental searching for Vim"
+
+cat << EOF
+Incremantal fuzzy search extension for incsearch.vim.
+EOF

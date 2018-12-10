@@ -1,0 +1,21 @@
+          MODULE=openrc-qemu
+         VERSION=0.6.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/qemu-openrc-$VERSION
+ SOURCE_URL_FULL=https://github.com/jirutka/qemu-openrc/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:63ec22b25cad1701b7d07a5cb6eaaad5a91adff8bcdb09fc530d912c786ca2c6
+        WEB_SITE=https://github.com/jirutka/qemu-openrc
+         ENTERED=20180206
+         UPDATED=20180206
+           SHORT="OpenRC runscript for QEMU"
+
+cat << EOF
+This is (opinionated) OpenRC runscript for QEMU virtual machines.
+Linux kernel configuration requirements:
+  CONFIG_HW_RANDOM_VIRTIO=y
+  CONFIG_SCSI_VIRTIO=y
+  CONFIG_VIRTIO=y
+  CONFIG_VIRTIO_BALLOON=y
+  CONFIG_VIRTIO_NET=y
+  CONFIG_VIRTIO_PCI=y
+EOF

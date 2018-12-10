@@ -1,0 +1,14 @@
+          MODULE=vim-colorscheme-sidonia
+         VERSION=2.0.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Sidonia-$VERSION
+ SOURCE_URL_FULL=http://github.com/AlessandroYorba/Sidonia/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:e0e25953e78333fc724830b9c7ea7313cce92f8e96ccb8ec3aeac028896a7ab3
+        WEB_SITE=http://github.com/AlessandroYorba/Sidonia/
+         ENTERED=20170430
+         UPDATED=20170030
+           SHORT="A Vim colorscheme"
+
+cat << EOF
+A dark low-contrast Vim colorscheme for terminal Vim and GUI Vim.
+EOF

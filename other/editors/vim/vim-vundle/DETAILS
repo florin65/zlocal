@@ -1,0 +1,26 @@
+          MODULE=vim-vundle
+         VERSION=0.10.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Vundle.vim-$VERSION
+ SOURCE_URL_FULL=https://github.com/VundleVim/Vundle.vim/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:16710ab69b08e934344b9d8931084d40d61b40624efbdc16f12fad0da9712416
+        WEB_SITE=https://github.com/VundleVim/Vundle.vim/
+         ENTERED=2017114
+         UPDATED=2017114
+           SHORT="Vundle, the plug-in manager for Vim"
+
+cat << EOF
+Vundle for Vim is a Vim plugin manager.
+
+Vundle allows you to...
+  - keep track of and configure your plugins right in the .vimrc
+  - install configured plugins (a.k.a. scripts/bundle)
+  - update configured plugins
+  - search by name all available Vim scripts
+  - clean unused plugins up
+  - run the above actions in a single keypress with interactive mode
+
+Vundle automatically...
+  - manages the runtime path of your installed scripts
+  - regenerates help tags after installing and updating.
+EOF

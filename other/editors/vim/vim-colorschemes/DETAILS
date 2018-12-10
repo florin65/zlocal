@@ -1,0 +1,15 @@
+          MODULE=vim-colorschemes
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=git+http://github.com/solaraquarion/vim-colorschemes
+#      SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/flazz/vim-colorschemes/
+         ENTERED=20170306
+         UPDATED=20170306
+           SHORT="A very large collection of color schemes from vim.org"
+
+cat << EOF
+One stop shop for vim colorschemes.
+This is harvested from vim.org. Only colorschemes downloaded in a single .vim
+file are included.
+EOF

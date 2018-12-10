@@ -1,0 +1,6 @@
+depends boost
+depends cryptopp
+depends curl
+depends fuse
+depends %OSSL
+depends cmake

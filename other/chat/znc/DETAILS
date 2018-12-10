@@ -1,0 +1,14 @@
+          MODULE=znc
+         VERSION=1.6.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://znc.in/releases/
+      SOURCE_VFY=sha256:631c46de76fe601a41ef7676bc974958e9a302b72b25fc92b4a603a25d89b827
+        WEB_SITE=http://wiki.znc.in/ZNC/
+         ENTERED=20151117
+         UPDATED=20160227
+           SHORT="An IRC bouncer with modules & scripts support"
+
+cat << EOF
+ZNC is an advanced IRC bouncer that is left connected so an IRC
+client can disconnect/reconnect without losing the chat session.
+EOF

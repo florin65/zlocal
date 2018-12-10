@@ -1,0 +1,3 @@
+depends docbook-xsl
+depends xmlto
+depends openssh

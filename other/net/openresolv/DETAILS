@@ -1,0 +1,34 @@
+          MODULE=openresolv
+         VERSION=3.8.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+         SOURCE2=$MODULE-fs33801.patch.xz
+      SOURCE_URL=http://roy.marples.name/downloads/openresolv/
+     SOURCE2_URL=$PATCH_URL
+      SOURCE_VFY=sha256:d259d78fd92ac288f1b27959daee11be9a40d70e91af5432046164c260de1d43
+     SOURCE2_VFY=sha256:f0cc33300deb9f08fe37428fe45b8609ac9800b21c4b7f491019458dc4a795c3
+        WEB_SITE=http://roy.marples.name/projects/openresolv/
+         ENTERED=20160612
+         UPDATED=20160612
+           SHORT="An /etc/resolv.conf management framework"
+
+cat << EOF
+etc/resolv.conf is a file that holds the configuration for the local resolution
+of domain names. Normally this file is either static or maintained by a local
+daemon, normally a DHCP daemon. But what happens if more than one thing wants to
+control the file? Say you have wired and wireless interfaces to different subnets
+and run a VPN or two on top of that, how do you say which one controls the file?
+It's also not as easy as just adding and removing the nameservers each client
+knows about as different clients could add the same nameservers.
+Enter resolvconf, the middleman between the network configuration services and
+/etc/resolv.conf. resolvconf itself is just a script that stores, removes and
+lists a full resolv.conf generated for the interface. It then calls all the helper
+scripts it knows about so it can configure the real /etc/resolv.conf and
+optionally any local nameservers other than libc.
+Reasons for using openresolv:
+  Works with POSIX shell and userland
+  Does not need awk, grep or sed which means we can work without /usr mounted
+  Works with other init systems than Debians' out of the box
+  Available as a 2 clause BSD license
+  Prefer configs via IF_METRIC for dynamic ordering
+  Configures zones for local resolvers other than libc.
+EOF

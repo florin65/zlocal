@@ -1,0 +1,8 @@
+depends openrc-dbus
+depends openrc-cronie
+depends openrc-dhcpcd
+depends openrc-inetutils
+depends openrc-nfs-utils
+depends openrc-syslog-ng
+
+#depends openrc-glibc

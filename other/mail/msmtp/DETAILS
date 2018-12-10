@@ -1,0 +1,26 @@
+          MODULE=msmtp
+         VERSION=1.6.6
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/$MODULE/
+      SOURCE_VFY=sha256:da15db1f62bd0201fce5310adb89c86188be91cd745b7cb3b62b81a501e7fb5e
+        WEB_SITE=http://msmtp.sourceforge.net
+         ENTERED=20161127
+         UPDATED=20161127
+           SHORT="A mini SMTP client"
+
+cat << EOF
+msmtp is an SMTP client.
+In the default mode, it transmits a mail to an SMTP server (for example at a
+free mail provider) which takes care of further delivery. To use this program
+with your mail user agent (MUA), create a configuration file with your mail
+account(s) and tell your MUA to call msmtp instead of /usr/sbin/sendmail.
+Features include:
+  Sendmail compatible interface (command line options and exit codes)
+  Support for multiple accounts
+  TLS/SSL support including client certificates
+  Many authentication methods
+  Support for Internationalized Domain Names (IDN)
+  Fast SMTP implementation using command pipelining
+  DSN (Delivery Status Notification) support
+  SOCKS proxy support
+EOF

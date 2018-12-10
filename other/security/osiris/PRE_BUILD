@@ -1,0 +1,7 @@
+default_pre_build &&
+
+sedit "s|/sbin|/bin|g" src/install/install.sh.in &&
+
+sedit "s|^INSTALL_OSIRISM=0|INSTALL_OSIRISM=1|" src/install/install.sh &&
+sedit "s|^INSTALL_OSIRISD=0|INSTALL_OSIRISD=1|" src/install/install.sh &&
+sedit "s|^ROOT_GROUP=wheel|ROOT_GROUP=root|" src/install/install.sh

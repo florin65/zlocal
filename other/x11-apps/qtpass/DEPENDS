@@ -1,0 +1,3 @@
+depends pass
+depends libxkbcommon
+depends qt5

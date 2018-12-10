@@ -1,0 +1,16 @@
+          MODULE=ssl-admin
+         VERSION=1.2.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+         SOURCE2=$MODULE-fix_makefile_for_linux.patch
+ SOURCE_URL_FULL=ftp://ftp.secure-computing.net/pub/ssl-admin/
+SOURCE2_URL_FULL=$PATCH_URL
+      SOURCE_VFY=sha256:ebe6667c1beb79c7a12400e8a19bb4ec9f78ea7f72e0363d1eb10ed7f4b357ba
+     SOURCE2_VFY=sha256:4a85bb4eec3e638720d99753f0f734774f7788f6f5d67016bb01745d8f5652c7
+        WEB_SITE=https://www.secure-computing.net
+         ENTERED=20171229
+         UPDATED=20171229
+           SHORT="OpenSSL certificate manager with OpenVPN support"
+
+cat << EOF
+OpenSSL certificate manager with OpenVPN support.
+EOF

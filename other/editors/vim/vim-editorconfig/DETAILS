@@ -1,0 +1,24 @@
+          MODULE=vim-editorconfig
+         VERSION=0.3.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/editorconfig-vim-$VERSION
+ SOURCE_URL_FULL=http://github.com/editorconfig/editorconfig-vim/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:fd579672c426a089835e9bc57a1fd5fc18dba77c014b67141153372e83c92c57
+        WEB_SITE=http://github.com/editorconfig/editorconfig-vim/
+         ENTERED=20170319
+         UPDATED=20170319
+           SHORT="EditorConfig plugin for Vim"
+
+cat << EOF
+This is an EditorConfig plugin for Vim.
+The EditorConfig Vim plugin supports the following EditorConfig properties:
+  indent_style
+  indent_size
+  tab_width
+  end_of_line
+  charset
+  insert_final_newline (+fixendofline or PreserveNoEOL is required)
+  trim_trailing_whitespace
+  max_line_length
+  root (only used by EditorConfig core)
+EOF

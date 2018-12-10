@@ -1,0 +1,20 @@
+          MODULE=vim-project
+         VERSION=1.4.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://www.vim.org/scripts/download_script.php?src_id=6273
+      SOURCE_VFY=sha256:6e0c60cb2782d8232182124b0b617fdb6f1e1fcf0259273ce717940976d0b097
+        WEB_SITE=http://vim.org/scripts/script.php?script_id=69
+         ENTERED=20170507
+         UPDATED=20170507
+           SHORT="Organize and navigate projects of files"
+
+cat << EOF
+You can use this plugin's basic functionality to set up a list of frequently
+accessed files for easy navigation. The list of files will be displayed in a
+window on the left side of the Vim window, and you can press <Return> or
+double-click on filenames in the list to open the files. This is similar to
+how some IDEs I've used work. It is easier to use than having to navigate a
+directory hierarchy with the file-explorer. It also obviates the need for a
+buffer explorer because you have your list of files on the left of the Vim
+Window.
+EOF

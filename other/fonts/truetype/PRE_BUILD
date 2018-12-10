@@ -1,0 +1,10 @@
+mk_source_dir &&
+
+cd $SOURCE_DIRECTORY &&
+
+for FILE in IELPKTH.CAB andale32.exe arial32.exe  arialb32.exe \
+            comic32.exe courie32.exe georgi32.exe impact32.exe \
+            times32.exe trebuc32.exe verdan32.exe webdin32.exe ; do
+  verbose_msg "Extracting \"$FILE\" in \"$(pwd)\""
+  cabextract -L -q -f $SOURCE_CACHE/$FILE
+done

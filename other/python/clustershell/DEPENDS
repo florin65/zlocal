@@ -1,0 +1,4 @@
+depends python-six
+
+optional_depends openssh "" "" "for SSH connect to remote machines"
+optional_depends vim     "" "" "for vim editor support"

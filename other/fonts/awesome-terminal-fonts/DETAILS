@@ -1,0 +1,15 @@
+          MODULE=awesome-terminal-fonts
+         VERSION=1.1.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://codeload.github.com/gabrielelana/awesome-terminal-fonts/tar.gz/v1.1.0
+      SOURCE_VFY=sha256:7e23d0d01a72323a4b388093aa07de61088f61521bd59e418a35345a40637aa0
+        WEB_SITE=http://github.com/gabrielelana/awesome-terminal-fonts/
+         ENTERED=20160724
+         UPDATED=20180617
+         ARCHIVE=off
+           SHORT="Fonts/icons for powerlines"
+
+cat << EOF
+Tools and instructions on how to have awesome symbols in a terminal with a
+monospace font.
+EOF

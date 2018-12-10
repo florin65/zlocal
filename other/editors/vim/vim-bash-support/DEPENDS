@@ -1,0 +1,4 @@
+depends vim-support
+
+optional_depends bashdb "" "" "for bash debugger support"
+

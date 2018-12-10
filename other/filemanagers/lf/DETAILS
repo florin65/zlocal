@@ -1,0 +1,16 @@
+          MODULE=lf
+         VERSION=r8
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/gokcehan/lf/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:b92bfba41cc1b4054c44bf615907380482c66694fc9eaf4affe185b39cb9bb26
+        WEB_SITE=https://github.com/gokcehan/lf/
+         ENTERED=20181116
+         UPDATED=20181116
+           SHORT="A terminal file manager inspired by ranger"
+
+cat << EOF
+lf (as in "list files") is a terminal file manager written in Go. It is heavily
+inspired by ranger with some missing and extra features. Some of the missing
+features are deliberately omitted since they are better handled by external
+tools.
+EOF

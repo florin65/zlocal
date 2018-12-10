@@ -1,0 +1,3 @@
+if module_installed openrc-postfix; then
+   lrm openrc-postfix
+fi

@@ -1,0 +1,6 @@
+depends Python
+depends gettext
+depends newt
+
+optional_depends screen "" "" "for screen back-end"
+optional_depends tmux   "" "" "for tmux back-end"

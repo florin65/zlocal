@@ -1,0 +1,13 @@
+          MODULE=vim-rainbow-parentheses
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+       SOURCE_URL=git+https://github.com/kien/rainbow_parentheses.vim
+#      SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/kien/rainbow_parentheses.vim/
+         ENTERED=20170430
+         UPDATED=20170430
+           SHORT="Better Rainbow Parentheses for Vim"
+
+cat << EOF
+Better Rainbow Parentheses for Vim.
+EOF

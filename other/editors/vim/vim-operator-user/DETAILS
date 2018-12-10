@@ -1,0 +1,16 @@
+          MODULE=vim-operator-user
+         VERSION=0.1.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/kana/vim-operator-user/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:14357a664558fdd7a83acbdcd24e5767828caad5070a887c14ab429c33e63afd
+        WEB_SITE=http://www.vim.org/scripts/script.php?script_id=2692
+         ENTERED=20171229
+         UPDATED=20171229
+           SHORT="Vim plugin: Define your own operator easily"
+
+cat << EOF
+*operator-user* is a Vim library plugin to provide an easy way to define your
+own |operator|.  Though there are several pitfalls to define operators, you
+don't have to take care of them with |operator#user#define()| which are
+provided by this library plugin.
+EOF

@@ -1,0 +1,6 @@
+depends python
+depends libffi
+depends libedit
+depends libuv
+depends boost
+depends curl

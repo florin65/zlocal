@@ -1,0 +1,7 @@
+SRCDIR="github.com/$MODULE" &&
+
+mkdir -p $BUILD_DIRECTORY/$SRCDIR &&
+cd $BUILD_DIRECTORY/$SRCDIR &&
+unpack $SOURCE &&
+mv $MODULE-$VERSION $MODULE &&
+cd $MODULE

@@ -1,0 +1,27 @@
+          MODULE=uTox
+         VERSION=0.17.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/GrayHatter/uTox/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/GrayHatter/uTox/
+         ENTERED=20160502
+         UPDATED=20180505
+           SHORT="Lightweight GTK+ based Tox client"
+
+cat << EOF
+The lightweight Tox client.
+Features:
+  Avatars
+  Secure person to person conversations:
+  Video (Webcam or Desktop sharing)
+  Audio
+  Text
+  Chat History
+  Screenshots
+  Group chats
+  New API support ready
+  File transfers, with inline images support
+  Tox DNS support with uTox.org
+  Tox URI support (clickable links)
+  Emoticons.
+EOF

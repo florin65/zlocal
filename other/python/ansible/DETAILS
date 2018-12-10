@@ -1,0 +1,16 @@
+          MODULE=ansible
+         VERSION=2.7.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://releases.ansible.com/$MODULE/
+      SOURCE_VFY=sha256:498bb0581bb8ff00d77f1643f20f63b69227c13d4464419d10450cc3bc37365c
+        WEB_SITE=https://www.ansible.com
+         ENTERED=20180322
+         UPDATED=20181202
+           SHORT="Radically simple IT automation platform"
+
+cat << EOF
+Ansible is a simple automation language that can perfectly describe an IT
+application infrastructure. It’s easy-to-learn, self-documenting, and doesn’t
+require a grad-level computer science degree to read. Automation shouldn’t be
+more complex than the tasks it’s replacing.
+EOF

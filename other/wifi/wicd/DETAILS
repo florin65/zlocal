@@ -1,0 +1,14 @@
+          MODULE=wicd
+         VERSION=1.7.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://launchpad.net/$MODULE/${VERSION%.*}/$VERSION/+download
+      SOURCE_VFY=sha256:67989614004773db349791c37675efb914d084bdb221356a05e4369c35e7eb62
+        WEB_SITE=http://wicd.sourceforge.net
+         ENTERED=20090309
+         UPDATED=20160125
+           SHORT="A wireless/wired internet connection daemon"
+
+cat << EOF
+A wireless/wired internet connection daemon with both curses
+and gtk client.
+EOF

@@ -1,0 +1,10 @@
+          MODULE=openrc-kmod
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20171115
+         UPDATED=20171115
+           SHORT="OpenRC kmod init script"
+
+cat << EOF
+OpenRC kmod init script.
+EOF

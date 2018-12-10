@@ -1,0 +1,20 @@
+          MODULE=Markdown
+         VERSION=1.0.1
+          SOURCE=${MODULE}_$VERSION.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${MODULE}_$VERSION
+      SOURCE_URL=http://daringfireball.net/projects/downloads/
+      SOURCE_VFY=sha256:6520e9b6a58c5555e381b6223d66feddee67f675ed312ec19e9cee1b92bc0137
+        WEB_SITE=http://daringfireball.net/projects/markdown/
+         ENTERED=20170325
+         UPDATED=20170325
+           SHORT="Text to (X)HTML conversion tool"
+
+cat << EOF
+Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you
+to write using an easy-to-read, easy-to-write plain text format, then convert it
+to structurally valid XHTML (or HTML).
+Thus, “Markdown” is two things:
+  (1) a plain text formatting syntax;
+  (2) a software tool, written in Perl, that converts the plain text formatting
+      to HTML.
+EOF

@@ -1,0 +1,31 @@
+          MODULE=smem
+         VERSION=1.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://selenic.com/repo/smem/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:5c3907b0ac9d3252cbbc5cb9ebe93f0c2b602df67376d9050c09146871822293
+        WEB_SITE=http://www.selenic.com/smem/
+         ENTERED=20180225
+         UPDATED=20180225
+           SHORT="Generate reports on memory usage"
+
+cat << EOF
+smem is a tool that can give numerous reports on memory usage on Linux systems.
+Unlike existing tools, smem can report proportional set size (PSS), which is a
+more meaningful representation of the amount of memory used by libraries and
+applications in a virtual memory system.
+Because large portions of physical memory are typically shared among multiple
+applications, the standard measure of memory usage known as resident set size
+(RSS) will significantly overestimate memory usage. PSS instead measures each
+application's "fair share" of each shared area to give a realistic measure.
+smem has many features:
+  system overview listing
+  listings by process, mapping, user
+  filtering by process, mapping, or user
+  configurable columns from multiple data sources
+  configurable output units and percentages
+  configurable headers and totals
+  reading live data from /proc
+  reading data snapshots from directory mirrors or compressed tarballs
+  lightweight capture tool for embedded systems
+  built-in chart generation
+EOF

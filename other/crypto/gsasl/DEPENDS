@@ -1,0 +1,11 @@
+depends libidn
+depends libgcrypt
+
+optional_depends gnutls \
+                 "--with-gnutls" \
+                 "--without-gnutls" \
+                 "for TLS support"
+
+optional_depends krb5 \
+                 "--with-gssapi-impl=mit" "" \
+                 "for GSS Kerberos support" n

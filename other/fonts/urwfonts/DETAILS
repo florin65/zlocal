@@ -1,0 +1,13 @@
+          MODULE=urwfonts
+         VERSION=8.71
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://ftp.sunet.se/pub/text-processing/postscript/interpreters/ghostscript/AFPL/GhostPCL/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.ghostscript.com/GhostPCL.html
+         ENTERED=20140929
+         UPDATED=20140929
+           SHORT="Ghostscript urwfonts"
+
+cat << EOF
+Ghostscript urwfonts.
+EOF

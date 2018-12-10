@@ -1,0 +1,14 @@
+          MODULE=conspy
+         VERSION=1.10
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://sourceforge.net/projects/$MODULE/files/$MODULE-$VERSION-1/
+      SOURCE_VFY=sha256:1c8357d80ef55807fddb62c223cb3779deb66aa33f31294ad6e4e2a03a81d7ee
+        WEB_SITE=http://conspy.sourceforge.net/
+         ENTERED=20150914
+         UPDATED=20150914
+           SHORT="Remote control of Linux virtual consoles"
+
+cat << EOF
+Conspy allows a (possibly remote) user to see what is displayed on a Linux
+virtual console, and send keystrokes to it.
+EOF

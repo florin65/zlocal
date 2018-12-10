@@ -1,0 +1,22 @@
+          MODULE=fossil
+         VERSION=2.5
+          SOURCE=$MODULE-src-$VERSION.tar.gz
+      SOURCE_URL=https://www.fossil-scm.org/index.html/uv/
+      SOURCE_VFY=sha256:f9b07360811f432dfb36ebfb44c83886872556ecce1c80387629ce90e1e4aad3
+        WEB_SITE=http://www.fossil-scm.org/
+         ENTERED=20180414
+         UPDATED=20180414
+           SHORT="Simple, high-reliability, distributed software configuration management"
+
+cat << EOF
+Fossil is a simple, high-reliability, distributed software configuration
+management system with these advanced features:
+  - Integrated Bug Tracking, Wiki, and Technotes
+  - Built-in Web Interface
+  - Self-Contained - Fossil is a single self-contained stand-alone executable.
+  - Simple Networking - No custom protocols or TCP ports (HTTP, HTTPS or SSH).
+  - CGI/SCGI enabled
+  - Autosyn
+  - Robust & Reliable
+  - Free and Open-Source
+EOF

@@ -1,0 +1,16 @@
+          MODULE=libetpan
+         VERSION=1.9.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/dinhviethoa/libetpan/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:f5e354ccf1014c6ee313ade1009b8a82f28043d2504655e388bb4c1328700fcd
+        WEB_SITE=http://www.etpan.org/libetpan.html
+         ENTERED=20070227
+         UPDATED=20181201
+           SHORT="A mail library"
+
+cat << EOF
+libEtPan is a mail purpose library. It will be used for low-level
+mail handling : network protocols (IMAP/NNTP/POP3/SMTP over TCP/IP and
+SSL/TCP/IP, already implemented), local storage (mbox/MH/maildir),
+message / MIME parser.
+EOF

@@ -1,0 +1,16 @@
+          MODULE=cpuid
+         VERSION=20160814
+          SOURCE=$MODULE-$VERSION.src.tar.gz
+      SOURCE_URL=http://www.etallen.com/$MODULE/
+      SOURCE_VFY=sha256:fd4e2b2d88f417ae32f47a92d29351de395a36578fde8aedc228e2e131f38ecd
+        WEB_SITE=http://www.etallen.com/cpuid.html
+         ENTERED=20160205
+         UPDATED=20160817
+           SHORT="Linux tool to dump x86 CPUID informations"
+
+cat << EOF
+cpuid dumps detailed information about the CPU(s) gathered from the CPUID
+instruction, and also determines the exact model of CPU(s). It supports
+Intel, AMD, and VIA CPUs, as well as older Transmeta, Cyrix, UMC, NexGen,
+Rise, and SiS CPUs.
+EOF

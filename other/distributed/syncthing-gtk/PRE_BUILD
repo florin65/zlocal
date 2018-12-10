@@ -1,0 +1,3 @@
+default_pre_build &&
+
+sedit "s:/local/share:/share:" scripts/syncthing-gtk syncthing_gtk/uisettingsdialog.py

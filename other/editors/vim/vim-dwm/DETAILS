@@ -1,0 +1,31 @@
+          MODULE=vim-dwm
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=git+https://github.com/spolu/dwm.vim
+#      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.vim.org/scripts/script.php?script_id=4186
+         ENTERED=20171110
+         UPDATED=20171110
+           SHORT="Dynamic Window Manager behaviour for Vim"
+
+cat << EOF
+dwm.vim adds tiled window management capabilities to Vim.
+Windows are always organised as follows: 
+
+========================== 
+|              |    S1   | 
+|              |========== 
+|      M       |    S2   | 
+|              |========== 
+|              |    S3   | 
+========================== 
+
+Use the following commands to create, close and browse windows: 
+  - CTRL-N Creates a new window and place it in the area [M] & stacks al
+    previous windows in the [S] areas. 
+  - CTRL-C Close the current window if no unsaved changes 
+  - CTRL-J Jumps to next window (clockwise) 
+  - CTRL-K Jumps to previous window (anti-clockwise) 
+  - CTRL-H Focus the current window, that is, place it in the [M] area & stacks
+    all other windows in the [S] areas 
+EOF

@@ -1,0 +1,15 @@
+          MODULE=timelimit
+         VERSION=1.9.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://devel.ringlet.net/files/sys/timelimit/
+      SOURCE_VFY=sha256:6d34e8e0bd06720c6c73d1baff5405f9385d0e675c5d6b1e9b6649cc070308cb
+        WEB_SITE=https://devel.ringlet.net/sysutils/timelimit/
+         ENTERED=20181029
+         UPDATED=20181029
+           SHORT="Limit a process's absolute execution time"
+
+cat << EOF
+imelimit executes a command and terminates the spawned process after a given time
+with a given signal. A “warning” signal is sent first, then, after a timeout, a
+“kill” signal, similar to the way init(8) operates on shutdown.
+EOF

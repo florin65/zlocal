@@ -1,0 +1,9 @@
+depends boost
+depends jemalloc
+depends openexr
+depends intel-tbb
+depends numpy
+depends zlib
+
+optional_depends blosc     "-DOPENDVB_USE_BLOSC=ON"     "" "for blosc compression support"
+optional_depends log4cplus "-DOPENDVB_USE_LOG4CPLUS=ON" "" "for C++ logging support"

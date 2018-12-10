@@ -1,0 +1,14 @@
+          MODULE=vim-indentfinder
+         VERSION=1.4
+          SOURCE=indent_finder-$VERSION.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/indent_finder-$VERSION
+      SOURCE_URL=http://labs.freehackers.org/attachments/download/397/
+      SOURCE_VFY=sha256:f871018e86360fa5c406c9793834d07b92891daeb44b3075178554543a9b1d2c
+        WEB_SITE=http://www.freehackers.org/Indent_Finder
+         ENTERED=20170430
+         UPDATED=20170430
+           SHORT="A Vim plugin to identify the indentation"
+
+cat << EOF
+Set vim's indentation scheme to match a newly opened buffer.
+EOF

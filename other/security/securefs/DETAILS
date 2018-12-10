@@ -1,0 +1,23 @@
+          MODULE=securefs
+         VERSION=0.8.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/netheril96/securefs/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:831c013bb8a5b32e21dca0e2503cf770dcd3c0c4ed9264769d0ab101707829ca
+        WEB_SITE=http://github.com/netheril96/securefs/
+         ENTERED=20160422
+         UPDATED=20180606
+           SHORT="A better transparent encryption filesystem"
+
+cat << EOF
+securefs is a filesystem in userspace (FUSE) that transparently encrypts and
+authenticates data stored. It is particularly designed to secure data stored in
+the cloud.
+securefs mounts a regular directory onto a mount point. The mount point appears
+as a regular filesystem, where one can read/write/create files, directories and
+symbolic links. The underlying directory will be automatically updated to contain
+the encrypted and authenticated contents.
+Compared to TrueCrypt, Apple's encrypted DMG or EncFS, securefs has the following
+advantages:
+  Randomized encryption
+  Authenticated encryption.
+EOF

@@ -1,0 +1,32 @@
+          MODULE=steel
+         VERSION=1.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/nrosvall/steel/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:b6899e621d940a2e2d23e512ddb52734be83df2f4ea4eb7167e307c47135cbc4
+        WEB_SITE=http://www.steelpasswordmanager.org/
+         ENTERED=20160430
+         UPDATED=20160430
+           SHORT="Command line password manager"
+
+cat << EOF
+Steel is a password manager for GNU/Linux and comes with a GUI and a command
+line version. With Steel your passwords are safe. Steel uses AES encryption
+in CFB mode with 256 bit keys. Steel is simple, yet powerful.
+Features:
+  AES in CFB mode with 256 bit keys
+  Uses bcrypt key derivation function with cost factor 12
+  Fast and lightweight, written in C
+  Both graphical and command line user interface
+  Double click to copy password (GUI)
+  Instant search, just start typing (GUI)
+  Integrates with standard Unix tools
+  Output is easy to parse (command line)
+  Automatic clipboard clean up (GUI)
+  Automatic database locking on idle (GUI)
+  Uses SQLite, easy to write data importers from other password managers
+  Backup and restore
+  Verifies data integrity (timing safe)
+  Manage multiple password databases with ease
+  Generate secure passwords
+  Shared library for easy development.
+EOF

@@ -1,0 +1,7 @@
+default_pre_build &&
+
+sedit 's/mktemp/mkstemp/g' sfill.c
+sed -i -e "s/sswap smem sdel-mod.o/sswap smem/" -e '/test.*sdel-mod/d' \
+       -e "s/^srm: /srm: sdel-lib.o /" -e "s/^sfill: /sfill: sdel-lib.o /" \
+       -e "s/^sswap: /sswap: sdel-lib.o /" -e "s/^smem: /smem: sdel-lib.o /" \
+      Makefile

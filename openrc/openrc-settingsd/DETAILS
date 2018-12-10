@@ -1,0 +1,13 @@
+          MODULE=openrc-settingsd
+         VERSION=1.0.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://dev.gentoo.org/~tetromino/distfiles/openrc-settingsd/
+      SOURCE_VFY=sha256:2047267982c716cbc113d76d826f9b694706dbf737273eaaab239f6839d9ade2
+        WEB_SITE=http://www.gentoo.org/proj/en/base/openrc/
+         ENTERED=20171206
+         UPDATED=20171206
+           SHORT="OpenRC eudev startup scripts"
+
+cat << EOF
+OpenRC eudev startup scripts.
+EOF

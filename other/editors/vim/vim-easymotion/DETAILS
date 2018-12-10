@@ -1,0 +1,21 @@
+          MODULE=vim-easymotion
+         VERSION=3.0.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/easymotion/vim-easymotion/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:c1b24de4592212f4c45327b98cca521cd811074475f8352cb2231be8fc61ae44
+        WEB_SITE=https://github.com/easymotion/vim-easymotion
+         ENTERED=20171225
+         UPDATED=20171225
+           SHORT="Vim motions on speed"
+
+cat << EOF
+EasyMotion provides a much simpler way to use some motions in vim. It takes the
+<number> out of <number>w or <number>f{char} by highlighting all possible
+choices and allowing you to press one key to jump directly to the target.
+
+When one of the available motions is triggered, all visible text preceding or
+following the cursor is faded, and motion targets are highlighted.
+
+EasyMotion is triggered by the provided mappings. This readme only covers the
+basics; please refer to :help easymotion.txt to see all the available mappings.
+EOF

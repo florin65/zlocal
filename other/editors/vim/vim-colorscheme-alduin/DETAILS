@@ -1,0 +1,14 @@
+          MODULE=vim-colorscheme-alduin
+         VERSION=5.0.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Alduin-$VERSION
+ SOURCE_URL_FULL=http://github.com/AlessandroYorba/Alduin/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:b5a3483e3f235668b2a0333489c310102113784245cac5b8a029429d7854d80c
+        WEB_SITE=http://github.com/AlessandroYorba/Alduin/
+         ENTERED=20170430
+         UPDATED=20170030
+           SHORT="A Vim colorscheme"
+
+cat << EOF
+A dark low-contrast Vim colorscheme for terminal Vim and GUI Vim.
+EOF

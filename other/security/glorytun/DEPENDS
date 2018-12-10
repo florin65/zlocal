@@ -1,0 +1,5 @@
+depends iproute2
+depends libsodium
+depends meson
+depends pkgconfig
+

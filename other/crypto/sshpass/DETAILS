@@ -1,0 +1,15 @@
+          MODULE=sshpass
+         VERSION=1.05
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/$MODULE/
+      SOURCE_VFY=sha256:c3f78752a68a0c3f62efb3332cceea0c8a1f04f7cf6b46e00ec0c3000bc8483e
+        WEB_SITE=http://sourceforge.net/projects/sshpass/
+         ENTERED=20150617
+         UPDATED=20150617
+           SHORT="Fool ssh into accepting an interactive password non-interactively"
+
+cat << EOF
+Sshpass is a tool for non-interactivly performing password authentication with
+SSH's so called "interactive keyboard password authentication". Most user
+should use SSH's more secure public key authentiaction instead.
+EOF

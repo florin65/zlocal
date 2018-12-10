@@ -1,0 +1,13 @@
+          MODULE=libdom
+         VERSION=0.3.2
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=git://git.netsurf-browser.org/libdom.git
+#      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.netsurf-browser.org/projects/libdom/
+         ENTERED=20150321
+         UPDATED=20171031
+           SHORT="An implementation of the W3C DOM"
+
+cat <<EOF
+LibDOM is an implementation of the W3C DOM, written in C.
+EOF

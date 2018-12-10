@@ -1,0 +1,10 @@
+          MODULE=openrc-rsyslog
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20180114
+         UPDATED=20180114
+           SHORT="OpenRC rsyslog init script"
+
+cat << EOF
+OpenRC rsyslog init script.
+EOF

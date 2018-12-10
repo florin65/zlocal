@@ -1,0 +1,15 @@
+          MODULE=vim-pathogen
+         VERSION=2.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/tpope/vim-pathogen/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:2551a0f4ac3681cba97c265af088460c2977fba9c5152afb4ce1b56fdf3195a8
+        WEB_SITE=http://github.com/tpope/vim-pathogen/
+         ENTERED=20170430
+         UPDATED=20170430
+           SHORT="A Vim plugin for managing your runtimepath"
+
+cat << EOF
+Manage your 'runtimepath' with ease. In practical terms, pathogen.vim
+makes it super easy to install plugins and runtime files in their own
+private directories.
+EOF

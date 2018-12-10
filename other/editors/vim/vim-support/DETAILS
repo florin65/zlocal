@@ -1,0 +1,15 @@
+          MODULE=vim-support
+         VERSION=2.3
+          SOURCE=$MODULE-$VERSION.zip
+ SOURCE_URL_FULL=http://www.vim.org/scripts/download_script.php?src_id=22356
+      SOURCE_VFY=sha256:c3aee4b733fb9e26e3839a8247342319a39a1abc7c9b976a2d7455b9106fc72b
+        WEB_SITE=http://vim.org/scripts/script.php?script_id=3931
+         ENTERED=20160426
+         UPDATED=20160426
+           SHORT="A vim script IDE with hotkeys and snippets"
+
+cat << EOF
+Vim-Support implements a Vim Script-IDE for Vim/gVim. It has been written
+to considerably speed up writing code in a consistent style. This is done
+by inserting complete statements, comments, idioms, and code snippets.
+EOF

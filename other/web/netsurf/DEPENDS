@@ -1,0 +1,17 @@
+depends curl
+depends gtk+-3
+depends lcms
+depends desktop-file-utils
+depends HTML-Parser
+depends inetutils
+depends libmng
+depends librsvg
+depends ImageMagick
+depends libnsbmp
+depends libnsgif
+depends libnsutils
+depends libcss
+depends libdom
+depends duktape
+
+optional_depends libwebp "" "" "for webp support"

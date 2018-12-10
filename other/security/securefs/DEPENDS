@@ -1,0 +1,5 @@
+depends cmake
+depends fuse
+
+# it uses a internal copy in external dir
+# depends cryptopp

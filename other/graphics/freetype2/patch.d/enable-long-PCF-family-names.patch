@@ -1,0 +1,23 @@
+From 62da6a0f7f5cb77859a793863c386c452411e2a6 Mon Sep 17 00:00:00 2001
+From: "Jan Alexander Steffens (heftig)" <jan.steffens@gmail.com>
+Date: Sun, 14 May 2017 18:09:31 +0200
+Subject: [PATCH 4/4] Enable long PCF family names
+
+---
+ include/freetype/config/ftoption.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- ./include/freetype/config/ftoption.h
++++ ./include/freetype/config/ftoption.h
+@@ -849,7 +849,7 @@ FT_BEGIN_HEADER
+   /* If this option is activated, it can be controlled with the            */
+   /* `no-long-family-names' property of the pcf driver module.             */
+   /*                                                                       */
+-/* #define PCF_CONFIG_OPTION_LONG_FAMILY_NAMES */
++#define PCF_CONFIG_OPTION_LONG_FAMILY_NAMES
+ 
+ 
+   /*************************************************************************/
+-- 
+2.13.0
+

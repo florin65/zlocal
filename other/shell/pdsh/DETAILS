@@ -1,0 +1,15 @@
+          MODULE=pdsh
+         VERSION=2.33
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://github.com/chaos/pdsh/releases/download/pdsh-$VERSION/
+      SOURCE_VFY=sha256:7368087429d6269f0a6313c406ef38c6a6a947bc003ca7368fc6481b139d942f
+        WEB_SITE=https://github.com/chaos/pdsh/
+         ENTERED=20181013
+         UPDATED=20181013
+           SHORT="Parallel Distributed Shell"
+
+cat << EOF
+Pdsh is a multithreaded remote shell client which executes commands on multiple
+remote hosts in parallel. Pdsh can use several different remote shell services,
+including standard "rsh", Kerberos IV, and ssh.
+EOF

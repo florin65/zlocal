@@ -1,0 +1,20 @@
+           MODULE=ex-vi
+          VERSION=4.1.3
+           SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/heirloom-$MODULE-$VERSION
+ SOURCE_URL_FULL=http://github.com/n-t-roff/heirloom-ex-vi/archive/$VERSION.tar.gz
+       SOURCE_VFY=sha256:7d3d38f94ce651b9521c0db2b824f85f2e587afab23951b51484f8f21d3614f3
+         WEB_SITE=http://github.com/n-t-roff/heirloom-ex-vi/
+          ENTERED=20030625
+          UPDATED=20180604
+            SHORT="The traditional vi"
+
+cat << EOF
+The vi editor is one of the most common text editors on Unix. It was developed
+starting around 1976 by Bill Joy at UCB, who was tired of the ed editor.
+Compared to most of its many clones, the original vi is a rather small program
+(~120 KB code on i386) just with its extremely powerful editing interface, but
+lacking fancy features like multiple undo, multiple screens or syntax
+highlighting. In other words, it is a typical Unix program that does exactly
+what it should and nothing more.
+EOF

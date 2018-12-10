@@ -1,0 +1,11 @@
+default_pre_build &&
+
+sedit "s:prefix?=/opt/diet:prefix=/opt/lunar/diet:" Makefile &&
+
+# save some space - adjust if required
+sedit '/#define WANT_IPV6_DNS/d' dietfeatures.h
+sedit '/#define WANT_PLUGPLAY_DNS/d' dietfeatures.h
+sedit '/#define WANT_VALGRIND_SUPPORT/d' dietfeatures.h
+sedit '/#define WANT_FULL_RESOLV_CONF/d' dietfeatures.h
+sedit '/#define WANT_LD_SO_GDB_SUPPORT/d' dietfeatures.h
+sedit '/#define WANT_HIGH_PRECISION_MATH/d' dietfeatures.h

@@ -1,0 +1,15 @@
+          MODULE=glorytun
+         VERSION=0.0.93-mud
+          SOURCE=$MODULE-$VERSION.tar.gz
+         SOURCE2=mud.tar.gz
+ SOURCE_URL_FULL=https://github.com/angt/glorytun/archive/v$VERSION.tar.gz
+     SOURCE2_URL=git+https://github.com/angt/mud
+      SOURCE_VFY=sha256:9145b6532456dc821499485d8e9d498c9c1a5377c403cde2ac24d8dbebcb44cc
+        WEB_SITE=https://github.com/angt/glorytun
+         ENTERED=20171229
+         UPDATED=20171229
+           SHORT="A small, simple and secure VPN"
+
+cat << EOF
+Small, Simple and Stupid VPN over mud.
+EOF

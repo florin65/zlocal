@@ -1,0 +1,4 @@
+depends Linux-PAM
+depends opentmpfiles
+
+optional_depends net-tools "" "" "for network service support"

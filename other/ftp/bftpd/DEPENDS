@@ -1,0 +1,3 @@
+depends zlib
+
+optional_depends Linux-PAM "--enable-pam" "--disble-pam" "for PAM auth support"

@@ -1,0 +1,15 @@
+          MODULE=vim-singlecompile
+         VERSION=2.12.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/SingleCompile-$VERSION
+ SOURCE_URL_FULL=http://github.com/xuhdev/SingleCompile/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:7f4c6191ab1ec9de4a0e0402e47da2cfb739ca856003aee7a604cae2266299d2
+        WEB_SITE=http://singlecompile.topbug.net/
+         ENTERED=20160430
+         UPDATED=20160430
+           SHORT="Compile or run a single source file without leaving vim"
+
+cat << EOF
+SingleCompile is a Vim plugin aimed at making it more convenient to compile or
+run a single source file without leaving Vim.
+EOF

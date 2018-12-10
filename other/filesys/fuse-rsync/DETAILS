@@ -1,0 +1,13 @@
+          MODULE=fuse-rsync
+         VERSION=
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=git+http://github.com/zaddach/fuse-rsync
+#      SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/zaddach/fuse-rsync/
+         ENTERED=20170308
+         UPDATED=20170308
+           SHORT="A FUSE filesystem that lets you mount remote rsync modules"
+
+cat << EOF
+A FUSE filesystem that lets you mount remote rsync modules.
+EOF

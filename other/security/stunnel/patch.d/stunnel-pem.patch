@@ -1,0 +1,11 @@
+--- ./tools/Makefile.in.orig	2017-11-12 15:39:10.896505621 +0200
++++ ./tools/Makefile.in 		2017-11-12 15:39:41.056506962 +0200
+@@ -544,7 +544,7 @@
+ 
+ cert:
+ 	$(srcdir)/makecert.sh $(srcdir) $(SSLDIR) $(RANDOM_FILE)
+-	${INSTALL} -b -m 600 stunnel.pem $(DESTDIR)$(confdir)/stunnel.pem
++	${INSTALL} -b -m 600 stunnel.pem /etc/ssl/stunnel.pem
+ 	rm -f stunnel.pem
+ 
+ stunnel.conf-sample stunnel.init stunnel.service: Makefile

@@ -1,0 +1,13 @@
+          MODULE=openrc-dbus
+         VERSION=20171115
+          SOURCE=dbus.initd
+ SOURCE_URL_FULL=https://gitweb.gentoo.org/repo/gentoo.git/plain/sys-apps/dbus/files/dbus.initd-r1
+      SOURCE_VFY=sha256:00a1a8f254d4f40b6f98a2777809b9c45ad81c4aeb4c0592793dd839777990bd
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20171115
+         UPDATED=20171115
+           SHORT="OpenRC dbus init script"
+
+cat << EOF
+OpenRC dbus init script.
+EOF

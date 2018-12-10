@@ -1,0 +1,13 @@
+          MODULE=vim-salt
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=git+https://github.com/saltstack/salt-vim/
+#      SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/saltstack/salt-vim/
+         ENTERED=20160427
+         UPDATED=20160427
+           SHORT="Vim files for editing Salt files"
+
+cat << EOF
+Vim files for editing Salt files.
+EOF

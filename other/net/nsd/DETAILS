@@ -1,0 +1,14 @@
+          MODULE=nsd
+         VERSION=4.1.13
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.nlnetlabs.nl/downloads/$MODULE/
+      SOURCE_VFY=sha256:c45cd4ba2101a027e133b2be44db9378e27602e05f09a5ef25019e1ae45291af
+        WEB_SITE=http://www.nlnetlabs.nl/nsd/
+         ENTERED=20160422
+         UPDATED=20160929
+           SHORT="Authoritative only, high performance and simple DNS server"
+
+cat << EOF
+NSD is an authoritative only, high performance, simple and open source
+name server.
+EOF

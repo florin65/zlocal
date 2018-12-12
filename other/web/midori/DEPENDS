@@ -1,0 +1,19 @@
+depends cmake
+depends ninja
+depends libpeas
+depends libxml2
+depends libsoup
+depends libXScreenSaver
+depends vala
+depends intltool
+depends webkitgtk3
+
+optional_depends zeitgeist \
+                 "-D USE_ZEITGEIST=1" \
+                 "-D USE_ZEITGEIST=0" \
+                 "for zeitgeist support"
+
+#optional_depends gtk-doc \
+#                  "-D USE_APIDOCS=1" \
+#                  "-D USE_APIDOCS=0" \
+#                  "build API documentation"

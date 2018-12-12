@@ -1,0 +1,19 @@
+          MODULE=xfce4-windowck-plugin
+         VERSION=0.4.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/cedl38/xfce4-windowck-plugin/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:7c20e2af27e6f0406dd0598c0282a9ed73c5e83a178f7f79bb577482f4b5b091
+        WEB_SITE=http://www.xfce.org
+         ENTERED=20180823
+         UPDATED=20180823
+           SHORT="Xfce panel plugin which allows to put the maximized window title on the panel"
+
+cat << EOF
+fce panel plugin which allows to put the maximized window title and windows buttons on the panel.
+It's main features are:
+ - Show the title and buttons of the maximized window on the panel.
+ - Allow window actions on buttons and title clicks (activate, (un)maximize, close).
+ - Allow window action menu on left button click.
+ - Title formatting options.
+ - xfwm4/unity theming support for buttons.
+EOF

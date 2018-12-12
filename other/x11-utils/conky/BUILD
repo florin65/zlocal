@@ -11,7 +11,7 @@ OPTS+=" -D DEFAULTNETDEV=wlp3s0"
 OPTS+=" -D BUILD_PORT_MONITORS=OFF"
 
 if module_installed systemd; then
-  OPTS+=" -D BUILD_JOURNAL=ON"
+   OPTS+=" -D BUILD_JOURNAL=ON"
 fi &&
 
 default_cmake_build &&

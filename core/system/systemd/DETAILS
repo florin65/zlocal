@@ -1,0 +1,23 @@
+          MODULE=systemd
+         VERSION=234
+          SOURCE=$MODULE-$VERSION.tar.gz
+         SOURCE2=systemd-234-various-fixes.patch
+ SOURCE_URL_FULL=https://github.com/systemd/systemd/archive/v$VERSION.tar.gz
+     SOURCE2_URL=$PATCH_URL
+      SOURCE_VFY=sha256:da3e69d10aa1c983d33833372ad4929037b411ac421fb085c8cee79ae1d80b6a
+     SOURCE2_VFY=sha256:67bd9725e6efb3d695a53069db4765e54a1535a9f17d8d565eb7afed3ff61825
+        WEB_SITE=http://www.freedesktop.org/wiki/Software/systemd
+         ENTERED=20100919
+         UPDATED=20170903
+           SHORT="A system and program management daemon"
+
+cat << EOF
+systemd is a system and session manager for Linux, compatible with SysV
+and LSB init scripts. systemd provides aggressive parallelization
+capabilities, uses socket and D-Bus activation for starting services,
+offers on-demand starting of daemons, keeps track of processes using
+Linux cgroups, supports snapshotting and restoring of the system state,
+maintains mount and automount points and implements an elaborate
+transactional dependency-based service control logic.
+It can work as a drop-in replacement for sysvinit.
+EOF

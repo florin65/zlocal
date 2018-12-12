@@ -1,0 +1,14 @@
+          MODULE=xf86-input-libinput
+         VERSION=0.28.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$XORG_URL/individual/driver/
+      SOURCE_VFY=sha256:9ada448e076c0078a84b48e5298fa8ce317565f9b342b74c20429214a707d98b
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://www.x.org
+         ENTERED=20150901
+         UPDATED=20181017
+           SHORT="Generic input driver based on libinput"
+
+cat << EOF
+Generic input driver for the X.Org server based on libinput.
+EOF

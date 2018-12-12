@@ -1,0 +1,14 @@
+          MODULE=courier-authlib
+         VERSION=0.69.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/courier/authlib/$VERSION/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.courier-mta.org/authlib
+         ENTERED=20020629
+         UPDATED=20180919
+           SHORT="Courier authentication library"
+
+cat << EOF
+The Courier authentication library provides authentication services for other
+Courier applications.
+EOF

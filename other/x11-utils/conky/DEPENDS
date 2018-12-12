@@ -33,6 +33,3 @@ optional_depends imlib2 "-D BUILD_IMLIB2=ON -D BUILD_LUA_IMLIB2=ON" \
                         "" "for images display support"
 
 optional_depends toluapp "" "" "for embeded Lua suport - needed for Cairo graphics"
-
-# To be added
-#optional_depends libxnvctrl "-D BUILD_NVIDIA=ON" "" "for NVIDIA support"

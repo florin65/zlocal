@@ -1,0 +1,23 @@
+          MODULE=create-headers
+         KERNVER=4.19
+        PATCHVER=8
+         VERSION=$KERNVER.$PATCHVER
+          SOURCE=linux-$KERNVER.tar.xz
+         SOURCE2=patch-$VERSION.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/linux-$KERNVER
+   SOURCE_URL[0]=$KERNEL_URL/pub/linux/kernel/v4.x/
+   SOURCE_URL[1]=http://www.kernel.org/pub/linux/kernel/v4.x/
+  SOURCE2_URL[0]=$KERNEL_URL/pub/linux/kernel/v4.x/
+  SOURCE2_URL[1]=http://www.kernel.org/pub/linux/kernel/v4.x/
+      SOURCE_VFY=sha256:0c68f5655528aed4f99dae71a5b259edc93239fa899e2df79c055275c21749a1
+     SOURCE2_VFY=sha256:03628355b0ac320421af20a3f09274214c078d3b6075ba5fd8024f1f178d0e7a
+        WEB_SITE=http://www.lunar-linux.org/
+         ENTERED=20100711
+         UPDATED=20181209
+           SHORT="Creates the latest kernel headers package"
+
+cat << EOF
+Lunar Linux module to create the kernel headers package for userspace. You
+should only use this module after a major kernel version bump and glibc is at
+an appropriate level.
+EOF

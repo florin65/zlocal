@@ -1,0 +1,20 @@
+          MODULE=bash_static
+         VERSION=4.4
+        PATCHLVL=023
+          SOURCE=bash-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/bash-$VERSION
+   SOURCE_URL[0]=$GNU_URL/$MODULE
+   SOURCE_URL[1]=ftp://ftp.gnu.org/pub/gnu/$MODULE
+   SOURCE_URL[2]=ftp://ftp.cwru.edu/pub/$MODULE
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://tiswww.case.edu/php/chet/bash_static/bashtop.html
+         ENTERED=20020615
+         UPDATED=20180606
+           SHORT="static bash build for rescue purposes"
+
+cat << EOF
+bash_static is the same as bash (Bourne Again SHell) -- just a static build of
+it so one can use it as a rescue shell without relying on any shared libraries.
+It will be located at /usr/bin/bash_static. You can call it with
+  $ bash_static
+EOF

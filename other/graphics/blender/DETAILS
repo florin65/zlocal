@@ -1,0 +1,14 @@
+          MODULE=blender
+         VERSION=2.79a
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://download.blender.org/source/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.blender.org
+         ENTERED=20030929
+         UPDATED=20180228
+           SHORT="3D editor for modeling, animation, and rendering"
+
+cat << EOF
+3D tool does everything from modeling, animation, rendering, and
+post-production to interactive creation and playback.
+EOF

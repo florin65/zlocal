@@ -1,0 +1,14 @@
+          MODULE=xfce4-datetime-plugin
+         VERSION=0.7.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://archive.xfce.org/src/panel-plugins/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:297f3077f7aee52a237449fbd8595e232267bc600b5b9e7ddc5baab306ed67b9
+        WEB_SITE=http://goodies.xfce.org/projects/panel-plugins/xfce4-datetime-plugin
+         ENTERED=20061124
+         UPDATED=20180819
+           SHORT="date and time in the panel"
+
+cat << EOF
+this plugin shows the date and time in the panel, and a calendar
+appears when you left-click on it.
+EOF

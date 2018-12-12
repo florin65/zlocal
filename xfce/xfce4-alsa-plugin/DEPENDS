@@ -1,0 +1,4 @@
+depends alsa-lib
+depends xfce4-panel
+depends vala
+depends intltool

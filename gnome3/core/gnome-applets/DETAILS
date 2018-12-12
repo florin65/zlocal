@@ -1,0 +1,27 @@
+          MODULE=gnome-applets
+         VERSION=3.30.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:83bc1f401fd4563a14c05593be8eca56c1a6830a1410cf03181c4f83881874b3
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20160218
+         UPDATED=20181006
+           SHORT="Small applications for the GNOME Panel"
+
+cat << EOF
+Gnome Applets currently provides the following applets:
+  Accessibility applet
+  Battery status
+  A symbol table
+  A system monitor for cpu, memory and network usage information
+  A drive mount applet
+  Geyes, a funny applet that shows a pair of eyes which follow the cursor
+  A weather applet
+  A command execution and macro plugin
+  A sound applet (deprecated and replaced by libsound-applet)
+  A model lights plugin for modems
+  A multi load plugin
+  A notes applets
+  A trash applet
+  A window picker applet that shows open applications as icons.
+EOF

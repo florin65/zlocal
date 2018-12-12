@@ -1,0 +1,13 @@
+          MODULE=openbox-theme-mistral
+         VERSION=20150704
+          SOURCE=mistral-$VERSION.7z
+ SOURCE_URL_FULL=http://www.dropbox.com/s/p3q19muy49qjkhs/mistral_openbox_by_phobi4n-d8ztvoc.7z
+      SOURCE_VFY=sha256:b3654fa49876c5d1a073938987e1d25b80c68c152fe0d85fdeab0addca0526b6
+        WEB_SITE=http://phobi4n.deviantart.com/art/Mistral-Openbox-543910044/
+         ENTERED=20160718
+         UPDATED=20160718
+           SHORT="A Breeze style for Openbox"
+
+cat << EOF
+A Breeze style for Openbox.
+EOF

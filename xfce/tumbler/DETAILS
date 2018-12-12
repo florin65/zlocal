@@ -1,0 +1,14 @@
+          MODULE=tumbler
+         VERSION=0.2.3
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://archive.xfce.org/src/xfce/tumbler/${VERSION%.*}
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+      SOURCE_VFY=sha256:d022e1bd1559fba33e4bf20fb053b219eca17676ebffb1ceb214fcd58a187d40
+        WEB_SITE=http://xfce.org
+         ENTERED=20110418
+         UPDATED=20180914
+           SHORT="XFCE thumbnailer"
+
+cat <<EOF
+XFCE thumbnailer service over D-Bus.
+EOF

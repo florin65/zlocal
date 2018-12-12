@@ -1,0 +1,16 @@
+depends cairo
+depends libpciaccess
+depends util-macros
+depends libxslt
+depends %UDEV
+depends meson
+
+optional_depends valgrind \
+                 "-D valgrind=true" \
+                 "-D valgrind=false" \
+                 "for valgrind support" n
+
+optional_depends docbook-xsl \
+                 "-D man-pages=true" \
+                 "-D man-pages=false" \
+                 "for man pages install" n

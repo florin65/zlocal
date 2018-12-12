@@ -1,0 +1,14 @@
+          MODULE=appstream-glib
+         VERSION=0.7.4
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://people.freedesktop.org/~hughsient/$MODULE/releases/
+      SOURCE_VFY=sha256:a09d0c0e892f7c142ddaf4dc40c3391f5211beff77307734576fe46911a6c825
+        WEB_SITE=https://github.com/hughsie/appdata-ools/
+         ENTERED=20140413
+         UPDATED=20180316
+          SHORT="A library to read/write AppStream metadata"
+
+cat << EOF
+Provides GObjects and helper methods to make it easy to read and write
+AppStream metadata.
+EOF

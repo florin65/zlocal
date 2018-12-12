@@ -1,0 +1,14 @@
+          MODULE=refind
+         VERSION=0.11.4
+          SOURCE=$MODULE-src-$VERSION.tar.gz
+      SOURCE_URL=http://download.lunar-linux.org/lunar/mirrors/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+      SOURCE_VFY=sha256:39baf140603951da098238c1cbf4176fdd7d4a45fab0399e9985ad7368034dae
+        WEB_SITE="http://www.rodsbooks.com/refind/"
+         ENTERED=20181208
+         UPDATED=20181208
+           SHORT="EFI Boot Manager"
+PSAFE=no
+cat <<EOF
+A fork of the rEFIt boot manager
+EOF

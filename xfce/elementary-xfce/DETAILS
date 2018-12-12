@@ -1,0 +1,14 @@
+          MODULE=elementary-xfce
+         VERSION=0.13.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/shimmerproject/elementary-xfce/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:b46402629660908ec1e266b41186ee0e8662bd3a6b537e3ca5c66e5074136c11
+        WEB_SITE=https://github.com/shimmerproject/elementary-xfce/
+         ENTERED=20180915
+         UPDATED=20180926
+           SHORT="Elementary icons forked, extended and maintained for Xfce"
+
+cat << EOF
+This is an icon-theme forked from the upstream elementsry project and
+maintained with Xfce in mind.
+EOF

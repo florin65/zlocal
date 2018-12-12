@@ -1,0 +1,13 @@
+          MODULE=gvfs
+         VERSION=1.38.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION:0:4}/
+      SOURCE_VFY=sha256:ed136a842c996d25c835da405c4775c77106b46470e75bdc242bdd59ec0d61a0
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20080312
+         UPDATED=20180925
+           SHORT="Replacement for Gnome-VFS"
+
+cat << EOF
+GVFS is designed to supercede Gnome-VFS.
+EOF

@@ -1,0 +1,13 @@
+          MODULE=archive mount
+         VERSION=0.8.7
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.cybernoia.de/software/archivemount/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.cybernoia.de/software/archivemount/
+         ENTERED=20160709
+         UPDATED=20160709
+           SHORT="FUSE filesystem using libarchive"
+
+cat << EOF
+FUSE filesystem using libarchive.
+EOF

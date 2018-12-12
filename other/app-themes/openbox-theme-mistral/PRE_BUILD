@@ -1,0 +1,5 @@
+mkdir -p $SOURCE_DIRECTORY &&
+cd $SOURCE_DIRECTORY &&
+
+# Decompressing the file
+7z x -y $SOURCE_CACHE/$SOURCE

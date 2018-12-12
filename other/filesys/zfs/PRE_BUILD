@@ -1,0 +1,4 @@
+default_pre_build &&
+
+sedit "s:/bin/cp:/usr/bin/cp:" module/Makefile.in &&
+sedit "s:/sbin:/bin:" etc/systemd/system/zfs-import-{cache,scan}.service.in

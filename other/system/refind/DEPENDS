@@ -1,0 +1,3 @@
+depends gnu-efi
+depends efibootmgr
+depends dosfstools

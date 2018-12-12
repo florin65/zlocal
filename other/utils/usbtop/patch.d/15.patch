@@ -1,0 +1,159 @@
+From fc1ae4d80ba46d510689973b9d0ac3f274d37809 Mon Sep 17 00:00:00 2001
+From: Jan Beich <jbeich@FreeBSD.org>
+Date: Tue, 17 Apr 2018 04:03:57 +0000
+Subject: [PATCH 1/4] Properly specify path to Boost headers
+
+In file included from src/usb_stats.cpp:31:
+include/usbtop/usb_stats.h:37:10: fatal error: 'boost/circular_buffer.hpp' file not found
+#include <boost/circular_buffer.hpp>
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+---
+ src/CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index 8c22423..afd48b5 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -1,4 +1,4 @@
+-include_directories(${BOOST_INCLUDEDIR} ${PCAP_INCLUDE_DIRS})
++include_directories(${Boost_INCLUDE_DIRS} ${PCAP_INCLUDE_DIRS})
+ add_definitions("-std=c++0x -Wall -D_GNU_SOURCE -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64")
+ 
+ IF(CMAKE_BUILD_TYPE MATCHES "[Dd][Ee][Bb][Uu][Gg]")
+
+From d5eca7df4dd380b3a393e4f35b718bfe7846b641 Mon Sep 17 00:00:00 2001
+From: Jan Beich <jbeich@FreeBSD.org>
+Date: Tue, 17 Apr 2018 04:08:36 +0000
+Subject: [PATCH 2/4] Explicitly link against libpthread on Unix
+
+/usr/bin/ld: error: undefined symbol: pthread_condattr_init
+>>> referenced by main.cpp
+>>>               src/CMakeFiles/usbtop.dir/main.cpp.o:(boost::condition_variable::condition_variable())
+
+/usr/bin/ld: error: undefined symbol: pthread_condattr_setclock
+>>> referenced by main.cpp
+>>>               src/CMakeFiles/usbtop.dir/main.cpp.o:(boost::condition_variable::condition_variable())
+
+/usr/bin/ld: error: undefined symbol: pthread_condattr_destroy
+>>> referenced by main.cpp
+>>>               src/CMakeFiles/usbtop.dir/main.cpp.o:(boost::condition_variable::condition_variable())
+
+/usr/bin/ld: error: undefined symbol: pthread_condattr_init
+>>> referenced by usb_stats.cpp
+>>>               src/CMakeFiles/usbtop.dir/usb_stats.cpp.o:(boost::condition_variable::condition_variable())
+
+/usr/bin/ld: error: undefined symbol: pthread_condattr_setclock
+>>> referenced by usb_stats.cpp
+>>>               src/CMakeFiles/usbtop.dir/usb_stats.cpp.o:(boost::condition_variable::condition_variable())
+
+/usr/bin/ld: error: undefined symbol: pthread_condattr_destroy
+>>> referenced by usb_stats.cpp
+>>>               src/CMakeFiles/usbtop.dir/usb_stats.cpp.o:(boost::condition_variable::condition_variable())
+---
+ src/CMakeLists.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index afd48b5..5280e23 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -21,5 +21,9 @@ usb_stats.cpp
+ 
+ add_executable(usbtop ${SRC_FILES})
+ target_link_libraries(usbtop ${PCAP_LIBRARIES} ${Boost_LIBRARIES})
++if(UNIX AND NOT APPLE)
++	# Boost.Thread 1.67+ headers reference pthread_condattr_*
++	target_link_libraries(usbtop pthread)
++endif()
+ 
+ install(TARGETS usbtop DESTINATION sbin)
+
+From 12f97d9ed01f07baa730beeb42b495c21ff31752 Mon Sep 17 00:00:00 2001
+From: Jan Beich <jbeich@FreeBSD.org>
+Date: Tue, 17 Apr 2018 03:51:54 +0000
+Subject: [PATCH 3/4] Switch to Boost imported targets
+
+---
+ CMakeLists.txt     | 2 +-
+ src/CMakeLists.txt | 8 ++------
+ 2 files changed, 3 insertions(+), 7 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 84b164a..644b9cd 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -12,7 +12,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake)
+ find_package(PCAP REQUIRED)
+ 
+ # Boost thread
+-find_package(Boost COMPONENTS thread system)
++find_package(Boost REQUIRED COMPONENTS thread)
+ 
+ ##
+ 
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index 5280e23..898d4c6 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -1,4 +1,4 @@
+-include_directories(${Boost_INCLUDE_DIRS} ${PCAP_INCLUDE_DIRS})
++include_directories(${PCAP_INCLUDE_DIRS})
+ add_definitions("-std=c++0x -Wall -D_GNU_SOURCE -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64")
+ 
+ IF(CMAKE_BUILD_TYPE MATCHES "[Dd][Ee][Bb][Uu][Gg]")
+@@ -20,10 +20,6 @@ usb_stats.cpp
+ )
+ 
+ add_executable(usbtop ${SRC_FILES})
+-target_link_libraries(usbtop ${PCAP_LIBRARIES} ${Boost_LIBRARIES})
+-if(UNIX AND NOT APPLE)
+-	# Boost.Thread 1.67+ headers reference pthread_condattr_*
+-	target_link_libraries(usbtop pthread)
+-endif()
++target_link_libraries(usbtop ${PCAP_LIBRARIES} Boost::thread)
+ 
+ install(TARGETS usbtop DESTINATION sbin)
+
+From ab4c2db024d58bfc9355b620fb557e23418a587b Mon Sep 17 00:00:00 2001
+From: Jan Beich <jbeich@FreeBSD.org>
+Date: Mon, 22 Oct 2018 11:06:45 +0000
+Subject: [PATCH 4/4] Explicitly include boost::noncopyable
+
+In file included from src/buses.cpp:37:
+In file included from include/usbtop/buses.h:34:
+In file included from include/usbtop/usb_bus.h:34:
+In file included from include/usbtop/usb_device.h:35:
+include/usbtop/usb_stats.h:44:21: error: expected class name
+class Stats: boost::noncopyable
+                    ^
+include/usbtop/usb_stats.h:84:24: error: expected class name
+class UsbStats: boost::noncopyable
+                       ^
+In file included from src/buses.cpp:37:
+In file included from include/usbtop/buses.h:34:
+In file included from include/usbtop/usb_bus.h:34:
+include/usbtop/usb_device.h:41:25: error: expected class name
+class UsbDevice: boost::noncopyable
+                        ^
+In file included from src/buses.cpp:37:
+In file included from include/usbtop/buses.h:34:
+include/usbtop/usb_bus.h:45:22: error: expected class name
+class UsbBus: boost::noncopyable
+                     ^
+---
+ include/usbtop/usb_stats.h | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/include/usbtop/usb_stats.h b/include/usbtop/usb_stats.h
+index 0e87399..9e7fc19 100644
+--- a/include/usbtop/usb_stats.h
++++ b/include/usbtop/usb_stats.h
+@@ -35,6 +35,7 @@
+ #include <cstddef>
+ 
+ #include <boost/circular_buffer.hpp>
++#include <boost/noncopyable.hpp>
+ #include <boost/thread/shared_mutex.hpp>
+ 
+ #define LIVE_SAMPLE_COUNT 128

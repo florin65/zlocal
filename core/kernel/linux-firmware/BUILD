@@ -1,8 +1,8 @@
 prepare_install &&
 
 mkdir -p /usr/lib/firmware &&
-cp -av * /usr/lib/firmware &&
+cp -avR * /usr/lib/firmware &&
 
-rm -f /usr/lib/firmware/{GPL*,LICEN*,WHENCE} &&
+rm -fR /usr/lib/firmware/{GPL*,LICEN*,WHENCE, old-libraries} &&
 
 gather_docs GPL* LICEN* WHENCE

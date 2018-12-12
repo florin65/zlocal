@@ -1,0 +1,4 @@
+mquery USE_75DPI  "Install 75 dpi fonts?"   n "" ""
+mquery USE_TYPE1  "Install type1 fonts?"    n "" ""
+mquery USE_MISC   "Install misc font(s)?"   n "" ""
+mquery USE_SPEEDO "Install speedo font(s)?" n "" ""

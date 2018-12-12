@@ -1,0 +1,42 @@
+depends mkfontdir
+depends font-alias
+
+depends font-bh-ttf
+
+depends font-adobe-100dpi
+depends font-adobe-utopia-100dpi
+depends font-bh-100dpi
+depends font-bh-lucidatypewriter-100dpi
+depends font-bitstream-100dpi
+
+if [ "$USE_75DPI" == "y" ]; then
+  depends font-adobe-75dpi
+  depends font-adobe-utopia-75dpi
+  depends font-bh-75dpi
+  depends font-bh-lucidatypewriter-75dpi
+  depends font-bitstream-75dpi
+else
+  echo "Skip 75 dpi fonts"
+fi
+
+if [ "$USE_TYPE1" == "y" ]; then
+  depends font-adobe-utopia-type1
+  depends font-bh-type1
+  depends font-bitstream-type1
+  depends font-xfree86-type1
+else
+  echo "Skip type1 fonts"
+fi
+
+if [ "$USE_MISC" == "y" ]; then
+  depends font-cursor-misc
+  depends font-misc-misc
+else
+  echo "Skip misc font(s)"
+fi
+
+if [ "$USE_SPEEDO" == "y" ]; then
+  depends font-bitstream-speedo
+else
+  echo "Skip speedo font(s)"
+fi

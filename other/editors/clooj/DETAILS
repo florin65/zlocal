@@ -1,0 +1,13 @@
+          MODULE=clooj
+         VERSION=0.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=git+http://github.com/arthuredelstein/clooj.git
+#      SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/arthuredelstein/clooj/
+         ENTERED=20150715
+         UPDATED=20150715
+           SHORT="An editor for clojure"
+
+cat <<EOF
+An editor for clojure written in clojure.
+EOF

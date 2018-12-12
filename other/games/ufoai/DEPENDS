@@ -1,0 +1,14 @@
+depends curl
+depends libpng
+depends %JPEG
+depends glu
+depends SDL2_image
+depends SDL2_ttf
+depends SDL2_mixer
+depends libvorbis
+depends zip
+depends zlib
+depends git
+
+# this is no build option, but ufoai might only show a blank screen without this
+optional_depends libtxc_dxtn "" " " "full s3tc (texture compression) support"

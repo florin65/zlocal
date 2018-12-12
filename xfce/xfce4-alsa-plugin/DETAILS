@@ -1,0 +1,13 @@
+          MODULE=xfce4-alsa-plugin
+         VERSION=0.1.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/equeim/xfce4-alsa-plugin/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:2ae44ad8b94d8a889f7c33d251b9e61bc987cdd857fd140124499b0caf3fb643
+        WEB_SITE=http://github.com/equeim/xfce4-alsa-plugin/
+         ENTERED=20160709
+         UPDATED=20180924
+           SHORT="Simple ALSA volume control for xfce4-panel"
+
+cat << EOF
+Simple ALSA volume control for xfce4-panel.
+EOF

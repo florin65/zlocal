@@ -20,7 +20,7 @@ OPTS+=" --sbindir=/usr/bin"
             --enable-attr \
             --enable-modules \
             --enable-vhost-net \
-            $OPTS &&
+            $OPTS
 
 # fix a cpp error
 sedit "s: -c::" pc-bios/{,optionrom/}Makefile

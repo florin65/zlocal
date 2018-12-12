@@ -1,0 +1,15 @@
+          MODULE=gjs
+         VERSION=1.54.2
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:6f2ddbff4557879b1ea8b0ee710d27201c3a5ae12dc19b88238a6eaaa1ad865f
+        WEB_SITE=http://live.gnome.org/Gjs
+         ENTERED=20130210
+         UPDATED=20181023
+           SHORT="Javascript bindings for GNOME"
+
+cat <<EOF
+Gjs is a Javascript bindings for GNOME.
+It's mainly based on Spidermonkey javascript engine and the GObject
+introspection framework.
+EOF

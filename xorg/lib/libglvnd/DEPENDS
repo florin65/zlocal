@@ -1,0 +1,5 @@
+depends python
+depends libXext
+
+#circular depend on mesa
+#depends mesa-lib

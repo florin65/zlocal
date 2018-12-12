@@ -1,0 +1,13 @@
+          MODULE=ephoto
+         VERSION=1.5
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://download.enlightenment.org/rel/apps/$MODULE/
+      SOURCE_VFY=sha256:fed33ae0ff594596d3925687d988e8ea7b629852f81ed611d059a62b974afbe0
+        WEB_SITE=http://enlightenment.org/
+         ENTERED=20170927
+         UPDATED=20180904
+           SHORT="A comprehensive image viewer written using the core EFL"
+
+cat <<EOF
+Ephoto - A comprehensive image viewer written using the core EFL.
+EOF

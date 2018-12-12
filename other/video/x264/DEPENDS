@@ -1,0 +1,4 @@
+depends git
+depends nasm
+
+optional_depends l-smash "" "" "for mp4 support"

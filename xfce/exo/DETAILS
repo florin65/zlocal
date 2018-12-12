@@ -1,0 +1,16 @@
+          MODULE=exo
+         VERSION=0.12.3
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://archive.xfce.org/src/xfce/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.os-cillation.de/en/open-source-projekte/libexo
+         ENTERED=20040930
+         UPDATED=20181016
+           SHORT="The Xfce extension library"
+
+cat << EOF
+libexo is a library for Xfce that contain additional widgets and a framework
+for editable toolbars, light-weight session management support, functions to
+automatically synchronize object properties (GObject Bindings), and several
+miscellaneous utility and helper functions for application developers.
+EOF

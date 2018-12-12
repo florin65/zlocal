@@ -1,3 +1,0 @@
-depends sed
-depends inetutils
-depends go

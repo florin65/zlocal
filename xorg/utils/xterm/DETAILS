@@ -2,7 +2,7 @@
          VERSION=339
           SOURCE=$MODULE-$VERSION.tgz
       SOURCE_URL=ftp://ftp.invisible-island.net/$MODULE
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:65e66bb13336b363c68ae82e077b7e2e48721a79b315c730f35d06b5099d2fce
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://invisible-island.net/xterm
          ENTERED=20060124

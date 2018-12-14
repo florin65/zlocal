@@ -1,0 +1,17 @@
+          MODULE=calibre
+         VERSION=3.35.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+   SOURCE_URL[0]=http://download.calibre-ebook.com/$VERSION
+   SOURCE_URL[1]=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:3f1cb12804de37ea0bbe4119b378ac60fac5e1f0b113d28cca0c3af2252fa1bd
+        WEB_SITE=http://www.calibre-ebook.com
+         ENTERED=20090108
+         UPDATED=20181207
+           SHORT="eBook management"
+
+cat << EOF
+Calibre is a e-book library management application. Calibre is meant to be
+a complete e-library solution and thus includes library management, format
+conversion, news feeds to ebook conversion as well as e-book reader sync
+features.
+EOF

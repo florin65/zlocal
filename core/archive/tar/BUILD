@@ -1,3 +1,3 @@
-export FORCE_UNSAFE_CONFIGURE=1 &&
+export FORCE_UNSAFE_CONFIGURE=1
 
 default_build

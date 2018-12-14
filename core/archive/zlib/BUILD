@@ -1,4 +1,4 @@
-export CFLAGS="$CFLAGS -fPIC" &&
+export CFLAGS="$CFLAGS -fPIC"
 
 # binutils needs static the lib
 ./configure --prefix=/usr &&

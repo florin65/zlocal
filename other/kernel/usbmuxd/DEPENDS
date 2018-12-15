@@ -1,4 +1,0 @@
-depends cmake
-depends %UDEV
-depends libusb
-depends libimobiledevice

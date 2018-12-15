@@ -1,7 +1,13 @@
-diff -urNp old/src/plugins/lanplus/lanplus_crypt_impl.c new/src/plugins/lanplus/lanplus_crypt_impl.c
---- old/src/plugins/lanplus/lanplus_crypt_impl.c	2016-05-28 10:20:20.000000000 +0200
-+++ new/src/plugins/lanplus/lanplus_crypt_impl.c	2017-02-21 10:50:21.634873466 +0100
-@@ -164,10 +164,10 @@ lanplus_encrypt_aes_cbc_128(const uint8_
+Taken from various upstream commits:
+
+https://github.com/ipmitool/ipmitool/commit/b57487e360916ab3eaa50aa6d021c73b6337a4a0
+https://github.com/ipmitool/ipmitool/commit/77fe5635037ebaf411cae46cf5045ca819b5c145
+https://github.com/ipmitool/ipmitool/commit/f004b4b7197fc83e7d47ec8cbcaefffa9a922717
+https://github.com/ipmitool/ipmitool/commit/f004b4b7197fc83e7d47ec8cbcaefffa9a922717
+
+--- ipmitool-1.8.18/src/plugins/lanplus/lanplus_crypt_impl.c
++++ ipmitool-1.8.18/src/plugins/lanplus/lanplus_crypt_impl.c
+@@ -164,11 +164,7 @@
  							uint8_t       * output,
  							uint32_t        * bytes_written)
  {
@@ -9,14 +15,27 @@ diff -urNp old/src/plugins/lanplus/lanplus_crypt_impl.c new/src/plugins/lanplus/
 -	EVP_CIPHER_CTX_init(&ctx);
 -	EVP_EncryptInit_ex(&ctx, EVP_aes_128_cbc(), NULL, key, iv);
 -	EVP_CIPHER_CTX_set_padding(&ctx, 0);
-+	EVP_CIPHER_CTX *ctx = EVP_CIPHER_CTX_new();
+-	
++	EVP_CIPHER_CTX *ctx = NULL;
+ 
+ 	*bytes_written = 0;
+ 
+@@ -182,6 +178,14 @@
+ 		printbuf(input, input_length, "encrypting this data");
+ 	}
+ 
++	ctx = EVP_CIPHER_CTX_new();
++	if (ctx == NULL) {
++		lprintf(LOG_DEBUG, "ERROR: EVP_CIPHER_CTX_new() failed");
++		return;
++	}
 +	EVP_CIPHER_CTX_init(ctx);
 +	EVP_EncryptInit_ex(ctx, EVP_aes_128_cbc(), NULL, key, iv);
 +	EVP_CIPHER_CTX_set_padding(ctx, 0);
- 	
  
- 	*bytes_written = 0;
-@@ -191,7 +191,7 @@ lanplus_encrypt_aes_cbc_128(const uint8_
+ 	/*
+ 	 * The default implementation adds a whole block of padding if the input
+@@ -191,28 +195,28 @@
  	assert((input_length % IPMI_CRYPT_AES_CBC_128_BLOCK_SIZE) == 0);
  
  
@@ -25,26 +44,32 @@ diff -urNp old/src/plugins/lanplus/lanplus_crypt_impl.c new/src/plugins/lanplus/
  	{
  		/* Error */
  		*bytes_written = 0;
-@@ -201,7 +201,7 @@ lanplus_encrypt_aes_cbc_128(const uint8_
+-		return;
+ 	}
+ 	else
  	{
  		uint32_t tmplen;
  
 -		if(!EVP_EncryptFinal_ex(&ctx, output + *bytes_written, (int *)&tmplen))
 +		if(!EVP_EncryptFinal_ex(ctx, output + *bytes_written, (int *)&tmplen))
  		{
++			/* Error */
  			*bytes_written = 0;
- 			return; /* Error */
-@@ -210,7 +210,8 @@ lanplus_encrypt_aes_cbc_128(const uint8_
+-			return; /* Error */
+ 		}
+ 		else
  		{
  			/* Success */
  			*bytes_written += tmplen;
 -			EVP_CIPHER_CTX_cleanup(&ctx);
-+			EVP_CIPHER_CTX_cleanup(ctx);
-+			EVP_CIPHER_CTX_free(ctx);
  		}
  	}
++	/* performs cleanup and free */
++	EVP_CIPHER_CTX_free(ctx);
  }
-@@ -239,10 +240,10 @@ lanplus_decrypt_aes_cbc_128(const uint8_
+ 
+ 
+@@ -239,11 +243,7 @@
  							uint8_t       * output,
  							uint32_t        * bytes_written)
  {
@@ -52,14 +77,34 @@ diff -urNp old/src/plugins/lanplus/lanplus_crypt_impl.c new/src/plugins/lanplus/
 -	EVP_CIPHER_CTX_init(&ctx);
 -	EVP_DecryptInit_ex(&ctx, EVP_aes_128_cbc(), NULL, key, iv);
 -	EVP_CIPHER_CTX_set_padding(&ctx, 0);
-+	EVP_CIPHER_CTX *ctx = EVP_CIPHER_CTX_new();
+-
++	EVP_CIPHER_CTX *ctx = NULL;
+ 
+ 	if (verbose >= 5)
+ 	{
+@@ -252,12 +252,20 @@
+ 		printbuf(input, input_length, "decrypting this data");
+ 	}
+ 
+-
+ 	*bytes_written = 0;
+ 
+ 	if (input_length == 0)
+ 		return;
+ 
++	ctx = EVP_CIPHER_CTX_new();
++	if (ctx == NULL) {
++		lprintf(LOG_DEBUG, "ERROR: EVP_CIPHER_CTX_new() failed");
++		return;
++	}
 +	EVP_CIPHER_CTX_init(ctx);
 +	EVP_DecryptInit_ex(ctx, EVP_aes_128_cbc(), NULL, key, iv);
 +	EVP_CIPHER_CTX_set_padding(ctx, 0);
- 
- 
- 	if (verbose >= 5)
-@@ -266,7 +267,7 @@ lanplus_decrypt_aes_cbc_128(const uint8_
++
+ 	/*
+ 	 * The default implementation adds a whole block of padding if the input
+ 	 * data is perfectly aligned.  We would like to keep that from happening.
+@@ -266,33 +274,33 @@
  	assert((input_length % IPMI_CRYPT_AES_CBC_128_BLOCK_SIZE) == 0);
  
  
@@ -68,22 +113,33 @@ diff -urNp old/src/plugins/lanplus/lanplus_crypt_impl.c new/src/plugins/lanplus/
  	{
  		/* Error */
  		lprintf(LOG_DEBUG, "ERROR: decrypt update failed");
-@@ -277,7 +278,7 @@ lanplus_decrypt_aes_cbc_128(const uint8_
+ 		*bytes_written = 0;
+-		return;
+ 	}
+ 	else
  	{
  		uint32_t tmplen;
  
 -		if (!EVP_DecryptFinal_ex(&ctx, output + *bytes_written, (int *)&tmplen))
 +		if (!EVP_DecryptFinal_ex(ctx, output + *bytes_written, (int *)&tmplen))
  		{
++			/* Error */
  			char buffer[1000];
  			ERR_error_string(ERR_get_error(), buffer);
-@@ -290,7 +291,8 @@ lanplus_decrypt_aes_cbc_128(const uint8_
+ 			lprintf(LOG_DEBUG, "the ERR error %s", buffer);
+ 			lprintf(LOG_DEBUG, "ERROR: decrypt final failed");
+ 			*bytes_written = 0;
+-			return; /* Error */
+ 		}
+ 		else
  		{
  			/* Success */
  			*bytes_written += tmplen;
 -			EVP_CIPHER_CTX_cleanup(&ctx);
-+			EVP_CIPHER_CTX_cleanup(ctx);
-+			EVP_CIPHER_CTX_free(ctx);
  		}
  	}
++	/* performs cleanup and free */
++	EVP_CIPHER_CTX_free(ctx);
  
+ 	if (verbose >= 5)
+ 	{

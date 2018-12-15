@@ -1,4 +1,0 @@
-default_pre_build &&
-
-sedit "/CFLAGS  =/ c\CFLAGS = $CFLAGS" Makefile &&
-sedit "/LDFLAGS =/ c\LDFLAGS = $LDFLAGS" Makefile

@@ -4,5 +4,5 @@ mquery ENABLE_UNIX    "Enable listen on Unix?" y "-D listen_unix=true" "-D liste
 mquery ENABLE_TCP     "Enable listen on TCP?" y "-D listen_tcp=true" "-D listen_tcp=false"
 
 if ; then
-   mquery ENABLE_IPV6    "Enable IPv6?" y "" "-D ipv6=true" "-D ipv6=false"
+  mquery ENABLE_IPV6    "Enable IPv6?" y "" "-D ipv6=true" "-D ipv6=false"
 fi

@@ -8,4 +8,6 @@ fi
 
 default_pre_build &&
 
-cp $SCRIPT_DIRECTORY/xwayland-config.h.meson.in include/
+cp $SCRIPT_DIRECTORY/xwayland-config.h.meson.in include/ &&
+
+autoreconf -vfi

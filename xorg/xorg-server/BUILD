@@ -4,8 +4,6 @@ if [ -h /usr/share/X11/xkb/compiled ]; then
   rm -f /usr/share/X11/xkb/compiled
 fi &&
 
-autoreconf -vfi &&
-
 export CFLAGS=${CFLAGS/-fno-plt}
 export CXXFLAGS=${CXXFLAGS/-fno-plt}
 export LDFLAGS=${LDFLAGS/,-z,now}

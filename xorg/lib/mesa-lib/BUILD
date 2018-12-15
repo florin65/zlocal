@@ -9,12 +9,12 @@ fi
 
 if [[ $VULKAN == y ]]; then
   OPTS+=" -D vulkan-drivers=$(echo $VULKANDRIVER | sed s/\ /,/g)"
-fi &&
+fi
 
 OPTS+=" -D platforms=x11,drm" &&
 if in_depends $MODULE wayland-protocols; then
   OPTS+=",wayland"
-fi &&
+fi
 
 OPTS+=" -D b_lto=false \
         -D b_ndebug=true \

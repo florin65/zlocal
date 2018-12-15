@@ -1,7 +1,7 @@
 mkdir -p build &&
 
 meson build --prefix /usr \
-            -Denable-gtk-doc=true &&
+            -D enable-gtk-doc=true &&
 
 ninja -C build &&
 

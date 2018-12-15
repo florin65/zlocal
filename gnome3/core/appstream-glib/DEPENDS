@@ -8,11 +8,11 @@ depends yaml
 depends meson
 
 optional_depends gtk-doc \
-                 "-Denable-gtk-doc=true" \
-                 "-Denable-gtk-doc=false" \
+                 "-D enable-gtk-doc=true" \
+                 "-D enable-gtk-doc=false" \
                  "for building documentation"
 
 optional_depends gobject-introspection \
-                 "-Denable-introspection=true" \
-                 "-Denable-introspection=false" \
+                 "-D enable-introspection=true" \
+                 "-D enable-introspection=false" \
                  "for object introspection"

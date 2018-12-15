@@ -2,6 +2,6 @@
 
 OPTS+=" --enable-unicode \
         --enable-delayacct \
-        --enable-cgroup" &&
+        --enable-cgroup"
 
 default_build

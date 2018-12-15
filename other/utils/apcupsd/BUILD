@@ -1,13 +1,13 @@
 OPTS+=" --sysconfdir=/etc/$MODULE \
-         --sbindir=/usr/bin" &&
+         --sbindir=/usr/bin"
 
 if [[ "$USE_USB" = "y" ]]; then
   OPTS+=" --with-upstype=usb --with-upscable=usb"
-fi &&
+fi
 
 if [[ "$USE_APC" = "y" ]]; then
   OPTS+=" --with-serial-dev=/dev/usb/hid/hiddev[0-9]"
-fi &&
+fi
 
 default_build &&
 

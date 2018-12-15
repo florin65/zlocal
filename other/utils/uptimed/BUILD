@@ -1,6 +1,4 @@
-./autogen.sh &&
-
-OPTS+=" --sbindir=/usr/bin" &&
+OPTS+=" --sbindir=/usr/bin"
 
 default_build &&
 

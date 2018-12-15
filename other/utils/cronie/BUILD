@@ -4,10 +4,10 @@ automake -a &&
 autoconf    &&
 
 OPTS+=" --exec-prefix=/usr \
-        --enable-anacron   \
-        --with-inotify"   &&
+        --enable-anacron \
+        --with-inotify"
 
-OPTS+=" --sbindir=/usr/bin" &&
+OPTS+=" --sbindir=/usr/bin"
 
 default_build &&
 

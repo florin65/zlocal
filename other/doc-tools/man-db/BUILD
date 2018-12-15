@@ -3,7 +3,7 @@ OPTS+=" --sbindir=/usr/bin \
         --with-db=gdbm \
         --disable-setuid \
         --enable-mandirs=GNU \
-        --with-sections="1 n l 8 3 0 2 5 4 9 6 7"
+        --with-sections='1 n l 8 3 0 2 5 4 9 6 7'"
 
 default_build &&
 

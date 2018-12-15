@@ -1,6 +1,6 @@
-OPTS=" --prefix=/usr --enable-all-features --with-fenced-code --shared" &&
+OPTS=" --prefix=/usr --enable-all-features --with-fenced-code --shared"
 
-./configure.sh $OPTS
+./configure.sh $OPTS &&
 
 make &&
 prepare_install &&

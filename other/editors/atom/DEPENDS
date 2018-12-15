@@ -1,5 +1,0 @@
-depends libxkbfile
-depends npm
-
-optional_depends ctags "" "" "for symbol indexing support"
-optional_depends git   "" "" "for git support"

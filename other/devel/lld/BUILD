@@ -10,7 +10,9 @@ cmake .. -G Ninja \
       -DCMAKE_BUILD_TYPE=Release \
       -DCMAKE_INSTALL_PREFIX=/usr \
       -DBUILD_SHARED_LIBS=ON \
-      $OPTS
+      $OPTS &&
 ninja &&
+
 prepare_install &&
+
 ninja install

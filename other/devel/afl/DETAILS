@@ -2,7 +2,7 @@
          VERSION=2.52b
           SOURCE=$MODULE-$VERSION.tgz
       SOURCE_URL=http://lcamtuf.coredump.cx/$MODULE/releases/
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:43614b4b91c014d39ef086c5cc84ff5f068010c264c2c05bf199df60898ce045
         WEB_SITE=http://lcamtuf.coredump.cx/afl/
          ENTERED=20151005
          UPDATED=20180210

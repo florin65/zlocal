@@ -9,4 +9,3 @@ default_build &&
 mv /usr/bin/sx /usr/bin/sgml2xml &&
 
 rm /usr/lib/lib{grove,sp,spgrove,style}.a
-

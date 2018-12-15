@@ -6,8 +6,6 @@ OPTS+=" --sbindir=/usr/bin"
 
 if ! module_installed systemd; then
    OPTS+=" --with-systemdsystemunitdir=no"
-fi 
-
-./autogen.sh &&
+fi
 
 default_build

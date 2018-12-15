@@ -1,4 +1,4 @@
-OPTS+=" --enable-optimize --prefix=/usr" &&
+OPTS+=" --enable-optimize --prefix=/usr"
 
 # Upstream forgot to bump the version number
 setconf Makefile.in CFG_RELEASE_NUM="$VERSION"

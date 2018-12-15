@@ -2,4 +2,3 @@ depends bison
 depends flex
 depends git
 depends netsurf-buildsystem
-

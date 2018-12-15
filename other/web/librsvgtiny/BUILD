@@ -1,4 +1,4 @@
-CFLAGS="$CFLAGS -Wno-error=unused-but-set-variable" &&
+CFLAGS="$CFLAGS -Wno-error=unused-but-set-variable"
 
 prepare_install &&
 

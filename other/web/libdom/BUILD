@@ -1,4 +1,4 @@
-export CFLAGS="-Wno-error=unused-but-set-variable" &&
+export CFLAGS="-Wno-error=unused-but-set-variable"
 
 prepare_install &&
 

@@ -19,7 +19,7 @@ OPTS=" --datadir=/srv/http              \
        --with-apr=/usr/bin/apr-1-config \
        --with-apr-util=/usr/bin/apu-1-config" &&
 
-OPTS+=" --sbindir=/usr/bin" &&
+OPTS+=" --sbindir=/usr/bin"
 
 cat $SCRIPT_DIRECTORY/lunar.layout >> config.layout &&
 

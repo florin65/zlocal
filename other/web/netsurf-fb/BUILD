@@ -1,4 +1,4 @@
-OPTS+=" PREFIX=/usr TARGET=framebuffer"  &&
+OPTS+=" PREFIX=/usr TARGET=framebuffer"
 
 prepare_install &&
 

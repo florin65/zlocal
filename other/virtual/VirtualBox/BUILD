@@ -21,9 +21,9 @@ fi &&
 
 # Build VirtualBox
 # Disable hardening, so normal users can run it
-OPTS+=" --disable-hardening" &&
+OPTS+=" --disable-hardening"
 
-OPTS+=" --disable-kmods" &&
+OPTS+=" --disable-kmods"
 
 ./configure $OPTS &&
 source ./env.sh &&

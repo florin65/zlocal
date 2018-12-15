@@ -1,4 +1,4 @@
-OPTS+=" --sbindir=/usr/bin" &&
+OPTS+=" --sbindir=/usr/bin"
 
 OPTS+=" --enable-email \
         --enable-fancydm \
@@ -6,7 +6,7 @@ OPTS+=" --enable-email \
         --enable-orig-ip \
         --with-zlib \
         --with-logdir=/var/log/dansguardian \
-        --with-piddir=/var/run/dansguardian" &&
+        --with-piddir=/var/run/dansguardian"
 
 if in_depends $MODULE clamav; then
   DGUSER="clamav:clamav"

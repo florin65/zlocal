@@ -1,4 +1,4 @@
-OPTS+=" PREFIX=/usr TARGET=gtk" &&
+OPTS+=" PREFIX=/usr TARGET=gtk"
 
 prepare_install &&
 

@@ -1,4 +1,4 @@
-CFLAGS="$CFLAGS -fno-strict-aliasing" &&
+CFLAGS="$CFLAGS -fno-strict-aliasing"
 
 prepare_install &&
 

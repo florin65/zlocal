@@ -1,2 +1,0 @@
-mquery WIZ "Build the wizard?" n "-D build_wizard=1" "-D build_wizard=0"
-mquery BUILD_SEARCH "Build external search tools (doxysearch and doxyindexer)" n "-D build_search=1" "-D build_search=0"

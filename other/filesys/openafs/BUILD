@@ -8,13 +8,13 @@ case `arch` in
   *)
     OPTS+=" --with-afs-sysname=`arch`_linux26"
     ;;
-esac &&
+esac
 
 if module_installed Linux-PAM; then
   OPTS+=" --enable-pam"
 else
   OPTS+=" --disable-pam"
-fi &&
+fi
 
 ./configure  --prefix=/usr             \
              --sysconfdir=/etc         \
@@ -63,7 +63,7 @@ fi &&
 install -p -m 755 $SOURCE_CACHE/$SOURCE3 /usr/sbin/killafs &&
 touch /etc/openafs/SuidCells &&
 
-# Default to openafs.org unless custom cell has been chosen 
+# Default to openafs.org unless custom cell has been chosen
 if [ ! -f /etc/openafs/ThisCell ]; then
   echo "${AFSCELL:-openafs.org}" > /etc/openafs/ThisCell &&
   touch /etc/openafs/ThisCell

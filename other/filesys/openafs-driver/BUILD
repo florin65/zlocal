@@ -1,4 +1,4 @@
-OPTS+=" --with-linux-kernel-headers=/usr/src/linux" &&
+OPTS+=" --with-linux-kernel-headers=/usr/src/linux"
 
 case `arch` in
   x86_64)

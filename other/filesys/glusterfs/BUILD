@@ -1,9 +1,9 @@
-OPTS+=" --sbindir=/usr/bin" &&
+OPTS+=" --sbindir=/usr/bin"
 
-OPTS+=" --disable-static --with-mountutildir=/usr/bin" &&
+OPTS+=" --disable-static --with-mountutildir=/usr/bin"
 
 if module_installed systemd; then
   OPTS+=" --with-systemddir=/usr/lib/systemd/system"
-fi &&
+fi
 
 default_build

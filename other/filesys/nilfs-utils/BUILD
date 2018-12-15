@@ -1,4 +1,4 @@
-OPTS+=" --sbindir=/usr/bin -with-libmount" &&
+OPTS+=" --sbindir=/usr/bin -with-libmount"
 
 default_build &&
 

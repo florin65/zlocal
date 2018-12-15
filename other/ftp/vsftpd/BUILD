@@ -1,6 +1,6 @@
 add_priv_user ftp:ftp -d /var/empty -s /bin/false &&
 
-CFLAGS+=" -fPIC" &&
+CFLAGS+=" -fPIC"
 
 echo -e "#ifndef VSF_BUILDDEFS_H\n#define VSF_BUILDDEFS_H" > builddefs.h &&
 echo "#undef VSF_BUILD_TCPWRAPPERS" >> builddefs.h &&

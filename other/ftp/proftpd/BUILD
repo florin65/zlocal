@@ -4,9 +4,9 @@ OPTS+=" --enable-nls \
         --enable-cap \
         --enable-ipv6 \
         --enable-facl \
-        --enable-ctrls" &&
+        --enable-ctrls"
 
-OPTS+=" --sbindir=/usr/bin" &&
+OPTS+=" --sbindir=/usr/bin"
 
 if module_installed systemd; then
   OPTS+=" --localstatedir=/run/proftpd --with-systemd"

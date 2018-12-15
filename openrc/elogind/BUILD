@@ -12,6 +12,6 @@ if module_installed polkit; then
    OPTS+=" -D polkit=true"
 else
    OPTS+=" -D polkit=false"
-fi &&
+fi
 
 default_meson_build

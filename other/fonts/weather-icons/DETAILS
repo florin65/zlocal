@@ -1,0 +1,17 @@
+          MODULE=weather-icons
+         VERSION=2.0.10
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+ SOURCE_URL_FULL=https://github.com/erikflowers/weather-icons/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:51fc93425a61754b34ce298158de28984ad5904e58d42bbfc225704edde20d02
+        WEB_SITE=https://github.com/erikflowers/weather-icons/
+         ENTERED=20181215
+         UPDATED=20181215
+         ARCHIVE=off
+           SHORT="Icon font with 222 weather themed icons"
+
+cat << EOF
+Weather Icons is the only icon font and CSS with 222 weather themed icons,
+ready to be dropped right into Bootstrap, or any project that needs highx
+ quality weather, maritime, and meteorological based icons.
+EOF

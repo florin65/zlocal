@@ -1,5 +1,5 @@
 if ! in_depends $MODULE gtk+-2; then
-   cd server
+  cd server
 fi &&
 
 make &&

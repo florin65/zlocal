@@ -7,12 +7,7 @@ depends libX11
 depends libxcb
 depends libXdmcp
 depends libxklavier
-depends intltool 
-
-optional_depends qt4 \
-                 "--enable-liblightdm-qt" \
-                 "--disable-liblightdm-qt" \
-                 "Enable library for qt4 based greeters"
+depends intltool
 
 optional_depends qt5 \
                  "--enable-liblightdm-qt5" \

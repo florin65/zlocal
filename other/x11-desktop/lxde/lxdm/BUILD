@@ -1,5 +1,5 @@
-cp $SCRIPT_DIRECTORY/Xsession data/Xsession &&
+OPTS+=" --sbindir=/usr/bin"
 
-OPTS+=" --sbindir=/usr/bin" &&
+cp $SCRIPT_DIRECTORY/Xsession data/Xsession &&
 
 default_build

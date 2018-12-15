@@ -1,4 +1,0 @@
-depends openssl
-depends sqlite
-
-optional_depends readline "" "--disable-readline" "for readline support"

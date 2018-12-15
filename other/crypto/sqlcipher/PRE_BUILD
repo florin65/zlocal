@@ -1,5 +1,0 @@
-default_pre_build &&
-
-if !( module_installed tcl); then
-  lin tcl
-fi

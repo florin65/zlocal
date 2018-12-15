@@ -1,13 +1,13 @@
 cd src
 
+OPTS+=" --sbindir=/usr/bin"
+
 ./configure  --build=$BUILD \
              --prefix=/usr \
              --sysconfdir=/etc \
              --localstatedir=/var \
              --mandir=/usr/share/man \
-             $OPTS                  &&
-
-OPTS+=" --sbindir=/usr/bin" &&
+             $OPTS &&
 
 sedit "s/docdir=\/usr\/doc/docdir=\/usr\/share\/doc/" Makefile &&
 make &&

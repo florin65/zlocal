@@ -1,5 +1,3 @@
-autoreconf --install -v &&
-
 OPTS=" --prefix=/usr \
        --sysconfdir=/etc \
        --localstatedir=/var \
@@ -10,7 +8,7 @@ OPTS=" --prefix=/usr \
        --enable-ethernet  \
        --enable-loopback  \
        --enable-threads   \
-       --enable-nmcompat" &&
+       --enable-nmcompat"
 
 OPTS+=" --sbindir=/usr/bin"
 

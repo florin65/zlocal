@@ -3,11 +3,11 @@
 
 OPTS+=" --enable-ntp-signd \
         --disable-static   \
-        --localstatedir=/var/cache" &&
+        --localstatedir=/var/cache"
 
-OPTS+=" --sbindir=/usr/bin" &&
+OPTS+=" --sbindir=/usr/bin"
 
-CPPFLAGS+=" -fPIC" &&
+CPPFLAGS+=" -fPIC"
 
 default_build &&
 

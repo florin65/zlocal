@@ -1,3 +1,3 @@
-OPTS+=" --sbindir=/usr/bin --with-kerneldir" &&
+OPTS+=" --sbindir=/usr/bin --with-kerneldir"
 
 default_build

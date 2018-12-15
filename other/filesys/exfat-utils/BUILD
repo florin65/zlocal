@@ -1,7 +1,5 @@
 OPTS+=" --sbindir=/usr/bin"
 
-autoreconf -i &&
-
 default_build &&
 
 # Install man pages

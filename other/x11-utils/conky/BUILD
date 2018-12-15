@@ -7,12 +7,14 @@ OPTS+=" -D BUILD_RSS=ON \
         -D BUILD_BUILTIN_CONFIG=ON \
         -D CMAKE_INSTALL_PREFIX=/usr"
 
-OPTS+=" -D DEFAULTNETDEV=wlp3s0"
-OPTS+=" -D BUILD_PORT_MONITORS=OFF"
+#OPTS+=" -D DEFAULTNETDEV=wlp3s0"
+#OPTS+=" -D BUILD_PORT_MONITORS=OFF"
 
 if module_installed systemd; then
   OPTS+=" -D BUILD_JOURNAL=ON"
 fi
+
+echo "OPTS-> "$OPTS
 
 default_cmake_build &&
 

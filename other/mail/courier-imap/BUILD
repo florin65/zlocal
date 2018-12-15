@@ -1,4 +1,4 @@
-OPTS+=" --sbindir=/usr/bin" &&
+OPTS+=" --sbindir=/usr/bin"
 
 ./configure --prefix=/usr \
             --sysconfdir=/etc/courier-imap \
@@ -20,8 +20,9 @@ mkdir -p /etc/courier/cert &&
 make install-configure &&
 cp -av imap/*.dist /etc/courier/ &&
 cp -av imap*.cnf /etc/courier/ &&
+
 for file in /etc/courier/*.dist; do
   if [ ! -f /etc/courier/$(basename $file .dist) ]; then
-    cp $file /etc/courier/$(basename $file .dist) 
+    cp $file /etc/courier/$(basename $file .dist)
   fi || exit 1
 done || exit 1

@@ -1,4 +1,4 @@
-OPTS+=" --with-ssl=gnutls" &&
+OPTS+=" --with-ssl=gnutls"
 
 default_build &&
 

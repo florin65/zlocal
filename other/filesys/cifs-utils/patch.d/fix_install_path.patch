@@ -1,0 +1,11 @@
+--- ./Makefile.am.orig	2018-12-15 17:25:02.139064537 +0200
++++ ./Makefile.am	2018-12-15 17:26:00.049438020 +0200
+@@ -24,8 +24,6 @@
+ 	$(RST2MAN)
+ 
+ CLEANFILES =
+-bin_PROGRAMS =
+-bin_PROGRAMS =
+ 
+ if CONFIG_CIFSUPCALL
+ bin_PROGRAMS += cifs.upcall

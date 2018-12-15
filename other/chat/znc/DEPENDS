@@ -1,6 +1,6 @@
 depends icu4c
 
-optional_depends py thon    "--enable-python"  "--disable-python"  "for Python support"
+optional_depends python     "--enable-python"  "--disable-python"  "for Python support"
 optional_depends perl       "--enable-perl"    "--disable-perl"    "for Perl support"
 optional_depends openssl    "--enable-openssl" "--disable-openssl" "for SSL support"
 optional_depends cyrus-sasl "--enable-cyrus"   "--disable-cyrus"   "for SASL support"

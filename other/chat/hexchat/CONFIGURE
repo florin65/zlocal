@@ -1,1 +1,0 @@
-mquery ENABLE_GUI "Enable GTK+ 2.x GUI?" y "-Dwith-gtk=true" "-Dwith-gtk=false"

@@ -1,4 +1,3 @@
 depends adwaita-icon-theme
 depends gtk+-3
 depends optipng
-

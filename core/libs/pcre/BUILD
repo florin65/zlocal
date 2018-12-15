@@ -7,7 +7,7 @@ OPTS+=" --enable-jit \
         --enable-pcregrep-libz \
         --enable-pcregrep-libbz2 \
         --enable-unicode-properties \
-        --disable-static" &&
+        --disable-static"
 
 default_config &&
 

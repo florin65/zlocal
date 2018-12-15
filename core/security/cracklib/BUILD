@@ -1,5 +1,5 @@
 OPTS+=" --exec-prefix=/usr \
-        --without-python" &&
+        --without-python"
 
 default_build &&
 

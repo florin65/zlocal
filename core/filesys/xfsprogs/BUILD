@@ -1,7 +1,7 @@
 export DEBUG=-DNDEBUG &&
 
 OPTS+=" --prefix=/usr \
-        --sbindir=/usr/bin" &&
+        --sbindir=/usr/bin"
 
 default_config &&
 make &&

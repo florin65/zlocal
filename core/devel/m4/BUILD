@@ -1,6 +1,6 @@
 ./configure --build=$BUILD \
             --prefix=/usr \
-            $OPTS &&
+            $OPTS
 
 sedit "s/fix)\/info/fix)\/share\/info/" Makefile &&
 

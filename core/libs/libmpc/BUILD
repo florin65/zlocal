@@ -1,4 +1,4 @@
-OPTS+=" --disable-static" &&
+OPTS+=" --disable-static"
 
 if [ -f /usr/lib/libmpc.so.2.0.0 ]; then
 # preserve the old version to prevent the crash of gcc

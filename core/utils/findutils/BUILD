@@ -1,4 +1,4 @@
-OPTS+=" --exec-prefix=/usr" &&
+OPTS+=" --exec-prefix=/usr"
 
 default_build &&
 

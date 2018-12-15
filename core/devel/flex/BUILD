@@ -1,7 +1,7 @@
 ./configure --build=$BUILD \
             --prefix=/usr  \
             --disable-static \
-            $OPTS &&
+            $OPTS
 
 sedit 's/ln -s/ln -sf/' Makefile &&
 

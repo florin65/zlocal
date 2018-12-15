@@ -6,7 +6,7 @@ WANT_VERSION= download_module wget &&
          shared                \
          no-ssl3               \
          no-ssl3-method        \
-         $OPTS                &&
+         $OPTS
 
 sedit "/^CC/d" Makefile &&
 sedit "s/-m486//g" Makefile &&

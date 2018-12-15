@@ -1,3 +1,3 @@
-OPTS+=" --enable-compat-symlinks" &&
+OPTS+=" --enable-compat-symlinks"
 
 default_build

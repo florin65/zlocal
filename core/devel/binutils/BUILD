@@ -13,7 +13,7 @@ CFLAGS+=" -fPIC"
              --enable-plugins \
              --enable-install-libiberty \
              --with-system-zlib \
-             $OPTS &&
+             $OPTS
 
 make configure-host &&
 make tooldir=/usr &&

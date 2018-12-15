@@ -1,6 +1,6 @@
 OPTS+=" --disable-static\
         --enable-shared \
-        --enable-thread-safe" &&
+        --enable-thread-safe"
 
 if [ -f /usr/lib/libmpfr.so.4.1.6 ]; then
 # preserve the old version to prevent the crash of gcc

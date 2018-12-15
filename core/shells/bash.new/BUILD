@@ -4,7 +4,7 @@ OPTS+=" --enable-readline \
         --with-curses \
         --without-installed-readline \
         --without-bash-malloc \
-        --disable-profiling"  &&
+        --disable-profiling"
 
 default_build &&
 

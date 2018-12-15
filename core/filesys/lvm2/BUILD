@@ -6,7 +6,7 @@ fi
 OPTS+=" --with-udev_prefix=/usr"
 if module_installed systemd; then
   OPTS+=" --with-systemdsystemunitdir=/usr/lib/systemd/system"
-fi &&
+fi
 
 OPTS+=" --sbindir=/usr/bin"
 

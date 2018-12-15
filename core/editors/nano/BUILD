@@ -1,14 +1,14 @@
 if [[ "$COLOR" == "y" ]]; then
   OPTS+=" --enable-color"
-fi &&
+fi
 
 if [[ "$NANORC" == "y" ]]; then
   OPTS+=" --enable-nanorc"
-fi &&
+fi
 
 if [[ "$MULTI" == "y" ]]; then
   OPTS+=" --enable-multibuffer"
-fi &&
+fi
 
 default_build &&
 

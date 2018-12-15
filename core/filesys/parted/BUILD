@@ -1,8 +1,8 @@
-OPTS+=" --sbindir=/usr/bin" &&
+OPTS+=" --sbindir=/usr/bin"
 
 OPTS+=" --disable-rpath \
         --disable-debug \
-        --disable-static" &&
+        --disable-static"
 
 default_config &&
 

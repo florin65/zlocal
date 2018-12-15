@@ -1,6 +1,6 @@
-CXXFLAGS+=' -std=gnu++98' &&
+CXXFLAGS+=' -std=gnu++98'
 
-OPTS+=" --enable-cplusplus --disable-static" &&
+OPTS+=" --enable-cplusplus --disable-static"
 
 default_build &&
 

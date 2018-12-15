@@ -3,7 +3,7 @@ CFLAGS="${CFLAGS} -flto"
 OPTS+=" libdir=/usr/lib/ \
         bindir=/usr/bin/ \
         mandir=/usr/share/man/ \
-        includedir=/usr/include/ -j1" &&
+        includedir=/usr/include/ -j1"
 
 default_make &&
 

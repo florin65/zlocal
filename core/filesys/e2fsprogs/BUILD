@@ -1,5 +1,5 @@
 # libcom_err.a(error_message.o): relocation R_X86_64_32 against `.bss' can not be used when making a shared object; recompile with -fPIC
-CFLAGS+=" -fPIC" &&
+CFLAGS+=" -fPIC"
 
 OPTS+=" --libdir=/usr/lib \
         --sbindir=/usr/bin"

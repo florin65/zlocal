@@ -1,5 +1,5 @@
 OPTS+=" --sysconfdir=/etc \
         --disable-static  \
-        --disable-padlock-support" &&
+        --disable-padlock-support"
 
 default_build

@@ -5,7 +5,7 @@ OPTS+=" --with-features=huge \
 
 if ! (( in_depends $MODULE gtk+-3 ) || ( in_depends $MODULE gtk+-2 )); then
   OPTS+=" --disable-gui"
-fi &&
+fi
 
 cd src &&
 default_config &&

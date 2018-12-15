@@ -1,4 +1,5 @@
-CFLAGS+=" -Wno-error" &&
-OPTS+="  --disable-static --enable-rdrand --enable-threading" &&
+CFLAGS+=" -Wno-error"i
+
+OPTS+="  --disable-static --enable-rdrand --enable-threading"
 
 default_build

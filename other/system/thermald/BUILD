@@ -1,4 +1,5 @@
 CXXFLAGS+=" -std=c++14"
+
 OPTS+=" --sbindir=/usr/bin"
 
 default_build &&

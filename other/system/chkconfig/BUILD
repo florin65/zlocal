@@ -7,8 +7,8 @@ OPTS+=" --exec-prefix=/usr          \
         --with-rc-dir=/etc          \
         --enable-mandatory-headers  \
         --disable-ntsysv            \
-        --with-xinetd-dir=/etc/xinetd.d" &&
+        --with-xinetd-dir=/etc/xinetd.d"
 
-OPTS+=" --sbindir=/usr/bin" &&
+OPTS+=" --sbindir=/usr/bin"
 
 default_build

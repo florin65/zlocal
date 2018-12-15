@@ -3,9 +3,9 @@ if module_installed harfbuzz; then
   OPTS+=" --with-harfbuzz"
 else
   OPTS+=" --without-harfbuzz"
-fi &&
+fi
 
-OPTS+=" --disable-static" &&
+OPTS+=" --disable-static"
 
 default_build
 

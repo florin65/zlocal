@@ -3,13 +3,13 @@ OPTS+=" --no-install-init \
         --suspend=/usr/share/wicd/scripts/ \
         --verbose \
         --lib=/usr/lib \
-        --no-install-gnome-shell-extensions" &&
+        --no-install-gnome-shell-extensions"
 
 if module_installed systemd; then
   OPTS+=" --systemd=/usr/lib/systemd/system"
-fi &&
+fi
 
-OPTS+=" --sbin=/usr/bin" &&
+OPTS+=" --sbin=/usr/bin"
 
 python setup.py configure $OPTS &&
 

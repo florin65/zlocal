@@ -1,4 +1,4 @@
-OPTS+=" --disable-static --enable-shared --disable-gtktest" &&
+OPTS+=" --disable-static --enable-shared --disable-gtktest"
 
 # fix a compiler error introduced by gcc-4.9.0 on 32-bit machines
 case $(uname -m) in

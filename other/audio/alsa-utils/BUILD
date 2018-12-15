@@ -2,10 +2,10 @@ UDEV_DIR=/usr/lib/udev/rules.d
 if module_installed systemd; then
   OPTS+=" --with-udev-rules-dir=$UDEV_DIR \
           --with-systemdsystemunitdir=/usr/lib/systemd/system"
-fi &&
+fi
 
 OPTS+=" --exec-prefix=/usr \
-        --sbindir=/usr/sbin" &&
+        --sbindir=/usr/sbin"
 
 default_build &&
 

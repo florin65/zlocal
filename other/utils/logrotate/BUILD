@@ -1,8 +1,9 @@
-./autogen.sh
+OPTS+=" --mandir=/usr/share/man \
+        --with-compress-command=/usr/bin/gzip \
+	--with-uncompress-command=/usr/bin/gunzip \
+	--with-default-mail-command=/usr/bin/mail"
 
-OPTS+=" --mandir=/usr/share/man" &&
-
-OPTS+=" --sbindir=/usr/bin" &&
+OPTS+=" --sbindir=/usr/bin"
 
 default_build &&
 

@@ -1,4 +1,0 @@
-MODDIR=$(expr $SOURCE_DIRECTORY/src/libafs/MODLOAD-*)
-KVER=$(echo ${MODDIR##*/} | awk -F- '{ print $2 }')
-
-depmod -a $KVER

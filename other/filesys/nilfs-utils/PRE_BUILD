@@ -1,3 +1,0 @@
-default_pre_build &&
-
-sedit 's#root_sbindir=/sbin#root_sbindir=/usr/bin#' configure

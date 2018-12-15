@@ -4,13 +4,13 @@ export VERTO_LIBS="-L/usr/lib -lverto"
 
 OPTS+=" --sbindir=/usr/bin \
         --without-selinux \
-        --with-pubconf-path=/etc/gssproxy" &&
+        --with-pubconf-path=/etc/gssproxy"
 
 if module_installed systemd; then
   OPTS+=" --with-initscript=systemd"
 else
   OPTS+=" --with-initscript=none"
-fi &&
+fi
 
 default_build &&
 

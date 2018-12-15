@@ -1,3 +1,3 @@
-OPTS+=" --libdir=/usr/lib/security" &&
+OPTS+=" --libdir=/usr/lib/security"
 
 default_build

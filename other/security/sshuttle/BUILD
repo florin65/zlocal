@@ -1,10 +1,6 @@
 export SETUPTOOLS_SCM_PRETEND_VERSION=$VERSION
 
-python3 setup.py build &&
-
-prepare_install &&
-
-python3 setup.py install --root=/ &&
+default_python3_build &&
 
 if module_installed Sphinx; then
   cd docs

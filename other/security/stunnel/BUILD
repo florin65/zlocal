@@ -3,7 +3,7 @@ add_priv_group stunnel
 OPTS+=" --sysconfdir=/etc \
         --localstatedir=/var \
         --enable-ipv6 \
-        --disable-libwrap" &&
+        --disable-libwrap"
 
 default_config &&
 

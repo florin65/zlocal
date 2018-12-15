@@ -1,4 +1,4 @@
-OPTS+=" --sbindir=/usr/bin --with-firewall=iptables" &&
+OPTS+=" --sbindir=/usr/bin --with-firewall=iptables"
 
 default_build &&
 

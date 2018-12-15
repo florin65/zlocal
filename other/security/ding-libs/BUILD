@@ -2,6 +2,6 @@
 export VERTO_CFLAGS="-I/usr/include"
 export VERTO_LIBS="-L/usr/lib -lverto"
 
-OPTS+=" --disable-static" &&
+OPTS+=" --disable-static"
 
 default_build

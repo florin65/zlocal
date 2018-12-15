@@ -1,4 +1,4 @@
-OPTS+=" --enable-fancy-cli --with-md-root-dir=/usr/share/$MODULE" &&
+OPTS+=" --enable-fancy-cli --with-md-root-dir=/usr/share/$MODULE"
 
 default_build &&
 

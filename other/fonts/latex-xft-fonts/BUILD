@@ -8,4 +8,3 @@ default_build
 
 mkfontscale $FONTS_DIR &&
 mkfontdir $FONTS_DIR
-

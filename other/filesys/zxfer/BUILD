@@ -1,4 +1,4 @@
-OPTS+=" --sbindir=/usr/bin" &&
+OPTS+=" --sbindir=/usr/bin"
 
 OPTS+=" --with-linux=$BUILD_DIRECTORY/linux \
         --with-linux-obj=$BUILD_DIRECTORY/linux \
@@ -6,7 +6,7 @@ OPTS+=" --with-linux=$BUILD_DIRECTORY/linux \
         --with-spl-obj=$BUILD_DIRECTORY/spl \
         --disable-static \
         --with-config=all \
-        --disable-sysvinit" &&
+        --disable-sysvinit"
 
 default_config &&
 make &&

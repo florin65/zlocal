@@ -33,8 +33,6 @@ OPTS+=" --build=$BUILD                \
         --disable-libstdcxx-pch       \
         --disable-libunwind-exceptions"
 
-OPTS+=" --libexecdir=/usr/lib" &&
-
 ../configure $OPTS &&
 
 make CFLAGS='-O' LIBCFLAGS='-g -O2' LIBCXXFLAGS='-g -O2 -fno-implicit-templates' bootstrap-lean &&

@@ -17,7 +17,7 @@ depend() {
 	need virtlogd
 	use dbus virtlockd
 	after ntp-client ntpd nfs nfsmount portmap rpc.statd iptables ip6tables \
-          ebtables corosync sanlock cgconfig xenconsoled avahi-daemon firewalld
+              ebtables corosync sanlock cgconfig xenconsoled avahi-daemon firewalld
 	use iscsid
 	use ceph
 }

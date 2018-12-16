@@ -1,24 +1,23 @@
-add_priv_user qemu -G kvm &&
-
-OPTS+=" --sbindir=/usr/bin"
+add_priv_user qemu:qemu -G kvm &&
 
 OPTS+=" --disable-static \
         --without-wireshark-dissector \
+        --without-xen \
         --without-hal \
         --without-netcf \
         --with-udev \
-        --with-yajl \
         --with-network \
         --with-secrets \
         --with-libvirtd \
         --with-interface \
-        --with-qemu-user=qemu \
-        --with-qemu-group=kvm"
+        --with-init-script=none"
 
-#        --with-init-script=none"
+OPTS+=" --sbindir=/usr/bin"
 
 if module_installed systemd; then
   OPTS+=" --with-init-script=systemd"
 fi
+
+autoreconf &&
 
 default_build

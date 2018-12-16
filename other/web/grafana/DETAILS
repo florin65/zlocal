@@ -1,11 +1,11 @@
          MODULE=grafana
-        VERSION=5.4.0
+        VERSION=5.4.1
          SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_URL_FULL=http://github.com/grafana/grafana/archive/v$VERSION.tar.gz
-     SOURCE_VFY=sha256:389c718741c4f052cc463ad8d0625c46463bea43fd702dfda7045c8eac67d867
+     SOURCE_VFY=sha256:
        WEB_SITE=http://grafana.org/
         ENTERED=20150919
-        UPDATED=20181206
+        UPDATED=20181216
           SHORT="A general purpose dashboard and graph composer"
 
 cat <<EOF

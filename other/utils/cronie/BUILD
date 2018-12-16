@@ -1,8 +1,3 @@
-aclocal     &&
-autoheader  &&
-automake -a &&
-autoconf    &&
-
 OPTS+=" --exec-prefix=/usr \
         --enable-anacron \
         --with-inotify"

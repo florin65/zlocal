@@ -1,11 +1,11 @@
           MODULE=libnsbmp
-         VERSION=0.1.4
+         VERSION=0.1.5
           SOURCE=$MODULE-$VERSION-src.tar.gz
       SOURCE_URL=http://download.netsurf-browser.org/libs/releases/
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:65cc0d81727e2ece417b7997ba2451309f07a4e5932e52019a20867640152b52
         WEB_SITE=http://www.netsurf-browser.org/projects/libnsbmp/
          ENTERED=20141227
-         UPDATED=20161127
+         UPDATED=20181216
            SHORT="A decoding library for BMP and ICO image file formats"
 
 cat <<EOF

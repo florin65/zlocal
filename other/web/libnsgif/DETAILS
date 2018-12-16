@@ -1,11 +1,11 @@
           MODULE=libnsgif
-         VERSION=0.1.3
+         VERSION=0.2.1
           SOURCE=$MODULE-$VERSION-src.tar.gz
       SOURCE_URL=http://download.netsurf-browser.org/libs/releases/
-      SOURCE_VFY=sha256:d450ea0a9da234486e997248b30a86524f75f1021ca67017b5597423cf6c0a15
+      SOURCE_VFY=sha256:9eaea534cd70b53c5aaf45317ae957701685a6b4a88dbe34ed26f4faae879a4b
         WEB_SITE=http://www.netsurf-browser.org/projects/libnsgif/
          ENTERED=20141227
-         UPDATED=20141227
+         UPDATED=20181216
            SHORT="A decoding library for the GIF image file format"
 
 cat <<EOF

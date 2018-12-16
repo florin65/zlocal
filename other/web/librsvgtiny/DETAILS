@@ -1,11 +1,11 @@
           MODULE=librsvgtiny
-         VERSION=0.1.6
+         VERSION=0.1.7
           SOURCE=$MODULE-$VERSION-src.tar.gz
       SOURCE_URL=http://download.netsurf-browser.org/libs/releases/
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:2c0dcf952f1cd882c3e95401ef9459f16dbb53c5d3e4512339b2f9eb769d7781
         WEB_SITE=http://www.netsurf-browser.org/projects/librvgtiny/
          ENTERED=20160227
-         UPDATED=20171031
+         UPDATED=20181216
            SHORT="SVG Tiny library"
 
 cat <<EOF

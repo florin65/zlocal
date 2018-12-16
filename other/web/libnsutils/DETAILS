@@ -1,11 +1,11 @@
           MODULE=libnsutils
-         VERSION=0.0.3
+         VERSION=0.0.5
           SOURCE=$MODULE-$VERSION-src.tar.gz
-      SOURCE_URL=git://git.netsurf-browser.org/libnsutils.git
-#      SOURCE_VFY=sha256:
+      SOURCE_URL=http://download.netsurf-browser.org/libs/releases/
+      SOURCE_VFY=sha256:0e3b7a19f4348f25a1cac514bebfdc941e044dab9dcb1cb9c131067d7bcc8127
         WEB_SITE=http://www.netsurf-browser.org/projects/libnsbmp/
          ENTERED=20160227
-         UPDATED=20161127
+         UPDATED=20181216
            SHORT="NetSurf Utilities"
 
 cat <<EOF

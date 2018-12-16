@@ -1,11 +1,11 @@
           MODULE=libparserutils
-         VERSION=0.2.3
+         VERSION=0.2.4
           SOURCE=$MODULE-$VERSION-src.tar.gz
       SOURCE_URL=http://download.netsurf-browser.org/libs/releases/
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:322bae61b30ccede3e305bf6eae2414920649775bc5ff1d1b688012a3c4947d8
         WEB_SITE=http://www.netsurf-browser.org/projects/libparserutils/
          ENTERED=20150321
-         UPDATED=20160227
+         UPDATED=20181216
            SHORT="A library for building efficient parsers"
 
 cat <<EOF

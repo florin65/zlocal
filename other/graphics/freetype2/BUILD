@@ -5,8 +5,8 @@ else
   OPTS+=" --without-harfbuzz"
 fi
 
-OPTS+=" --disable-static"
+OPTS+=" --disable-static --enable-freetype-config"
 
-default_build
+default_build &&
 
-#ln -sf /usr/include/freetype2 /usr/include/freetype
+ln -sf /usr/include/freetype2 /usr/include/freetype

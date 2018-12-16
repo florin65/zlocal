@@ -1,17 +1,14 @@
           MODULE=pam_blue
          VERSION=0.9.0.orig
           SOURCE=libpam-blue_$VERSION.tar.gz
-         SOURCE2=$MODULE.patch.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/libpam-blue-$VERSION
       SOURCE_URL=http://archive.ubuntu.com/ubuntu/pool/universe/libp/libpam-blue/
-     SOURCE2_URL=$PATCH_URL
       SOURCE_VFY=sha256:60b55ef1fcf495f7efa7c1f4bbeb964251fc4765a626117a37d90dcdc5b4e122
-     SOURCE2_VFY=sha256:b393b49a203b93283ea139850d70f8f006a91b339418d99ebd1a171b3e2b2349
         WEB_SITE=https://launchpad.net/ubuntu/+source/libpam-blue/
          ENTERED=20170409
          UPDATED=20170409
-           SHORT="PAM authenticaction with bluetooth devices"
+           SHORT="PAM authentication with a bluetooth devices"
 
 cat << EOF
-A PAM module for local authenticaction with bluetooth devices.
+A PAM module for local authentication with a bluetooth devices.
 EOF

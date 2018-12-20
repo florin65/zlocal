@@ -1,4 +1,0 @@
-depends llvm
-depends python
-depends cmake
-depends ninja

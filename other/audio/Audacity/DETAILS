@@ -1,0 +1,21 @@
+          MODULE=Audacity
+         VERSION=2.3.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/audacity-$MODULE-$VERSION
+      SOURCE_URL=http://github.com/audacity/audacity/archive/
+      SOURCE_VFY=sha256:37127f68dceeb5da08d008ec9373a65e2d5d0a9b937c808a5d7c3b88aa9e275e
+        WEB_SITE=http://github.com/audacity/audacity/
+         ENTERED=20011217
+         UPDATED=20181221
+           SHORT="A simple soundfile editor"
+
+cat << EOF
+Audacity is a program that lets you manipulate digital audio waveforms.
+In addition to letting you record sounds directly from within the
+program, it imports many sound file formats, including WAV, AIFF, and
+MP3. It supports all common editing operations such as Cut, Copy, and
+Paste, plus it will mix tracks and let you apply plug-in effects to any
+part of a sound. It also has a built-in amplitude envelope editor, a
+customizable spectrogram mode and a frequency analysis window for audio
+analysis applications.
+EOF

@@ -1,11 +1,11 @@
           MODULE=sqlcipher
-         VERSION=4.0.0
+         VERSION=4.0.1
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/sqlcipher/sqlcipher/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:c8f5fc6d800aae6107bf23900144804db5510c2676c93fbb269e4a0700837d68
+      SOURCE_VFY=sha256:2f803017378c7479cb791be59b7bad8392a15acddbcc094e4433581fe421f4ca
         WEB_SITE=https://github.com/sqlcipher/sqlcipher/
          ENTERED=20160218
-         UPDATED=20181216
+         UPDATED=20181220
            SHORT="SQLite extension that provides encryption of database files"
 
 cat << EOF

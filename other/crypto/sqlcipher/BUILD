@@ -1,6 +1,6 @@
-CFLAGS="-DSQLITE_HAS_CODEC"
+CFLAGS+=" -DSQLITE_HAS_CODEC"
 
-LDFLAGS="-lcrypto"
+LDFLAGS_="-lcrypto"
 
 OPTS+=" --enable-tempstore=yes --disable-static"
 

@@ -1,0 +1,16 @@
+          MODULE=sysprof
+         VERSION=3.30.2
+          SOURCE=$MODULE-$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://gitlab.gnome.org/GNOME/$MODULE/-/archive/$MODULE-$VERSION/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$MODULE-$VERSION
+      SOURCE_VFY=sha256:44ec7a145cbbdc76370d52242756e3bea537c756449f6ae57825a3444a5fde8f
+        WEB_SITE="https://gitlab.gnome.org/GNOME/sysprof"
+         ENTERED=20090601
+         UPDATED=20181220
+           SHORT="system profiler (sysprof) data analysis tool"
+cat << EOF
+Sysprof is a sampling CPU profiler for Linux that uses a kernel module
+to profile the entire system, not just a single application. Sysprof
+handles shared libraries and applications do not need to be
+recompiled. In fact they don't even have to be restarted.
+EOF

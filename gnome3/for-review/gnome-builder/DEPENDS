@@ -1,0 +1,10 @@
+depends gtk+-3
+depends libdazzle
+depends gtksourceview
+depends jsonrpc-glib
+depends libpeas
+depends template-glib
+depends vte3
+depends libgit2-glib
+depends gspell
+depends sysprof

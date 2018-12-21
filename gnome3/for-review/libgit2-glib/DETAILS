@@ -1,0 +1,11 @@
+          MODULE=libgit2-glib
+         VERSION=v0.27.7
+          SOURCE=${MODULE}-${VERSION}.tar.gz
+      SOURCE_URL=https://gitlab.gnome.org/GNOME/$MODULE/-/archive/$VERSION/
+      SOURCE_VFY=sha256:7718d337c8372bfc77717673cab9a0c9aff997a55aae371b101eef681f2f92f2
+        WEB_SITE="https://gitlab.gnome.org/GNOME/libgit2-glib"
+         ENTERED=20181220
+         UPDATED=20181220
+           SHORT=""
+cat <<EOF
+EOF

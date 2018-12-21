@@ -1,0 +1,11 @@
+          MODULE=template-glib
+         VERSION=3.30.0
+          SOURCE=${MODULE}-${VERSION}.tar.gz
+      SOURCE_URL=https://gitlab.gnome.org/GNOME/$MODULE/-/archive/$VERSION/
+      SOURCE_VFY=sha256:c18645f7eb42afb7bf0d3ee9f8cdff15afee0960db8f22e76934eb68863abf5e
+        WEB_SITE="https://gitlab.gnome.org/GNOME/template-glib"
+         ENTERED=20181220
+         UPDATED=20181220
+           SHORT="A library for template expansion which supports calling into GObject Introspection from templates."
+cat <<EOF
+EOF

@@ -1,0 +1,11 @@
+          MODULE=gnome-builder
+         VERSION=3.30.2
+          SOURCE=${MODULE}-${VERSION}.tar.gz
+      SOURCE_URL=https://gitlab.gnome.org/GNOME/gnome-builder/-/archive/3.30.2/
+      SOURCE_VFY=sha1:8795c0bab7be1fdadc58e5b0bd6547601bd36886
+        WEB_SITE="https://wiki.gnome.org/Apps/Builder"
+         ENTERED=20181220
+         UPDATED=20181220
+           SHORT="IDE for writing GNOME-based software"
+cat <<EOF
+EOF

@@ -6,10 +6,10 @@ fi &&
 OPTS+=" --sbindir=/usr/bin"
 
 OPTS+=" --enable-shared \
-	--enable-libipq \
+        --enable-libipq \
         --enable-bpf-compiler \
         --disable-static \
-	--with-xtlibdir=/usr/lib/iptables"
+        --with-xtlibdir=/usr/lib/iptables"
 
 # headers aren't installed by default
 OPTS+=" --enable-devel"

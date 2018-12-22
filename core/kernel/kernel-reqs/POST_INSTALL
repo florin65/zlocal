@@ -10,7 +10,6 @@ kreqs="fglrx \
        spl \
        zfs"
 
-
 for req in $kreqs; do
   if module_installed $req; then
      # ignore failures as much as possible

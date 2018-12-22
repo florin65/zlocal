@@ -36,10 +36,13 @@ sed -e 's|#baud=""|baud="38400"|' \
     -i /etc/conf.d/agetty &&
 
 for num in 1 2 3 4 5 6; do
-   cp -v /etc/conf.d/agetty /etc/conf.d/agetty.tty$num &&
+   cp -v  /etc/conf.d/agetty /etc/conf.d/agetty.tty$num &&
    ln -sf /etc/init.d/agetty /etc/init.d/agetty.tty$num &&
    ln -sf /etc/init.d/agetty.tty$num /etc/runlevels/default/agetty.tty$num
 done &&
 
 # sysctl defaults
-install -Dm640 $SCRIPT_DIRECTORY/sysctl.conf /etc/sysctl.d/default-conf
+install -Dm640 $SCRIPT_DIRECTORY/sysctl.conf /etc/sysctl.d/default-conf &&
+
+# fix a sbin reference
+sedit 's:/sbin:/usr/bin:' /etc/init.d/{agetty,bootmisc,cgroups,devfs,sysfs}

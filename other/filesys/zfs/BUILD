@@ -1,5 +1,6 @@
-OPTS+=" --sbindir=/usr/bin \
-        --libdir=/usr/lib \
+OPTS+=" --sbindir=/usr/bin"
+
+OPTS+=" --libdir=/usr/lib \
         --with-linux=$BUILD_DIRECTORY/linux \
         --with-linux-obj=$BUILD_DIRECTORY/linux \
         --with-spl=$BUILD_DIRECTORY/spl \

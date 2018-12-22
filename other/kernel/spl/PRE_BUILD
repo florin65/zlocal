@@ -8,7 +8,7 @@ tar xf $SOURCE_CACHE/$SOURCE --no-same-owner --no-same-permissions --strip-compo
 sedit "s:/bin/cp:/usr/bin/cp:" module/Makefile.in &&
 
 # Another hardcoded paths
-sedit "s;/sbin/lsmod;/bin/lsmod;" scripts/check.sh &&
-sedit "s;/sbin/rmmod;/bin/rmmod;" scripts/check.sh &&
+sedit "s;/sbin/lsmod;/usr/bin/lsmod;" scripts/check.sh &&
+sedit "s;/sbin/rmmod;/usr/bin/rmmod;" scripts/check.sh &&
 
 ./autogen.sh

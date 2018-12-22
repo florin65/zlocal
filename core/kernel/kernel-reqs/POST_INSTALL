@@ -1,5 +1,4 @@
-kreqs="fglrx \
-       fuse \
+kreqs="fuse \
        iptables \
        NVIDIA \
        openafs-driver \

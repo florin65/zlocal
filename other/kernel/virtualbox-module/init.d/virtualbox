@@ -40,4 +40,4 @@ restart () {
   start
 }
 
-. /lib/lsb/init-functions
+. /usr/lib/lsb/init-functions

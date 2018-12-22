@@ -1,5 +1,6 @@
-OPTS+=" --sbindir=/usr/bin \
-        --libdir=/usr/lib \
+OPTS+=" --sbindir=/usr/bin"
+
+OPTS+=" --libdir=/usr/lib \
         --disable-static  \
         --with-config=all \
         --with-linux=$BUILD_DIRECTORY/linux \

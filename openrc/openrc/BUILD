@@ -44,5 +44,5 @@ done &&
 # sysctl defaults
 install -Dm640 $SCRIPT_DIRECTORY/sysctl.conf /etc/sysctl.d/default-conf &&
 
-# fix a sbin reference
-sedit 's:/sbin:/usr/bin:' /etc/init.d/{agetty,bootmisc,cgroups,devfs,sysfs}
+# fix the sbin reference
+sedit 's|/sbin|/usr/bin|' /etc/init.d/{agetty,bootmisc,cgroups,devfs,sysfs}

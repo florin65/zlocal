@@ -7,5 +7,6 @@
          ENTERED=20181220
          UPDATED=20181220
            SHORT=""
+
 cat <<EOF
 EOF

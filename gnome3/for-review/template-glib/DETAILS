@@ -6,6 +6,9 @@
         WEB_SITE="https://gitlab.gnome.org/GNOME/template-glib"
          ENTERED=20181220
          UPDATED=20181220
-           SHORT="A library for template expansion which supports calling into GObject Introspection from templates."
+           SHORT="A library for template expansion"
+
 cat <<EOF
+A library for template expansion which supports calling into GObject
+Introspection from templates.
 EOF

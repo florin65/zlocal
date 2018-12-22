@@ -1,6 +1,6 @@
 depends gtk+-3
 depends libdazzle
-depends gtksourceview
+depends gtksourceview4
 depends jsonrpc-glib
 depends libpeas
 depends template-glib

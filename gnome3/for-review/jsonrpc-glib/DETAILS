@@ -6,6 +6,7 @@
         WEB_SITE="https://gitlab.gnome.org/GNOME/jsonrpc-glib"
          ENTERED=20181220
          UPDATED=20181220
-           SHORT="A library to communicate using the JSON-RPC 2.0 specification."
+           SHORT="A library to communicate using the JSON-RPC 2.0 specification"
+
 cat <<EOF
 EOF

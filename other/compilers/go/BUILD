@@ -27,8 +27,10 @@ fi &&
 
 $GOROOT/bin/go get -d golang.org/x/tools/cmd/godoc &&
 $GOROOT/bin/go build -o $SOURCE_DIRECTORY/godoc golang.org/x/tools/cmd/godoc &&
-$GOROOT/bin/go get -d golang.org/x/tools/cmd/cover &&
-$GOROOT/bin/go build -o $GOROOT/pkg/tool/${GOOS}_${GOARCH}/cover golang.org/x/tools/cmd/cover
+for i in vet cover; do
+  $GOROOT/bin/go get -d golang.org/x/tools/cmd/${i} &&
+  $GOROOT/bin/go build -o $GOROOT/pkg/tool/${GOOS}_${GOARCH}/${i} golang.org/x/tools/cmd/${i}
+done &&
 
 prepare_install &&
 

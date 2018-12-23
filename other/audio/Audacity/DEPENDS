@@ -2,7 +2,6 @@ depends expat
 depends wxGTK
 depends libsndfile
 depends soxr
-depends lame
 
 optional_depends ffmpeg \
                  "--with-ffmpeg=system" \
@@ -14,10 +13,10 @@ optional_depends libid3tag \
                  "--without-libid3tag" \
                  "enable id3 support"
 
-#optional_depends lame \
-#                 "--with-lame=system" \
-#                 "--without-lame" \
-#                 "enable mp3 support"
+optional_depends lame \
+                 "--with-lame=system" \
+                 "--without-lame" \
+                 "enable mp3 support"
 
 optional_depends twolame \
                  "--with-libtwolame=system" \
@@ -48,9 +47,3 @@ optional_depends soundtouch \
                  "--with-soundtouch=system" \
                  "--without-soundtouch" \
                  "for pitch and tempo changing"
-
-#audacity bundles a patched version of portaudio 19
-#optional_depends portaudio \
-#                 "--with-portaudio= --with-portmixer" \
-#                 "--with-portaudio --without-portmixer" \
-#                 "for portaudio support"

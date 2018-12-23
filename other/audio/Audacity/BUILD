@@ -1,6 +1,5 @@
 OPTS+=" --with-lib-preference=system \
         --with-libsndfile=system \
-        --with-lame=system \
         --with-expat=system \
         --enable-unicode \
         --with-libresample=no \

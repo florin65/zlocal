@@ -6,8 +6,8 @@ ConditionPathExists=/var/log/account
 [Service]
 Type=oneshot
 ExecStartPre=/usr/lib/acct/accton-create
-ExecStart=/usr/sbin/accton /var/log/account/pacct
-ExecStop=/usr/sbin/accton off
+ExecStart=/usr/bin/accton /var/log/account/pacct
+ExecStop=/usr/bin/accton off
 RemainAfterExit=yes
 
 [Install]

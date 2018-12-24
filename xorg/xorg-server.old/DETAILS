@@ -1,4 +1,4 @@
-          MODULE=xorg-server
+          MODULE=xorg-server-old
          VERSION=1.20.3
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/xserver

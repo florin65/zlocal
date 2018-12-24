@@ -1,6 +1,7 @@
 depends cmake
 depends boost
 depends openal
+depends optipng
 depends SDL2_image
 depends SDL2_mixer
 depends physfs

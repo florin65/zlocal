@@ -1,0 +1,4 @@
+depends openssh
+depends help2man
+
+#optional_depends colordiff "" "" "for colors support in ssh-diff"

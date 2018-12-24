@@ -1,8 +1,8 @@
+depends nettle
 depends libdmx
 depends libXaw
 depends libXt
 depends libXfont2
-depends libxkbui
 depends libXaw
 depends libXi
 depends libXrender
@@ -10,33 +10,51 @@ depends libXtst
 depends libXres
 depends libXv
 depends libxkbfile
+depends libpciaccess
+depends libxshmfence
+depends libevdev
 depends pixman
 depends mesa-lib
 depends dbus-glib
 depends xkeyboard-config
 depends xcb-util-keysyms
-
-optional_depends libgcrypt \
-                 "--with-sha1=libgcrypt" "" \
-                 "for SHA1 implementation"
+depends xcb-util-cursor
+depends xcb-util-image
+depends xcb-util-renderutil
+depends xcb-util-wm
+depends xkbcomp
+depends setxkbmap
+depends xtrans
+depends meson
 
 optional_depends libepoxy \
-                 "--enable-glamor" \
-                 "--disable-glamor" \
+                 "-D glamor=true" \
+                 "-D glamor=false" \
                  "for glamor support (needed for radeonsi driver)" y
 
-optional_depends libunwind \
-                 "--enable-libunwind" \
-                 "--disable-libunwind" \
-                 "for call-chain library support" n
+optional_depends acpid\
+                 "-D acpi=true" \
+                 "-D acpi=false" \
+                 "for ACPI support" y
 
-optional_depends wayland \
-                 "--enable-xwayland" "" \
+optional_depends libXvMC \
+                 "-D xvmc=true" \
+                 "-D xvmc=false" \
+                 "for MotionCompensation support"
+
+optional_depends wayland-protocols \
+                 "-D xwayland=true" \
+                 "-D xwayland=false" \
                  "for Wayland support"
 
-optional_depends xmlto \
-                 "--with-xmlto" \
-                 "--without-xmlto" \
-                 "for xmlto support to regenerate documentation" n
+#optional_depends libunwind \
+#                 "-d libunwind=true" \
+#                 "-d libunwind=false" \
+#                 "for call-chain library support" n
 
-optional_depends libXxf86misc "" "" "for some old binary compatibility" n
+#optional_depends xmlto \
+#                 "-D xmlto=true" \
+#                 "-D xmlto=false" \
+#                 "for xmlto support to regenerate documentation" n
+
+#optional_depends libXxf86misc "" "" "for some old binary compatibility" n

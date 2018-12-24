@@ -8,25 +8,21 @@ export CFLAGS=${CFLAGS/-fno-plt}
 export CXXFLAGS=${CXXFLAGS/-fno-plt}
 export LDFLAGS=${LDFLAGS/,-z,now}
 
-OPTS+=" -D xorg=true \
-        -D dmx=false \
-        -D xvfb=false \
-        -D xnest=false \
-        -D xephyr=false \
-        -D pciaccess=true \
-        -D xcsecurity=true \
-        -D xkb-output=/var/lib/xkb \
-        -D default_font_path=/usr/share/fonts/"
+OPTS+=" --enable-dri         \
+        --enable-dmx         \
+        --enable-xorg        \
+        --enable-kdrive      \
+        --enable-record      \
+        --enable-composite   \
+        --enable-xcsecurity  \
+        --enable-config-udev \
+        --disable-static     \
+        --disable-devel-docs \
+        --with-xkb-output=/var/lib/xkb \
+        --with-xkb-path=/usr/share/X11/xkb \
+        --with-fontrootdir=/usr/share/fonts/"
 
-if module_installed libXvMC; then
-   OPTS+=" -D xvmc=true"
-fi
-
-if module_installed systemd; then
-   OPTS+=" -D systemd_logind=true"
-fi
-
-default_meson_build &&
+default_build &&
 
 # This should not be needed, check in next release if still needed.
 rm -fr /usr/share/X11/xkb/compiled &&

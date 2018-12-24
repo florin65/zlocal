@@ -1,8 +1,0 @@
-mquery ENABLE_WRAPPER "Enable suid wrapper (needed by some user-space mode-setting drivers like NVIDIA and VESA)?" y "-D suid-wrapper=true" "-D suid-wrapper=false"
-mquery ENABLE_LOCAL   "Enable listen on local?" y "-D listen_local=true" "-D listen_local=false"
-mquery ENABLE_UNIX    "Enable listen on Unix?" y "-D listen_unix=true" "-D listen_unix=false"
-mquery ENABLE_TCP     "Enable listen on TCP?" y "-D listen_tcp=true" "-D listen_tcp=false"
-
-if ; then
-  mquery ENABLE_IPV6    "Enable IPv6?" y "" "-D ipv6=true" "-D ipv6=false"
-fi

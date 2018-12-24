@@ -1,11 +1,11 @@
           MODULE=glusterfs
-         VERSION=5.1
+         VERSION=5.2
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://download.gluster.org/pub/gluster/glusterfs/${VERSION%.*}/$VERSION
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:842eaff5e7abb1bb56b00127ceb1ffb9dc62ffc6ce3fa851fb434f4989b76d2f
         WEB_SITE=http://www.gluster.org/
          ENTERED=20140108
-         UPDATED=20181119
+         UPDATED=20181224
            SHORT="A distributed, replicated, self-healing filesystem"
 
 cat <<EOF

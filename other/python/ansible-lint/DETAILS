@@ -1,12 +1,12 @@
           MODULE=ansible-lint
-         VERSION=3.4.23
+         VERSION=4.0.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/willthames/ansible-lint/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:c5e1c6500d65fa9655ef155fecd67b775701b5e427d5d978a677e5d53d584ef4
+      SOURCE_VFY=sha256:20ceaa5bbaf62d718c46c468b5998a7d29dc0f1e0a5731a8b5580a80a93a1cfd
         WEB_SITE=https://github.com/willthames/ansible-lint
             TYPE=python3
          ENTERED=20180322
-         UPDATED=20180803
+         UPDATED=20181225
            SHORT="Checks playbooks for ansible best practices"
 
 cat << EOF

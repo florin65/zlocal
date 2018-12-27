@@ -1,11 +1,11 @@
           MODULE=sshguard
-         VERSION=2.2.0
+         VERSION=2.3.0
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=$SFORGE_URL/$MODULE/
-      SOURCE_VFY=sha256:2aff07fee6ec33e4ffd5411916b75189977af1d77b86dac5f3834dd3aa3656c2
+      SOURCE_VFY=sha256:d4b53f87a3c26652e5a2899b16506b815fa56a36aaf5bde9c2704bfb1a0ca068
         WEB_SITE=http://www.sshguard.net/
          ENTERED=20160927
-         UPDATED=20180718
+         UPDATED=20181227
            SHORT="Brute force detector for SSH, Exim, VSFTPD and more"
 
 cat << EOF

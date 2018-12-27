@@ -7,13 +7,14 @@ CFLAGS+=" -fPIC"
 ../configure --prefix=/usr    \
              --disable-gdb    \
              --disable-werror \
+             --enable-gold    \
              --enable-shared  \
              --enable-threads \
-             --enable-gold    \
              --enable-plugins \
              --enable-install-libiberty \
+             --with-pic \
              --with-system-zlib \
-             $OPTS
+             $OPTS &&
 
 make configure-host &&
 make tooldir=/usr &&
@@ -28,7 +29,7 @@ make tooldir=/usr install &&
 
 # For some reason installwatch fail to pick up the ld hardlink, touching it solves that issue
 if [ -e /usr/bin/ld ]; then
-  touch /usr/bin/ld
+   touch /usr/bin/ld
 fi &&
 
 # Remove unwanted files

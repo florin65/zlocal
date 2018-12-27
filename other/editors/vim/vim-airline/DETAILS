@@ -1,11 +1,11 @@
           MODULE=vim-airline
-         VERSION=0.8
+         VERSION=0.10
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/vim-airline/vim-airline/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:5fb1cdcd9a760516a050bd0e3fa4cae04291cfccd2bcf58f2facbd2a07767a14
+      SOURCE_VFY=sha256:7fa1b5dc7fa65fefb9bdc8f0b431b365bbc13c2cc95b006a6358f66a52d1dec5
         WEB_SITE=http://github.com/vim-airline/vim-airline/
          ENTERED=20161111
-         UPDATED=20161111
+         UPDATED=20181227
            SHORT="Lean & mean statusline/tabline for ViM"
 
 cat << EOF

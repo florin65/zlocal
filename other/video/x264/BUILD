@@ -1,10 +1,10 @@
-OPTS+=" --prefix=/usr \ 
+OPTS+=" --prefix=/usr \
         --enable-shared \
-        --enable-strip  \
+        --enable-strip \
         --enable-pic"
 
 if [[ "$TEN_BITS" == "y" ]]; then
-  OPTS+=" --bit-depth=10"
+   OPTS+=" --bit-depth=10"
 fi
 
 VERSION=$(grep '#define X264_BUILD' x264.h | cut -d' ' -f3) &&

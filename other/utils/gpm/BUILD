@@ -10,28 +10,30 @@ BASEMSG="A mouse configuration file has been installed in /etc/config.d. SA plea
 
 # To fix bug report http://bugs.lunar-linux.org/view.php?id=442
 if [ `arch` == "x86_64" ]; then
-  CFLAGS="-fPIC"
+   CFLAGS="-fPIC"
 fi
 
 OPTS+=" --build=$BUILD \
-        --sbindir=/usr/bin"
+        --disable-static"
 
-LDFLAGS="-lm" &&
+OPTS+=" --sbindir=/usr/bin"
+
+LDFLAGS="-lm"
 
 default_build &&
 
 if [ -d "/etc/config.d" ]; then
-  if [ -e /etc/config.d/mouse ]; then
-     cp $SCRIPT_DIRECTORY/mouse /etc/config.d/mouse.new
-     echo $NEWMSG
+   if [ -e /etc/config.d/mouse ]; then
+      cp $SCRIPT_DIRECTORY/mouse /etc/config.d/mouse.new
+      echo $NEWMSG
    else
-     cp $SCRIPT_DIRECTORY/mouse /etc/config.d/mouse
-     echo $BASEMSG
-  fi
+      cp $SCRIPT_DIRECTORY/mouse /etc/config.d/mouse
+      echo $BASEMSG
+   fi
 else
-  mkdir -p /etc/config.d
-  cp $SCRIPT_DIRECTORY/mouse /etc/config.d
-  echo $BASEMSG
+   mkdir -p /etc/config.d
+   cp $SCRIPT_DIRECTORY/mouse /etc/config.d
+   echo $BASEMSG
 fi &&
 
 chmod 0644 /etc/config.d/mouse &&
@@ -49,4 +51,9 @@ fi &&
 
 if module_installed systemd; then
    install -D -m644 $SCRIPT_DIRECTORY/systemd.d/gpm.service /usr/lib/systemd/system/gpm.service
-fi
+fi &&
+
+# library fixes
+cd /usr/lib/ &&
+ln -sf libgpm.so.2.* libgpm.so &&
+chmod 0755 /usr/lib/libgpm.so.*

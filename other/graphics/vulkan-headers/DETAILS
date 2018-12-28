@@ -1,0 +1,16 @@
+          MODULE=vulkan-headers
+         VERSION=1.1.92
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=git+https://github.com/KhronosGroup/Vulkan-Headers.git
+#      SOURCE_VFY=sha256:
+        WEB_SITE=https://www.khronos.org/vulkan/
+         ENTERED=20181228
+         UPDATED=20120128
+           SHORT="Vulkan header files"
+
+cat << EOF
+Vulkan is a new generation graphics and compute API that provides
+high-efficiency, cross-platform access to modern GPUs used in a wide
+variety of devices from PCs and consoles to mobile phones and embedded
+platforms.
+EOF

@@ -16,6 +16,7 @@ depends libevdev
 depends pixman
 depends mesa-lib
 depends dbus-glib
+depends font-util
 depends xkeyboard-config
 depends xcb-util-keysyms
 depends xcb-util-cursor

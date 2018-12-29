@@ -1,10 +1,10 @@
            MODULE=vim
             MAJOR=8.1
-          VERSION=$MAJOR.0655
+          VERSION=$MAJOR.0657
             MAJOR=${MAJOR//./}
            SOURCE=$MODULE-$VERSION.tar.gz
   SOURCE_URL_FULL=https://github.com/vim/vim/archive/v$VERSION.tar.gz
-       SOURCE_VFY=sha256:f95daadd1d024a188d72cd40a7548ba555d716922ba75de45b46d10a43c3eff4
+       SOURCE_VFY=sha256:44b525e0ab7785eb16d5b55633a10bd9be365ff3d26cf6bf5206119eea044310
          WEB_SITE=https://github.com/vim/vim/
        MAINTAINER=sofar@lunar-linux.org
           ENTERED=20010922

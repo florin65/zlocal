@@ -32,7 +32,7 @@ fi &&
 # todo: should be detected by our package-management (installwatch?)
 #       i guess nobody uses lunar without installed iptables.
 if module_installed systemd; then
-  cp -Dm755 $SCRIPT_DIRECTORY/files/iptables-flush /usr/lib/systemd/scripts/ &&
+  cp $SCRIPT_DIRECTORY/files/iptables-flush /usr/lib/systemd/scripts/ &&
   cp $SCRIPT_DIRECTORY/files/iptsave /usr/bin/iptsave &&
   chmod a+x /usr/bin/iptsave
 fi &&

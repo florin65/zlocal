@@ -112,4 +112,3 @@ if [[ $VULKAN == y ]]; then
 fi
 
 set_module_config CONFIGURED y
-

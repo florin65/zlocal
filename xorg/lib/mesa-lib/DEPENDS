@@ -11,8 +11,8 @@ depends dbus-glib
 depends python-mako
 depends meson
 
-if [[ $GALLIUM == y ]]; then
-  # it needs to be compiled with AMDGPU backend
+if [[ "$GALLIUM" == "y" || "$VULKAN" == "y" ]]; then
+  # it needs to be compiled with amdgpu backend
   depends llvm
 fi
 

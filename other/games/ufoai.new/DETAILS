@@ -6,11 +6,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION-source
 #      SOURCE_VFY=sha256:
         WEB_SITE=http://ufoai.ninex.info/
          ENTERED=20080115
-         UPDATED=20170429
+         UPDATED=20181230
            SHORT="A squad-based tactical strategy game"
-
 Archive=off
-
 cat << EOF
 UFO: ALIEN INVASION is a squad-based tactical strategy game in the tradition of
 the old X-COM PC games, but with a twist. Our game combines military realism

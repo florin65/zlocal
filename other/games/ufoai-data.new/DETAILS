@@ -7,11 +7,10 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION-data
 #      SOURCE_VFY=sha256:
         WEB_SITE=http://ufoai.ninex.info/
          ENTERED=20170429
-         UPDATED=20170429
-           SHORT="Data for ufoai game"
+         UPDATED=20181230
+           SHORT="Data for the UfoAI game"
 # this would duplicate more than 1 GB of data and the module compiles quite fast anyway...
 ARCHIVE=off
-
 cat << EOF
 UFO: ALIEN INVASION is a squad-based tactical strategy game in the tradition of
 the old X-COM PC games, but with a twist. Our game combines military realism

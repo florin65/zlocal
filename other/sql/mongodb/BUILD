@@ -2,7 +2,9 @@ add_priv_user mongodb:mongodb -d /var/lib/mongodb &&
 
 OPTS+=" --use-system-boost \
         --use-system-pcre \
+        --use-system-yaml \
         --use-system-zlib \
+        --use-system-snappy\
         --disable-warnings-as-errors"
 
 if [[ "$(arch)" =~ ^i.86$ ]]; then

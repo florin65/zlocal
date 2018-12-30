@@ -1,0 +1,17 @@
+          MODULE=tower-cli
+         VERSION=3.3.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/ansible/tower-cli/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:7dcd730b27b878a4a747a9190550c468a8791f8b3cf2cb7f5bc90bec6bebff80
+        WEB_SITE=https://github.com/ansible/tower-cli/
+            TYPE=python2
+         ENTERED=20181230
+         UPDATED=20181230
+           SHORT="Command line tool and client library for the Ansible Tower"
+
+cat << EOF
+tower-cli is a command line tool for Ansible Tower. It allows Tower commands to
+be easily run from the Unix command line. It can also be used as a client
+library for other python apps, or as a reference for others developing API
+interactions with Tower's REST API.
+EOF

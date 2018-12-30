@@ -1,12 +1,12 @@
           MODULE=fuse-3
-         VERSION=3.0
+         VERSION=4.1
           SOURCE=$MODULE.$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/libfuse-$MODULE.$VERSION
       SOURCE_URL=http://github.com/libfuse/libfuse/archive/
-      SOURCE_VFY=sha256:1e26877b2038ad7ce74e1800a39e2bd2dfbd79fca06ae40bf06958f926856daa
+      SOURCE_VFY=sha256:425fb4461f8456ee005003c222cde4857a1cebb3484c9af8b132247bf3a4c66c
         WEB_SITE=http://fuse.sourceforge.net
          ENTERED=20170711
-         UPDATED=20181128
+         UPDATED=20181230
            SHORT="File system in userspace"
 
 cat << EOF

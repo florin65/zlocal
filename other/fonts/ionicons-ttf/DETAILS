@@ -1,0 +1,19 @@
+          MODULE=ionicons-ttf
+         VERSION=4.5.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/ionicons-$VERSION
+ SOURCE_URL_FULL=https://github.com/ionic-team/ionicons/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:6125a684e7981b3b9a302850a63bbea428de9876f6ff83da4f50786210450143
+        WEB_SITE=https://ionicons.com/
+         ENTERED=20161230
+         UPDATED=20181230
+           SHORT="Font from the Ionic mobile framework"
+
+cat << EOF
+Ionicons is a completely open-source icon set with 700+ icons crafted for web,
+iOS, Android, and desktop apps. Ionicons was built for Ionic Framework, so
+icons have both Material Design and iOS versions. When used with Ionic, the
+ion-icon component will automatically use the correct version based on your
+platform. Additionally, when used outside of Ionic, both ios and md platforms
+can be chosen by the application.
+EOF

@@ -1,10 +1,12 @@
-default_build &&
+prepare_install &&
 
-# Remove unnecessary files.
-find /usr/share/icons \
-\( \
-    -name 'AUTHORS' \
-    -o -name 'CONTRIBUTORS' \
-    -o -name 'LICENSE' \
-\) -delete
+# Prepare all theme directories for package
+for i in Xfce\ Evolution*; do
+  if [ -d "$i" ]; then
+     install -dm 0755 "/usr/share/themes/${i##*/}" &&
+     cp -rp "${i##*/}" "/usr/share/themes/"
+  fi
+done &&
 
+# Remove unnecessary TOOLS folder
+rm -rf "/usr/share/themes/Xfce Evolution/TOOLS"

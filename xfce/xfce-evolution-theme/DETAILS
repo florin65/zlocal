@@ -1,0 +1,15 @@
+          MODULE=xfce-evolution-theme
+         VERSION=5.6.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://itgroup.ro/xfce-evolution/
+         ENTERED=20181231
+         UPDATED=20181231
+           SHORT="The Xfce Evolution theme"
+
+cat << EOF
+The Xfce Evolution theme attempts to rid the Xfce desktop of visual distractions
+by providing a more consistent look (buttons, scrollbars, menus, etc) across
+older and newer applications.
+EOF

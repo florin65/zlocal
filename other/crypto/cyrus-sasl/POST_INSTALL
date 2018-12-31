@@ -5,5 +5,5 @@ if (in_depends $MODULE gdbm || in_depends $MODULE db) && [ ! -f "/var/lib/sasl/s
 fi &&
 
 if module_installed openrc; then
-   lin -c openrc-eudev
+   lin -c openrc-saslauthd
 fi

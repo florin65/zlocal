@@ -1,5 +1,4 @@
 OPTS+=" --prefix=/usr \
-        --sbindir=/usr/bin \
         --with-drivedbdir \
         --with-libcap-ng=yes \
         --with-initscriptdir=/etc/init.d \
@@ -10,6 +9,8 @@ if module_installed systemd; then
    OPTS+=" --with-libsystemd \
            --with-systemdsystemunitdir=/usr/lib/systemd/system"
 fi
+
+OPTS+=" --sbindir=/usr/bin"
 
 default_build &&
 

@@ -4,8 +4,12 @@ OPTS+=" --prefix=/usr \
         --with-libcap-ng=yes \
         --with-initscriptdir=/etc/init.d \
         --with-smartdscriptdir=/usr/share/smartmontools \
-        --with-systemdsystemunitdir=/usr/lib/systemd/system \
         --with-smartdplugindir=/usr/share/smartmontools/smartd_warning.d"
+
+if module_installed systemd; then
+   OPTS+=" --with-libsystemd \
+           --with-systemdsystemunitdir=/usr/lib/systemd/system"
+fi
 
 default_build &&
 

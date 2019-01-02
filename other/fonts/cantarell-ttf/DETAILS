@@ -1,0 +1,14 @@
+          MODULE=cantarell-ttf
+         VERSION=0.1
+          SOURCE=cantarell.zip
+      SOURCE_URL=https://www.fontsquirrel.com/fonts/download/cantarell/
+      SOURCE_VFY=sha256:8574d36e5b170d117d77e167a8f444746b34619cf76ca7982a2d2493c39a4172
+        WEB_SITE=https://www.fontsquirrel.com/fonts/Cantarell
+         ENTERED=20190102
+         UPDATED=20190102
+         ARCHIVE=off
+           SHORT="The Cantarell TTF fonts"
+
+cat << EOF
+The Cantarell TTF fonts.
+EOF

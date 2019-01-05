@@ -1,11 +1,11 @@
           MODULE=dfshow
-         VERSION=0.5.3-alpha
+         VERSION=0.5.4-alpha
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/roberthawdon/dfshow/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:4b343a814689f4fcc98ee6c96d040efefebf393a85194b75792f4d5376064277
+      SOURCE_VFY=sha256:2dc1c0fec9d6f0cbcdb9461145926b0d3f84c624000ba779eb5442af18580131
         WEB_SITE=https://github.com/roberthawdon/dfshow/
          ENTERED=20181103
-         UPDATED=20190104
+         UPDATED=20190105
            SHORT="An interactive directory/file browser"
 
 cat << EOF

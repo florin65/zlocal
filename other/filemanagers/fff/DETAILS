@@ -1,8 +1,8 @@
           MODULE=fff
          VERSION=0.3.2
           SOURCE=$MODULE-$VERSION.tar.gz
- SOURCE_URL_FULL=git+https://github.com/dylanaraps/fff/
-      SOURCE_VFY=sha256:05078c5033c0b429b82bde851b55609b99eb63ee2fd887bd1507230b8ce573a2
+ SOURCE_URL_FULL=https://github.com/dylanaraps/fff/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:f4d64abd0adacfdcc3d2e8f8adc80a878c41b982c662a97e8b4f1989f01aea61
         WEB_SITE=https://github.com/dylanaraps/fff/
          ENTERED=20181029
          UPDATED=20190106

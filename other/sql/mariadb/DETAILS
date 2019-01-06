@@ -1,11 +1,11 @@
           MODULE=mariadb
-         VERSION=10.3.10
+         VERSION=10.3.11
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=https://downloads.mariadb.org/interstitial/mariadb-$VERSION/source
-      SOURCE_VFY=sha256:57767c048982811c7ab21d8527f6f36aa897386e8c7235f11b5505a924d68eda
+      SOURCE_VFY=sha256:211655b794c9d5397ba3be6c90737eac02e882f296268299239db47ba328f1b2
         WEB_SITE=http://mariadb.org/
          ENTERED=20130921
-         UPDATED=20181005
+         UPDATED=20190106
            SHORT="Fast SQL database server, drop-in replacement for MySQL"
 
 cat << EOF

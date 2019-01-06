@@ -1,0 +1,17 @@
+          MODULE=gnuplot
+         VERSION=5.2.6
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:35dd8f013139e31b3028fac280ee12d4b1346d9bb5c501586d1b5a04ae7a94ee
+        WEB_SITE=http://www.gnuplot.vt.edu/
+         ENTERED=20021015
+         UPDATED=20190106
+           SHORT="Command line program to make scientific graphs"
+
+cat << EOF
+gnuplot is a command-driven interactive function plotting program. It can be
+used to plot functions and data points in both two- and three-dimensional plots
+in many different formats, and will accommodate many of the needs of today's
+scientists for graphic data representation. gnuplot is copyrighted, but freely
+distributable; you don't have to pay for it.
+EOF

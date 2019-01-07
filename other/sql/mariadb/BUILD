@@ -3,6 +3,7 @@ OPTS+=" -DSYSCONFDIR=/etc/mysql \
         -DMYSQL_UNIX_ADDR=/run/mysqld/mysqld.sock \
         -DBUILD_CONFIG=mysql_release \
         -DINSTALL_BINDIR=bin \
+        -DINSTALL_SBINDIR=bin \
         -DINSTALL_INFODIR=share/info \
         -DINSTALL_MANDIR=share/man \
         -DINSTALL_PLUGINDIR=lib/mysql/plugin \
@@ -34,8 +35,6 @@ OPTS+=" -DSYSCONFDIR=/etc/mysql \
         -DWITHOUT_TOKUDB_STORAGE_ENGINE=ON \
         -DWITHOUT_PBXT_STORAGE_ENGINE=ON \
         -DWITH_EMBEDDED_SERVER=ON"
-
-OPTS+=" -DINSTALL_SBINDIR=bin"
 
 if module_installed systemd; then
   OPTS+=" --DWITH_SYSTEMD=yes"

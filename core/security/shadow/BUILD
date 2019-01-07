@@ -17,8 +17,8 @@ sedit '/^SUBDIRS/ n; s/etc//' Makefile.in Makefile.am &&
             --sbindir=/usr/bin \
             --with-sha-crypt \
             --with-libcrack \
-            --without-selinux \
             --without-skey \
+            --without-selinux \
             --without-group-name-max-length \
             --disable-static \
             $OPTS &&

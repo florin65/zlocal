@@ -1,12 +1,12 @@
           MODULE=vim-diffchar
-         VERSION=8.1
+         VERSION=8.2
           SOURCE=$MODULE-$VERSION.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/undotree-rel_$VERSION
   SOURCE_URL_FULL=http://www.vim.org/scripts/download_script.php?src_id=26254
       SOURCE_VFY=sha256:d19ec89f09341144efc858c1edad57ec68d83e1f4ab8cd8d418c16343c928b07
         WEB_SITE=http://github.com/rickhowe/diffchar.vim/
          ENTERED=20170320
-         UPDATED=20181120
+         UPDATED=20190106
            SHORT="Improved vim's diff mode"
 
 cat << EOF

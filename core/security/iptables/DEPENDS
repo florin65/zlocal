@@ -2,4 +2,4 @@ depends libnftnl
 depends libpcap
 depends pkgconf
 
-optional_depends libnetfilter_conntrack "" "" "for netfilter commumication support"
+optional_depends libnetfilter_conntrack "" "" "for netfilter communication support"

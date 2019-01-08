@@ -1,5 +1,5 @@
 # make a backup for gawk app
-cp -f /bin/gawk /bin/gawk.old &&
+cp -f /usr/bin/gawk /usr/bin/gawk.old &&
 
 OPTS+="--build=$BUILD \
        --prefix=/usr \
@@ -19,13 +19,13 @@ make &&
 prepare_install &&
 
 # restore backup gawk app
-mv /bin/gawk.old /bin/gawk &&
-ln -sf /bin/gawk /bin/awk  &&
+mv /usr/bin/gawk.old /usr/bin/gawk &&
+ln -sf /usr/bin/gawk /usr/bin/awk &&
 
 make install &&
 
-ln -sf /bin/gawk /bin/awk &&
-rm -f /bin/{,p}gawk-* &&
+ln -sf /usr/bin/gawk /usr/bin/awk &&
+rm -f /usr/bin/{,p}gawk-* &&
 
 mv /etc/profile.d/gawk.{sh,rc} &&
 rm -f /etc/profile.d/gawk.csh

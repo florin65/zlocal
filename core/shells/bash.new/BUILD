@@ -1,15 +1,16 @@
 bad_flags -malign-double &&
 
-OPTS+=" --enable-readline \
+OPTS+=" --bindir=/usr/bin \
+        --enable-readline \
+        --disable-profiling \
         --with-curses \
-        --without-installed-readline \
         --without-bash-malloc \
-        --disable-profiling"
+        --without-installed-readline"
 
 default_build &&
 
-ln -sf bash /bin/sh &&
-ln -f /bin/bash /bin/rbash &&
+ln -sf bash /usr/bin/sh &&
+ln -f /usr/bin/bash /usr/bin/rbash &&
 
 rm -f /usr/share/man/man1/bash.1 &&
 rm -f /usr/share/man/man1/bashbug.1 &&

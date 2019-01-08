@@ -1,10 +1,11 @@
 bad_flags -malign-double -s
 
-OPTS+=" --without-bash-malloc \
-        --with-curses \
-        --without-installed-readline \
+OPTS+=" --with-curses \
+        --disable-profiling  \
         --enable-static-link \
-        --disable-profiling"
+        --disable-profiling \
+        --without-bash-malloc \
+        --without-installed-readline"
 
 default_config &&
 make version.h &&

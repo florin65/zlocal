@@ -1,4 +1,0 @@
-depends fhs
-depends sed
-depends uudeview
-depends util-linux

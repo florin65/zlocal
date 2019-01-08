@@ -1,7 +1,7 @@
 # Real and working fix for readline major version upgrade
 mkdir -p /tmp/old.libraries &&
-cp -f /lib/libreadline.so.* /tmp/old.libraries &&
-cp -f /lib/libhistory.so.*  /tmp/old.libraries &&
+cp -f /usr/lib/libreadline.so.* /tmp/old.libraries &&
+cp -f /usr/lib/libhistory.so.*  /tmp/old.libraries &&
 LD_LIBRARY_PATH=/tmp/old.libraries:$LD_LIBRARY_PATH &&
 
 OUR_OLD_READLINE_VVV=$(lvu installed readline | sed -r 's/([0-9]+).+/\1/') &&

@@ -5,6 +5,6 @@ OPTS+=" --enable-nc \
 
 default_build
 
-#install -Dm 755 ./apps/nc/nc /usr/bin/nc &&
+#install -Dm 755 ./apps/nc/nc /usr/bin/ &&
 #ln -sf nc /usr/bin/netcat &&
-#install -Dm 644 ./apps/nc/nc.1 /usr/share/man/man1/nc.1
+#install -Dm 644 ./apps/nc/nc.1 /usr/share/man/man1/

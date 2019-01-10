@@ -1,0 +1,18 @@
+          MODULE=cmst
+         VERSION=2018.01.06
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://github.com/andrew-bibb/cmst/releases/download/cmst-$VERSION/
+   MODULE_PREFIX=${QT5_PREFIX:-/usr}
+      SOURCE_VFY=sha256:30bb83272284ffac4abda4b190aa3099e72ab67ed5075275dfef38145a040365
+        WEB_SITE=https://github.com/andrew-bibb/cmst/
+         ENTERED=20190110
+         UPDATED=20190110
+           SHORT="A QT based GUI front end for the connman connection manager"
+
+cat << EOF
+The program provides graphical user interface to control the connman daemon.
+The connman daemon must be started as you normally would, this program just
+interfaces with that daemon. You can see what technologies and services connman
+has found, and for wifi services an agent is registered to assist in obtainingxi
+ the information from you necessary to logon the wifi service.
+EOF

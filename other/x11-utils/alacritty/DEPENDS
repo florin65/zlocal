@@ -1,0 +1,10 @@
+depends cmake
+depends ncurses
+depends rustc
+depends fontconfig
+depends freetype2
+depends desktop-file-utils
+depends libXi
+depends libXcursor
+
+optional_depends xclip "" "" "for copy/paste clipboard support"

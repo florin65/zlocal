@@ -1,12 +1,11 @@
-          MODULE=pass
+          MODULE=password-store
          VERSION=1.7.3
-          SOURCE=password-store-$VERSION.tar.xz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/password-store-$VERSION
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=http://git.zx2c4.com/password-store/snapshot/
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:2b6c65846ebace9a15a118503dcd31b6440949a30d3b5291dfb5b1615b99a3f4
         WEB_SITE=http://www.passwordstore.org/
          ENTERED=20160430
-         UPDATED=20180805
+         UPDATED=20190111
            SHORT="The standard unix password manager"
 
 cat << EOF

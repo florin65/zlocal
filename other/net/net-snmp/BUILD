@@ -12,8 +12,7 @@ PERL_SO_PATH="/usr/lib/perl$PERL_MAJ_VER/$PERL_VER/`arch`-linux-thread-multi/COR
 # So lets put all that together.
 LDFLAGS="$LDFLAGS -Wl,-rpath,${PERL_SO_PATH}" &&
 
-OPTS+=" --sbindir=/usr/bin \
-        --disable-static \
+OPTS+=" --disable-static \
         --enable-ucd-snmp-compatibility \
         --with-logfile=/var/log/snmpd.log \
         --with-mib-modules=host,tunnel,misc/ipfwacc,ucd-snmp/diskio,ucd-snmp/dlmod"
@@ -21,6 +20,8 @@ OPTS+=" --sbindir=/usr/bin \
 if module_installed systemd; then
  OPTS+=" --with-systemd"
 fi
+
+OPTS+=" --sbindir=/usr/bin"
 
 PYTHONPROG=/usr/bin/python2 \
            ./configure --prefix=/usr \

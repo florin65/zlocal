@@ -8,11 +8,12 @@ OPTS+="--build=$BUILD \
        --infodir=/usr/share/info \
        ac_cv_func_working_mktime=yes"
 
-if module_installed readline; then
-   OPTS+=" --with-readline"
-else
+# make it build without readline support
+#if module_installed readline; then
+#   OPTS+=" --with-readline"
+#else
    OPTS+=" --without-readline"
-fi
+#fi
 
 default_config &&
 make &&

@@ -1,0 +1,17 @@
+          MODULE=gnutls
+         VERSION=3.6.5
+          SOURCE=$MODULE-$VERSION.tar.xz
+   SOURCE_URL[0]=https://www.gnupg.org/ftp/gcrypt/$MODULE/v${VERSION::3}
+   SOURCE_URL[1]=$GNU_URL/$MODULE
+      SOURCE_VFY=sha256:073eced3acef49a3883e69ffd5f0f0b5f46e2760ad86eddc6c0866df4e7abb35
+        WEB_SITE=http://www.gnu.org/software/gnutls
+         ENTERED=20020212
+         UPDATED=20190111
+           SHORT="A TLS library"
+
+cat << EOF
+GnuTLS is a project that aims to develop a library which provides a
+secure layer, over a reliable transport layer. Currently the GnuTLS
+library implements the proposed standards by the IETF's TLS working
+group.
+EOF

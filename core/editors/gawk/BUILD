@@ -3,7 +3,7 @@ cp -f /usr/bin/gawk /usr/bin/gawk.old &&
 
 OPTS+="--build=$BUILD \
        --prefix=/usr \
-       --bindir=/bin \
+       --bindir=/usr/bin \
        --mandir=/usr/share/man \
        --infodir=/usr/share/info \
        ac_cv_func_working_mktime=yes"

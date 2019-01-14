@@ -1,11 +1,11 @@
           MODULE=libidn2
-         VERSION=2.1.0
+         VERSION=2.0.5
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=https://ftp.gnu.org/gnu/libidn/
-      SOURCE_VFY=sha256:032398dbaa9537af43f51a8d94e967e3718848547b1b2a4eb3138b20cad11d32
+      SOURCE_VFY=sha256:53f69170886f1fa6fa5b332439c7a77a7d22626a82ef17e2c1224858bb4ca2b8
         WEB_SITE=https://www.gnu.org/software/libidn/#libidn2
          ENTERED=20180314
-         UPDATED=20190114
+         UPDATED=20180519
            SHORT="An implementation of IDNA2008, Punycode and TR46"
 
 cat << EOF

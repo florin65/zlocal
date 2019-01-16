@@ -1,0 +1,14 @@
+          MODULE=sphinxcontrib-websupport
+         VERSION=1.1.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://pypi.org/packages/source/s/$MODULE/
+      SOURCE_VFY=sha256:9de47f375baf1ea07cdb3436ff39d7a9c76042c10a769c52353ec46e4e8fc3b9
+        WEB_SITE=http://www.selenic.com/smem/
+            TYPE=python3
+         ENTERED=20190116
+         UPDATED=20190116
+           SHORT="Sphinx API for Web Apps"
+
+cat << EOF
+Sphinx API for Web Apps.
+EOF

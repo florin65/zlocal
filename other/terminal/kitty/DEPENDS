@@ -1,0 +1,11 @@
+depends Sphinx
+depends sphinxcontrib-websupport
+depends freetype2
+depends fontconfig
+depends libxkbcommon
+depends libXinerama
+depends wayland-protocols
+depends mesa-lib
+depends hicolor-icon-theme
+
+optional_depends ImageMagick "" "" "for viewing images with icat"

@@ -1,11 +1,11 @@
           MODULE=fff
-         VERSION=1.0
+         VERSION=1.2
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/dylanaraps/fff/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:6e5eed18b50b3e1a2497092e618665ff00b71b27b4f7653f9693ee40517d1a8a
+      SOURCE_VFY=sha256:a77095950c2fe1eca82c12c41273ed987e295e522c7e85365192f9056e4f80d8
         WEB_SITE=https://github.com/dylanaraps/fff/
          ENTERED=20181029
-         UPDATED=20190114
+         UPDATED=2019011r6
            SHORT="Simple and fast file manager"
 
 cat << EOF

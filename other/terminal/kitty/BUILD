@@ -1,3 +1,3 @@
 prepare_install &&
 
-python setup.py linux-package
+python3 setup.py linux-package --prefix=/usr

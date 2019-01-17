@@ -1,0 +1,15 @@
+          MODULE=asciinema
+         VERSION=2.0.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/asciinema/asciinema/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:2578a1b5611e5375771ef6582a6533ef8d40cdbed1ba1c87786fd23af625ab68
+        WEB_SITE=https://asciinema.org/
+            TYPE=python3
+         ENTERED=20190117
+         UPDATED=20190117
+           SHORT="Record and share terminal sessions"
+
+cat << EOF
+asciinema is a free and open source solution for recording terminal sessions
+and sharing them on the web.
+EOF

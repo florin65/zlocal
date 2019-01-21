@@ -7,7 +7,6 @@ depends libXp
 depends libXScrnSaver
 depends libXinerama
 depends mesa-lib
-depends gstreamer
 depends %JPEG
 depends giflib
 depends libpng
@@ -17,7 +16,7 @@ depends libsndfile
 optional_depends %SSL "" "--with-crypto=none" "for crypto support"
 optional_depends bullet3 "" "--disable-physics" "enable physics support (HIGHLY recommended)" y
 optional_depends pulseaudio "" "--disable-pulseaudio" "for audio support (HIGHLY recommended)" y
-optional_depends gst-plugins-base-1.0 "" "--disable-gstreamer1" "for gstreamer support"
+optional_depends gst-plugins-base "--enable-gstreamer1" "--disable-gstreamer1" "for gstreamer support"
 optional_depends fribidi "--enable-fribidi" "--disable-fribidi" "for bidirectional text support"
 optional_depends harfbuzz "--enable-harfbuzz" "--disable-harfbuzz" "enable complex text shaping"
 optional_depends libwebp "--enable-image-loader-webp" "" "enable WEBP image loader"

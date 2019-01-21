@@ -1,6 +1,6 @@
 --- ./setup.py.old	2019-01-04 06:07:59.000000000 +0200
 +++ ./setup.py		2019-01-16 18:39:39.307046059 +0200
-@@ -551,36 +551,35 @@
+@@ -552,36 +552,35 @@
  def copy_man_pages(ddir):
      mandir = os.path.join(ddir, 'share', 'man')
      safe_makedirs(mandir)
@@ -20,7 +20,7 @@
      shutil.copytree(src, os.path.join(mandir, 'man1'))
 -
 +''')
- 
+
  def copy_html_docs(ddir):
      htmldir = os.path.join(ddir, 'share', 'doc', appname, 'html')
      safe_makedirs(os.path.dirname(htmldir))
@@ -38,9 +38,9 @@
  (needs the sphinx documentation system to be installed)
 -''')
 -    shutil.copytree(src, htmldir)
- 
+
 +    shutil.copytree(src, htmldir)
 +''')
- 
+
  def compile_python(base_path):
      import compileall

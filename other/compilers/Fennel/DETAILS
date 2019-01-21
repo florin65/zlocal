@@ -1,11 +1,11 @@
           MODULE=Fennel
-         VERSION=0.1.1
+         VERSION=0.2.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/bakpakin/Fennel/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:2235832b75cb362f8ba453d7124bf5c1330602e0849b5c3353e6ea71f73a0e29
+      SOURCE_VFY=sha256:5a4519e9247ccfa18bc2a0a41e69692d0d571569addb77b0bb1afc4e7b838569
         WEB_SITE=https://github.com/bakpakin/Fennel/
          ENTERED=20181130
-         UPDATED=20181207
+         UPDATED=20190121
            SHORT="A Lua Lisp language"
 
 cat << EOF

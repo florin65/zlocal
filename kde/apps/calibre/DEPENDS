@@ -5,11 +5,11 @@ depends ImageMagick
 depends python2-beautifulsoup4
 depends python2-lxml
 depends python2-dateutil
-depends python2-cssutils
+depends python2-cssselect
+depends python2-css-parser
 depends chmlib
 depends podofo
 depends apsw
-depends python2-cssselect
 depends python2-netifaces
 depends libmtp
 depends python2-msgpack

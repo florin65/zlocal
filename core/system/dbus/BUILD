@@ -37,5 +37,8 @@ add_priv_user dbus:dbus -d /dev/null -s /bin/false &&
 mkdir -p /run/dbus &&
 chown -R dbus:dbus /run/dbus &&
 
+# remove the /etc/dbus-1 directory
+rm -fr /etc/dbus-1 &&
+
 mkdir -p /etc/X11/xinit/xinitrc.d/ &&
 install -m756 $SCRIPT_DIRECTORY/30-dbus.sh /etc/X11/xinit/xinitrc.d/

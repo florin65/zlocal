@@ -1,11 +1,11 @@
           MODULE=ansible
-         VERSION=2.7.5
+         VERSION=2.7.6
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=https://releases.ansible.com/$MODULE/
-      SOURCE_VFY=sha256:aaf9e1974bd12840ca055ac156f37601c08d73d726a3a6b98a2fe759a57051bb
+      SOURCE_VFY=sha256:6d855ead966c1a24a7d583ddcea8dd9e1f6edab3207390b647149351e113eb38
         WEB_SITE=https://www.ansible.com
          ENTERED=20180322
-         UPDATED=20181220
+         UPDATED=20190122
            SHORT="Radically simple IT automation platform"
 
 cat << EOF

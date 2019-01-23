@@ -1,6 +1,6 @@
 --- ./configure.ac.old	2013-04-16 00:22:24.000000000 +0300
 +++ ./configure.ac	2013-04-20 11:12:24.155259923 +0300
-@@ -3480,8 +3480,6 @@
+@@ -3481,8 +3481,6 @@
  gobject/tests/Makefile
  gthread/Makefile
  gio/Makefile

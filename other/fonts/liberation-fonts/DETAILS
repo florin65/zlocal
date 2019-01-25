@@ -1,12 +1,12 @@
           MODULE=liberation-fonts
-         VERSION=2.00.1
+         VERSION=2.00.4
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=https://fedorahosted.org/releases/l/i/liberation-fonts
-      SOURCE_VFY=sha256:7acbc612c3665292d2d94fd38fe7cd88d826281d31f8c209af92702bdaf6b9fa
-        WEB_SITE=http://www.redhat.com/promo/fonts
+      SOURCE_URL=https://github.com/liberationfonts/liberation-fonts/files/2579282/
+      SOURCE_VFY=sha256:9445ec66a9161eeaef3f07fb2318598e50e83ce662132a76a0a3c6097061c58d
+        WEB_SITE=https://github.com/liberationfonts/liberation-fonts/
          ENTERED=20070516
-         UPDATED=20121205
-           SHORT="some RedHat GPL exception licensed fonts"
+         UPDATED=20190125
+           SHORT="Some RedHat GPL exception licensed fonts"
 
 cat << EOF
 There are three sets: Sans (a substitute for Arial, Albany, Helvetica,

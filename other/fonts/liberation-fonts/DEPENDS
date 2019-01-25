@@ -1,4 +1,3 @@
-depends numpy
 depends fontconfig
 depends fontforge
 depends fonttools

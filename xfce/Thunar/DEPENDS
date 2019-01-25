@@ -1,7 +1,10 @@
 depends exo
+depends libnotify
 depends libpng
 depends shared-mime-info
 depends desktop-file-utils
+depends hicolor-icon-theme
+depends intltool
 
 optional_depends libgudev \
                  "--enable-gudev" \

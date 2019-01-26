@@ -1,0 +1,15 @@
+          MODULE=ptunnel-ng
+         VERSION=1.32
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/lnslbrty/ptunnel-ng/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:0e51f6fa2fb5b11e9cd5303e450a4e236e4688560ad2a14b0b6e01e9fc2970db
+        WEB_SITE=https://github.com/lnslbrty/ptunnel-ng/
+         ENTERED=20190126
+         UPDATED=20190126
+           SHORT="Tunnel TCP connections through ICMP"
+
+cat << EOF
+Ptunnel is an application that allows you to reliably tunnel TCP connections
+to a remote host using ICMP echo request and reply packets, commonly known as
+ping requests and replies.
+EOF

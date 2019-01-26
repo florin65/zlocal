@@ -1,6 +1,5 @@
 depends expat
 depends pkgconf
-depends autoconf-archive
 
 optional_depends libX11 \
                 "--with-x --enable-x11-autolaunch" \

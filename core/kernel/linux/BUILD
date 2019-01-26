@@ -15,6 +15,8 @@ make ${MAKES:+-j$MAKES} bzImage
 make ${MAKES:+-j$MAKES} INSTALL_MOD_PATH=/usr modules
 backup_mods_krnl $FULL_VERSION
 prepare_install
+
+INSTALL_MOD_PATH=/usr
 make modules_install
 
 cp arch/${MYARCH}/boot/bzImage /boot/vmlinuz-$FULL_VERSION-$(arch)

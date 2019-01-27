@@ -1,3 +1,4 @@
 # Do not unpach VirtualBox sources
 
-sedit "s:/sbin:/usr/sbin:" /usr/lib/virtualbox/src/Makefile
+sedit "s:/sbin:/usr/sbin:" /usr/lib/virtualbox/src/Makefile &&
+sedit "s:/lib:/usr/lib:" /usr/lib/virtualbox/src/Makefile

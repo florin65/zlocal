@@ -9,6 +9,8 @@ ln -sf ../vboxnetadp ./vboxnetadp/vboxnetadp &&
 ln -sf ../vboxnetflt ./vboxnetflt/vboxnetflt &&
 ln -sf ../vboxpci    ./vboxpci/vboxpci &&
 
+make clean &&
+export INSTALL_MOD_PATH="/usr"
 default_make &&
 
 install -Dm0644 /dev/null /usr/lib/modules-load.d/virtualbox-modules.conf &&

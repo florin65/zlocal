@@ -1,0 +1,18 @@
+          MODULE=ctop
+         VERSION=0.7.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/bcicen/ctop/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:bb40939b3d420864db6abc82e885a755f6de5b2e84eef3c7b956a8508f931811
+        WEB_SITE=https://ctop.sh/
+         ENTERED=20190127
+         UPDATED=20190127
+           SHORT="Top-like interface for container metrics"
+
+cat << EOF
+ctop provides a concise and condensed overview of real-time metrics for
+multiple containers. ctop comes with built-in support for Docker and runC.
+To build a minimal Docker image containing only ctop:
+  make image
+Now you can run your local image:
+  docker run -ti --name ctop --rm -v /var/run/docker.sock:/var/run/docker.sock ctop
+EOF

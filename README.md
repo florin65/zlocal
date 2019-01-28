@@ -11,21 +11,32 @@ cd /var/lib/lunar/moonbase/zlocal
 git clone https://github.com/Florin65/zlocal.git moonbase-openrc
 ```
 
-2. Start by installing `openrc` along with `elogind` (which pulls in `eudev`) and `dbus` by running:
+2. Start by installing the following:
 ```
-lin -rc openrc elogind dbus
+lin -rc openrc eudev elogind polit dbus
 ```
 
-3. Move all binaries into `/usr/bin`:
+3. Move all binaries and libraries into their /usr respective directories:
 ```
 mv -f /bin/* /sbin/* /usr/sbin/* /usr/bin
+mv -f /lib/* /usr/lib
 ```
 
-4. Make symlinks to `/usr/bin` to emulate the classic file system
+4. Make compatibility symlinks to emulate the classic file system
 ```
 ln -sf /usr/bin /bin
 ln -sf /usr/bin /sbin
 ln -sf /usr/bin /usr/sbin
+ln -sf /usr/lib /lib
 ```
 
-## To be continued...
+5. Do the magick with either
+```
+lunar renew
+```
+
+or this for core install
+
+```
+lunar rebuild
+```

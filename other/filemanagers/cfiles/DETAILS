@@ -1,0 +1,15 @@
+          MODULE=cfiles
+         VERSION=1.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/mananapr/cfiles/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:1ce74b1c797532fce5bcb256b7b5b35eb119ad23220a2f8615241b68e23dc9c4
+        WEB_SITE=https://github.com/mananapr/cfiles/
+         ENTERED=20190129
+         UPDATED=20190129
+           SHORT="A ncurses file manager with vim like keybindings"
+
+cat << EOF
+cfiles is a work in progress terminal file manager with vim like keybindings,
+written in C using the ncurses library. It aims to provide an interface like
+ranger while being lightweight, fast and minimal.
+EOF

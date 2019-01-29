@@ -13,12 +13,13 @@ git clone https://github.com/Florin65/zlocal.git moonbase-openrc
 
 2. Start by installing the following:
 ```
-lin -rc openrc eudev elogind polit dbus
+lin -rc openrc eudev elogind dbus polkit
 ```
 
-3. Move all binaries and libraries into their /usr respective directories:
+3. From a rescue boot, mount the Lunar root partition.
+Move all binaries and libraries into their /usr respective directories:
 ```
-mv -f /bin/* /sbin/* /usr/sbin/* /usr/bin
+mv -f /bin/* /sbin/* /usr/sbin/* /usr/bin/
 mv -f /lib/* /usr/lib
 ```
 
@@ -30,7 +31,7 @@ ln -sf /usr/bin /usr/sbin
 ln -sf /usr/lib /lib
 ```
 
-5. Do the magick with either
+5. Boot to Lunar and do the magick with either
 ```
 lunar renew
 ```

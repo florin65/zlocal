@@ -1,11 +1,11 @@
           MODULE=znc
-         VERSION=1.6.3
+         VERSION=1.7.2
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://znc.in/releases/
-      SOURCE_VFY=sha256:631c46de76fe601a41ef7676bc974958e9a302b72b25fc92b4a603a25d89b827
+      SOURCE_VFY=sha256:60b4e78f54c532c32673d1ef8e5f606c530ef3a6d6b76ea1daa66459a86682a9
         WEB_SITE=http://wiki.znc.in/ZNC/
          ENTERED=20151117
-         UPDATED=20160227
+         UPDATED=20190129
            SHORT="An IRC bouncer with modules & scripts support"
 
 cat << EOF

@@ -1,5 +1,5 @@
 # optimize -O2
-CFLAGS+=" -O2"
+CFLAGS+=" -O2" &&
 
 # The fortify compiler option cause the build to fail
 bad_flags -D_FORTIFY_SOURCE=2 &&
@@ -48,17 +48,16 @@ OPTS+=" --libdir=/usr/lib \
              --enable-obsolete-nsl      \
              --enable-bind-now          \
              --enable-bind-now          \
+             --enable-kernel=3.2        \
              --enable-lock-elision      \
-             --enable-stack-protector=strong \
              --enable-stackguard-randomization \
+             --enable-stack-protector=strong \
              --enable-add-ons           \
              --disable-timezone-tools   \
              --disable-multi-arch       \
              --disable-profile          \
              --disable-werror           \
              $OPTS &&
-
-#             --enable-kernel=3.2        \
 
 # build libraries with hardening disabled
 echo "build-programs=no" >> configparms &&

@@ -1,12 +1,12 @@
            MODULE=mesa-lib
-          VERSION=18.3.2
+          VERSION=18.3.3
            SOURCE=mesa-$VERSION.tar.xz
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/mesa-$VERSION
        SOURCE_URL=https://mesa.freedesktop.org/archive/
-       SOURCE_VFY=sha256:f7ce7181c07b6d8e0132da879af1729523a6c8aa87f79a9d59dfd064024cfb35
+       SOURCE_VFY=sha256:2ab6886a6966c532ccbcc3b240925e681464b658244f0cbed752615af3936299
          WEB_SITE=http://www.mesa3d.org
           ENTERED=20060215
-          UPDATED=20190117
+          UPDATED=20190201
             SHORT="Mesa 3D library"
 
 cat << EOF
@@ -17,4 +17,4 @@ To the extent that Mesa utilizes the OpenGL command syntax or state machine, it
 is being used with authorization from Silicon Graphics, Inc.(SGI).
 
 mesa-lib provides libGL.so, needed for many different programs.
-EOF
+OF

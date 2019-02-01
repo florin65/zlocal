@@ -3,7 +3,14 @@ NOCONFIGURE=1 ./autogen.sh &&
 if [[ $GALLIUM == y ]]; then
   # Mesa Gallium mklib breaks build when linker flags are set
   bad_flags linker &&
-  OPTS+=" -D osmesa=gallium" &&
+  OPTS+=" -D osmesa=gallium \
+          -D gallium-xa=true \
+          -D gallium-extra-hud=true \
+          -D gallium-opencl=disabled"
+
+#        -D gallium-opencl=icd \
+#        -D gallium-nine=true \
+
   OPTS+=" -D gallium-drivers=swrast,$(echo $GALLIUMDRIVER | sed s/\ /,/g)"
 fi
 
@@ -25,18 +32,10 @@ OPTS+=" -D b_lto=false \
         -D gles1=true \
         -D gles2=true \
         -D valgrind=false \
-        -D gallium-xa=true \
         -D shared-glapi=true \
+        -D texture-float=true \
         -D swr-arches=avx,avx2 \
-        -D gallium-extra-hud=true \
-        -D gallium-opencl=disabled \
         -D dri-drivers=$(echo $MESADRIVER | sed s/\ /,/g)" &&
-
-#        -D gallium-nine=true \
-
-if module_installed libglvnd; then
-  OPTS+=" -D glvnd=false"
-fi
 
 default_meson_build &&
 

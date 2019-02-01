@@ -89,7 +89,7 @@ if [[ -z "$(get_module_config CONFIGURED)" ]]; then
   message "${DEFAULT_COLOR}"
 fi
 
-mquery GALLIUM "Enable Gallium llvm renderer?" y "-D llvm=true" ""
+mquery GALLIUM "Enable Gallium renderer?" y "-D llvm=true" ""
 # mquery doesn't return or set env's, so read out the result:
 GALLIUM=`get_module_config GALLIUM`
 
@@ -100,7 +100,7 @@ if [[ $GALLIUM == y ]]; then
   fi
 fi
 
-mquery VULKAN "Enable Vulkan llvm renderer?" y "-D llvm=true" ""
+mquery VULKAN "Enable Vulkan renderer?" y "-D llvm=true" ""
 # mquery doesn't return or set env's, so read out the result:
 VULKAN=`get_module_config VULKAN`
 

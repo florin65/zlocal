@@ -39,10 +39,6 @@ if [ -n "$MODS" ]; then
   OPTS+=" --with-modules=$MODS"
 fi
 
-if module_installed Linux-PAM; then
-  OPTS+=" --enable-shadow $ENABLE_PAM"
-fi
-
 sedit "s/\tstandalone/\tinetd/" sample-configurations/basic.conf &&
 sedit "s:\#DefaultRoot ~:DefaultRoot /srv/ftp:" sample-configurations/basic.conf &&
 sedit "s:nobody:ftp:g" sample-configurations/*.conf &&

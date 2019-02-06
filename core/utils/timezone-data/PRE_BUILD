@@ -8,4 +8,6 @@ cd $SOURCE_DIRECTORY &&
 unpack $SOURCE  &&
 unpack $SOURCE2 &&
 
-patch_it $SOURCE3 1
+patch_it $SOURCE3 1 &&
+
+sedit 's:/sbin:/bin:' Makefile

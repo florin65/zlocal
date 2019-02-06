@@ -1,0 +1,16 @@
+          MODULE=wedder
+         VERSION=1.0.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/awersching/wedder/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:def5e1dbc4f8ab4c4c7f3ab777e71c590a8860ab608150feb42c3c235f883936
+        WEB_SITE=https://github.com/awersching/wedder/
+         ENTERED=20190206
+         UPDATED=20190206
+           SHORT="Current weather info for status bars"
+
+cat <<EOF
+Wedder displays the current weather condition and temperature in a configurable
+format for status bars like polybar. The current weather is pulled from
+OpenWeatherMap and you can either set a location manually or let it be
+determined by your IP.
+EOF

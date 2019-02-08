@@ -1,6 +1,7 @@
 OPTS+=" --exec-prefix=/usr \
         --sbindir=/usr/bin \
-        --with-zlib"
+        --with-zlib \
+          --with-openssl"
 
 default_build &&
 

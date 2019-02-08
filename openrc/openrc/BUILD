@@ -4,7 +4,6 @@ OPTS+=(MKPAM=pam)
 OPTS+=(MKSELINUX=no)
 OPTS+=(MKSYSVINIT=yes)
 OPTS+=(MKBASHCOMP=yes)
-OPTS+={MKPKGCONFIG=yes}
 OPTS+=(MKTERMCAP=ncurses)
 OPTS+=(MKZSHCOMP=no)
 OPTS+=(LIBMODE=0644)
@@ -16,6 +15,8 @@ OPTS+=(LIBDIR=/usr/lib)
 OPTS+=(SHLIBDIR=/usr/lib)
 OPTS+=(LIBEXECDIR=/usr/libexec)
 OPTS+=(SYSCONFDIR=/etc)
+
+#OPTS+={MKPKGCONFIG=yes}
 
 make "${OPTS[@]}" &&
 prepare_install &&

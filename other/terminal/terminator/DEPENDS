@@ -1,0 +1,9 @@
+depends python2-pycairo
+depends python2-pygobject
+depends python2-dbus
+depends gsettings-desktop-schemas
+depends keybinder3
+depends libnotify
+depends vte3
+depends xdg-utils
+depends intltool

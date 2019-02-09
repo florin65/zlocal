@@ -1,0 +1,22 @@
+          MODULE=terminator
+         VERSION=1.91
+          SOURCE=${MODULE}-$VERSION.tar.gz
+      SOURCE_URL=https://launchpad.net/terminator/gtk3/${VERSION}/+download/
+      SOURCE_VFY=sha256:95f76e3c0253956d19ceab2f8da709a496f1b9cf9b1c5b8d3cd0b6da3cc7be69
+        WEB_SITE=https://gnometerminator.blogspot.com/p/introduction.html
+            TYPE=python2
+         ENTERED=20190109
+         UPDATED=20190109
+           SHORT="Terminal emulator that supports tabs and grids"
+
+cat << EOF
+Terminal emulator that supports tabs and grids.
+Features:
+   Arrange terminals in a grid
+   Tabs
+   Drag and drop re-ordering of terminals
+   Lots of keyboard shortcuts
+   Save multiple layouts and profiles via GUI preferences editor
+   Simultaneous typing to arbitrary groups of terminals
+   and lots more...
+EOF

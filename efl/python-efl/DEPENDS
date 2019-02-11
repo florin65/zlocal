@@ -1,3 +1,0 @@
-depends cython
-depends efl
-depends python-dbus

@@ -21,8 +21,7 @@ make DESTDIR=$SOURCE_DIRECTORY/__pkg install &&
 cd $SOURCE_DIRECTORY/__pkg &&
 cp -fR lib/*  usr/lib/ &&
 cp -fR sbin/* usr/bin/ &&
-cp -fR usr/sbin/* usr/bin/ &&
-rm -fr lib sbin usr/sbin usr/src &&
+rm -fr lib sbin usr/src &&
 
 invoke_installwatch &&
 

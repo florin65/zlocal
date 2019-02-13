@@ -1,11 +1,11 @@
           MODULE=alacritty
-         VERSION=0.2.7
+         VERSION=0.2.9
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/jwilm/alacritty/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:2d12fd880174fc6530df3718725395e95682444fae04402f37f67a03ba1d5796
+      SOURCE_VFY=sha256:0261d427bd93262403c3acdda6ebcb06c6a37062124e96fe2b29ff3104cb3089
         WEB_SITE=https://github.com/jwilm/alacritty/
          ENTERED=20190110
-         UPDATED=20190122
+         UPDATED=20190212
            SHORT="A GPU-accelerated terminal emulator"
 
 cat << EOF

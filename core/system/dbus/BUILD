@@ -12,6 +12,7 @@ OPTS+=" runstatedir=/run        \
         --disable-libaudit      \
         --disable-verbose-mode  \
         --disable-ducktype-docs \
+        --enable-user-session   \
         --with-dbus-user=dbus   \
         --with-session-socket-dir=/tmp \
         --with-console-auth-dir=/run/console/ \

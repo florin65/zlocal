@@ -1,0 +1,20 @@
+          MODULE=direnv
+         VERSION=2.19.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+  SOURCE_URL_FULL=https://github.com/direnv/direnv/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:407e46233942277dcac133bcf9dc656c825299c611d0b22b9cd02841c4c34ffb
+        WEB_SITE=https://direnv.net/
+         ENTERED=20190218
+         UPDATED=20190218
+           SHORT="A shell extension that manages the environment"
+
+cat << EOF
+direnv is an environment switcher for the shell. It knows how to hook into
+bash, zsh, tcsh, fish shell and elvish to load or unload environment variables
+depending on the current directory. This allows project-specific environmentxi
+ variables without cluttering the ~/.profile file.
+Before each prompt, direnv checks for the existence of a ".envrc" file in the
+current and parent directories. If the file exists (and is authorized), it is
+loaded into a bash sub-shell and all exported variables are then captured by
+direnv and then made available to the current shell.
+EOF

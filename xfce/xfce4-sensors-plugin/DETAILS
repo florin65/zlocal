@@ -1,0 +1,15 @@
+          MODULE=xfce4-sensors-plugin
+         VERSION=1.3.92
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://archive.xfce.org/src/panel-plugins/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:3dc6643d2c064b7718badff44b948f8d410f00f13db197820b26ae38045f5112
+        WEB_SITE=http://goodies.xfce.org/projects/panel-plugins/xfce4-sensors-plugin
+         ENTERED=20190219
+         UPDATED=20190219
+           SHORT="A lm_sensors plugin for the Xfce panel"
+
+cat << EOF
+This is a hardware sensors plugin for the panel.
+Requires libsensors to display your mainboard sensors and fan speeds.
+Furthermore, it supports hddtemp to surveil your hard disk's temperature values.
+EOF

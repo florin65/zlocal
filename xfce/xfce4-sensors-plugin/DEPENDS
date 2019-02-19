@@ -1,0 +1,7 @@
+depends hicolor-icon-theme
+depends libnotify
+depends lm_sensors
+depends xfce4-panel
+depends intltool
+
+optional_depends hddtemp "" "" "for monitoring the temperature of hard drives"

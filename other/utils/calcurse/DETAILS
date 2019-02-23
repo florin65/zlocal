@@ -1,11 +1,11 @@
           MODULE=calcurse
-         VERSION=4.3.0
+         VERSION=4.4.0
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://calcurse.org/files/
-      SOURCE_VFY=sha256:31ecc3dc09e1e561502b4c94f965ed6b167c03e9418438c4a7ad5bad2c785f9a
+      SOURCE_VFY=sha256:edcbc9dbcdfe3aba43ac70b8d6895fb0ff4a364df89762d1ca3053a14cec826f
         WEB_SITE=http://calcurse.org/
          ENTERED=20170521
-         UPDATED=20171105
+         UPDATED=20190222
            SHORT="A text-based personal organizer"
 
 cat << EOF

@@ -1,0 +1,14 @@
+          MODULE=xrdb
+         VERSION=1.2.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$XORG_URL/individual/app/
+      SOURCE_VFY=sha256:f23a65cfa1f7126040d68b6cf1e4567523edac10f8dc06f23d840d330c7c6946
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://www.x.org
+         ENTERED=20060216
+         UPDATED=20190222
+           SHORT="The X.Org utility to access the X resource database"
+
+cat << EOF
+xrdb is the X.Org utility to query and update the X resource database.
+EOF

@@ -1,0 +1,8 @@
+depends dbus
+depends %UDEV
+depends zlib
+
+optional_depends acl    "--enable-udev-acl" "" "for ACL support"
+optional_depends polkit "--enable-polkit"   "" "for polkit support"
+
+optional_depends docbook-xsl "--enable-docbook-docs" "" "for documentation install"

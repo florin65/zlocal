@@ -1,6 +1,0 @@
-default_pre_build &&
-
-sed -i t/sa_compile.t \
-      -e 's#^my $temp_binpath = $Config{sitebinexp};#my $temp_binpath = "/bin/site_perl/";#'
-
-#patch_it $SOURCE2 0

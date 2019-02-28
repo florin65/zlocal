@@ -1,1 +1,2 @@
 conflicts systemd
+conflicts ConsoleKit2

@@ -4,6 +4,10 @@
 # use rc_need to specify that requirement.  See the runscript(8) man
 # page for more information.
 
+# Along the same lines, if  dmcrypt needs to be running before
+# localmount or netmount, please use rc_before to specify this
+# requirement.
+
 #--------------------
 # Instructions
 #--------------------
@@ -100,7 +104,7 @@ dmcrypt_retries=5
 #target=crypt-tmp
 #source='/dev/hda6'
 #key='/full/path/to/tmpkey'
-#pre_mount='/usr/bin/mkreiserfs -f -f ${dev}'
+#pre_mount='/sbin/mkreiserfs -f -f ${dev}'
 #post_mount='chown root:root ${mount_point}; chmod 1777 ${mount_point}'
 
 ## Loopback file example

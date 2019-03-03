@@ -1,11 +1,11 @@
           MODULE=midori
-         VERSION=7.0
+         VERSION=8.0
           SOURCE=$MODULE-v$VERSION.tar.gz
-      SOURCE_URL=https://github.com/midori-browser/core/releases/download/v${VERSION%.*}/
-      SOURCE_VFY=sha256:905b2cf721f1dbfbee974c56b328870f462bd68c1dd27dc6890ce852aeb4cd39
+      SOURCE_URL=https://github.com/midori-browser/core/releases/download/v$VERSION/
+      SOURCE_VFY=sha256:559ec7cc8903a423958f660f6ffb29f30e9e357b85c19ecd296e8911dc92be3c
         WEB_SITE=https://github.com/midori-browser/core/
          ENTERED=20070921
-         UPDATED=20181130
+         UPDATED=20190302
            SHORT="A lightweight WebKit/Gtk+-3 based browser"
 
 cat << EOF

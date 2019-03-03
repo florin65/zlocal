@@ -1,12 +1,12 @@
           MODULE=cmst
-         VERSION=2018.01.06
+         VERSION=2019.01.13
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=https://github.com/andrew-bibb/cmst/releases/download/cmst-$VERSION/
    MODULE_PREFIX=${QT5_PREFIX:-/usr}
-      SOURCE_VFY=sha256:30bb83272284ffac4abda4b190aa3099e72ab67ed5075275dfef38145a040365
+      SOURCE_VFY=sha256:7407aa40ba227463877c86a6729992f7fe8220155d5cd34a9fc5cd9bc5efc6b2
         WEB_SITE=https://github.com/andrew-bibb/cmst/
          ENTERED=20190110
-         UPDATED=20190110
+         UPDATED=20190303
            SHORT="A QT based GUI front end for the connman connection manager"
 
 cat << EOF

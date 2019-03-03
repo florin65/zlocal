@@ -3,7 +3,7 @@
           SOURCE=$MODULE-$VERSION.tar.xz
    SOURCE_URL[0]=http://download.calibre-ebook.com/$VERSION
    SOURCE_URL[1]=$SFORGE_URL/$MODULE
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:50bb56ca9455464495c646688722cb07199ed74a3a2eb3dc4f3b3e609be68121
         WEB_SITE=http://www.calibre-ebook.com
          ENTERED=20090108
          UPDATED=20190202

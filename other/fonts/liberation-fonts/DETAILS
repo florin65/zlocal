@@ -1,11 +1,11 @@
           MODULE=liberation-fonts
-         VERSION=2.00.4
+         VERSION=2.00.5
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=https://github.com/liberationfonts/liberation-fonts/files/2579282/
-      SOURCE_VFY=sha256:9445ec66a9161eeaef3f07fb2318598e50e83ce662132a76a0a3c6097061c58d
+      SOURCE_URL=https://github.com/liberationfonts/liberation-fonts/files/2926167/
+     SOURCE_VFY=sha256:af351ce9f4d6630ffa047bce0dca7dc58f93b5545325f18d1b92332e46be94a8
         WEB_SITE=https://github.com/liberationfonts/liberation-fonts/
          ENTERED=20070516
-         UPDATED=20190125
+         UPDATED=20190305
            SHORT="Some RedHat GPL exception licensed fonts"
 
 cat << EOF

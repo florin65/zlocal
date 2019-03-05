@@ -10,7 +10,11 @@ optional_depends pcre \
 		 "-D internal_pcre=true" \
                  "use the system installed pcre library"
 
-optional_depends libxslt     "" "" "for XSL support" n
+optional_depends libxslt \
+                 "-D man=true" \
+                 "-D man=false" \
+                 "for man pages install" n
+
 optional_depends docbook-xml "" "" "for DocBook XML support" n
 optional_depends docbook-xsl "" "" "for DocBook XSL support" n
 

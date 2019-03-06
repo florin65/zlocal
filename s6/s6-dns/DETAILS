@@ -1,0 +1,14 @@
+          MODULE=s6-dns
+         VERSION=2.3.0.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.skarnet.org/software/$MODULE/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.skarnet.org/software/s6-dns/
+         ENTERED=20190306
+         UPDATED=20190306
+           SHORT="A suite of DNS client programs and libraries"
+
+cat << EOF
+s6-dns is a suite of DNS client programs and libraries for Unix systems, as an
+alternative to the BIND, djbdns or other DNS clients.
+EOF

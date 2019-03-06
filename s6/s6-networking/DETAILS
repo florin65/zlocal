@@ -1,0 +1,19 @@
+          MODULE=s6-networking
+         VERSION=2.3.0.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.skarnet.org/software/$MODULES/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.skarnet.org/software/s6-networking/
+         ENTERED=20190306
+         UPDATED=20190306
+           SHORT="A suite of small networking utilities for Unix systems"
+
+cat << EOF
+s6-networking is a suite of small networking utilities for Unix systems.
+It includes command-line client and server management, TCP access control,
+privilege escalation across UNIX domain sockets, IDENT protocol management
+and clock synchronization. Optionally, it also includes command-line TLS/SSL
+tools for secure communications.
+If the underlying skalibs has been compiled with IPv6 support, s6-networking
+is IPv6-ready.
+EOF

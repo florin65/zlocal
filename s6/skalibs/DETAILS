@@ -1,0 +1,18 @@
+          MODULE=skalibs
+         VERSION=2.8.0.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://www.skarnet.org/software/skalibs/
+      SOURCE_VFY=sha256:a3c0ed99d75be1485e69f9566badbfff936a571bbcf92a32c76240890c8e1e1a
+        WEB_SITE=http://www.skarnet.org/software/skalibs/
+         ENTERED=20190306
+         UPDATED=20190306
+           SHORT="A general-purpose utility library for secure, small C development"
+
+cat << EOF
+skalibs is a package centralizing the free software / open source C development
+files used for building all software at skarnet.org: it contains essentially
+general-purpose libraries. You will need to install skalibs if you plan to
+build skarnet.org software. The point is that you won't have to download and
+compile big libraries, and care about portability issues, everytime you need
+to build a package: do it only once.
+EOF

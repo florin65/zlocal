@@ -1,0 +1,13 @@
+          MODULE=s6-linux-init
+         VERSION=2.5.0.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.skarnet.org/software/$MODULES/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.skarnet.org/software/s6-linux-utils/
+         ENTERED=20190306
+         UPDATED=20190306
+           SHORT="Tiny Linux-specific utilities"
+
+cat << EOF
+s6-linux-utils is a set of minimalistic Linux-specific system utilities.
+EOF

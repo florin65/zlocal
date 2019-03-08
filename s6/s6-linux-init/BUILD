@@ -1,5 +1,4 @@
-# Makefile.am: required file `./ChangeLog' not found
-touch ChangeLog &&
-autoreconf -fi &&
+OPTS+=" --bindir=/usr/bin \
+        --sbindir=/usr/bin"
 
 default_build

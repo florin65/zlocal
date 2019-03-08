@@ -1,2 +1,4 @@
+depends s6
 depends s6-dns
 
+optional_depends libressl "" "" "for building a secure communication tools"

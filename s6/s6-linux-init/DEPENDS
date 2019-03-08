@@ -1,2 +1,3 @@
 depends libnl3
 depends skalibs
+depends execline

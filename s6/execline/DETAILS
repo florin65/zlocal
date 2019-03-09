@@ -1,14 +1,17 @@
-          MODULE=skalibs
-         VERSION=2.8.0.0
+          MODULE=execline
+         VERSION=2.5.1.0
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://skarnet.org/software/$MODULE/
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:b1a756842947488404db8173bbae179d6e78b6ef551ec683acca540ecaf22677
         WEB_SITE=http://skarnet.org/software/execline/
          ENTERED=20190306
-         UPDATED=20190306
+         UPDATED=20190309
            SHORT="A (non-interactive) scripting language"
 
 cat << EOF
 The execlineb program is meant to be used as an interpreter for a text file;
 the other commands are essentially useful inside an execlineb script.
+execline is as powerful as a shell: it features conditional loops, getopt-style
+option handling, filename globbing, and more. Meanwhile, its syntax is far more
+logic and predictable than the shell's syntax, and has no security issues.
 EOF

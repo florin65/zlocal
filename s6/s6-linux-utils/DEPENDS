@@ -1,3 +1,1 @@
-depends libnl3
-depends s6
-depends s6-linux-init
+depends skalibs

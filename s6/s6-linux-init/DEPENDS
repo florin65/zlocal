@@ -1,3 +1,2 @@
-depends libnl3
-depends skalibs
-depends execline
+depends s6-portable-utils
+depends s6-linux-utils

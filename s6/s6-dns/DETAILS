@@ -2,7 +2,7 @@
          VERSION=2.3.0.2
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://www.skarnet.org/software/$MODULE/
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:4806c8b1dadb582029c92986f0b09763090e03b38e565a70174be385fa862bf9
         WEB_SITE=http://www.skarnet.org/software/s6-dns/
          ENTERED=20190306
          UPDATED=20190306

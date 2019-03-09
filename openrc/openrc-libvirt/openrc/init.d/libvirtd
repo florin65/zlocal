@@ -16,8 +16,9 @@ retry="${LIBVIRTD_TERMTIMEOUT}"
 depend() {
 	need virtlogd
 	use dbus virtlockd
-	after ntp-client ntpd nfs nfsmount portmap rpc.statd iptables ip6tables \
-              ebtables corosync sanlock cgconfig xenconsoled avahi-daemon firewalld
+	after ntp-client ntpd nfs nfsmount portmap rpc.statd iptables ip6tables ebtables corosync sanlock cgconfig xenconsoled
+	use firewalld
+	use avahi-daemon
 	use iscsid
 	use ceph
 }

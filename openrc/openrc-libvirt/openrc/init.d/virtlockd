@@ -5,7 +5,7 @@
 description="libvirt virtual machine lock manager"
 command="/usr/bin/virtlockd"
 command_args="-d"
-pidfile="/var/run/virtlockd.pid"
+pidfile="/run/virtlockd.pid"
 
 extra_started_commands="reload"
 description_reload="re-exec the daemon, while maintaining locks and clients"

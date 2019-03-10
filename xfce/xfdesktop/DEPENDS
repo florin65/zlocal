@@ -3,6 +3,6 @@ depends dbus-glib
 depends exo
 depends garcon
 depends libnotify
-depends libwnck
+depends libwnck3
 
 optional_depends Thunar "" "" "for desktop file icon support"

@@ -1,0 +1,14 @@
+          MODULE=libfuse
+         VERSION=3.2.6
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/libfuse/libfuse/archive/fuse-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-fuse-$VERSION
+      SOURCE_VFY=sha256:686b98afac4ca322498f68d37d598ae3d07919fe21a4700c76572fae59a6256b
+        WEB_SITE=https://github.com/libfuse/libfuse
+         ENTERED=20180731
+         UPDATED=20181007
+           SHORT="Filesystem in Userspace"
+
+cat << EOF
+The reference implementation of the Linux FUSE (Filesystem in Userspace) interface .
+EOF

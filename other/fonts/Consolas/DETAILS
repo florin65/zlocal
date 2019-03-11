@@ -1,0 +1,13 @@
+          MODULE=Consolas
+         VERSION=8.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/PiotrGrochowski/Consolas/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:756064b7c6e49e8438a80e43740cd81336ad015bfae77966d66baf304bae7de4
+        WEB_SITE=https://github.com/PiotrGrochowski/Consolas
+         ENTERED=20190311
+         UPDATED=20190311
+           SHORT="Consolas font"
+
+cat << EOF
+Consolas fonts.
+EOF

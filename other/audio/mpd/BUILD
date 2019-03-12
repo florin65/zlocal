@@ -1,5 +1,5 @@
 OPTS+=" -D zlib=enabled \
-	-D shine=disable \
+	-D shine=disabled \
 	-D sndio=disabled \
 	-D adplug=disabled \
         -D sidplay=disabled \

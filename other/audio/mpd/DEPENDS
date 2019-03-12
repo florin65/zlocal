@@ -24,7 +24,7 @@ optional_depends mpcdec     "-D mpcdec=enabled"     "-D mpcdec=disabled"    "to 
 optional_depends curl       "-D curl=enabled"       "-D curl=disabled"      "to play HTTP streams"
 optional_depends libmms     "-D mms=enabled"        "-D mms=disabled"       "to enable MMS protocol support"
 optional_depends libid3tag  "-D id3tag=enabled"     "-D id3tag=disabled"    "to enable support for ID3 tags"
-optional_depends libupnp    "-D upnp=enabled        "-D upnp=disabled"      "to enable UPnP client support"
+optional_depends libupnp    "-D upnp=enabled"       "-D upnp=disabled"      "to enable UPnP client support"
 optional_depends libnfs     "-D nfs=enabled"        "-D nfs=disabled"       "to enable NFS support"
 optional_depends samba      "-D smbclient=enabled"  "-D smbclient=disabled" "to enable SMB support"
 

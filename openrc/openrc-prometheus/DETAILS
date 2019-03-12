@@ -1,0 +1,10 @@
+          MODULE=openrc-prometheus
+         VERSION=2019
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20190312
+         UPDATED=20190312
+           SHORT="OpenRC prometheus init script"
+
+cat << EOF
+OpenRC prometheus init script.
+EOF

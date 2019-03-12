@@ -1,0 +1,10 @@
+          MODULE=openrc-jenkins
+         VERSION=2019
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20190312
+         UPDATED=20190312
+           SHORT="OpenRC jenkins init script"
+
+cat << EOF
+OpenRC jenkins init script.
+EOF

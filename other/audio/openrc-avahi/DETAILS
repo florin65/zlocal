@@ -1,0 +1,10 @@
+          MODULE=openrc-avahi
+         VERSION=2018
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20180121
+         UPDATED=20180121
+           SHORT="OpenRC avahi init script"
+
+cat << EOF
+OpenRC avahi init script.
+EOF

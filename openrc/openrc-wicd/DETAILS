@@ -1,0 +1,10 @@
+          MODULE=openrc-wicd
+         VERSION=2019
+        WEB_SITE=https://github.com/OpenRC/
+         ENTERED=20190312
+         UPDATED=20190312
+           SHORT="OpenRC wicd init script"
+
+cat << EOF
+OpenRC wicd init script.
+EOF

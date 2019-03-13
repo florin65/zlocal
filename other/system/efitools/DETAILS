@@ -1,0 +1,13 @@
+          MODULE=efitools
+         VERSION=1.9.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://git.kernel.org/pub/scm/linux/kernel/git/jejb/efitools.git/snapshot/
+      SOURCE_VFY=sha256:0f315b36e7d1ba74bfc97ab9f304f0a3072c47578bbe5e42594acae381f9acfe
+        WEB_SITE=http://git.kernel.org/cgit/linux/kernel/git/jejb/efitools.git
+         ENTERED=20171022
+         UPDATED=20190312
+           SHORT="Tools for manipulating UEFI secure boot platforms"
+
+cat << EOF
+Tools for manipulating UEFI secure boot platforms.
+EOF

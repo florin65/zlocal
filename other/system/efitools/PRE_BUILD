@@ -1,0 +1,3 @@
+default_pre_build &&
+
+sedit "s/-O2/${CFLAGS} -Wno-pointer-sign/" Make.rules

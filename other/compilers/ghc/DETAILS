@@ -1,0 +1,17 @@
+          MODULE=ghc
+         VERSION=8.6.4
+          SOURCE=$MODULE-$VERSION-src.tar.xz
+         SOURCE2=$MODULE-$VERSION-i386-deb9-linux.tar.xz
+      SOURCE_URL=http://www.haskell.org/ghc/dist/$VERSION/
+     SOURCE2_URL=http://www.haskell.org/ghc/dist/$VERSION/
+      SOURCE_VFY=sha256:5b5d07e4463203a433c3ed3df461ba6cce11b6d2b9b264db31f3429075d0303a
+     SOURCE2_VFY=sha256:5e2ce88f4d13d23ac37e278e0c7b51c801008931359b9fa8a631d804d2da552c
+        WEB_SITE=http://www.haskell.org
+         ENTERED=20130714
+         UPDATED=20190312
+           SHORT="The Glasgow Haskell Compiler"
+
+cat << EOF
+The Glasgow Haskell Compiler is a state-of-the-art, open source compiler and
+interactive environment for the functional language Haskell.
+EOF

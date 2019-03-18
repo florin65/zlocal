@@ -1,0 +1,12 @@
+          MODULE=openrc-udisks2
+         VERSION=2019
+        WEB_SITE=http://lunar-linux.org
+         ENTERED=20060120
+         UPDATED=20190318
+           SHORT="A profile for udisks2 services with OpenRC"
+         PROFILE=yes
+
+cat << EOF
+A profile for udisks2 services with OpenRC.
+EOF
+

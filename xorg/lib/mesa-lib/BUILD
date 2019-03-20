@@ -33,7 +33,6 @@ OPTS+=" -D b_lto=false \
         -D gles2=true \
         -D valgrind=false \
         -D shared-glapi=true \
-        -D texture-float=true \
         -D swr-arches=avx,avx2 \
         -D dri-drivers=$(echo $MESADRIVER | sed s/\ /,/g)" &&
 

@@ -1,12 +1,12 @@
           MODULE=xfce-evolution-theme
-         VERSION=5.8.0
+         VERSION=5.10.1
           SOURCE=xfce-evolution-$VERSION.zip
 #SOURCE_DIRECTORY=$BUILD_DIRECTORY/xfce-evolution
       SOURCE_URL=$SFORGE_URL/xfce-evolution/
-      SOURCE_VFY=sha256:9d0f8547b436d4cc596157b5e1dff2cd18b12492b8fcdee3e7eaa1134a8a4057
+      SOURCE_VFY=sha256:8887ecdd80dda31c5c8638a5418b8d82ae4d760812eae16041826b6687ca3915
         WEB_SITE=https://sourceforge.net/projects/xfce-evolution/
          ENTERED=20181231
-         UPDATED=20190228
+         UPDATED=20190322
            SHORT="The Xfce Evolution theme"
 
 cat << EOF

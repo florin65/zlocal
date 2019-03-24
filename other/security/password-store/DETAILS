@@ -1,0 +1,28 @@
+          MODULE=password-store
+         VERSION=1.7.3
+         SOURCE=$MODULE-$VERSION.tar.xz
+     SOURCE_URL=https://git.zx2c4.com/password-store/snapshot/
+      SOURCE_VFY=sha256:2b6c65846ebace9a15a118503dcd31b6440949a30d3b5291dfb5b1615b99a3f4
+        WEB_SITE=https://www.passwordstore.org/
+         ENTERED=20190324
+         UPDATED=20190324
+           SHORT="Stores, retrieves, generates, and synchronizes passwords securely"
+
+cat << EOF
+Password management should be simple and follow Unix philosophy. With pass, each
+password lives inside of a gpg encrypted file whose filename is the title of the
+website or resource that requires the password.
+These encrypted files may be organized into meaningful folder hierarchies,
+copied from computer to computer, and, in general, manipulated using standard
+command line file management utilities.
+
+pass makes managing these individual password files extremely easy. All passwords
+live in ~/.password-store, and pass provides some nice commands for adding,
+editing, generating, and retrieving passwords. It is a very short and simple
+shell script. It's capable of temporarily putting passwords on your clipboard and
+tracking password changes using git.
+
+You can edit the password store using ordinary unix shell commands alongside the
+pass command. There are no funky file formats or new paradigms to learn. There is
+bash completion so that you can simply hit tab to fill in names and commands.
+EOF

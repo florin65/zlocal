@@ -1,0 +1,16 @@
+          MODULE=python-pycryptodome
+         VERSION=3.8.0
+          SOURCE=pycryptodome-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/pycryptodome-$VERSION
+ SOURCE_URL_FULL=https://github.com/Legrandin/pycryptodome/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:de71bf1d11c8540fa6abb235e63ac2443a8271d101cdb726d75c6c7871f3fd94
+        WEB_SITE=http://www.pycryptodome.org/
+         ENTERED=20190324
+         UPDATED=20190324
+            TYPE=python3
+           SHORT="Cryptographic algorithms and protocols in Python 3"
+
+cat << EOF
+PyCryptodome is a self-contained Python package of low-level cryptographici
+primitives.
+EOF

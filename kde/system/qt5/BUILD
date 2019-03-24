@@ -3,18 +3,18 @@ if in_depends $MODULE libressl; then
 #  patch_it $SOURCE2 1 &&
   CFLAGS+=" -DOPENSSL_NO_PSK -DOPENSSL_NO_NEXTPROTONEG -DOPENSSL_NO_SSL3_METHOD" &&
   CXXFLAGS+=" -DOPENSSL_NO_PSK -DOPENSSL_NO_NEXTPROTONEG -DOPENSSL_NO_SSL3_METHOD -Wno-deprecated-declarations -fno-delete-null-pointer-checks"
-fi &&
+fi
 
 if [[ $LICENSE_TYPE == "y" ]]; then
   LICENSE_TYPE="-opensource"
 else
   LICENSE_TYPE="-commercial"
-fi &&
+fi
 
 # No SSE2 for i686
 if [[ 'arch' == "i686" ]]; then
   SSE2="-no-sse2"
-fi &&
+fi
 
 # Making accessibility a hard option, disabling this will break QStyle and may break other internal parts of Qt and
 # create a source incompatible version which is unsupported. Why bother making it a switch if that is the case.
@@ -31,13 +31,13 @@ OPTS+=" -gui \
         -no-use-gold-linker \
         -reduce-relocations \
         -confirm-license $LICENSE_TYPE -v \
-        $SSE2" &&
+        $SSE2"
 
 if [[ "$USE_JOURNALD" == "y" && $(module_installed systemd) ]]; then
   OPTS+=" -journald"
  else
   OPTS+=" -no-journald"
-fi &&
+fi
 
 mkdir build-qt &&
 cd build-qt &&
@@ -59,10 +59,10 @@ make &&
 prepare_install &&
 make install &&
 
-install -v -Dm644 ../qttools/src/assistant/assistant/images/assistant-128.png /usr/share/pixmaps/assistant-qt5.png &&
-install -v -Dm644 ../qttools/src/designer/src/designer/images/designer.png /usr/share/pixmaps/designer-qt5.png &&
-install -v -Dm644 ../qttools/src/linguist/linguist/images/icons/linguist-128-32.png /usr/share/pixmaps/linguist-qt5.png &&
-install -v -Dm644 ../qttools/src/qdbus/qdbusviewer/images/qdbusviewer-128.png /usr/share/pixmaps/qdbusviewer-qt5.png &&
+#install -v -Dm644 ../qttools/src/assistant/assistant/images/assistant-128.png /usr/share/pixmaps/assistant-qt5.png &&
+#install -v -Dm644 ../qttools/src/designer/src/designer/images/designer.png /usr/share/pixmaps/designer-qt5.png &&
+#install -v -Dm644 ../qttools/src/linguist/linguist/images/icons/linguist-128-32.png /usr/share/pixmaps/linguist-qt5.png &&
+#install -v -Dm644 ../qttools/src/qdbus/qdbusviewer/images/qdbusviewer-128.png /usr/share/pixmaps/qdbusviewer-qt5.png &&
 
 # It wants to point moc_location and uic_location to ${prefix}/src/qt-everywhere-opensource-src-5.3.1/bin
 # and after much fiddling cannot get it to point them to /usr/bin. So lets just sedit these rascals.
@@ -73,7 +73,7 @@ for i in `ls /usr/lib/$MODULE/pkgconfig/Qt5*.pc`; do sed -i "s:-L$SOURCE_DIRECTO
 find /usr/lib/$MODULE -type f -name '*Qt5*.prl' -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d;s/\(QMAKE_PRL_LIBS =\).*/\1/' {} \; &&
 find /usr/lib/$MODULE -type f -name '*.prl' -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d;s/\(QMAKE_PRL_LIBS =\).*/\1/' {} \; &&
 
-# Remove references to the build directory from installed files 
+# Remove references to the build directory from installed files
 sedit "s:$PWD/qtbase:/usr/lib/qt5:g" /usr/lib/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri &&
 
 cat > ${MODULE}-designer.desktop << EOF &&

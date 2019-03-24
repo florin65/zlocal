@@ -1,3 +1,0 @@
-if module_installed openrc-lvm2; then
-   lrm openrc-lvm2
-fi

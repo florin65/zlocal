@@ -1,0 +1,4 @@
+depends libxkbcommon
+depends password-store
+depends pwgen
+depends qt5

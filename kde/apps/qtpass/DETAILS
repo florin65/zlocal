@@ -1,0 +1,22 @@
+          MODULE=qtpass
+         VERSION=1.2.3
+          SOURCE=$MODULE-$VERSION-src.tar.gz
+ SOURCE_URL_FULL=https://github.com/IJHack/QtPass/archive/v$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/QtPass-$VERSION
+   MODULE_PREFIX=${KDE_PREFIX:-/usr}
+      SOURCE_VFY=sha256:658b632bb06e9ad63d5076aace5fe0e57a0f7f20e0aafdfb64f86a25bdadbb07
+        WEB_SITE=https://qtpass.org/
+         ENTERED=20190324
+         UPDATED=20190324
+           SHORT="A multi-platform GUI for password-store"
+
+cat << EOF
+QtPass is a multi-platform GUI for pass, the standard unix password manager.
+Features
+   Using pass or git and gpg2 directly
+   Configurable shoulder surfing protection options
+   Cross platform: Linux, BSD, OS X and Windows
+   Per-folder user selection for multi recipient encryption
+   Multiple profiles
+   Easy onboarding.
+EOF

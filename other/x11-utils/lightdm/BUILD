@@ -1,14 +1,13 @@
 export MOC5="/usr/lib/qt5/bin/moc"
 
 OPTS+=" --sbindir=/usr/bin"
+OPTS+=" --datadir=/usr/share \
+        --disable-tests \
+        --disable-static \
+        --with-greeter-user=lightdm \
+        --with-greeter-session=lightdm-mini-greeter"
 
-OPTS+=" --disable-static \
-        --disable-tests  \
-        --with-greeter-user=lightdm"
-
-#        --with-greeter-session=lightdm-gtk-greeter"
-
-add_priv_user lightdm:lightdm -d /var/lib/lightdm -g lightdm -s /sbin/nologin &&
+add_priv_user lightdm:lightdm -d /var/lib/lightdm -g lightdm -s /usr/bin/nologin &&
 
 default_build &&
 
@@ -18,6 +17,7 @@ install -dm0711 /var/log/lightdm &&
 chmod +t /var/{cache/lightdm,lib/lightdm{,-data}} &&
 chown -R lightdm:lightdm /var/lib/lightdm{,-data} &&
 chgrp lightdm /var/log/lightdm &&
+
 install -m0755 $SCRIPT_DIRECTORY/Xsession /etc/lightdm/
 
 # PolicyKit

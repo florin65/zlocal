@@ -1,11 +1,11 @@
           MODULE=xfce4-weather-plugin
-         VERSION=0.8.10
+         VERSION=0.8.11
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=http://archive.xfce.org/src/panel-plugins/$MODULE/${VERSION%.*}
-      SOURCE_VFY=sha256:ee6d43c444904631c240470e15e96215c2ce451158bfdbf234bce892bf60eab8
+      SOURCE_VFY=sha256:0382ce99c0ad4424afe7096a354f301a9396d12807a0f2ab041912d6ab58145d
         WEB_SITE=http://goodies.xfce.org/projects/panel-plugins/xfce4-weather-plugin
          ENTERED=20061124
-         UPDATED=20171012
+         UPDATED=20190325
            SHORT="shows current weather in your panel"
 
 cat << EOF

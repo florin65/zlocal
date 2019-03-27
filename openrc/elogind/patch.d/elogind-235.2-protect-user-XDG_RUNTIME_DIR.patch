@@ -1,6 +1,6 @@
 --- ./src/login/pam_elogind.c
 +++ ./src/login/pam_elogind.c
-@@ -575,6 +575,15 @@
+@@ -582,6 +582,15 @@
                  if (r != PAM_SUCCESS)
                          return r;
          }

@@ -4,4 +4,6 @@ aclocal &&
 automake &&
 
 sedit 's;^#run-directory=.*;run-directory=/run/lightdm;;s;^#session-wrapper=.*;session-wrapper=/etc/lightdm/Xsession;' data/lightdm.conf &&
-sedit 's;minimum-uid=.*;minimum-uid=1000;;s;hidden-shells=.*;hidden-shells=/bin/false /usr/bin/nologin;' data/users.conf
+sedit 's;minimum-uid=.*;minimum-uid=1000;;s;hidden-shells=.*;hidden-shells=/bin/false /usr/bin/nologin;' data/users.conf &&
+
+sedit 's; help;;'g Makefile.am Makefile.in

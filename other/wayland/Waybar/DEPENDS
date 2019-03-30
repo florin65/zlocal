@@ -1,0 +1,17 @@
+depends fmt
+depends gtkmm3
+depends jsoncpp
+depends sway
+depends meson
+
+#depends libappindicator-gtk3
+
+optional_depends pulseaudio \
+                 "-D pulseaudio=true" \
+                 "-D pulseaudio=false" \
+                 "for audio support"
+
+optional_depends libnl3 \
+                 "-D libnl=true" \
+                 "-D libnl=false" \
+                 "for network features support"

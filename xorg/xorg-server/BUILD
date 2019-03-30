@@ -21,15 +21,9 @@ OPTS+=" -D xorg=true \
         -D xkb_dir=/usr/share/X11/xkb \
         -D default_font_path=/usr/share/fonts/"
 
-if ! module_installed udev; then
-   OPTS+=" -D udev=false"
-fi
-
-if module_installed systemd; then
-   OPTS+=" -D systemd_logind=true"
-else
-   OPTS+=" -D systemd_logind=false"
-fi
+#if ! module_installed udev; then
+#   OPTS+=" -D udev=false"
+#fi
 
 default_meson_build &&
 

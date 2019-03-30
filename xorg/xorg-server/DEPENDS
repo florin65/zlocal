@@ -38,6 +38,16 @@ optional_depends acpid\
                  "-D acpi=false" \
                  "for ACPI support" y
 
+optional_depends elogind \
+                 "-D elogind=true" \
+                 "-D elogind=false" \
+                 "for elogind support"
+
+optional_depends systemd \
+                 "-D systemd-logind=true" \
+                 "-D systemd-logind=false" \
+                 "for systemd logind support" n
+
 optional_depends libXvMC \
                  "-D xvmc=true" \
                  "-D xvmc=false" \

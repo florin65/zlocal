@@ -1,0 +1,14 @@
+          MODULE=fmt
+         VERSION=5.3.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/fmtlib/fmt/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:defa24a9af4c622a7134076602070b45721a43c51598c8456ec6f2c4dbb51c89
+        WEB_SITE=http://fmtlib.net
+         ENTERED=20190330
+         UPDATED=20190330
+           SHORT="Open-source formatting library for C++"
+
+cat << EOF
+fmt (formerly cppformat) is an open-source formatting library.
+It can be used as a fast and safe alternative to printf and IOStreams.
+EOF

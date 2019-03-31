@@ -1,14 +1,18 @@
-OPTS+=" -D zlib=enabled \
-	-D shine=disabled \
-	-D sndio=disabled \
-	-D adplug=disabled \
-        -D sidplay=disabled \
-	-D tremor=disabled"
+OPTS+=" -Dzlib=enabled \
+        -Dshine=disabled \
+        -Dsndio=disabled \
+        -Dadplug=disabled \
+        -Dsidplay=disabled \
+        -Dtremor=disabled"
 
 if module_installed systemd; then
-    OPTS+=" -D documentation=false -D systemd=enabled -D systemd_system_unit_dir=enabled"
+    OPTS+=" -Ddocumentation=false \
+            -Dsystemd=enabled \
+            -Dsystemd_system_unit_dir=enabled"
   else
-    OPTS+=" -D documentation=false -D systemd=disabled -D systemd_system_unit_dir=disabled"
+    OPTS+=" -Ddocumentation=false \
+            -Dsystemd=disabled \
+            -Dsystemd_system_unit_dir=disabled"
 fi
 
 default_meson_build &&

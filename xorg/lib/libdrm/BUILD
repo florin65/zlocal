@@ -1,6 +1,6 @@
 OPTS+=" --prefix /usr \
-        -D udev=true \
-        -D cairo-tests=false"
+        -Dudev=true \
+        -Dcairo-tests=false"
 
 # if the  string is not empty
 if [[ -n "${DRMDRIVER/[  ]*\n/}" ]]; then

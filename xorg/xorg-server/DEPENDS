@@ -29,43 +29,43 @@ depends xtrans
 depends meson
 
 optional_depends libepoxy \
-                 "-D glamor=true" \
-                 "-D glamor=false" \
+                 "-Dglamor=true" \
+                 "-Dglamor=false" \
                  "for glamor support (needed for radeonsi driver)" y
 
 optional_depends acpid\
-                 "-D acpi=true" \
-                 "-D acpi=false" \
+                 "-Dacpi=true" \
+                 "-Dacpi=false" \
                  "for ACPI support" y
 
 optional_depends elogind \
-                 "-D elogind=true" \
-                 "-D elogind=false" \
+                 "-Delogind=true" \
+                 "-Delogind=false" \
                  "for elogind support"
 
 optional_depends systemd \
-                 "-D systemd-logind=true" \
-                 "-D systemd-logind=false" \
+                 "-Dsystemd-logind=true" \
+                 "-Dsystemd-logind=false" \
                  "for systemd logind support" n
 
 optional_depends libXvMC \
-                 "-D xvmc=true" \
-                 "-D xvmc=false" \
+                 "-Dxvmc=true" \
+                 "-Dxvmc=false" \
                  "for MotionCompensation support"
 
 optional_depends wayland-protocols \
-                 "-D xwayland=true" \
-                 "-D xwayland=false" \
+                 "-Dxwayland=true" \
+                 "-Dxwayland=false" \
                  "for Wayland support"
 
 #optional_depends libunwind \
-#                 "-d libunwind=true" \
-#                 "-d libunwind=false" \
+#                 "-Dlibunwind=true" \
+#                 "-Dlibunwind=false" \
 #                 "for call-chain library support" n
 
 #optional_depends xmlto \
-#                 "-D xmlto=true" \
-#                 "-D xmlto=false" \
+#                 "-Dxmlto=true" \
+#                 "-Dxmlto=false" \
 #                 "for xmlto support to regenerate documentation" n
 
 #optional_depends libXxf86misc "" "" "for some old binary compatibility" n

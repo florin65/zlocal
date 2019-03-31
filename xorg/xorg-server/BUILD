@@ -8,21 +8,21 @@ export CFLAGS=${CFLAGS/-fno-plt}
 export CXXFLAGS=${CXXFLAGS/-fno-plt}
 export LDFLAGS=${LDFLAGS/,-z,now}
 
-OPTS+=" -D xorg=true \
-        -D dmx=false \
-        -D xwin=false \
-        -D xvfb=false \
-        -D xnest=false \
-        -D xephyr=false \
-        -D pciaccess=true \
-        -D xcsecurity=true \
-        -D xkb_default_rules=kbd \
-        -D xkb-output=/var/lib/xkb \
-        -D xkb_dir=/usr/share/X11/xkb \
-        -D default_font_path=/usr/share/fonts/"
+OPTS+=" -Dxorg=true \
+        -Ddmx=false \
+        -Dxwin=false \
+        -Dxvfb=false \
+        -Dxnest=false \
+        -Dxephyr=false \
+        -Dpciaccess=true \
+        -Dxcsecurity=true \
+        -Dxkb_default_rules=kbd \
+        -Dxkb-output=/var/lib/xkb \
+        -Dxkb_dir=/usr/share/X11/xkb \
+        -Ddefault_font_path=/usr/share/fonts/"
 
 #if ! module_installed udev; then
-#   OPTS+=" -D udev=false"
+#   OPTS+=" -Dudev=false"
 #fi
 
 default_meson_build &&

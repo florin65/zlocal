@@ -11,7 +11,7 @@ export LDFLAGS=${LDFLAGS/,-z,now}
 OPTS+=" -Dxorg=true \
         -Ddmx=false \
         -Dxwin=false \
-        -Dxvfb=false \
+        -Dxvfb=true \
         -Dxnest=false \
         -Dxephyr=false \
         -Dpciaccess=true \

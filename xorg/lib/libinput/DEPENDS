@@ -16,5 +16,5 @@ optional_depends libwacom \
 
 optional_depends doxygen \
                  "-Ddocumentation=true" \
-                 "-Ddocumentation=false" n
-                 "for documentaton install"
+                 "-Ddocumentation=false" \
+                 "for documentaton install" n

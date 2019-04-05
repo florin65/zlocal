@@ -1,0 +1,16 @@
+          MODULE=VirtualBox
+         VERSION=6.0.4
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://download.virtualbox.org/virtualbox/$VERSION
+      SOURCE_VFY=sha256:f80b0c68182c946fb74ada8034960c38159ad91085b153da1277e4f191af6e1f
+   MODULE_PREFIX=${VIRTUALBOX_PREFIX:-/usr/lib/virtualbox}
+        WEB_SITE=http://virtualbox.org/
+         ENTERED=20071004
+         UPDATED=20190128
+           SHORT="Full virtualizer for x86 hardware"
+
+cat << EOF
+VirtualBox is a general-purpose full virtualizer for x86 hardware.
+Targeted at server, desktop and embedded use, it is now the only professional-
+quality virtualization solution that is also Open Source Software.
+OF

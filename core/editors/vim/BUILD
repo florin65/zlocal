@@ -5,6 +5,7 @@ OPTS+=" --with-features=huge \
 
 if ! (( in_depends $MODULE gtk+-3 ) || ( in_depends $MODULE gtk+-2 )); then
   OPTS+=" --disable-gui"
+  sedit "/gvim.desktop/d" src/Makefile
 fi
 
 cd src &&
@@ -18,5 +19,4 @@ rm -f /usr/bin/vim /usr/bin/vi &&
 make install &&
 
 ln -sf /usr/bin/vim /usr/bin/vi &&
-ln -sf /usr/bin/vim /usr/bin/view &&
-cp -f $SCRIPT_DIRECTORY/vimrc /usr/share/vim/vim${MAJOR}/sample.vimrc
+ln -sf /usr/bin/vim /usr/bin/view

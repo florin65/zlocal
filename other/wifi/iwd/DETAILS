@@ -1,11 +1,11 @@
           MODULE=iwd
-         VERSION=0.14
+         VERSION=0.16
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=https://www.kernel.org/pub/linux/network/wireless/
-      SOURCE_VFY=sha256:4e2b9e7bc84db880ed28e3bd929c00c4fdc5d5448cc8557bdd265c16810f1be8
+      SOURCE_VFY=sha256:8bfef0fc8476069b03175d6009c2d66f574144710aafbbd25e17f2a8b17a5e06
         WEB_SITE=https://git.kernel.org/cgit/network/wireless/iwd.git/
          ENTERED=20180216
-         UPDATED=20190116
+         UPDATED=20190405
            SHORT="Internet Wireless Daemon"
 
 cat << EOF

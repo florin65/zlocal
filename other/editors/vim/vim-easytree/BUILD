@@ -7,4 +7,3 @@ chmod -R a=r,u+w,a+X . &&
 
 install -dm755 $INSTPTH
 cp -av {syntax,doc,plugin} $INSTPTH/
-

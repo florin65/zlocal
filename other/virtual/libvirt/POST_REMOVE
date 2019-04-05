@@ -1,3 +1,0 @@
-if module_installed openrc-libvirt; then
-   lrm openrc-libvirt
-fi

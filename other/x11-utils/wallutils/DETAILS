@@ -1,0 +1,19 @@
+          MODULE=wallutils
+         VERSION=5.7.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/xyproto/wallutils/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:
+        WEB_SITE=https://github.com/xyproto/wallutils/
+         ENTERED=20190404
+         UPDATED=20190404
+           SHORT="Utilities for handling resolutions, wallpapers and timed wallpapers"
+
+cat <<EOF
+Wallutils:
+ - Detect monitor resolutions and set the desktop wallpaper, for any window
+   manager (please file an issue if your window manager is not supported yet).
+ - Supports GNOME timed wallpapers, and includes a utility that can run an event
+   loop for changing them (also supports cross fading).
+ - Introduces a new file format for timed wallpapers: The Simple Timed Wallpaper
+   format.
+EOF

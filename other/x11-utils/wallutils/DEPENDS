@@ -1,0 +1,7 @@
+depends go
+depends wayland
+depends libXcursor
+depends libXmu
+depends xbitmaps
+
+optional_depends feh "" "" "for setting the wallpaper for some window managers for X"

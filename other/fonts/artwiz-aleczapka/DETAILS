@@ -7,7 +7,7 @@
          ENTERED=20030927
          UPDATED=20041007
            SHORT="A set of (improved) artwiz fonts"
-
+ARCHIVE=off
 cat << EOF
 A set of Artwiz Aleczapko fonts.
 EOF

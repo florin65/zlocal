@@ -7,7 +7,7 @@
          ENTERED=20070516
          UPDATED=20190305
            SHORT="Some RedHat GPL exception licensed fonts"
-
+ARCHIVE=off
 cat << EOF
 There are three sets: Sans (a substitute for Arial, Albany, Helvetica,
 Nimbus Sans L, and Bitstream Vera Sans), Serif (a substitute for Times

@@ -6,8 +6,8 @@
         WEB_SITE=http://github.com/ryanoasis/nerd-fonts/
          ENTERED=20160425
          UPDATED=20180126
+         ARCHIVE=off
            SHORT="A collection of over 20 patched fonts"
-ARCHIVE=off
 
 cat << EOF
 Collection of over 20 patched fonts (over 2,700 variations) & FontForge font

@@ -7,6 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE
     WEB_SITE=http://www.google.com/get/noto/
      ENTERED=20161011
      UPDATED=20181029
+     ARCHIVE=off
        SHORT="Fonts support all languages/characters in Unicode"
 
 cat << EOF

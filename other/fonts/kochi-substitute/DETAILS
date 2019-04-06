@@ -7,7 +7,7 @@
      ENTERED=20050206
      UPDATED=20050206
        SHORT="Japanese fonts"
-
+ARCHIVE=off
 cat << EOF
 Some basic fonts for Japanese.
 EOF

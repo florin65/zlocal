@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/freefont-$VERSION
          ENTERED=20150927
          UPDATED=20150927
            SHORT="Free outline fonts covering the Unicode character set"
-
+ARCHIVE=off
 cat << EOF
 GNU FreeFont is a free family of scalable outline fonts, suitable for general use
 on computers and for desktop publishing. It is Unicode-encoded for compatibility

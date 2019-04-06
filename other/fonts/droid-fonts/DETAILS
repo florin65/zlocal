@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/google-$MODULE-$VERSION
          ENTERED=20110427
          UPDATED=20150104
            SHORT="Android fonts"
-
+ARCHIVE=off
 cat << EOF
 A font created by Ascender Corporation for use by the Open Handset Alliance
 platform, Android.

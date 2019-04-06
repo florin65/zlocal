@@ -9,7 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
          UPDATED=20181215
          ARCHIVE=off
            SHORT="Icon font with 222 weather themed icons"
-
+ARCHIVE=off
 cat << EOF
 Weather Icons is the only icon font and CSS with 222 weather themed icons,
 ready to be dropped right into Bootstrap, or any project that needs highx

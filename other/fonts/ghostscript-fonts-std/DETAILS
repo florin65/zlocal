@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/fonts
          ENTERED=20010922
          UPDATED=20071003
            SHORT="Fonts for ghostscript"
-
+ARCHIVE=off
 cat << EOF
 Ghostscript is the name of a set of software that provides:
     * An interpreter for the PostScript language and the PDF file

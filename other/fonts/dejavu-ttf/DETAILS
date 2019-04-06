@@ -9,7 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/dejavu-fonts-ttf-$VERSION
          UPDATED=20161031
          ARCHIVE=off
            SHORT="Font family based on the Bitstream Vera Fonts"
-
+ARCHIVE=off
 cat << EOF
 The DejaVu fonts are a font family based on the Bitstream Vera Fonts release
 1.10. Its purpose is to provide a wider range of characters (see Current

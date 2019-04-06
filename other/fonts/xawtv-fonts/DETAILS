@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/tv-fonts-$VERSION
          ENTERED=20020701
          UPDATED=20080814
            SHORT="A font pack for xawtv"
-
+ARCHIVE=off
 cat << EOF
 This package contains several typical tv and videotext (teletext) fonts
 to be used with xawtv.

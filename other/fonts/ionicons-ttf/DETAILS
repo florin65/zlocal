@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/ionicons-$VERSION
          ENTERED=20161230
          UPDATED=20190123
            SHORT="Font from the Ionic mobile framework"
-
+ARCHIVE=off
 cat << EOF
 Ionicons is a completely open-source icon set with 700+ icons crafted for web,
 iOS, Android, and desktop apps. Ionicons was built for Ionic Framework, so

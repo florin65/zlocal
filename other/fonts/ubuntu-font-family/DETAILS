@@ -7,7 +7,7 @@
          ENTERED=20110927
          UPDATED=20150927
            SHORT="TTF Ubuntu Font Family"
-
+ARCHIVE=off
 cat << EOF
 The Ubuntu Font Family are a set of matching new libre/open fonts.
 The development is being funded by Canonical on behalf the wider Free Software

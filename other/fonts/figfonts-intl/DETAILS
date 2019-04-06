@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/international
          ENTERED=20030722
          UPDATED=20140929
            SHORT="Extra international fonts for figlet"
-
+ARCHIVE=off
 cat << EOF
 17 International figlet fonts
 EOF

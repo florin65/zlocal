@@ -7,7 +7,7 @@
          ENTERED=20150508
          UPDATED=20150508
            SHORT="fonts designed with coding in mind"
-
+ARCHIVE=off
 cat << EOF
 Anonymous Pro (2009) is a family of four fixed-width fonts designed with coding
 in mind. Anonymous Pro features an international, Unicode-based character set,

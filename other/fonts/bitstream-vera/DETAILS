@@ -9,7 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/ttf-$MODULE-$VERSION
          ENTERED=20030218
          UPDATED=20030418
            SHORT="Fonts with a better looking, given to the Gnome Team"
-
+ARCHIVE=off
 cat << EOF
 Fonts with a better looking, given to the Gnome Team.
 EOF

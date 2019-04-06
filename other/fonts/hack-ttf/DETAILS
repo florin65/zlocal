@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${MODULE%-*}-$VERSION
          ENTERED=20160801
          UPDATED=20180320
            SHORT="Typeface base on Bitstream Vera Mono"
-
+ARCHIVE=off
 cat << EOF
 Hack is designed to be a workhorse typeface for code. It has deep roots in the
 libre, open source typeface community and expands upon the contributions of the

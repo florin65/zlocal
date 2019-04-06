@@ -8,7 +8,6 @@
          UPDATED=20170422
            SHORT="Wide range of Latin-based alphabets"
 ARCHIVE=off
-
 cat << EOF
-
+Wide range of Latin-based alphabets.
 EOF

@@ -7,7 +7,7 @@
          ENTERED=20090511
          UPDATED=20090511
            SHORT="Bitstream Vera font converted for ming"
-
+ARCHIVE=off
 cat << EOF
 This contains the Bitstream Vera font family, a high quality font family
 suitable for commercial grade end user applications, converted into FDB

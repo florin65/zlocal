@@ -7,7 +7,7 @@
          ENTERED=20160906
          UPDATED=20190309
            SHORT="TrueType version of the GNU Unifont"
-
+ARCHIVE=off
 cat << EOF
 GNU Unifont is part of the GNU Project. This page contains the latest release of
 GNU Unifont, with glyphs for every printable code point in the Unicode 9.0 Basic

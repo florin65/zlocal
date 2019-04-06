@@ -7,7 +7,7 @@
          ENTERED=20190311
          UPDATED=20190311
            SHORT="Consolas font"
-
+ARCHIVE=off
 cat << EOF
 Consolas fonts.
 EOF

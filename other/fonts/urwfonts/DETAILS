@@ -7,7 +7,7 @@
          ENTERED=20140929
          UPDATED=20140929
            SHORT="Ghostscript urwfonts"
-
+ARCHIVE=off
 cat << EOF
 Ghostscript urwfonts.
 EOF

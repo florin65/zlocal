@@ -7,8 +7,7 @@
         ENTERED=20060501
         UPDATED=20060501
           SHORT="Xft-compatible versions of LaTeX fonts"
-     MAINTAINER=jannis@lunar-linux.org
-
+ARCHIVE=off
 cat <<EOF
 Some xft-compatible versions of LaTeX fonts for use with visual
 math symbol display in LyX. It is useful primarily for the LyX

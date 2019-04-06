@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
          ENTERED=20110810
          UPDATED=20110827
            SHORT="Some juicy fonts"
-
+ARCHIVE=off
 cat << EOF
 Some juicy fonts.
 EOF

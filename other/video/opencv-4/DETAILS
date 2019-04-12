@@ -1,16 +1,16 @@
           MODULE=opencv-4
-         VERSION=4.0.1
+         VERSION=4.1.0
           SOURCE=${MODULE%-*}-$VERSION.tar.gz
          SOURCE2=${MODULE%-*}_contrib-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/opencv/opencv/archive/$VERSION.tar.gz
 SOURCE2_URL_FULL=https://github.com/opencv/opencv_contrib/archive/$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/opencv-$VERSION
-      SOURCE_VFY=sha256:7b86a0ee804244e0c407321f895b15e4a7162e9c5c0d2efc85f1cadec4011af4
-     SOURCE2_VFY=sha256:0d8acbad4b7074cfaafd906a7419c23629179d5e98894714402090b192ef8237
+      SOURCE_VFY=sha256:
+     SOURCE2_VFY=sha256:
         WEB_SITE=http://opencv.org/
             TYPE=cmake
          ENTERED=20050404
-         UPDATED=20181118
+         UPDATED=20190408
            SHORT="Open Source Computer Vision Library"
 
 cat << EOF

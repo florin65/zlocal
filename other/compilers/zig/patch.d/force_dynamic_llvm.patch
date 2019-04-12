@@ -3,7 +3,7 @@
 
 --- ./cmake/Findllvm.cmake
 +++ ./cmake/Findllvm.cmake
-@@ -15,7 +15,7 @@ find_program(LLVM_CONFIG_EXE
+@@ -65,7 +65,7 @@ find_program(LLVM_CONFIG_EXE
          "c:/msys64/mingw64/bin"
          "C:/Libraries/llvm-7.0.0/bin")
  

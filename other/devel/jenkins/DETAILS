@@ -1,11 +1,11 @@
           MODULE=jenkins
-         VERSION=2.170
+         VERSION=2.172
           SOURCE=$MODULE-$VERSION.war
  SOURCE_URL_FULL=http://mirrors.jenkins-ci.org/war/$VERSION/jenkins.war
-      SOURCE_VFY=sha256:95e634e135b969024e2b4a225bb36db4fb40ee0a268e379e19ac2a480576d636
+      SOURCE_VFY=sha256:e7160e33d68a4e3cf5f4314a4190ca7f9faff9c10ff7c87dc0fc31bd86733850
         WEB_SITE=http://jenkins-ci.org/
          ENTERED=20141027
-         UPDATED=20190401
+         UPDATED=20190411
            SHORT="Extendable continuous integration server"
          ARCHIVE=off
        LDD_CHECK=off

@@ -1,11 +1,11 @@
           MODULE=nmon
-         VERSION=16i
+         VERSION=16j
           SOURCE=lmon$VERSION.c
       SOURCE_URL=$SFORGE_URL/$MODULE/
-      SOURCE_VFY=sha256:af66d756cc1146a4a4101c5595ca8c99b4f84cb9e7e7f58a080773e8e6b6a24c
+      SOURCE_VFY=sha256:ba3878c9b3e3bbb1635659735e8373624ba938904889f130183908c203f34615
         WEB_SITE=http://nmon.sourceforge.net/
          ENTERED=20160104
-         UPDATED=20190212
+         UPDATED=20190411
            SHORT="AIX & Linux Performance Monitoring tool"
 
 cat << EOF

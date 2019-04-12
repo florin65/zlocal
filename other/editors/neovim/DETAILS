@@ -1,11 +1,11 @@
           MODULE=neovim
-         VERSION=0.3.3
+         VERSION=0.3.4
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/neovim/neovim/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:9280f68c02dfe632815ce8063a621c6d73a40da91d0a18e1cb3104c32d0e724b
+      SOURCE_VFY=sha256:a641108bdebfaf319844ed46b1bf35d6f7c30ef5aeadeb29ba06e19c3274bc0e
         WEB_SITE=https://neovim.io
          ENTERED=20180419
-         UPDATED=20190106
+         UPDATED=20190409
            SHORT="Fork of Vim to improve user experience, plugins, and GUIs"
 
 cat << EOF

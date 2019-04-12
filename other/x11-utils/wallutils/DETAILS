@@ -1,11 +1,11 @@
           MODULE=wallutils
-         VERSION=5.7.0
+         VERSION=5.7.2
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/xyproto/wallutils/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:9ea4088cce68a15ab769b09397ac6930887437101257f5d468eaf5a96019d41f
         WEB_SITE=https://github.com/xyproto/wallutils/
          ENTERED=20190404
-         UPDATED=20190404
+         UPDATED=20190409
            SHORT="Utilities for handling resolutions, wallpapers and timed wallpapers"
 
 cat <<EOF

@@ -17,7 +17,6 @@ set -x &&
              --prefix=/usr                            \
              --libdir=/usr/lib                        \
              --mandir=/usr/share/man                  \
-             --disable-termcap                        \
              --enable-pc-files                        \
              --enable-colorfgbg                       \
              --without-ada                            \
@@ -27,6 +26,8 @@ set -x &&
              --with-manpage-format=gzip               \
              --with-terminfo-dirs=/usr/share/terminfo \
              $OPTS                                   &&
+
+#             --disable-termcap                        \
 
 default_make &&
 
@@ -48,7 +49,6 @@ set -x &&
              --libdir=/usr/lib                        \
              --includedir=/usr/include/ncursesw       \
              --mandir=/usr/share/man                  \
-             --disable-termcap                        \
              --enable-colorfgbg                       \
              --enable-widec                           \
              --enable-pc-files                        \
@@ -59,6 +59,8 @@ set -x &&
              --with-manpage-format=gzip               \
              --with-terminfo-dirs=/usr/share/terminfo \
             $OPTS                                    &&
+
+#             --disable-termcap                        \
 
 set +x &&
 default_make &&

@@ -1,9 +1,6 @@
-meson --prefix /usr --sbindir bin . build &&
+OPTS+=" --sbindir=bin"
 
-cd build
-ninja &&
-prepare_install &&
-ninja install &&
+default_meson_build &&
 
 if module_installed systemd; then
    rm -f /etc/init.d/fuse3

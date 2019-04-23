@@ -13,6 +13,7 @@ fi &&
 OPTS+=" --disable-hardening"
 
 OPTS+=" --disable-kmods \
+        --disable-java \
         --disable-docs"
 
 # this removes 32 bit simulation support
@@ -75,6 +76,9 @@ fi &&
 
 install -Dm644 {$SCRIPT_DIRECTORY/udev.d,/etc/udev/rules.d}/60-vboxdrv.rules &&
 install -Dm644 {$SCRIPT_DIRECTORY/udev.d,/etc/udev/rules.d}/60-vboxguest.rules &&
+
+# install an alternative to mount.vboxsf 
+install -Dm0755 $SCRIPT_DIRECTORY/mount.vboxsf /usr/lib/virtualbox/ &&
 
 # Create the vboxusers group
 groupadd -f vboxusers

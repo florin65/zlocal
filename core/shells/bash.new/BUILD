@@ -5,7 +5,7 @@ OPTS+=" --bindir=/usr/bin \
         --disable-profiling \
         --with-curses \
         --without-bash-malloc \
-        --without-installed-readline"
+        --with-installed-readline"
 
 default_build &&
 

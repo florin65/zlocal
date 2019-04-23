@@ -1,0 +1,6 @@
+default_pre_build &&
+
+sedit 's|@rootsbin|@sbin|' Makefile.in &&
+sedit 's|$(DESTDIR)/sbin|$(DESTDIR)/usr/bin|' {ntfsprogs,src}/Makefile.in &&
+sed -e 's:sbin\($\|/\):$(sbindir)\1:g' -i {.,ntfsprogs,src}/Makefile.in &&
+sedit "1049,1060d" libntfs-3g/Makefile.in

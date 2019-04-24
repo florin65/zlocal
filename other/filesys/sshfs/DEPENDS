@@ -1,5 +1,0 @@
-depends fuse-3
-depends openssh
-depends meson
-
-optional_depends docutils "" "" "for man page build"

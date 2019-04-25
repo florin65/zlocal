@@ -1,0 +1,17 @@
+          MODULE=hunter
+         VERSION=1.0.10
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/rabite0/hunter/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:66b1ce0ca1467418f01598ead8a56f19e0943fb42f73c409abda6bef0adf39aa
+        WEB_SITE=https://github.com/rabite0/hunter/
+         ENTERED=20190425
+         UPDATED=20190425
+           SHORT="A ranger-like file browser written in rust"
+
+cat << EOF
+hunter is a fast and lag-free file browser/manager for the terminal.
+It features a heavily asynchronous and multi-threaded design and all disk IO
+happens off the main thread in a non-blocking fashion, so that hunter will
+always stay responsive, even under heavy load on a slow spinning rust disk,
+even with all the previews enabled.
+EOF

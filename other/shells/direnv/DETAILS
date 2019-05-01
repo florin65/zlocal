@@ -1,11 +1,11 @@
           MODULE=direnv
-         VERSION=2.20.0
+         VERSION=2.20.1
           SOURCE=$MODULE-$VERSION.tar.gz
   SOURCE_URL_FULL=https://github.com/direnv/direnv/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:cc72525b0a5b3c2ab9a52a3696e95562913cd431f923bcc967591e75b7541bff
+      SOURCE_VFY=sha256:dd54393661602bb989ee880f14c41f7a7b47a153777999509127459edae52e47
         WEB_SITE=https://direnv.net/
          ENTERED=20190218
-         UPDATED=20190405
+         UPDATED=20190430
            SHORT="A shell extension that manages the environment"
 
 cat << EOF

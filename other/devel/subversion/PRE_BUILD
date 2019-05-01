@@ -1,0 +1,6 @@
+default_pre_build &&
+
+# fix dependency bug in 1.7.6
+sedit "370 s/install = tools/install = apache-mod/" build.conf &&
+
+./autogen.sh

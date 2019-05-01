@@ -1,4 +1,5 @@
 depends cmake
+depends ninja
 depends lua
 depends libuv
 depends msgpack-c-cpp

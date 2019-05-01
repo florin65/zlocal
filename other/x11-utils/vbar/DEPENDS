@@ -1,0 +1,3 @@
+depends %I3
+depends gperf
+depends meson

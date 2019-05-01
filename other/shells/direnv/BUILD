@@ -1,6 +1,4 @@
-export GOPATH=./go
-
-cd "$GOPATH/src/$gopackagepath"
+export GOPATH=$BUILD_DIRECTORY/go
 
 make &&
 

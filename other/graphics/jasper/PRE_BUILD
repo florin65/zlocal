@@ -1,5 +1,0 @@
-default_pre_build &&
-
-if [ -f /usr/include/gnu/stubs.h ]; then
-    cp -fr $SCRIPT_DIRECTORY/stubs.h /usr/include/gnu/
-fi

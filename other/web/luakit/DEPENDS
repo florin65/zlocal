@@ -1,0 +1,4 @@
+depends luajit
+depends luafilesystem
+depends webkit2gtk3
+depends help2man

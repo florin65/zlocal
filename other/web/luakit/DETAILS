@@ -1,0 +1,14 @@
+          MODULE=luakit
+         VERSION=2.1
+          SOURCE=$MODULE-v$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/luakit/luakit/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:ecbfa23316712f444714387b2ffd846626dab6e40b444d3def4475c145d56f26
+        WEB_SITE=https://luakit.github.io/
+         ENTERED=20190507
+         UPDATED=20190507
+           SHORT="Browser framework based on Webkit and Lua"
+
+cat << EOF
+luakit is a fast, light and simple to use micro-browser framework extensible by
+Lua using the WebKit web content engine and the GTK+ toolkit.
+EOF

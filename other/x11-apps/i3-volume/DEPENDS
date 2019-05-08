@@ -1,0 +1,7 @@
+depends gawk
+depends libnotify
+depends alsa-utils
+depends pulseaudio
+
+optional_depends dunst "" "" "for notification support"
+optional_depends notify-osd "" "" "for notifiction support"

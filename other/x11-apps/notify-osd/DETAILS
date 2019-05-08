@@ -1,0 +1,15 @@
+          MODULE=notify-osd
+         VERSION=0.9.35+16.04.20160415
+          SOURCE=${MODULE}_$VERSION.orig.tar.gz
+      SOURCE_URL=https://launchpad.net/ubuntu/+archive/primary/+files/
+      SOURCE_VFY=sha256:119fd662e4cbfeec492c1f96e26687dbfb5986076114bda488807358e54cfb53
+        WEB_SITE=https://launchpad.net/notify-osd
+         ENTERED=20190508
+         UPDATED=20190508
+           SHORT="On-screen-display notification agent"
+
+cat << EOF
+Canonical's on-screen-display notification agent, implementing the
+freedesktop.org Desktop Notifications Specification with semi-transparent
+click-through bubbles.
+EOF

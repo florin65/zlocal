@@ -1,0 +1,9 @@
+validate_source_dir $SOURCE_DIRECTORY &&
+
+mk_source_dir $SOURCE_DIRECTORY &&
+
+cd $SOURCE_DIRECTORY &&
+
+unpack $SOURCE &&
+
+NOCONFIGURE=1 ./autogen.sh

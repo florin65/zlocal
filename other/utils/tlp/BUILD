@@ -1,5 +1,6 @@
 export TLP_SBIN='/usr/bin'
 export TLP_ULIB='/usr/lib/udev'
+export TLP_ELOD='/usr/libexec/elogind/system-sleep'
 export TLP_NO_INIT='1'
 export TLP_NO_PMUTILS='1'
 

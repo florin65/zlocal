@@ -7,11 +7,11 @@ depends meson
 #depends libappindicator-gtk3
 
 optional_depends pulseaudio \
-                 "-Dpulseaudio=true" \
-                 "-Dpulseaudio=false" \
+                 "-Dpulseaudio=enabled" \
+                 "-Dpulseaudio=disabled" \
                  "for audio support"
 
 optional_depends libnl3 \
-                 "-Dlibnl=true" \
-                 "-Dlibnl=false" \
+                 "-Dlibnl=enabled" \
+                 "-Dlibnl=disabled" \
                  "for network features support"

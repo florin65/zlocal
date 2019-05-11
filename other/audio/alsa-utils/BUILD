@@ -5,7 +5,8 @@ if module_installed systemd; then
 fi
 
 OPTS+=" --exec-prefix=/usr \
-        --sbindir=/usr/sbin"
+        --sbindir=/usr/bin \
+        --disable-alsaconf"
 
 default_build &&
 

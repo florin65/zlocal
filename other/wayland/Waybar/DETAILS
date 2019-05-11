@@ -1,11 +1,11 @@
           MODULE=Waybar
-         VERSION=0.5.1
+         VERSION=0.6.2
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/Alexays/Waybar/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:dfd8dd7a6d6849a6eca596038b9929d51bcfa6d1d47afaa11abde3dc5b672a62
         WEB_SITE=https://github.com/Alexays/Waybar/
          ENTERED=20190330
-         UPDATED=20190405
+         UPDATED=20190511
            SHORT="Highly customizable Wayland bar for Sway"
 
 cat << EOF

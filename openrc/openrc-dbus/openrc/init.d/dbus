@@ -20,7 +20,7 @@ start_pre() {
 	/usr/bin/dbus-uuidgen --ensure=/etc/machine-id
 
 	# We need to test if /run/dbus exists, since script will fail if it does not
-	checkpath -q -d /run/dbus || mkdir -p /run/dbus
+	checkpath -q -d /run/dbus 
 }
 
 stop_post() {

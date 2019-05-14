@@ -1,0 +1,14 @@
+          MODULE=fpc
+         VERSION=3.0.4
+          SOURCE=fpcbuild-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/fpcbuild-$VERSION
+      SOURCE_URL=ftp://ftp.freepascal.org/pub/fpc/dist/$VERSION/source/
+      SOURCE_VFY=sha256:f66514e6f2c2e4e1bccccb4d554c24b77682ed61c87811ae5dd210f421855e76
+        WEB_SITE=http://freepascal.org
+         ENTERED=20130819
+         UPDATED=20190514
+           SHORT="The Free Pascal Compiler"
+
+cat << EOF
+FPC is an open source compiler for Pascal and Object Pascal.
+EOF

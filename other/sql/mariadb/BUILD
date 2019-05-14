@@ -34,11 +34,14 @@ OPTS+=" -DSYSCONFDIR=/etc/mysql \
         -DWITHOUT_EXAMPLE_STORAGE_ENGINE=ON \
         -DWITHOUT_TOKUDB_STORAGE_ENGINE=ON \
         -DWITHOUT_PBXT_STORAGE_ENGINE=ON \
+        -DPLUGIN_AUTH_GSSAPI=NO \
+        -DAUTH_GSSAPI_PLUGIN_TYPE=OFF \
+        -DAWS_SDK_EXTERNAL_PROJECT=OFF \
         -DWITH_EMBEDDED_SERVER=ON"
 
 if module_installed systemd; then
   OPTS+=" --DWITH_SYSTEMD=yes"
-fi
+fi &&
 
 # A few of these flags are necessary when building mariadb with gcc >= 4.4
 CFLAGS="-fPIC ${CFLAGS} -fno-strict-aliasing -DBIG_JOINS=1 -fomit-frame-pointer -fno-delete-null-pointer-checks"
@@ -56,6 +59,4 @@ fi &&
 # Setting up links for mysqlcheck multi-call binary
 for i in analyze repair optimize; do
   ln -sf /usr/bin/mysql{check,$i}
-done &&
-
-ln -sf /usr/bin/{mysql,mariadb}_config
+done

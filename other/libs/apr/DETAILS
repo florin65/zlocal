@@ -7,7 +7,7 @@
       SOURCE_VFY=sha256:e2e148f0b2e99b8e5c6caa09f6d4fb4dd3e83f744aa72a952f94f5a14436f7ea
         WEB_SITE=http://apr.apache.org
          ENTERED=20051208
-         UPDATED=20190409
+         UPDATED=20190515
            SHORT="Apache Portable Runtime Project"
 
 PSAFE=no

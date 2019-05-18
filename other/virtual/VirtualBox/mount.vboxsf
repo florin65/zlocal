@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Hopefully this works as intented, supporting both pre-4.16 and newer kernels
-# https://bugs.archlinux.org/task/58272#comment168687
 
 kver_major=$(uname -r | cut -d. -f1)
 kver_minor=$(uname -r | cut -d. -f2)

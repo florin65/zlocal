@@ -1,11 +1,11 @@
           MODULE=libxfce4ui
-         VERSION=4.13.4
+         VERSION=4.13.5
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=http://archive.xfce.org/src/xfce/$MODULE/${VERSION%.*}
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:3c38b065796a1cb2c2f2e9a28edaa6b37a3728c1c0b7a4297af9ecd82a8ab66d
         WEB_SITE=http://www.xfce.org
          ENTERED=20030715
-         UPDATED=20190310
+         UPDATED=20190518
            SHORT="Widget library for Xfce4"
 
 cat << EOF

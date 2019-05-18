@@ -1,6 +1,6 @@
 depends bash
-depends coreutils
 depends cpio
+depends coreutils
 depends util-linux
 depends gzip
 depends bzip2

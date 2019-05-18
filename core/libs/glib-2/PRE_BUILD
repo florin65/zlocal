@@ -1,0 +1,4 @@
+default_pre_build &&
+
+# Do not install gdbus-codegen, it's part of gdbus-codegen module
+sedit '/install.*true/s;true;false;' gio/gdbus-2.0/codegen/meson.build

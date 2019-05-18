@@ -16,6 +16,4 @@ fi
 
 default_pre_build &&
 
-sedit 's:dash:bash:' Makefile &&
-sedit 's:="/lib/:="/usr/lib/:' dracut-init.sh &&
-sedit 's: /lib/modules: /usr/lib/modules:' dracut.sh
+sedit 's:dash:bash:' Makefile

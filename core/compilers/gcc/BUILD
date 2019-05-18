@@ -39,6 +39,9 @@ make CFLAGS='-O' LIBCFLAGS='-g -O2' LIBCXXFLAGS='-g -O2 -fno-implicit-templates'
 prepare_install &&
 make install &&
 
+( cd /usr/libexec/gcc/`arch`-pc-linux-gnu/$VERSION &&
+  strip cc1 cc1plus lto1 ) &&
+
 # Make the package archive a lot smaller
 #(
 #  cd /usr/lib/gcc/`arch`-pc-linux-gnu/$VERSION &&

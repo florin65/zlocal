@@ -1,3 +1,13 @@
+local prefix=/usr sysconfdir=/etc
+
+OPTS+=" --prefix=${prefix} \
+        --libdir=${prefix}/lib \
+        --bashcompletiondir=$(pkg-config --variable=completionsdir bash-completion)"
+
+if module_installed systemd; then    
+   OPTS+=" --systemdsystemunitdir=${prefix}/lib/systemd/system"
+fi
+
 default_build &&
 
 # Removing modules we don't support

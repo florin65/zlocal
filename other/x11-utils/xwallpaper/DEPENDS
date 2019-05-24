@@ -1,0 +1,16 @@
+depends pixman
+depends xcb-util
+depends xcb-util-image
+
+optional_depends libpng "--with-png" "--without-png" "for PNG support"
+optional_depends libXpm "--with-xpm" "--without-xpm" "for XPM support"
+
+optional_depends libjpeg-turbo \
+                 "--with-jpeg" \
+                 "--without-jpeg" \
+                 "for JPG support"
+
+optional_depends libseccomp \
+                 "--with-seccomp" \
+                 "--without-seccomp" \
+                 "for seccomp support"

@@ -1,0 +1,17 @@
+          MODULE=xwallpaper
+         VERSION=0.5.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+       SOURCE_URL=https://github.com/stoeckmann/xwallpaper/releases/download/v$VERSION/
+      SOURCE_VFY=sha256:c5bd92653d5cf0a29a27c0b6d1997a3aa2dd62d6def1a940380526fcc3019c0c
+        WEB_SITE=https://github.com/stoeckmann/xwallpaper/
+         ENTERED=20190522
+         UPDATED=20190522
+           SHORT="wallpaper setting utility for X"
+
+cat <<EOF
+The xwallpaper utility allows you to set image files as your X wallpaper. JPEG,
+PNG, and XPM file formats are supported, all of them being configurable and
+therefore no fixed dependencies.
+The wallpaper is also advertised to programs which support semi-transparent
+backgrounds.
+EOF

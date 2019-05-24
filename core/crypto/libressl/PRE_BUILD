@@ -1,0 +1,7 @@
+default_pre_build &&
+
+# fix manpage symlink locations
+sed -ri 's|(ln -sf )(.+) (.+)|\1\2.gz \3.gz|g' man/Makefile.in &&
+
+# avoid to compile the tests
+sedit 's|tests||g' Makefile.{am,in}

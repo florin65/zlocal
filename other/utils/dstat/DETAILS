@@ -1,0 +1,20 @@
+          MODULE=dstat
+         VERSION=0.7.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/dagwieers/dstat/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:4fbd58f3461c86d09a3ab97472aa204de37aa33d31a0493a3e5ed86a2045abea
+        WEB_SITE=http://dag.wiee.rs/home-made/dstat/
+         ENTERED=20190524
+         UPDATED=20190524
+           SHORT="A versatile resource statistics tool"
+
+cat << EOF
+Dstat is a versatile replacement for vmstat, iostat, netstat and ifstat.
+Dstat overcomes some of their limitations and adds some extra features, more
+counters and flexibility. Dstat is handy for monitoring systems during
+performance tuning tests, benchmarks or troubleshooting.
+Dstat allows you to view all of your system resources in real-time, you can eg.
+compare disk utilization in combination with interrupts from your IDE
+controller, or compare the network bandwidth numbers directly with the disk
+throughput (in the same interval).
+EOF

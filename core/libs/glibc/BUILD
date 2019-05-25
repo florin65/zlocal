@@ -1,5 +1,5 @@
 # optimize -O2
-CFLAGS+=" -O2" &&
+CFLAGS+=" -O2"
 
 # The fortify compiler option cause the build to fail
 bad_flags -D_FORTIFY_SOURCE=2 &&
@@ -28,7 +28,8 @@ mkdir -p $INSTALL_ROOT &&
 cd $INSTALL_ROOT &&
 
 OPTS+=" --libdir=/usr/lib \
-        --sbindir=/usr/bin"
+        --sbindir=/usr/bin \
+        --exec-prefix=/usr"
 
 ../configure --prefix=/usr              \
              --infodir=/usr/share/info  \
@@ -44,20 +45,20 @@ OPTS+=" --libdir=/usr/lib \
              --without-cvs              \
              --enable-cet               \
              --enable-shared            \
+             --enable-add-ons           \
+             --enable-bind-now          \
              --enable-obsolete-rpc      \
              --enable-obsolete-nsl      \
-             --enable-bind-now          \
-             --enable-bind-now          \
              --enable-kernel=3.2        \
              --enable-lock-elision      \
-             --enable-stackguard-randomization \
-             --enable-stack-protector=strong \
-             --enable-add-ons           \
              --disable-timezone-tools   \
              --disable-multi-arch       \
              --disable-profile          \
              --disable-werror           \
              $OPTS &&
+
+#             --enable-stackguard-randomization \
+#             --enable-stack-protector=strong \
 
 # build libraries with hardening disabled
 echo "build-programs=no" >> configparms &&

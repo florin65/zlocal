@@ -1,5 +1,5 @@
 # optimize -O2
-CFLAGS+=" -O2" &&
+CFLAGS+=" -O2"
 
 # The fortify compiler option cause the build to fail
 bad_flags -D_FORTIFY_SOURCE=2 &&
@@ -25,7 +25,8 @@ mkdir -p $INSTALL_ROOT &&
 cd $INSTALL_ROOT &&
 
 OPTS+=" --libdir=/usr/lib \
-        --sbindir=/usr/bin"
+        --sbindir=/usr/bin \
+        --exec-prefix=/usr"
 
 ../configure --prefix=/usr             \
              --infodir=/usr/share/info \
@@ -40,12 +41,10 @@ OPTS+=" --libdir=/usr/lib \
              --with-__thread           \
              --with-tls                \
              --enable-cet              \
-             --enable-bind-now         \
              --enable-shared           \
-             --enable-obsolete-rpc     \
-             --enable-obsolete-nsl     \
-             --enable-bind-now         \
              --enable-add-ons          \
+             --enable-bind-now         \
+             --enable-bind-now         \
              --enable-lock-elision     \
              --enable-stack-protector=strong \
              --enable-stackguard-randomization \
@@ -55,8 +54,9 @@ OPTS+=" --libdir=/usr/lib \
              --disable-werror          \
              $OPTS &&
 
-#             --enable-kernel=3.2       \
-
+#             --enable-obsolete-rpc     \
+#             --enable-obsolete-nsl     \
+ 
 # build libraries with hardening disabled
 echo "build-programs=no" >> configparms &&
 make &&
@@ -107,7 +107,7 @@ sln /usr/lib/libmvec-lunar.so $MVEC
 
 # clean hack to make sure gnu/stubs.h gets refreshed
 rm -f /usr/include/gnu/stubs.h &&
-
+exit 1
 # This removes the old glibc
 prepare_install &&
 

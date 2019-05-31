@@ -13,6 +13,7 @@ depends libxkbfile
 depends libpciaccess
 depends libxshmfence
 depends libevdev
+depends libepoxy
 depends pixman
 depends mesa-lib
 depends dbus-glib
@@ -27,11 +28,6 @@ depends xkbcomp
 depends setxkbmap
 depends xtrans
 depends meson
-
-optional_depends libepoxy \
-                 "-Dglamor=true" \
-                 "-Dglamor=false" \
-                 "for glamor support (needed for radeonsi driver)" y
 
 optional_depends acpid\
                  "-Dacpi=true" \

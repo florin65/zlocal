@@ -2,7 +2,7 @@
          VERSION=2.4.1
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=https://github.com/intel/libva/archive/$VERSION/
-      SOURCE_VFY=sha256:8d65764d2efb1fdeb0c2ad51c7e2f9db1b2d6b005c58a85fd814f8f7b8c89a2d
+      SOURCE_VFY=sha256:68ca8d071dcb84ac82e3c6d7f02a55937d9f690fcb215853f4aa1de8d459812f
         WEB_SITE=http://www.freedesktop.org/wiki/Software/vaapi
          ENTERED=20110211
          UPDATED=20190409

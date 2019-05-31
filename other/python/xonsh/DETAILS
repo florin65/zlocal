@@ -1,12 +1,12 @@
           MODULE=xonsh
-         VERSION=0.9.0
+         VERSION=0.9.4
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/xonsh/xonsh/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:5acafb34ffc37d8872c3b4d48d13843ec00a49d3905be1bdebd2c4072c84f6a6
+      SOURCE_VFY=sha256:ffd6d7c99ae0028d092e8ab5313cf562db6c7de8544241a4cbdf272c6c0029b9
         WEB_SITE=http://xon.sh/
             TYPE=python3
          ENTERED=20170821
-         UPDATED=20190511
+         UPDATED=20190525
            SHORT="A Python-ish, BASHwards-compatible shell"
 
 cat << EOF

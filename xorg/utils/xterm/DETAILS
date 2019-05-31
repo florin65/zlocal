@@ -1,12 +1,12 @@
           MODULE=xterm
-         VERSION=345
+         VERSION=346
           SOURCE=$MODULE-$VERSION.tgz
       SOURCE_URL=ftp://ftp.invisible-island.net/$MODULE
-      SOURCE_VFY=sha256:6649a782d179344011199241798133c2db822b158b8a6d7546b1d7fb76f2d535
+      SOURCE_VFY=sha256:cf327d73c058354d6816250fbd2ce439da0fcfd991ad48adc0e7c0c715ac8a77
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://invisible-island.net/xterm
          ENTERED=20060124
-         UPDATED=20190515
+         UPDATED=20190528
            SHORT="The X terminal emulator"
 
 cat << EOF

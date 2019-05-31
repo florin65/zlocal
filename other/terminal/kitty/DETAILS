@@ -1,12 +1,12 @@
           MODULE=kitty
-         VERSION=0.13.3
+         VERSION=0.14.1
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/kovidgoyal/kitty/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:b6f48404349ca99049de40e7bb55511de9ea04a6b1567068997d3fddb2c20f08
+      SOURCE_VFY=sha256:
         WEB_SITE=https://github.com/kovidgoyal/kitty/
             TYPE=python3
          ENTERED=20190110
-         UPDATED=20190121
+         UPDATED=20190530
            SHORT="A GPU based terminal emulator"
 
 cat << EOF

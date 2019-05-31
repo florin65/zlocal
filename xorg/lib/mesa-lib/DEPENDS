@@ -6,6 +6,7 @@ depends libdrm
 depends libXxf86vm
 depends libXdamage
 depends libxshmfence
+depends linXrandr
 depends libxml2
 depends dbus-glib
 depends python-mako

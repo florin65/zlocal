@@ -3,7 +3,7 @@
           SOURCE=$MODULE-src-r$VERSION.tar.gz
       SOURCE_URL=http://downloads.mongodb.org/src
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-src-r$VERSION
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:11c9c55f1145ac1b6f757ff74f969d41cf47044191b3b0f3fee77f333b8f4f8d
         WEB_SITE=http://www.mongodb.org/
          ENTERED=20101205
          UPDATED=20190530

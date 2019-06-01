@@ -2,7 +2,7 @@
          VERSION=0.14.1
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/kovidgoyal/kitty/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:92b9e3555e33b3aa1e267a7bc9bc026233b87c01a6f36ddf4492c151ab68218b
         WEB_SITE=https://github.com/kovidgoyal/kitty/
             TYPE=python3
          ENTERED=20190110

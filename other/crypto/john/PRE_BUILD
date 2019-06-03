@@ -1,0 +1,6 @@
+default_pre_build &&
+
+popd src &&
+sedit 's|$prefix/bin|/usr/lib/john|' configure.ac
+autoreconf -fiv
+pushd

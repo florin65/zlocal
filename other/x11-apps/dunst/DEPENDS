@@ -1,7 +1,0 @@
-depends perl
-depends pango
-depends gdk-pixbuf
-depends libnotify
-depends libXinerama
-depends libXrandr
-depends libXScrnSaver

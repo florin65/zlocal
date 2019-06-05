@@ -1,2 +1,7 @@
+depends ImageMagick
 depends file
 depends rustc
+
+optional_depends gst-plugins-good "" "" "for audio/video plugins"
+
+optional_depends nerd-fonts "" "" "for the supported icon pack"

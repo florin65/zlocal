@@ -5,7 +5,7 @@
       SOURCE_VFY=sha256:6ce29b3eb0bb16a7387bc609c39455fd13064bdcde5a4d185fab3a0c71946e16
         WEB_SITE=http://connman.net
          ENTERED=20110202
-         UPDATED=20190402
+         UPDATED=20190607
            SHORT="Fast and modular network connection manager"
 
 cat << EOF

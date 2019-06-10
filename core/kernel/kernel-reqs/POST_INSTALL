@@ -6,7 +6,6 @@ kreqs="fuse \
        virtualbox-module \
        easy-slow-down-manager \
        broadcom-wl \
-       spl \
        zfs"
 
 for req in $kreqs; do

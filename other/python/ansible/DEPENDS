@@ -1,6 +1,6 @@
 depends python-yaml
-depends python-paramiko
 depends python-jinja
+depends python-paramiko
 depends python-pycrypto
 depends asciidoc
 

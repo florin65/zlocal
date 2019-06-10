@@ -17,9 +17,7 @@ if module_installed systemd; then
   install -d -m755 /usr/lib/systemd/system/ &&
   install -m644 dbus/dbus-wpa_supplicant.conf /etc/dbus-1/system.d/wpa_supplicant.conf &&
   install -m644 systemd/*.service /usr/lib/systemd/system/ &&
-  if in_depends $MODULE dbus; then
-    install -m644 dbus/fi.w1.wpa_supplicant1.service} /usr/share/dbus-1/system-services/
-  fi
+  install -m644 dbus/fi.w1.wpa_supplicant1.service /usr/share/dbus-1/system-services/
 fi &&
 
 gather_docs developer.txt wpa_supplicant.conf

@@ -14,6 +14,6 @@ make -j1 VIMRCLOC=/etc &&
 prepare_install &&
 
 rm -f /usr/bin/vim /usr/bin/vi &&
-( find /usr/share/vim -type d -exec rmdir {} \; &> /dev/null || true) &&
+( find /usr/share/vim -type d -exec rmdir {} \; &> /dev/null || true ) &&
 
 make install

@@ -1,3 +1,5 @@
+rm -fr $BUILD_DIRECTORY/LVM2-initramfs &&
+
 if module_installed openrc; then
    lin -c openrc-lvm2
 fi

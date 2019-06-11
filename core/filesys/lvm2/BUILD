@@ -1,4 +1,4 @@
-cp -a lvm2/ lvm2-initramfs/ &&
+cp -a ../LVM2.$VERSION ../LVM2-initramfs &&
 
 if ! [[ $(arch) == x86_64 ]]; then
   CFLAGS+=" -fPIE " &&
@@ -35,7 +35,7 @@ install -D -m644 "${SCRIPT_DIRECTORY}/11-dm-initramfs.rules" /usr/lib/initcpio/u
 
 make install_system_dirs &&
 
-cd ../lvm2-initramfs &&
+cd ../LVM2-initramfs &&
 
 OPTS+=" --enable-udev_sync=no \
       ¦ --enable-udev_rules=no \

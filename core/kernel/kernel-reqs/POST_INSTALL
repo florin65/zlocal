@@ -1,12 +1,13 @@
 kreqs="fuse \
+       fuse-3 \
        iptables \
        NVIDIA \
        openafs-driver \
        submount \
        virtualbox-module \
        easy-slow-down-manager \
-       broadcom-wl \
-       zfs"
+       zfs \
+       broadcom-wl"
 
 for req in $kreqs; do
   if module_installed $req; then

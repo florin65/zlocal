@@ -1,5 +1,3 @@
-NOCONFIGURE=1 ./autogen.sh &&
-
 if [[ $GALLIUM == y ]]; then
   # Mesa Gallium mklib breaks build when linker flags are set
   bad_flags linker &&

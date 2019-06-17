@@ -5,7 +5,7 @@
       SOURCE_VFY=sha256:350dfc5fd8db881e6f1982da0466900b5b175527e9a94d69ada0b7e90a73e3ea
         WEB_SITE=http://irssi.org/
          ENTERED=20020908
-         UPDATED=20190212
+         UPDATED=20190614
            SHORT="irssi: an IRC client"
 
 cat << EOF

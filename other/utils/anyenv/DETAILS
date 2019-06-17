@@ -1,0 +1,15 @@
+          MODULE=anyenv
+         VERSION=1.1.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/anyenv/anyenv/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:d7f386f74d5fd40ded51b4e83f05490493fc6b63d22eb3d502836020548b0137
+        WEB_SITE=https://github.com/anyenv/anyenv/
+         ENTERED=20190612
+         UPDATED=20190612
+           SHORT="All in one for **env"
+
+cat << EOF
+This is a simple wrapper for rbenv style environment managers.
+You don't have to git clone or modify your shell profile for each **env anymore
+if you install anyenv.
+EOF

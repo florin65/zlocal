@@ -1,19 +1,19 @@
           MODULE=linux
-         VERSION=5.1.9
+         VERSION=5.1.10
             BASE=$(echo $VERSION | cut -d. -f1,2)
           SOURCE=$MODULE-$BASE.tar.xz
 if [ -n "$(echo $VERSION | cut -d. -f3)" ] ; then
          SOURCE2=patch-$VERSION.xz
 fi
    SOURCE_URL[0]=$KERNEL_URL/pub/linux/kernel/v5.x
-   SOURCE_URL[1]=http://www.kernel.org/pub/linux/kernel/v5.x
+   SOURCE_URL[1]=https://www.kernel.org/pub/linux/kernel/v5.x
   SOURCE2_URL[0]=$KERNEL_URL/pub/linux/kernel/v5.x
-  SOURCE2_URL[1]=http://www.kernel.org/pub/linux/kernel/v5.x
+  SOURCE2_URL[1]=https://www.kernel.org/pub/linux/kernel/v5.x
       SOURCE_VFY=sha256:d06a7be6e73f97d1350677ad3bae0ce7daecb79c2c2902aaabe806f7fa94f041
-     SOURCE2_VFY=sha256:34aee04c1af73dbf2f57f953df8032c581a1210952c231c2f1d80d0165ab0e71
-         WEB_SITE=http://www.kernel.org/
+     SOURCE2_VFY=sha256:d50fd9b01c35b161d0e116a0f4950afebc191d231e903f299c55270b491400a1
+         WEB_SITE=https://www.kernel.org/
          ENTERED=20111121
-         UPDATED=20190611
+         UPDATED=20190615
            SHORT="The core of a Linux GNU Operating System"
      KEEP_SOURCE=on
            TMPFS=off

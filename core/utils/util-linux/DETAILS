@@ -1,16 +1,15 @@
           MODULE=util-linux
-         VERSION=2.33.2
+         VERSION=2.34
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$KERNEL_URL/pub/linux/utils/$MODULE/v${VERSION::4}
-      SOURCE_VFY=sha256:631be8eac6cf6230ba478de211941d526808dba3cd436380793334496013ce97
+      SOURCE_VFY=sha256:
         WEB_SITE=http://freecode.com/projects/util-linux
          ENTERED=20010922
-         UPDATED=20190409
+         UPDATED=20190614
            SHORT="Essential utilities for any Linux box"
 
 cat << EOF
-Util-linux is a suite of essential utilities for any Linux system. Its
-primary audience is system integrators and DIY Linux hackers. Util-linux
-is attempting to be portable, but the only platform it has been tested
-much on is Linux i386.
+Util-linux is a suite of essential utilities for any Linux system. Its primary
+audience is system integrators and DIY Linux hackers. Util-linux is attempting
+to be portable, but the only platform it has been tested much on is Linux i386.
 EOF

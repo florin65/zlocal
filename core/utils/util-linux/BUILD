@@ -1,14 +1,14 @@
-OPTS+=" --enable-agetty     \
-        --enable-chfn-chsh  \
+OPTS+=" --enable-raw        \
+        --enable-vipw       \
         --enable-fsck       \
         --enable-mesg       \
-        --enable-partx      \
-        --enable-raw        \
-        --enable-rename     \
-        --enable-schedutils \
-        --enable-vipw       \
-        --enable-newgrp     \
         --enable-write      \
+        --enable-partx      \
+        --enable-rename     \
+        --enable-agetty     \
+        --enable-newgrp     \
+        --enable-chfn-chsh  \
+        --enable-schedutils \
         --disable-kill      \
         --disable-static    \
         --enable-fs-paths-extra=/usr/bin"

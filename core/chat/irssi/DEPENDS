@@ -6,6 +6,9 @@ optional_depends perl \
                  "--without-perl" \
                  "for perl support"
 
+
+optional_depends libotr "--with-otr" "" "for Off-the-Record Messaging support"
+
 optional_depends %OSSL "" "--disable-ssl" "for SSL support"
 
 optional_depends libwww-perl "" "" "for scriptassist script"

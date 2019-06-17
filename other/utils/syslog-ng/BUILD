@@ -6,10 +6,12 @@ OPTS+=" --prefix=/usr \
         --datadir=/usr/share \
         --disable-amqp \
         --disable-java \
+        --disable-java-modules \
         --disable-riemann \
         --disable-spoof-source \
         --enable-ipv6 \
         --enable-manpages \
+        --with-python=3 \
         --with-criterion=no \
         --with-pidfile-dir=/run \
         --with-embedded-crypto"

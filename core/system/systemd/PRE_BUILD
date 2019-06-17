@@ -34,14 +34,4 @@ if mountpoint -q /usr && ! module_installed dracut; then
   fi
 fi &&
 
-default_pre_build &&
-
-# systemd guys wrongly assume that on every linux
-# installation is a group called "lock" this isn't
-# the case in lunar, so we switch it to root.
-sedit "s:0775 root lock:0775 root root:" tmpfiles.d/legacy.conf &&
-
-# fix version liblz4 version check
-sedit 's:125:1.2.5:' configure.ac &&
-
-./autogen.sh
+default_pre_build

@@ -27,7 +27,7 @@ OPTS+=" -Db_lto=false \
         -Dgbm=true \
         -Degl=true \
         -Ddri3=true \
-        -Dgles1=true \
+        -Dgles1=false \
         -Dgles2=true \
         -Dvalgrind=false \
         -Dshared-glapi=true \

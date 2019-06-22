@@ -1,11 +1,11 @@
           MODULE=hunter
-         VERSION=1.2.1
+         VERSION=1.2.3
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/rabite0/hunter/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:807666e438d68960ec2982b88a31ecac82e38add4e184aabbc72532d53ea1940
+      SOURCE_VFY=sha256:44e67839df26614d32771b9656effba94519d3b984b2ec8d3de7226ec20c4c08
         WEB_SITE=https://github.com/rabite0/hunter/
          ENTERED=20190425
-         UPDATED=20190605
+         UPDATED=20190621
            SHORT="A ranger-like file browser written in rust"
 
 cat << EOF

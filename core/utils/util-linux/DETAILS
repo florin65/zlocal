@@ -2,7 +2,7 @@
          VERSION=2.34
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$KERNEL_URL/pub/linux/utils/$MODULE/v${VERSION::4}
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:743f9d0c7252b6db246b659c1e1ce0bd45d8d4508b4dfa427bbb4a3e9b9f62b5
         WEB_SITE=http://freecode.com/projects/util-linux
          ENTERED=20010922
          UPDATED=20190614

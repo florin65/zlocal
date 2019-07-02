@@ -1,11 +1,11 @@
           MODULE=thunar-volman
-         VERSION=0.9.1
+         VERSION=0.9.3
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=http://archive.xfce.org/src/apps/$MODULE/${VERSION%.*}
       SOURCE_VFY=sha256:
         WEB_SITE=http://goodies.xfce.org/projects/thunar-plugins/thunar-volman
          ENTERED=20070123
-         UPDATED=20181129
+         UPDATED=20190701
            SHORT="Automatic management of removable drives and media"
 
 cat << EOF

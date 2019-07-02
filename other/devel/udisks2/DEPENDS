@@ -10,6 +10,8 @@ depends intltool
 depends gnome-common
 depends gtk-doc
 
+#depends liblockdev
+
 optional_depends dosfstools  "" "" "for VFAT filesystem management support"
 optional_depends ntfs-3g     "" "" "for NTFS filesystem management support"
 optional_depends lvm2        "" "" "for LVM2 filesystem support"

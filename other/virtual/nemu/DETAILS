@@ -1,12 +1,12 @@
           MODULE=nemu
-         VERSION=1.4.0
+         VERSION=2.2.1
           SOURCE=$MODULE-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/PascalRD-$MODULE-1e73a64638ef
  SOURCE_URL_FULL=https://bitbucket.org/PascalRD/$MODULE/get/v$VERSION.tar.bz2
-      SOURCE_VFY=sha256:a24d2a0115814d67669aa8cc17745ac5ed03ffffc54ce68f61b66ce5b5246fd2
+      SOURCE_VFY=sha256:
         WEB_SITE=https://bitbucket.org/PascalRD/nemu/
          ENTERED=20180218
-         UPDATED=20180218
+         UPDATED=20190630
            SHORT="ncurses interface for qemu"
 
 cat << EOF

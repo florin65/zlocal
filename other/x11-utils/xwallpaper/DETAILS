@@ -1,11 +1,11 @@
           MODULE=xwallpaper
-         VERSION=0.5.0
+         VERSION=0.6.2
           SOURCE=$MODULE-$VERSION.tar.xz
        SOURCE_URL=https://github.com/stoeckmann/xwallpaper/releases/download/v$VERSION/
-      SOURCE_VFY=sha256:c5bd92653d5cf0a29a27c0b6d1997a3aa2dd62d6def1a940380526fcc3019c0c
+      SOURCE_VFY=sha256:436db7819f29eee3eef0b35df17070282ccecaeff0243a5398d96f58d1f8e353
         WEB_SITE=https://github.com/stoeckmann/xwallpaper/
          ENTERED=20190522
-         UPDATED=20190522
+         UPDATED=20190702
            SHORT="wallpaper setting utility for X"
 
 cat <<EOF

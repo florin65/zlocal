@@ -1,6 +1,6 @@
 --- ./src/truetype/ttdriver.c	2017-04-29 04:38:17 UTC
 +++ ./src/truetype/ttdriver.c
-@@ -357,6 +357,8 @@
+@@ -360,6 +360,8 @@
      if ( FT_IS_SCALABLE( size->face ) )
      {
        error = tt_size_reset( ttsize, 0 );
@@ -11,7 +11,7 @@
        /* for the `MPS' bytecode instruction we need the point size */
 --- ./src/truetype/ttobjs.c	2017-05-07 11:05:56 UTC
 +++ ./src/truetype/ttobjs.c
-@@ -1295,6 +1295,13 @@
+@@ -1329,6 +1329,13 @@
      /*                                                               */
      if ( face->header.Flags & 8 )
      {
@@ -25,7 +25,7 @@
        /* the TT spec always asks for ROUND, not FLOOR or CEIL */
        size_metrics->ascender = FT_PIX_ROUND(
                                   FT_MulFix( face->root.ascender,
-@@ -1327,11 +1327,12 @@
+@@ -1361,11 +1361,12 @@
      {
        /* base scaling values on integer ppem values, */
        /* as mandated by the TrueType specification   */

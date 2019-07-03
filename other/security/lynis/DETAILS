@@ -1,11 +1,11 @@
           MODULE=lynis
-         VERSION=2.7.4
+         VERSION=2.7.5
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/CISOfy/lynis/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:e9f52902b91c08c32704081ceda22ff0c15b2cc973cd841b77c30e7333a2ad4c
+      SOURCE_VFY=sha256:
         WEB_SITE=http://github.com/CISOfy/lynis/
          ENTERED=20160214
-         UPDATED=20190522
+         UPDATED=20190702
            SHORT="Security and system auditing tool to harden Unix/Linux systems"
 
 cat << EOF

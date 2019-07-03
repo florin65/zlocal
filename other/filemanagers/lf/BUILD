@@ -5,8 +5,7 @@ cd src &&
 unpack $ARCHIVE_DIRECORY/$SOURCE &&
 
 cd $GOPATH/src/$MODULE-$VERSION &&
-dep ensure -v &&
-go build &&
+go get &&
 
 prepare_install &&
 

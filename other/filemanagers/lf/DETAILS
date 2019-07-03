@@ -1,11 +1,11 @@
           MODULE=lf
-         VERSION=r11
+         VERSION=r12
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/gokcehan/lf/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:9b325380b42584b15cf15758d0cc43f23cc697e81546520efe73e7bde8501906
+      SOURCE_VFY=sha256:8a3ca71dd18ca01f34a08573049c5f9f4302b5c7a998443d2b0855792fdca7f2
         WEB_SITE=https://github.com/gokcehan/lf/
          ENTERED=20181116
-         UPDATED=20190310
+         UPDATED=20190702
            SHORT="A terminal file manager inspired by ranger"
 
 cat << EOF

@@ -3,6 +3,7 @@ depends sed
 depends fzf
 
 optional_depends w3m "" "" "for image previews"
+optional_depends poppler "" "" "for pdf previews"
 
 #optional_depends atool "" "" "for archieve previews"
 #optional_depends mediainfo "" "" "for media info display"

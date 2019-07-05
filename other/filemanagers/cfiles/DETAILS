@@ -1,11 +1,11 @@
           MODULE=cfiles
-         VERSION=1.4
+         VERSION=1.5
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/mananapr/cfiles/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:8d4eb7f9674c632cb827878a0e9c72b16e57275798208496bcd8134c546e77da
+      SOURCE_VFY=sha256:6decac548ac8f8b900bfe962407889101438889fab806327e29848f1918aae2d
         WEB_SITE=https://github.com/mananapr/cfiles/
          ENTERED=20190129
-         UPDATED=20190322
+         UPDATED=20190704
            SHORT="A ncurses file manager with vim like keybindings"
 
 cat << EOF

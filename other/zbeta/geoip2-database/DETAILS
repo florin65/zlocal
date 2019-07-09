@@ -1,17 +1,17 @@
           MODULE=geoip2-database
-         VERSION=20190611
+         VERSION=20190702
           SOURCE=GeoLite2-City_${VERSION}.tar.gz
          SOURCE2=GeoLite2-Country_${VERSION}.tar.gz
          SOURCE3=GeoLite2-ASN_${VERSION}.tar.gz
       SOURCE_URL=http://geolite.maxmind.com/download/geoip/database/
      SOURCE2_URL=http://geolite.maxmind.com/download/geoip/database/
      SOURCE3_URL=http://geolite.maxmind.com/download/geoip/database/
-      SOURCE_VFY=sha256:85dbc340afb57c51a1154608a620b449252cf404588e3e6657a6b37a0c90d508
-     SOURCE2_VFY=sha256:d570dac030f6404425a8d213f414231e994d70ea6f0edc3e9f1c4dea16047448
+      SOURCE_VFY=sha256:
+     SOURCE2_VFY=sha256:
      SOURCE3_VFY=sha256:a51bcbeedaa148427f74409e08b4fe9ab21d32e3f08d83dcc7013c8b276f7f79
        WEB_SITE=http://dev.maxmind.com/geoip/legacy/downloadable/
          ENTERED=20151002
-         UPDATED=20190630
+         UPDATED=20190707
         SHORT="GeoLite2 geolocation databases compiled by MaxMind"
 
 cat << EOF

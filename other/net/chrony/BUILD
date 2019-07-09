@@ -1,5 +1,7 @@
 add_priv_user ntp:ntp &&
 
+OPTS+=" --with-user=ntp"
+
 default_build &&
 
 install -Dm0644 examples/chrony.conf.example3 /etc/chrony.conf &&

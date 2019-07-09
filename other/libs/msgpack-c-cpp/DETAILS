@@ -1,11 +1,11 @@
           MODULE=msgpack-c-cpp
-         VERSION=2.1.5
+         VERSION=3.2.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/msgpack/msgpack-c/archive/cpp-$VERSION.tar.gz
-      SOURCE_VFY=sha256:9c87f80fc651b900772deaef0ab154b63160c74d292529b5be6d06d6485d4640
+      SOURCE_VFY=sha256:ff865a36bad5c72b8e7ebc4b7cf5f27a820fce4faff9c571c1791e3728355a39
         WEB_SITE=http://msgpack.org/
          ENTERED=20180419
-         UPDATED=20180419
+         UPDATED=20190706
            SHORT="An efficient object serialization library"
 
 cat << EOF

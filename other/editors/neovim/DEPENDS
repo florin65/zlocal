@@ -15,3 +15,4 @@ optional_depends jemalloc \
                  "for jemalloc support"
 
 optional_depends xclip "" "" "for clipboard support"
+optional_depends xsel  "" "" "for clipboard support"

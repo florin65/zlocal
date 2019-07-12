@@ -1,0 +1,18 @@
+          MODULE=i3keys
+         VERSION=0.0.6
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/RasmusLindroth/i3keys/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:1ad8fff2ef3d903c1d9bd64169227e350b2036f1b1a6b06ad96dd76ec0b1e433
+        WEB_SITE=https://github.com/RasmusLindroth/i3keys/
+         ENTERED=20190711
+         UPDATED=20190711
+           SHORT="Lists used and unused keys in your i3wm config"
+
+cat <<EOF
+This is program lists all the keys that are bound to some action in i3wm, and
+all keys that are not bound to any actions. Now you don't have to search through
+your configuration file or going down the track of trial and error anymore.
+The program will output one separate keyboard for all of your different modifier
+combinations. It will also output each combination for all of your modes.
+The keyboard should look like your keymap if everything works as expected :)
+EOF

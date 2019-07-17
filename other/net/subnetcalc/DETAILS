@@ -1,0 +1,18 @@
+          MODULE=subnetcalc
+         VERSION=2.4.11
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://www.uni-due.de/~be0001/subnetcalc/download/
+      SOURCE_VFY=sha256:19f18676c2e1f4559061f48e2f3378d8aad3f095822ad26e0e809ee46e684974
+        WEB_SITE=https://www.uni-due.de/~be0001/subnetcalc/
+         ENTERED=20190713
+         UPDATED=20190713
+           SHORT="Subnet Calculator for IPv4/IPv6"
+
+cat << EOF
+SubNetCalc is an IPv4/IPv6 subnet address calculator. For given IPv4 or IPv6
+address and netmask or prefix length, it calculates network address, broadcast
+address, maximum number of hosts and host address range. Also, it prints the
+addresses in binary format for better understandability.
+Furthermore, it prints useful information on specific address types (e.g. type,
+scope, interface ID, etc.).
+EOF

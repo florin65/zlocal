@@ -1,0 +1,16 @@
+          MODULE=xauth
+         VERSION=1.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$XORG_URL/individual/app/
+      SOURCE_VFY=sha256:6d1dd1b79dd185107c5b0fdd22d1d791ad749ad6e288d0cdf80964c4ffa7530c
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://www.x.org
+         ENTERED=20060120
+         UPDATED=20190712
+           SHORT="The X.Org authentication utility"
+
+cat << EOF
+xauth is a small utility that can read and mainpulate Xauthority files which
+are used by both servers and client to control authentication and access to X
+sessions.
+EOF

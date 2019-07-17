@@ -1,0 +1,2 @@
+depends geoip
+depends cmake

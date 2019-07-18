@@ -6,11 +6,14 @@ OPTS+=" --prefix=/usr \
         --datadir=/usr/share \
         --disable-amqp \
         --disable-java \
+        --disable-java-modules \
         --disable-kafka \
         --disable-riemann \
         --disable-spoof-source \
         --enable-ipv6 \
         --enable-manpages \
+        --enable-all-modules \
+        --enable-spoof-source \
         --with-python=3 \
         --with-criterion=no \
         --with-embedded-crypto \
@@ -19,7 +22,7 @@ OPTS+=" --prefix=/usr \
 if module_installed systemd; then
    OPTS+="--enable-systemd --with-systemd-journal=system"
 else
-   OPTS+="--disable-systemd --with-systemd-journal=no"
+   OPTS+="--disable-systemd --with-systemd-journal=no --with-systemdsystemunitdir=no"
 fi
 
 default_build &&

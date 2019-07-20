@@ -1,0 +1,14 @@
+          MODULE=public-sans-ttf
+         VERSION=v1.006
+          SOURCE=public-sans-$VERSION.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/public-sans-$VERSION
+      SOURCE_URL=https://github.com/uswds/public-sans/releases/download/$VERSION/
+      SOURCE_VFY=sha256:d849e9b590d7f60480d47488c939e097580449dae8fe0fbd3411d3144a11b2e1
+        WEB_SITE=https://public-sans.digital.gov/
+         ENTERED=20190718
+         UPDATED=20190718
+           SHORT="A strong, neutral typeface for text or display"
+ARCHIVE=off
+cat << EOF
+A strong, neutral, principles-driven, open source typeface for text or display.
+EOF

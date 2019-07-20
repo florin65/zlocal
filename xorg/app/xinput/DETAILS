@@ -1,0 +1,16 @@
+          MODULE=xinput
+         VERSION=1.6.3
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$XORG_URL/individual/app/
+      SOURCE_VFY=sha256:35a281dd3b9b22ea85e39869bb7670ba78955d5fec17c6ef7165d61e5aeb66ed
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://www.x.org
+         ENTERED=20060120
+         UPDATED=20190718
+           SHORT="Configure and test XInput devices"
+
+cat << EOF
+xinput is a utility to configure and test XInput devices. It wasn't originally
+designed to be the primary tool for doing this but it's still pretty much the
+only program out there for doing it.
+EOF

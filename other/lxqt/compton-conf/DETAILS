@@ -1,0 +1,13 @@
+          MODULE=compton-conf
+         VERSION=0.14.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://downloads.lxqt.org/downloads/${MODULE}/${VERSION}
+      SOURCE_VFY=sha256:
+        WEB_SITE=https://github.com/lxde/compton-conf
+         ENTERED=20190717
+         UPDATED=20190717
+           SHORT="A graphical configuration tool for Compton"
+
+cat << EOF
+compton-conf is a configuration tool for X composite manager Compton.
+EOF

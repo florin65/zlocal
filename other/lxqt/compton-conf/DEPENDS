@@ -1,0 +1,4 @@
+depends qt5
+depends libconfig
+depends lxqt-build-tools
+depends cmake

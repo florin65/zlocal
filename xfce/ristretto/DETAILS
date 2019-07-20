@@ -1,11 +1,11 @@
           MODULE=ristretto
-         VERSION=0.8.3
+         VERSION=0.8.5
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=http://archive.xfce.org/src/apps/$MODULE/${VERSION%.*}/
-      SOURCE_VFY=sha256:8c9c11760816dfd9ed57fb8b9df86c6a98a2604ab551be3133996a1c32ca2665
+      SOURCE_VFY=sha256:7f4805baca9ea77372cbd21b19673e22390bbc7a336ca1ac1a4aaecfbfc79f60
         WEB_SITE=http://goodies.xfce.org/projects/applications/ristretto
          ENTERED=20070826
-         UPDATED=20180819
+         UPDATED=20190718
            SHORT="Fast and lightweight picture-viewer"
 
 cat << EOF

@@ -1,5 +1,5 @@
           MODULE=openresolv
-         VERSION=3.8.1
+         VERSION=3.9.1
           SOURCE=$MODULE-$VERSION.tar.xz
          SOURCE2=$MODULE-fs33801.patch.xz
       SOURCE_URL=http://roy.marples.name/downloads/openresolv/
@@ -8,7 +8,7 @@
      SOURCE2_VFY=sha256:f0cc33300deb9f08fe37428fe45b8609ac9800b21c4b7f491019458dc4a795c3
         WEB_SITE=http://roy.marples.name/projects/openresolv/
          ENTERED=20160612
-         UPDATED=20160612
+         UPDATED=20190720
            SHORT="An /etc/resolv.conf management framework"
 
 cat << EOF

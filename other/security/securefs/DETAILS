@@ -1,11 +1,11 @@
           MODULE=securefs
-         VERSION=0.8.2
+         VERSION=0.8.3
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/netheril96/securefs/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:831c013bb8a5b32e21dca0e2503cf770dcd3c0c4ed9264769d0ab101707829ca
+      SOURCE_VFY=sha256:
         WEB_SITE=http://github.com/netheril96/securefs/
          ENTERED=20160422
-         UPDATED=20180606
+         UPDATED=20190722
            SHORT="A better transparent encryption filesystem"
 
 cat << EOF

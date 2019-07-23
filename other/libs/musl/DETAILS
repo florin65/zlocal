@@ -1,16 +1,15 @@
       MODULE=musl
-     VERSION=1.1.21
+     VERSION=1.1.23
       SOURCE=$MODULE-$VERSION.tar.gz
   SOURCE_URL=http://www.musl-libc.org/releases/
-  SOURCE_VFY=sha256:c742b66f6f49c9e5f52f64d8b79fecb5a0f6e0203fca176c70ca20f6be285f44
+  SOURCE_VFY=sha256:8a0feb41cef26c97dde382c014e68b9bb335c094bbc1356f6edaaf6b79bd14aa
     WEB_SITE=http://www.musl-libc.org/
      ENTERED=20150918
-     UPDATED=20190124
+     UPDATED=20190720
        SHORT="Lightweight implementation of C standard library"
 
 cat << EOF
 musl is a new standard library to power the new generation of Linux-based
-devices.
-musl is lightweight, fast, simple, free, and strives to be correct in the sense
-of standards-conformance and safety.
+devices. musl is lightweight, fast, simple, free, and strives to be correct in
+the sense of standards-conformance and safety.
 EOF

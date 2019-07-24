@@ -1,0 +1,30 @@
+          MODULE=mtm
+         VERSION=1.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/deadpixi/mtm/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:
+        WEB_SITE=https://github.com/deadpixi/mtm/
+         ENTERED=20190723
+         UPDATED=20190723
+           SHORT="Perhaps the smallest useful terminal multiplexer in the world"
+
+cat << EOF
+mtm is the Micro Terminal Multiplexer, a terminal multiplexer.
+It has four major features/princples:
+Simplicity
+  There are only a few commands, two of which are hardly ever used.
+  There are no modes, no dozens of commands, no crazy feature list.
+Compatibility
+  mtm emulates a classic ANSI text terminal. That means it should work out of
+  the box on essentially all terminfo/termcap-based systems (even pretty old
+  ones), without needing to install a new termcap entry.
+Size
+  mtm is small. The entire project is around 1000 lines of code.
+Stability
+   mtm is "finished" as it is now. You don't need to worry about it changing on
+   you unexpectedly. The only changes that can happen at this point are:
+      Bug fixes.
+      Translation improvements.
+      Accessibility improvements.
+      Fixes to keep it working on modern OSes.
+EOF

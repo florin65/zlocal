@@ -2,6 +2,7 @@ depends Sphinx
 depends sphinxcontrib-websupport
 depends freetype2
 depends fontconfig
+depends libcanberra
 depends libxkbcommon
 depends libXinerama
 depends wayland-protocols

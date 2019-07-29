@@ -1,13 +1,13 @@
           MODULE=udisks2
-         VERSION=2.8.2
+         VERSION=2.8.4
           SOURCE=udisks-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/udisks-udisks-$VERSION
       SOURCE_URL=https://github.com/storaged-project/udisks/archive/
-      SOURCE_VFY=sha256:489a37b23cbf4ef6f5a26ea62e87030202d3478757a053fa09651e209064c9d4
+      SOURCE_VFY=sha256:46cc88f26d26818b719a0070587f9d3fe13828b063edb1f0dfc8443d86b94d97
         WEB_SITE=https://www.freedesktop.org/wiki/Software/udisks/
         REPLACES=udisks
          ENTERED=20120411
-         UPDATED=20190318
+         UPDATED=20190728
            SHORT="Enumerates power devices and listens to device events"
 
 cat << EOF

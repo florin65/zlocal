@@ -1,12 +1,12 @@
           MODULE=bftpd
-         VERSION=5.1
+         VERSION=5.2
           SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE
       SOURCE_URL=$SFORGE_URL/$MODULE/
-      SOURCE_VFY=sha256:d0173b6c7ee2df202a270561b8fb470af8df37409a7eec87f3c333c393ee65ce
+      SOURCE_VFY=sha256:7e6259f8eada88ef598df4c1517fa260c798ad2361d9b4627b97ff2125ddaa4e
         WEB_SITE=http://bftpd.sourceforge.net/
          ENTERED=20170923
-         UPDATED=20190603
+         UPDATED=20190725
            SHORT="Small, easy-to-configure FTP server"
 
 cat << EOF

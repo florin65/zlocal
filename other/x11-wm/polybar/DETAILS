@@ -1,0 +1,15 @@
+          MODULE=polybar
+         VERSION=3.4.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/polybar/polybar/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:b8bd84b5154c4723181ec1ef74c0f278583fd80c81ca0aa9bcbce4c537f9ec45
+        WEB_SITE=https://github.com/jaagr/polybar
+         ENTERED=20180723
+         UPDATED=20190731
+           SHORT="A fast and easy-to-use status bar"
+
+cat <<EOF
+Polybar aims to help users build beautiful and highly customizable status bars
+for their desktop environment, without the need of having a black belt in shell
+scripting.
+EOF

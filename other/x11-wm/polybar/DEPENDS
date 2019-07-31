@@ -1,0 +1,15 @@
+depends curl
+depends jsoncpp
+depends cairo
+depends xcb-util-cursor
+depends xcb-util-wm
+depends xcb-util-xrm
+depends xcb-util-image
+depends cmake
+depends siji
+depends unifont
+
+optional_depends alsa-lib   "" "" "for volume support"
+optional_depends libmpd     "" "" "for mpd support"
+optional_depends libnl3     "" "" "for network support"
+optional_depends pulseaudio "" "" "for pulseaudio support"

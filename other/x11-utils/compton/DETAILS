@@ -1,12 +1,11 @@
           MODULE=compton
-         VERSION=7.0
+         VERSION=7.1
           SOURCE=$MODULE-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-${VERSION%.0}
- SOURCE_URL_FULL=https://github.com/yshui/compton/archive/v${VERSION%.0}.tar.gz
-      SOURCE_VFY=sha256:e8d418e36c4b1c394634cfaa3652e1c7f43db8cf0a6e5dc809a2a9d8e5b00f59
+ SOURCE_URL_FULL=https://github.com/yshui/compton/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:4cd71eb395b618772cf9d8c45f843a3dcf20efa52ae1e22d908961c47f644010
         WEB_SITE=http://github.com/chjj/compton/
          ENTERED=20150718
-         UPDATED=20190730
+         UPDATED=20190803
            SHORT="X Compositor (a fork of xcompmgr-dana)"
 
 cat << EOF

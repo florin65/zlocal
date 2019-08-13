@@ -1,11 +1,11 @@
           MODULE=terminate
-         VERSION=0.2.2
+         VERSION=0.3
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://git.sr.ht/~craftyguy/${MODULE}/archive/$VERSION.tar.gz
       SOURCE_VFY=sha256:
         WEB_SITE=https://git.sr.ht/~craftyguy/terminate/
          ENTERED=20190701
-         UPDATED=20190701
+         UPDATED=20190811
            SHORT="Minimal terminal emulator based on VTE"
 
 cat << EOF

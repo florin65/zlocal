@@ -1,11 +1,11 @@
           MODULE=opensysusers
-         VERSION=0.5
+         VERSION=0.5.1
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/artix-linux/opensysusers/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:79850051b679a92629d55f863fb2836516d3caf51b5e211660e56ed686821c09
+      SOURCE_VFY=sha256:
         WEB_SITE=https://github.com/artix-linux/opensysusers
          ENTERED=20180105
-         UPDATED=20190222
+         UPDATED=20190815
            SHORT="Handling systemd-style sysusers.d users and groups"
 
 cat << EOF

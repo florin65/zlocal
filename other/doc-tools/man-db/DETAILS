@@ -1,11 +1,11 @@
           MODULE=man-db
-         VERSION=2.8.3
+         VERSION=2.8.6.1
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=http://download-mirror.savannah.gnu.org/releases/$MODULE/
       SOURCE_VFY=sha256:
         WEB_SITE=http://www.nongnu.org/man-db/
          ENTERED=20150911
-         UPDATED=20180405
+         UPDATED=20190813
            SHORT="A utility for reading man pages"
 
 cat << EOF

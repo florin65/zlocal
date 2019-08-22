@@ -3,11 +3,12 @@ bad_flags -malign-double &&
 OPTS+=" --bindir=/usr/bin \
         --enable-readline \
         --disable-profiling \
-        --with-curses  \
+        --with-curses \
         --without-bash-malloc \
-        --without-installed-readline"
+        --with-installed-readline"
 
 default_build &&
+
 ln -sf bash /usr/bin/sh &&
 ln -f /usr/bin/bash /usr/bin/rbash &&
 
@@ -15,7 +16,7 @@ rm -f /usr/share/man/man1/bash.1 &&
 rm -f /usr/share/man/man1/bashbug.1 &&
 
 for MANPAGE in doc/*.1; do
-  gzip -9 $MANPAGE  &&
+  gzip -9 $MANPAGE &&
   install -m0644 $MANPAGE.gz /usr/share/man/man1
 done &&
 install -m0644 doc/bashref.info /usr/share/info &&
@@ -45,14 +46,14 @@ if [ ! -d /etc/profile.d ]; then
   if query "Do you want to replace /etc/[profile|bashrc] ? " y; then
     [ -f /etc/profile ] && mv /etc/profile /etc/profile.old
     [ -f /etc/bashrc  ] && mv /etc/bashrc /etc/bashrc.old
-    install -m 644 -o root -g root $SCRIPT_DIRECTORY/profile /etc/profile
-    install -m 644 -o root -g root $SCRIPT_DIRECTORY/bashrc /etc/bashrc
+    install -m 644 -o root -g root $SCRIPT_DIRECTORY/profile /etc/profile &&
+    install -m 644 -o root -g root $SCRIPT_DIRECTORY/bashrc /etc/bashrc   &&
     message ""
-    if query "Do you want root to have the new .bash_* files ? " y; then
+    if query "Do you want root to have the new .bash_* files ? "y ; then
       [ -L /root/.bashrc ] && rm /root/.bashrc
-      install -m 600 -o root -g root $SCRIPT_DIRECTORY/skel/.bash_profile /root/.bash_profile
-      install -m 600 -o root -g root $SCRIPT_DIRECTORY/skel/.bashrc /root/bashrc
-      install -m 600 -o root -g root $SCRIPT_DIRECTORY/skel/.bash_logout /root/.bash_logout
+      install -m 600 -o root -g root $SCRIPT_DIRECTORY/skel/.bash_profile /root/.bash_profile &&
+      install -m 600 -o root -g root $SCRIPT_DIRECTORY/skel/.bashrc /root/bashrc &&
+      install -m 600 -o root -g root $SCRIPT_DIRECTORY/skel/.bash_logout /root/.bash_logout &&
       [ -L /root/.bash_history ] || rm /root/.bash_history
       [ -e /root/.bash_history ] || ln -s /dev/null /root/.bash_history
     fi

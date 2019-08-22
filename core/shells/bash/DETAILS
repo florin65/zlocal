@@ -1,17 +1,14 @@
           MODULE=bash
-         VERSION=4.4.18
-          PATCH=019
+         VERSION=5.0
+        PATCHLVL=009
           SOURCE=$MODULE-$VERSION.tar.gz
-         SOURCE2=${MODULE}44-$PATCH
    SOURCE_URL[0]=$GNU_URL/$MODULE
-     SOURCE2_URL=https://ftp.gnu.org/gnu/bash/bash-4.4-patches/
    SOURCE_URL[1]=ftp://ftp.gnu.org/pub/gnu/$MODULE
    SOURCE_URL[2]=ftp://ftp.cwru.edu/pub/$MODULE
-      SOURCE_VFY=sha256:604d9eec5e4ed5fd2180ee44dd756ddca92e0b6aa4217bbab2b6227380317f23
-     SOURCE2_VFY=sha256:27170d6edfe8819835407fdc08b401d2e161b1400fe9d0c5317a51104c89c11e
+      SOURCE_VFY=sha256:b4a80f2ac66170b2913efbfb9f2594f1f76c7b1afd11f799e22035d63077fb4d
         WEB_SITE=http://www.gnu.org/software/bash
          ENTERED=20010922
-         UPDATED=20180208
+         UPDATED=20190820
            SHORT="A shell of the GNU operating system"
 
 cat << EOF

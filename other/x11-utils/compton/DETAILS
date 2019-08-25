@@ -1,11 +1,11 @@
           MODULE=compton
-         VERSION=7.2
+         VERSION=7.3
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/yshui/compton/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:a07f46e31b580622222dacb82b0362ab2af8631086f079a2cd6b3f5677f41822
+      SOURCE_VFY=sha256:
         WEB_SITE=http://github.com/yshui/compton/
          ENTERED=20150718
-         UPDATED=20190813
+         UPDATED=20190822
            SHORT="X Compositor"
 
 cat << EOF

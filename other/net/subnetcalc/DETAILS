@@ -1,11 +1,11 @@
           MODULE=subnetcalc
-         VERSION=2.4.11
+         VERSION=2.4.14
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=https://www.uni-due.de/~be0001/subnetcalc/download/
-      SOURCE_VFY=sha256:19f18676c2e1f4559061f48e2f3378d8aad3f095822ad26e0e809ee46e684974
+      SOURCE_VFY=sha256:
         WEB_SITE=https://www.uni-due.de/~be0001/subnetcalc/
          ENTERED=20190713
-         UPDATED=20190713
+         UPDATED=20190825
            SHORT="Subnet Calculator for IPv4/IPv6"
 
 cat << EOF

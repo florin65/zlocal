@@ -1,12 +1,11 @@
           MODULE=sd
          VERSION=0.6.5
           SOURCE=$MODULE-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$MODULE-$VERSION
-      SOURCE_URL=https://github.com/chmln/sd/archive/
-      SOURCE_VFY=sha256:
+ SOURCE_URL_FULL=https://github.com/chmln/sd/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:ed38e5103080373b00443f72683ac2785b18e354ab6ef4797e27af028be9baf2
         WEB_SITE=https://github.com/chmln/sd
-         ENTERED=20190513
-         UPDATED=20190624
+         ENTERED=20190825
+         UPDATED=20190825
            SHORT="Intuitive find & replace"
 
 cat << EOF

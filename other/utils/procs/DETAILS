@@ -1,0 +1,24 @@
+          MODULE=procs
+         VERSION=0.8.8
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/dalance/procs/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:359da9e463448f17f062c2847b02e7d41162190a8fa153ff7390a6b0f1e1e25d
+        WEB_SITE=https://github.com/dalance/procs/
+         ENTERED=20190825
+         UPDATED=201825
+           SHORT="A modern ps written in Rust"
+
+cat << EOF
+procs is a replacement for ps written in Rust.
+Features:
+  - Output by the colored and human-readable format
+  - Keyword search over multi-column
+  - Some additional information which are not supported by ps
+  - TCP/UDP port
+  - Read/Write throughput
+  - Docker container name
+  -More memory information
+  - Pager support
+  - Watch mode like top
+  - Tree view.
+EOF

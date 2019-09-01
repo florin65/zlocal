@@ -1,5 +1,3 @@
-OPTS+=" --exec-prefix=/usr"
-
 default_build &&
 
 mkdir -p /var/cache/locate &&

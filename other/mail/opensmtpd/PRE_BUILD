@@ -1,0 +1,4 @@
+default_pre_build &&
+
+sedit 's,/etc/mail,/etc/smtpd,g' smtpd/smtpd.conf
+

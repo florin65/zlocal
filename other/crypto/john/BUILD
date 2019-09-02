@@ -1,9 +1,4 @@
-OPTS+=" --enable-pkg-config \
-        --enable-pcap \
-        --with-systemwide \
-        --disable-native-tests"
-
-cd src &&
+cd src
 
 default_config &&
 

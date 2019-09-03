@@ -1,0 +1,6 @@
+default_pre_build &&
+
+sedit '/^groupname /s/mlocate/locate/' Makefile.am &&
+../gnulib/gnulib-tool --import # See file: ./HACKING
+autoreconf --install
+

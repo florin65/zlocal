@@ -1,0 +1,20 @@
+          MODULE=mlocate
+         VERSION=0.26
+          COMMIT=c98bf6595703456558a6f9c163c746cdaa9e591f
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=git+https://pagure.io/mlocate.git#commit=$COMMIT
+#      SOURCE_VFY=sha256:
+        WEB_SITE=https://pagure.io/mlocate/
+         ENTERED=20190902
+         UPDATED=20190902
+           SHORT="Merging locate/updatedb implementation"
+
+cat << EOF
+mlocate is a locate/updatedb implementation.  The 'm' stands for "merging":
+updatedb reuses the existing database to avoid rereading most of the file
+system, which makes updatedb faster and does not trash the system caches as
+much.
+The locate(1) utility is intended to be completely compatible to slocate. It
+also attempts to be compatible to GNU locate, when it does not conflict with
+slocate compatibility.
+EOF

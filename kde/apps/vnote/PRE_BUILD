@@ -1,0 +1,7 @@
+default_pre_build &&
+
+git submodule init &&
+git config 'submodule.src/utils/marked.url' marked &&
+git config 'submodule.hoedown.url' hoedown &&
+git submodule update
+

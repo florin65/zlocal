@@ -1,0 +1,5 @@
+default_pre_build &&
+
+sedit 's:lib/w3:libexec/w3:g' scripts/preview &&
+sedit 's:bin/echo:usr/bin/echo:g' scripts/preview
+

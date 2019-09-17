@@ -1,3 +1,0 @@
-depends readline
-depends bison
-depends ncurses

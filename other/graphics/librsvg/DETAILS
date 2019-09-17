@@ -1,0 +1,17 @@
+          MODULE=librsvg
+         VERSION=2.46.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:96c81e52cb81450f3b2e915e6409fd7d1e3c01e4661974b3a98c09a7c45743d1
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20020714
+         UPDATED=20190911
+           SHORT="A library for operating on files in SVG format"
+
+PSAFE=no
+cat << EOF
+The librsvg library is a lightweight library for parsing and rendering vector-
+graphic files in SVG format (like the ones made by sodipodi). It also includes
+functions that render anti-aliased fonts using freetype, including caching of
+glyphs. It's used by Nautilus for drawing vector icons and anti-aliased type.
+EOF

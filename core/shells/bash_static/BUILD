@@ -1,9 +1,9 @@
 bad_flags -malign-double -s
 
-OPTS+=" --with-curses \
-        --disable-profiling  \
-        --enable-static-link \
+OPTS+=" --bindir=/usr/bin \
+        --with-curses \
         --disable-profiling \
+        --enable-static-link \
         --without-bash-malloc \
         --without-installed-readline"
 

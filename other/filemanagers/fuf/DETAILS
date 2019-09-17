@@ -1,0 +1,20 @@
+          MODULE=fuf
+         VERSION=0.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/Ckath/fuf/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:
+        WEB_SITE=https://github.com/ckath/fuf/
+         ENTERED=20190913
+         UPDATED=20190917
+           SHORT="Fairly Usable cli Filebrowser"
+
+cat << EOF
+Another cli filebrowser made with the following ideas:
+ - async loading of directories and previews that you can cancel
+ - more vim movement keybinds
+ - handling of opening and previewing files done by external scripts for easy configuration
+ - more respect for LS_COLORS
+ - no fancy file edit operations, at most drop to shell
+ - no fancy in depth configuration besides the scripts
+ - minimize hanging due to unneeded disk io.
+EOF

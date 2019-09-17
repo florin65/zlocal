@@ -6,7 +6,7 @@ if [ "$(arch)" == "x86_64" ]; then
 else
   _EFI_ARCH="i386"
   _EFI_EMU="--disable-efiemu"
-fi
+fi &&
 
 OPTS+=" --prefix=/usr \
         --bindir=/usr/bin \
@@ -18,7 +18,6 @@ OPTS+=" --prefix=/usr \
         --enable-nls \
         --enable-mm-debug \
         --enable-boot-time \
-        --enable-grub-mount \
         --enable-cache-stats \
         --with-bootdir=/boot \
         --with-grubdir=grub \
@@ -45,9 +44,10 @@ make &&
 
 prepare_install &&
 cd $GRUB_BIOS &&
-make bashcompletiondir=/usr/share/bash-completion/completions install
+make bashcompletiondir=/usr/share/bash-completion/completions install &&
 cd $GRUB_EFI &&
 make bashcompletiondir=/usr/share/bash-completion/completions install &&
 
 # Clean up some debug files etc
-rm -f /usr/lib/grub/{i386-pc,${_EFI_ARCH}-efi}/{*.module,*.image,kernel.exec,gdb_grub,gmodule.pl} || true
+(rm -f /usr/lib/grub/{i386-pc,${_EFI_ARCH}-efi}/{*.module,*.image,kernel.exec,gdb_grub,gmodule.pl} || true)
+

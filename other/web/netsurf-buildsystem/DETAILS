@@ -1,12 +1,12 @@
           MODULE=netsurf-buildsystem
-         VERSION=1.7
+         VERSION=1.8
           SOURCE=buildsystem-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/buildsystem-$VERSION
       SOURCE_URL=http://download.netsurf-browser.org/libs/releases/
-      SOURCE_VFY=sha256:1cd6453301cd88c4dcc36ae67c67d2023b8a56ec2fd0704851b58ccdbc5243e0
+      SOURCE_VFY=sha256:
         WEB_SITE=http://www.netsurf-browser.org/
          ENTERED=20150321
-         UPDATED=20181216
+         UPDATED=20190918
            SHORT="The Netsurf buildsystem"
 
 cat <<EOF

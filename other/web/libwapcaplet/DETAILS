@@ -1,11 +1,11 @@
           MODULE=libwapcaplet
-         VERSION=0.4.1
+         VERSION=0.4.2
           SOURCE=$MODULE-$VERSION-src.tar.gz
       SOURCE_URL=http://download.netsurf-browser.org/libs/releases/
-      SOURCE_VFY=sha256:c8ff6ea5b64feda806f5b79ba970442f5edb237046a044bc0f7e4d54a9a4978c
+      SOURCE_VFY=sha256:
         WEB_SITE=http://www.netsurf-browser.org/projects/libwapcaplet/
          ENTERED=20150321
-         UPDATED=20181216
+         UPDATED=20190918
            SHORT="String internment library with rapid string comparison"
 
 cat <<EOF

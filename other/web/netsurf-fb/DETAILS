@@ -1,12 +1,12 @@
           MODULE=netsurf-fb
-         VERSION=3.7
+         VERSION=3.9
           SOURCE=netsurf-$VERSION-src.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/netsurf-$VERSION
       SOURCE_URL=http://download.netsurf-browser.org/netsurf/releases/source/
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:d72f1c6f6113a01e541f8476a93c347235068779140090df55ba402eb4a8ecc3
         WEB_SITE=http://www.netsurf-browser.org/
          ENTERED=20150321
-         UPDATED=20171031
+         UPDATED=20190918
            SHORT="A lightweight and fast web browser for framebuffer"
 
 cat << EOF

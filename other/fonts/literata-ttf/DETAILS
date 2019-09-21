@@ -1,0 +1,15 @@
+          MODULE=literata-ttf
+         VERSION=2.201
+          SOURCE=Literata-v$VERSION.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Literata-$VERSION
+      SOURCE_URL=https://github.com/googlefonts/literata/releases/download/v$VERSION/
+      SOURCE_VFY=sha256:b932af6bea23e1b62d2c524154001886ba3ddaafa7f81a88cb96277e2a452545
+        WEB_SITE=https://github.com/googlefonts/literata/
+         ENTERED=20190920
+         UPDATED=20190920
+           SHORT="Google's default typeface for Play Books"
+ARCHIVE=off
+cat << EOF
+Google's default typeface for Play Books. Truetype format, open source (OFL)
+distribution.
+EOF

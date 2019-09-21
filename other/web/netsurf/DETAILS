@@ -1,14 +1,14 @@
           MODULE=netsurf
-         VERSION=3.8
+         VERSION=3.9
           SOURCE=$MODULE-$VERSION-src.tar.gz
          SOURCE2=NetSurf.svg
       SOURCE_URL=http://download.netsurf-browser.org/$MODULE/releases/source/
      SOURCE2_URL=http://source.netsurf-browser.org/art.git/plain/logo/emblem/
-      SOURCE_VFY=sha256:a00ee6f3e7ea7ae50c6c1f95c81d381359171bf6874e58891f21c550090c5542
+      SOURCE_VFY=sha256:d72f1c6f6113a01e541f8476a93c347235068779140090df55ba402eb4a8ecc3
      SOURCE2_VFY=sha256:0b8ef911f7154079d16791167cd905f0df8eed00bf97aecb5edf1cf4915757c2
         WEB_SITE=http://www.netsurf-browser.org/
          ENTERED=20150321
-         UPDATED=20181216
+         UPDATED=20190918
            SHORT="A lightweight and fast web browser"
 
 cat << EOF

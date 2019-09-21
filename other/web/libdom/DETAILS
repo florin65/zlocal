@@ -1,11 +1,11 @@
           MODULE=libdom
-         VERSION=0.3.3
+         VERSION=0.4.0
           SOURCE=$MODULE-$VERSION-src.tar.gz
       SOURCE_URL=http://download.netsurf-browser.org/libs/releases/
-      SOURCE_VFY=sha256:e06a987d61d0783b81170ddb920d80802a1616aa7f1a7a458c6fd0564f3929a4
+      SOURCE_VFY=sha256:
         WEB_SITE=http://www.netsurf-browser.org/projects/libdom/
          ENTERED=20150321
-         UPDATED=20181216
+         UPDATED=20190918
            SHORT="An implementation of the W3C DOM"
 
 cat <<EOF

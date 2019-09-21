@@ -1,11 +1,11 @@
           MODULE=libcss
-         VERSION=0.8.0
+         VERSION=0.9.0
           SOURCE=$MODULE-$VERSION-src.tar.gz
       SOURCE_URL=http://download.netsurf-browser.org/libs/releases/
-      SOURCE_VFY=sha256:35a0490d98c23e09b8d2b5e4619926131c5b98da7a9db2ed00322f63fbc2ad5f
+      SOURCE_VFY=sha256:
         WEB_SITE=http://www.netsurf-browser.org/projects/libcss/
          ENTERED=20150321
-         UPDATED=20181216
+         UPDATED=20190918
            SHORT="CSS parser and selection engine"
 
 cat <<EOF

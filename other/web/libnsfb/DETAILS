@@ -1,12 +1,12 @@
           MODULE=libnsfb
-         VERSION=0.2.0
+         VERSION=0.2.1
           SOURCE=$MODULE-$VERSION-src.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$VERSION
       SOURCE_URL=http://download.netsurf-browser.org/libs/releases/
-      SOURCE_VFY=sha256:c011ba593dd9785415bb23cd2b0aaebd50c3490e2ee138106b83f4acea8f8a11
+      SOURCE_VFY=sha256:
         WEB_SITE=http://www.netsurf-browser.org/projects/libnsfb/
          ENTERED=20141227
-         UPDATED=20181216
+         UPDATED=20190918
            SHORT="A framebuffer abstraction library"
 
 cat <<EOF

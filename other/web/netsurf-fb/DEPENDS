@@ -15,4 +15,4 @@ depends libdom
 depends libnsfb
 depends duktape
 
-optional_depends libwebp      "" "" "for webp support"
+optional_depends libwebp "" "" "for webp support"

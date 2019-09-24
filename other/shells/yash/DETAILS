@@ -1,11 +1,11 @@
           MODULE=yash
-         VERSION=2.48
+         VERSION=2.49
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=https://osdn.net/projects/yash/downloads/70439/
-      SOURCE_VFY=sha256:f46294d77c5a646405db20a6dc3d16bc1ed109b061b2a508081ce483153c1e8d
+      SOURCE_VFY=sha256:
         WEB_SITE=http://sourceforge.jp/projects/yash/
          ENTERED=20181228
-         UPDATED=20180728
+         UPDATED=20190922
            SHORT="Yet Another SHell is a POSIX-compliant command line shell"
 
 cat << EOF

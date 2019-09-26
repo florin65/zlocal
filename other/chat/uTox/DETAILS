@@ -1,11 +1,11 @@
           MODULE=uTox
-         VERSION=0.17.0
+         VERSION=0.17.1
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/GrayHatter/uTox/archive/v$VERSION.tar.gz
       SOURCE_VFY=sha256:
         WEB_SITE=http://github.com/GrayHatter/uTox/
          ENTERED=20160502
-         UPDATED=20180505
+         UPDATED=20190924
            SHORT="Lightweight GTK+ based Tox client"
 
 cat << EOF

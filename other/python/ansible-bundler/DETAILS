@@ -1,12 +1,12 @@
           MODULE=ansible-bundler
-         VERSION=1.1.0
+         VERSION=1.7.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/kriansa/ansible-bundler/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:a6e52b3cfa12a59defcb7ba5aed0709bb131c534a43c3a25106855f8b056748e
+      SOURCE_VFY=sha256:
         WEB_SITE=https://github.com/kriansa/ansible-bundler/
             TYPE=python3
          ENTERED=20190825
-         UPDATED=20190825
+         UPDATED=20190929
            SHORT="Turn Ansible playbooks into executable files"
 
 cat << EOF

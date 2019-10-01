@@ -1,11 +1,11 @@
           MODULE=vim-fugitive
-         VERSION=2.4
+         VERSION=3.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/tpope/vim-fugitive/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:9f24a476118961c956197d0aa7e6c7a3429276dcc9de870de69f1685a8bebc31
+      SOURCE_VFY=sha256:4b090754625eac964a44bbf47492b4d98983bdcb59941b7c52af9f7315fc21bc
         WEB_SITE=http://github.com/tpope/vim-fugitive/
          ENTERED=20170430
-         UPDATED=20181013
+         UPDATED=20190930
            SHORT="A Git wrapper for Vim"
 
 cat << EOF

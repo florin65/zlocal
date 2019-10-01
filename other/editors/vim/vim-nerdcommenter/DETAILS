@@ -1,12 +1,12 @@
           MODULE=vim-nerdcommenter
-         VERSION=2.5.1
+         VERSION=2.5.2
           SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/nerdcommenter-$VERSION
  SOURCE_URL_FULL=https://github.com/scrooloose/nerdcommenter/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:58e5497cff1dad3ed201b26e97f5820733c7e31135811c0ef9e197cf927b5816
+      SOURCE_VFY=sha256:0f044ab154cbc906df9d0bb78cb7a5eafbc26ac596cca99b30f513d029998938
         WEB_SITE=https://github.com/scrooloose/nerdcommenter/
          ENTERED=20171114
-         UPDATED=20171114
+         UPDATED=20190930
            SHORT="Plugin for easy commenting of code for many filetypes"
 
 cat << EOF

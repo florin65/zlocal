@@ -1,12 +1,12 @@
           MODULE=vim-nerdtree
-         VERSION=5.0.0
+         VERSION=6.1.0
           SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/nerdtree-$VERSION
  SOURCE_URL_FULL=http://github.com/scrooloose/nerdtree/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:64ee6c672261aa5a6baafe45cfadf3affabe0b329166c75f10b84d68eaae5a3a
+      SOURCE_VFY=sha256:96366345fd52f21f911ab7a245b2f2959cde8d3bc3c6cdeb4e8368d1fcbd899f
         WEB_SITE=http://github.com/scrooloose/nerdtree/
          ENTERED=20170430
-         UPDATED=20170430
+         UPDATED=20190930
            SHORT="A tree explorer plugin for vim"
 
 cat << EOF

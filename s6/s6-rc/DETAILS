@@ -1,11 +1,11 @@
           MODULE=s6-rc
-         VERSION=0.5.0.0
+         VERSION=0.5.1.0
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://www.skarnet.org/software/$MODULE/
-      SOURCE_VFY=sha256:cb7f033965a6c1b6f500cbb7a2f3ecdf2310fbb18f79e7a2a384541413b9275d
+      SOURCE_VFY=sha256:
         WEB_SITE=http://www.skarnet.org/software/s6-rc/
          ENTERED=20190306
-         UPDATED=20190306
+         UPDATED=20190930
            SHORT="A dependency-based init script management system"
 
 cat << EOF

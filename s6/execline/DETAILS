@@ -1,11 +1,11 @@
           MODULE=execline
-         VERSION=2.5.1.0
+         VERSION=2.5.2.0
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://skarnet.org/software/$MODULE/
-      SOURCE_VFY=sha256:b1a756842947488404db8173bbae179d6e78b6ef551ec683acca540ecaf22677
+      SOURCE_VFY=sha256:
         WEB_SITE=http://skarnet.org/software/execline/
          ENTERED=20190306
-         UPDATED=20190309
+         UPDATED=20190930
            SHORT="A (non-interactive) scripting language"
 
 cat << EOF

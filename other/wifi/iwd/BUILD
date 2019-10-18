@@ -1,4 +1,5 @@
 OPTS+=" --enable-wired \
+	--disable-tools \
         --localstatedir=/var"
 
 if ! module_installed systemd; then

@@ -1,11 +1,11 @@
           MODULE=zig
-         VERSION=0.4.0
+         VERSION=0.5.0
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=https://s3.amazonaws.com/ziglang.org/download/$VERSION/
-      SOURCE_VFY=sha256:fec1f3f6b359a3d942e0a7f9157b3b30cde83927627a0e1ea95c54de3c526cfc
+      SOURCE_VFY=sha256:
         WEB_SITE=http://ziglang.org/
          ENTERED=20180126
-         UPDATED=20190409
+         UPDATED=20191011
            SHORT="A programming language for robustness, optimality, and clarity"
 
 cat << EOF

@@ -1,3 +1,0 @@
-default_pre_build &&
-
-sedit 's:\$(datadir)/pkgconfig:/usr/lib/pkgconfig:g' Makefile.in

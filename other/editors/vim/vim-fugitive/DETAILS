@@ -11,3 +11,4 @@
 cat << EOF
 One of the best Git wrapper for vim.
 EOF
+

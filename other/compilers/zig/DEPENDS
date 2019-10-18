@@ -1,2 +1,4 @@
 depends cmake
 depends llvm
+depends lld
+

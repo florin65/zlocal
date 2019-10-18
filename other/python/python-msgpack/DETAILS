@@ -1,0 +1,16 @@
+          MODULE=python-msgpack
+         VERSION=0.6.2
+          SOURCE=msgpack-python-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/msgpack-python-$VERSION
+ SOURCE_URL_FULL=https://github.com/msgpack/msgpack-python/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:
+        WEB_SITE=https://github.com/msgpack/msgpack-python/
+         ENTERED=20191004
+         UPDATED=20191004
+            TYPE=python3
+           SHORT="MessagePack serializer implementation for Python"
+
+cat << EOF
+MessagePack is an efficient binary serialization format. It lets you exchange
+data among multiple languages like JSON. But it's faster and smaller.
+EOF

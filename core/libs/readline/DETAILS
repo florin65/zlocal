@@ -1,6 +1,6 @@
           MODULE=readline
          VERSION=8.0
-        PATCHLVL=0
+        PATCHLVL=001
         RSAIDKEY=64EA74AB
           SOURCE=$MODULE-$VERSION.tar.gz
    SOURCE_URL[0]=$GNU_URL/$MODULE
@@ -9,7 +9,7 @@
       SOURCE_VFY=sha256:e339f51971478d369f8a053a330a190781acb9864cf4c541060f12078948e461
         WEB_SITE=http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
          ENTERED=20010922
-         UPDATED=20190108
+         UPDATED=20191009
            SHORT="Lets users edit command lines as they are typed in"
 
 cat << EOF

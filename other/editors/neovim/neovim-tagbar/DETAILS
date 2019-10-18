@@ -1,0 +1,17 @@
+          MODULE=neovim-tagbar
+         VERSION=2.7
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/tagbar-$VERSION
+ SOURCE_URL_FULL=https://github.com/majutsushi/tagbar/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:955523fdb9a12aa3de2985e57884a7ec3d5dea2ebeae371a25c2e71ab0af817a
+        WEB_SITE=https://github.com/majutsushi/tagbar/
+         ENTERED=20191004
+         UPDATED=20191004
+           SHORT="A class outline viewer for Neovim"
+
+cat << EOF
+Tagbar is a Vim plugin that provides an easy way to browse the tags of the
+current file and get an overview of its structure. It does this by creating
+a sidebar that displays the ctags-generated tags of the current file,
+ordered by their scope.
+EOF

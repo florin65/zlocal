@@ -1,4 +1,0 @@
-depends libXft
-depends libxkbfile
-depends libXaw
-depends libXrender

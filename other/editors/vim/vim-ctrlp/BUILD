@@ -14,3 +14,4 @@ install -Dm 644 readme.md /usr/share/doc/$MODULE/readme.md
 echo 'Installing the plugin'
 install -dm 755 $INST_PATH/plugin
 install -Dm 644 plugin/*.vim $INST_PATH/plugin/
+

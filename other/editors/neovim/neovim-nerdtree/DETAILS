@@ -1,0 +1,17 @@
+          MODULE=neovim-nerdtree
+         VERSION=6.1.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/nerdtree-$VERSION
+ SOURCE_URL_FULL=https://github.com/scrooloose/nerdtree/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:4aa3fe609883a056c76dd0f30342bd0eaee2357c43a4906b5aeb7359384816a4
+        WEB_SITE=http://github.com/scrooloose/nerdtree/
+         ENTERED=20170430
+         UPDATED=20191005
+           SHORT="A tree explorer plugin for neovim"
+
+cat << EOF
+The NERD tree allows you to explore your filesystem and to open files and
+directories. It presents the filesystem to you in the form of a tree which
+you manipulate with the keyboard and/or mouse. It also allows you to perform
+simple filesystem operations.
+EOF

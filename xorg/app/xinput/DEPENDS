@@ -1,4 +1,0 @@
-depends libXi
-depends libXfixes
-depends libXinerama
-depends xrandr

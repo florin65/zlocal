@@ -1,15 +1,15 @@
           MODULE=terminate
-         VERSION=0.3
+         VERSION=0.2.2
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://git.sr.ht/~craftyguy/${MODULE}/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:b238ccd75f8a13f4a7409cfc4f5a058301e735063da91e3492ff96409da76731
         WEB_SITE=https://git.sr.ht/~craftyguy/terminate/
          ENTERED=20190701
-         UPDATED=20190811
+         UPDATED=20190701
            SHORT="Minimal terminal emulator based on VTE"
 
 cat << EOF
-The terminal emulator to end all terminals emulators: an extremely minimal
+A terminal emulator to end all terminals emulators: an extremely minimal
 terminal primarily meant to be used with tmux.
 You probably won't like its biggest feature: the lack of most features other
 terminal emulators have, while containing some features I want.

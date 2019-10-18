@@ -1,12 +1,12 @@
           MODULE=vim-undotree
-         VERSION=5.0
+         VERSION=6.1
           SOURCE=rel_$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/undotree-rel_$VERSION
       SOURCE_URL=http://github.com/mbbill/undotree/archive/
-      SOURCE_VFY=sha256:57e49c1c819e53e340b9f76c639c4148ddaec88e050eb22095373dd051151cc7
+      SOURCE_VFY=sha256:
         WEB_SITE=http://github.com/mbbill/undotree/
          ENTERED=20170320
-         UPDATED=20170320
+         UPDATED=20191014
            SHORT="Display vim undo history in a graph"
 
 cat << EOF

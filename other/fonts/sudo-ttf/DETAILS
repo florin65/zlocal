@@ -1,0 +1,17 @@
+          MODULE=sudo-ttf
+         VERSION=0.40
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/sudo-font-$VERSION
+ SOURCE_URL_FULL=https://github.com/jenskutilek/sudo-font/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:b9f3fd44fcd6e1d585c7b8bbf730b06e9f97160cf58841aefcc94599cd566bd7
+        WEB_SITE=https://www.kutilek.de/sudo-font/
+         ENTERED=20191021
+         UPDATED=20191021
+           SHORT="A font for programmers and command line users"
+ARCHIVE=off
+cat << EOF
+There are many reasons why most programmers still prefer monospaced fonts. All
+letters have the same width in all weights.
+Sudo has been designed on a pixel grid for a font size of 16 pixels, but works
+well in other sizes as well.
+EOF

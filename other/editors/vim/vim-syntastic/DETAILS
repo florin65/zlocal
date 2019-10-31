@@ -1,12 +1,12 @@
           MODULE=vim-syntastic
-         VERSION=3.9.0
+         VERSION=3.10.0
           SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/syntastic-$VERSION
  SOURCE_URL_FULL=https://github.com/vim-syntastic/syntastic/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:7ecaed94dc6a5b3e1f8511c94e1df9436fad1895b3337a1cd3d4e77a526c155b
+      SOURCE_VFY=sha256:
         WEB_SITE=https://github.com/vim-syntastic/syntastic/
          ENTERED=20170430
-         UPDATED=20191001
+         UPDATED=20191028
            SHORT="A Vim plugin to use the tab key to do all insert completion"
 
 cat << EOF

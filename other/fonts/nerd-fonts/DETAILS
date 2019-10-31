@@ -1,11 +1,11 @@
           MODULE=nerd-fonts
-         VERSION=1.2.0
+         VERSION=2.0.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/ryanoasis/nerd-fonts/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:c440409b76c86dc4a88be3d9ab5fb04092a176e6ff15ff2a61edc00861df0c2d
+      SOURCE_VFY=sha256:
         WEB_SITE=http://github.com/ryanoasis/nerd-fonts/
          ENTERED=20160425
-         UPDATED=20180126
+         UPDATED=20191030
          ARCHIVE=off
            SHORT="A collection of over 20 patched fonts"
 

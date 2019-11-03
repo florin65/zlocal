@@ -1,4 +1,6 @@
 OPTS+=" --enable-wired \
+	--enable-hwsim \
+	--enable-sim-hardcoded \
 	--disable-tools \
         --localstatedir=/var"
 

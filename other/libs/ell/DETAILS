@@ -1,11 +1,11 @@
           MODULE=ell
-         VERSION=0.25
+         VERSION=0.26
           SOURCE=$MODULE-$VERSION.tar.xz
        SOURCE_URL=https://mirrors.edge.kernel.org/pub/linux/libs/$MODULE/
-      SOURCE_VFY=sha256:7f2be568219d991d566ca50c58a56e69df9a248619fed758dcd9a4b04e655e5b
+      SOURCE_VFY=sha256:
         WEB_SITE=https://01.org/ell/
          ENTERED=20191024
-         UPDATED=20191024
+         UPDATED=20191031
            SHORT="Embedded Linux library"
 
 cat << EOF

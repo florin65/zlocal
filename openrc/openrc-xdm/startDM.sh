@@ -1,18 +1,12 @@
 #!/bin/sh
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License, v2
-# $Id$
 
 # We need to source /etc/profile for stuff like $LANG to work
 # bug #10190.
 . /etc/profile
 
 . /etc/init.d/functions.sh
-
-# baselayout-1 compat
-if ! type get_options >/dev/null 2>/dev/null ; then
-	[ -r "${svclib}"/sh/rc-services.sh ] && . "${svclib}"/sh/rc-services.sh
-fi
 
 # Great new Gnome2 feature, AA
 # We enable this by default

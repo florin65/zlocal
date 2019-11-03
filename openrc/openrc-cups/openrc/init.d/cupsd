@@ -9,9 +9,9 @@ start_stop_daemon_args="-b -m --pidfile ${pidfile}"
 
 depend() {
 	use net
-	need dbus # avahi-daemon
+	need dbus avahi-daemon
 	before nfs
-	after logger avahi-daemon
+	after logger
 }
 
 start_pre() {

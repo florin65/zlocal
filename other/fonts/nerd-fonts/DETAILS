@@ -2,7 +2,7 @@
          VERSION=2.0.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/ryanoasis/nerd-fonts/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:0d5939042eff3b2d9b81ee2a871b3d2c046cbc6781f20ae87cdecfc1833e7bc8
         WEB_SITE=http://github.com/ryanoasis/nerd-fonts/
          ENTERED=20160425
          UPDATED=20191030

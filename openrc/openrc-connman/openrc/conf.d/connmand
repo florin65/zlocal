@@ -1,4 +1,5 @@
-# conf.d file for connman
+
+# conf.d file for connmand
 #
 # Please check connmand --help for more information.
 # Useful options are:

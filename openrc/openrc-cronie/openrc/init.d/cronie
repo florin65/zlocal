@@ -9,5 +9,5 @@ pidfile="/run/crond.pid"
 depend() {
 	use clock logger
 	need localmount
-	provide cron	
+	provide cron
 }

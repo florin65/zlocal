@@ -18,5 +18,3 @@ stop() {
    start-stop-daemon --stop --quiet --exec /usr/bin/connmand
    eend $?
 }
-
-# vim: set ft=gentoo-init-d ts=3 sw=3 et:

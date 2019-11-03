@@ -59,3 +59,5 @@ stop() {
 	start-stop-daemon --stop --quiet --exec /usr/bin/nscd ${pidfile}
 	eend $?
 }
+
+# vim:ts=4

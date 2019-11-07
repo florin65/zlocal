@@ -1,11 +1,11 @@
           MODULE=doas
-         VERSION=6.0p2
+         VERSION=6.2p2
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/slicer69/doas/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:5afff34eaa4d9bf65ebe861f57056a97f9ea6ce61f6d3d1a25e69bcfadd33c46
+      SOURCE_VFY=sha256:b8dc7e3357d12335ab6890d8303523862112416136bb50f170400cf5746dfd16
         WEB_SITE=http://github.com/slicer69/doas/
          ENTERED=20160903
-         UPDATED=20171021
+         UPDATED=20191107
            SHORT="Execute commands as another user"
 
 cat << EOF

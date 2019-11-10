@@ -1,12 +1,8 @@
 OPTS+=" --enable-shared \
         --enable-ipv6 \
-        --enable-optimizations \
-        --enable-loadable-sqlite-extensions \
-        --with-threads \
         --with-system-ffi \
         --with-system-expat \
         --with-computed-gotos \
-        --with-system-libmpdec \
         --without-ensurepip"
 
 _BASEVER=${VERSION%.*}

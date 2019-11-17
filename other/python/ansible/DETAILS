@@ -1,11 +1,11 @@
           MODULE=ansible
-         VERSION=2.9.0
+         VERSION=2.9.1
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=https://releases.ansible.com/$MODULE/
-      SOURCE_VFY=sha256:9f9a9ace1d63cd8a4692ab6ee6ed04823743f1bd339a6ef188860c02cf7f46f1
+      SOURCE_VFY=sha256:
         WEB_SITE=https://www.ansible.com
          ENTERED=20180322
-         UPDATED=20191104
+         UPDATED=20191116
            SHORT="Radically simple IT automation platform"
 
 cat << EOF

@@ -2,7 +2,7 @@
          VERSION=0.5.0
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=https://s3.amazonaws.com/ziglang.org/download/$VERSION/
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:55ae16960f152bcb9cf98b4f8570902d0e559a141abf927f0d3555b7cc838a31
         WEB_SITE=http://ziglang.org/
          ENTERED=20180126
          UPDATED=20191011

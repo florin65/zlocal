@@ -1,11 +1,11 @@
           MODULE=OpenDoas
-         VERSION=6.0
+         VERSION=6.6
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/Duncaen/OpenDoas/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:59b5ce734591e0e5142f9cb27aaa56a4d5ce470d1f7ad85e9679cd91d2dd2058
+      SOURCE_VFY=sha256:83ca7e6d75b834f0a03604a4e5dd3879534de5ab8e75b36bbe169b53666f8ec8
         WEB_SITE=http://github.com/Duncaen/OpenDoas/
          ENTERED=20160903
-         UPDATED=20171021
+         UPDATED=20191124
            SHORT="Run commands as super user or another user"
 
 cat << EOF

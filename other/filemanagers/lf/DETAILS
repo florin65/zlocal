@@ -2,7 +2,7 @@
          VERSION=r13
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/gokcehan/lf/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:fe99ed9785fbdc606835139c0c52c854b32b1f1449ba83567a115b21d2e882f4
         WEB_SITE=https://github.com/gokcehan/lf/
          ENTERED=20181116
          UPDATED=20190722

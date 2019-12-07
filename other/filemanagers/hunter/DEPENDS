@@ -2,6 +2,12 @@ depends ImageMagick
 depends file
 depends rustc
 
-optional_depends gst-plugins-good "" "" "for audio/video plugins"
-
+optional_depends fzf        "" "" "for file finder support"
+optional_depends poppler    "" "" "for PDF support"
+optional_depends lynx       "" "" "for HTML support"
+optional_depends elinks     "" "" "for HTML support"
+optional_depends w3m        "" "" "for HTML support"
+optional_depends libarchive "" "" "for archive support"
 optional_depends nerd-fonts "" "" "for the supported icon pack"
+
+optional_depends gst-plugins-good "" "" "for audio/video plugins"

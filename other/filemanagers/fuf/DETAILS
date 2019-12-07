@@ -1,11 +1,11 @@
           MODULE=fuf
-         VERSION=0.2
+         VERSION=0.4.20
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/Ckath/fuf/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:df44429f2118a9cfe881f09da4a5ef91ec770c134bf18b7477d9d7842947d8b7
         WEB_SITE=https://github.com/ckath/fuf/
          ENTERED=20190913
-         UPDATED=20190917
+         UPDATED=20191207
            SHORT="Fairly Usable cli Filebrowser"
 
 cat << EOF

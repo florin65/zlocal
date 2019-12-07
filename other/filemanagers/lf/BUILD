@@ -1,13 +1,15 @@
-export GOPATH=$SOURCE_DIRECTORY
-
-mkdir -p $GOPATH/src &&
-cd src &&
-unpack $ARCHIVE_DIRECORY/$SOURCE &&
-
-cd $GOPATH/src/$MODULE-$VERSION &&
-go get &&
+go mod vendor &&
+version=r$pkgver ./gen/build.sh -mod=vendor -trimpath &&
+go clean -modcache &&
 
 prepare_install &&
 
-install -Dm755 lf-$VERSION /usr/bin/lf &&
-install -Dm644 ./README.md /usr/share/doc/$MODULE/README.md
+mkdir -p /usr/share/doc/$MODULE &&
+install -Dm755 lf /usr/bin/ &&
+install -Dm644 lf.1 /usr/share/man/man1/ &&
+install -Dm644 README.md etc/lfrc.example /usr/share/doc/$MODULE/ &&
+
+# vim
+mkdir -p /usr/share/vim/vimfiles/{syntax,ftdetect} &&
+install -Dm644 etc/lf.vim /usr/share/vim/vimfiles/syntax/ &&
+install -Dm644 etc/lf.vim /usr/share/vim/vimfiles/ftdetect/

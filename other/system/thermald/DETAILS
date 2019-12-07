@@ -1,12 +1,12 @@
           MODULE=thermald
-         VERSION=1.7.2
+         VERSION=1.9.1
           SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/thermal_daemon-$VERSION
  SOURCE_URL_FULL=http://github.com/01org/thermal_daemon/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:2b180301b99508e7f340138c40ccbfd8a35055d707e71c81ab9a177fccda4695
+      SOURCE_VFY=sha256:aaf5ffdc12344eef2417b41b433094bb30e4ebf321f0140b090f97bfcf24ea1f
         WEB_SITE=http://01.org/linux-thermal-daemon/
          ENTERED=20180304
-         UPDATED=20180603
+         UPDATED=20191206
            SHORT="The Linux Thermal Daemon program"
 
 cat << EOF

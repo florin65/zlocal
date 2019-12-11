@@ -1,11 +1,11 @@
           MODULE=samba
-         VERSION=4.11.0
+         VERSION=4.11.3
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=https://us1.samba.org/samba/ftp/stable/
-      SOURCE_VFY=sha256:6adf1c74afff1f3f7e14060cc5a36111a6721d644ea51ed1b22da46051e48e9c
+      SOURCE_VFY=sha256:1acbe4a14d546e0b45ed638547ad40052b346293d23441715c903172ceb1a145
         WEB_SITE=http://www.samba.org
          ENTERED=20010922
-         UPDATED=20190918
+         UPDATED=20191210
            SHORT="Samba provides file and print services to SMB/CIFS clients"
 PSAFE=no
 

@@ -1,7 +1,1 @@
-make KERNEL_HEADERS=/usr/include &&
-
-prepare_install &&
-
-make RAISE_SETFCAP=no install
-
-install -Dm644 pam_cap/capability.conf /usr/share/doc/$MODULE/capability.conf.example
+default_make

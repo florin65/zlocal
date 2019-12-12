@@ -1,11 +1,11 @@
           MODULE=byobu
-         VERSION=5.124
+         VERSION=5.130
           SOURCE=${MODULE}_$VERSION.orig.tar.gz
       SOURCE_URL=https://launchpad.net/$MODULE/trunk/$VERSION/+download/
       SOURCE_VFY=sha256:
         WEB_SITE=http://byobu.org/
          ENTERED=20170101
-         UPDATED=20180223
+         UPDATED=20191212
            SHORT="Enhanced profile and useful notifications for tmux/screen"
 
 cat << EOF

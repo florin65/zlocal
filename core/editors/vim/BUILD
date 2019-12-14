@@ -13,7 +13,7 @@ default_config &&
 make &&
 prepare_install &&
 
-rm -f /usr/bin/vim /usr/bin/vi  &&
+rm -f /usr/bin/vim /usr/bin/vi &&
 ( find /usr/share/vim -type d -exec rmdir {} \; &> /dev/null || true) &&
 
 make install &&

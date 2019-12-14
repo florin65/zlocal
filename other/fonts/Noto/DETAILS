@@ -1,12 +1,12 @@
       MODULE=Noto
-     VERSION=2017-09-19
+     VERSION=2019-09-26
       SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE
  SOURCE_URL_FULL=https://github.com/googlei18n/noto-fonts/archive/v$VERSION-phase3-second.tar.gz
-  SOURCE_VFY=sha256:1ea3198233bc6e5a72f6f00a32e79f4ee6fe8058ec7ecb7bb6490aeb4b1ba272
+  SOURCE_VFY=sha256:
     WEB_SITE=http://www.google.com/get/noto/
      ENTERED=20161011
-     UPDATED=20181029
+     UPDATED=20191212
      ARCHIVE=off
        SHORT="Fonts support all languages/characters in Unicode"
 

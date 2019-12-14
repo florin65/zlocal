@@ -1,15 +1,14 @@
           MODULE=libvirt
-         VERSION=5.7.0
+         VERSION=5.10.0
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=http://libvirt.org/sources
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
-      SOURCE_VFY=sha256:7e91f23574c73f0da8812917922d45af1044dbe31d2526aa34e2ff29bfef62e0
+      SOURCE_VFY=sha256:9aaa889dccdc16e39eaa53dae36375413619561896920419fb1351bee8a2fc87
         WEB_SITE=http://libvirt.org/
          ENTERED=20130202
-         UPDATED=20190904
+         UPDATED=20191202
            SHORT="API for controlling virtualization engines"
 
 cat <<EOF
-API for controlling virtualization engines (openvz, kvm, qemu, virtualbox, xen,
-etc).
+API for controlling virtualization engines (openvz, kvm, qemu, etc).
 EOF

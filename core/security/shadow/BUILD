@@ -21,13 +21,14 @@ sedit '/^SUBDIRS/ n; s/etc//' Makefile.in Makefile.am &&
             --without-selinux \
             --without-group-name-max-length \
             --disable-static \
+            --disable-account-tools-setuid \
             $OPTS &&
 make &&
 mkdir -p $SOURCE_DIRECTORY/__shadowdest &&
 make DESTDIR=$SOURCE_DIRECTORY/__shadowdest/ suidperms=4711 install &&
 
 # Move stuff to bin
-mv $SOURCE_DIRECTORY/__shadowdest/usr/sbin/* $SOURCE_DIRECTORY/__shadowdest/usr/bin/ &&
+#mv $SOURCE_DIRECTORY/__shadowdest/usr/sbin/* $SOURCE_DIRECTORY/__shadowdest/usr/bin/ &&
 mv $SOURCE_DIRECTORY/__shadowdest/usr/bin/{newgrp,sg} &&
 rm -rf $SOURCE_DIRECTORY/__shadowdest/usr/sbin &&
 

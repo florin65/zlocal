@@ -1,8 +1,8 @@
           MODULE=vim-tmux-navigator
          VERSION=1.0
           SOURCE=$MODULE-$VERSION.tar.gz
- SOURCE_URL_FULL=https://github.com/christoomey/vim-tmux-navigator/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:57da279d446aed332af7a3969e67f832afc9d5df6aebf9cc21e2d7a654af4773
+ SOURCE_URL_FULL=git+https://github.com/christoomey/vim-tmux-navigator
+#      SOURCE_VFY=sha256:
         WEB_SITE=https://github.com/christoomey/vim-tmux-navigator/
          ENTERED=20190708
          UPDATED=20190708

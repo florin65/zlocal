@@ -2,7 +2,7 @@
          VERSION=0.10.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/junegunn/vim-plug/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:befb0324a2f323d9c3b6c83d3dffd0ebde783f44fb52a0247d6cfc98cb4ee41f
         WEB_SITE=https://github.com/junegunn/vim-plug/
          ENTERED=20191027
          UPDATED=20191027

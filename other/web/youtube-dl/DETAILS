@@ -1,5 +1,5 @@
           MODULE=youtube-dl
-         VERSION=2019.11.28
+         VERSION=2019.12.25
           SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE
       SOURCE_URL=http://yt-dl.org/downloads/$VERSION/

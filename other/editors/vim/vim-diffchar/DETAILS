@@ -3,7 +3,7 @@
           SOURCE=$MODULE-$VERSION.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/undotree-rel_$VERSION
   SOURCE_URL_FULL=http://www.vim.org/scripts/download_script.php?src_id=26254
-      SOURCE_VFY=sha256:501740dc80ca5e5f9b486510e672ed6a9aa35b433cf7786c474380d7f324ee31
+      SOURCE_VFY=sha256:d19ec89f09341144efc858c1edad57ec68d83e1f4ab8cd8d418c16343c928b07
         WEB_SITE=http://github.com/rickhowe/diffchar.vim/
          ENTERED=20170320
          UPDATED=20190829

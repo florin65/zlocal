@@ -1,9 +1,9 @@
           MODULE=vim-undotree
          VERSION=6.1
-          SOURCE=rel_$VERSION.tar.gz
+          SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/undotree-rel_$VERSION
-      SOURCE_URL=http://github.com/mbbill/undotree/archive/
-      SOURCE_VFY=sha256:
+ SOURCE_URL_FULL=http://github.com/mbbill/undotree/archive/rel_$VERSION.tar.gz
+      SOURCE_VFY=sha256:ab55e442be0eea4e3e22a08179086866f44d604e8a8132174e7c0d1166bcf42c
         WEB_SITE=http://github.com/mbbill/undotree/
          ENTERED=20170320
          UPDATED=20191014

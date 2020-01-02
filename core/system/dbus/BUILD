@@ -13,12 +13,12 @@ OPTS+=" runstatedir=/run        \
         --disable-verbose-mode  \
         --disable-ducktype-docs \
         --enable-user-session   \
-        --with-dbus-user=dbus   \
+        --with-dbus-user=messagebus   \
         --with-session-socket-dir=/tmp \
+        --with-system-pid-file=/run/dbus.pid \
         --with-console-auth-dir=/run/console/ \
         --with-system-socket=/run/dbus/system_bus_socket"
 
-#        --with-system-pid-file=/run/dbus.pid \
 
 if module_installed systemd; then
   OPTS+=" --enable-systemd \
@@ -34,9 +34,9 @@ default_build &&
 
 # The following used to be in POST_INSTALL but the service wasn't starting
 # on FIRST install due to the lack of existing /var/lib/dbus
-add_priv_user dbus:dbus -d /dev/null -s /bin/false &&
+add_priv_user messagebus:messagebus -d /dev/null -s /usr/bin/false &&
 mkdir -p /run/dbus &&
-chown -R dbus:dbus /run/dbus &&
+chown -R messagebus:messagebus /run/dbus &&
 
 # remove the /etc/dbus-1 directory
 rm -fr /etc/dbus-1 &&

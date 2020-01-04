@@ -1,0 +1,27 @@
+          MODULE=vlang
+         VERSION=0.1.23.1
+          SOURCE=vlang-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/v-$VERSION
+ SOURCE_URL_FULL=https://github.com/vlang/v/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:9324b5281a8074b91fe08113fb3daf54399c49094797c47d73d7bd38815a4acc
+        WEB_SITE=https://vlang.io/
+         ENTERED=20200104
+         UPDATED=20200104
+           SHORT="Simple, fast, safe programming language"
+
+cat << EOF
+Simple language for building maintainable programs.
+Key Features of V:
+ - Simplicity: the language can be learned in less than an hour
+ - Fast compilation
+ - Easy to develop: V compiles itself in less than a second
+ - Performance: within 3% of C
+ - Safety: no null, no globals, no undefined behavior, immutability by default
+ - C to V translation
+ - Hot code reloading
+ - Powerful UI and graphics libraries
+ - Easy cross compilation
+ - REPL
+ - Built-in ORM
+ - C and JavaScript backends
+EOF

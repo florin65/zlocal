@@ -1,0 +1,16 @@
+          MODULE=siren
+         VERSION=0.9
+          SOURCE=$MODULE-$VERSION.tar.gz
+       SOURCE_URL=https://www.kariliq.nl/siren/dist/
+      SOURCE_VFY=sha256:392c707de8854828ccbcca1e4f3c07e68326f9794edb82235a453ef6ee6c421b
+        WEB_SITE=https://www.kariliq.nl/siren/
+         ENTERED=20200104
+         UPDATED=20200104
+           SHORT="A text-based audio player"
+
+cat << EOF
+Siren is a text-based audio player for UNIX-like operating systems.Supported
+file formats include Ogg Vorbis, MP3, Opus, FLAC, AAC, WavPack, WAVE and AIFF.
+Playback is possible through sndio, PulseAudio, ALSA, OSS, Sun audio, PortAudio
+and libao.
+EOF

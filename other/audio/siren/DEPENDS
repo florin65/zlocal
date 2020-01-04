@@ -1,0 +1,7 @@
+depends ncurses
+
+optional_depends libao      "" "" "for audio output support"
+optional_depends libid3tag  "" "" "for id3 tags support"
+optional_depends libmad     "" "" "for mpeg decoder support"
+optional_depends pulseaudio "" "" "for Pulseaudio support"
+optional_depends wavpack    "" "" "for wav decoser support"

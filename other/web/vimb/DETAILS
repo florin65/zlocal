@@ -1,11 +1,11 @@
           MODULE=vimb
-         VERSION=3.5.0
+         VERSION=3.6.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/fanglingsu/vimb/archive/$VERSION.tar.gz
       SOURCE_VFY=sha256:
         WEB_SITE=https://fanglingsu.github.io/vimb/
          ENTERED=20180618
-         UPDATED=20190803
+         UPDATED=20200107
         SHORT="The vim like browser"
 
 cat << EOF

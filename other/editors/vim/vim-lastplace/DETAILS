@@ -1,11 +1,11 @@
           MODULE=vim-lastplace
-         VERSION=3.1.1
+         VERSION=3.2.1
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/farmergreg/vim-lastplace/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:a90c6281fb946d169ac5fcd49c1fbadb90c84607f651ac6d5dd88f82b735776f
+      SOURCE_VFY=sha256:ae8abdcd019a3acdd6019e08363663c36e3b643d232e801e2c7315dd61bb9141
         WEB_SITE=https://github.com/farmergreg/vim-lastplace/
          ENTERED=20181013
-         UPDATED=20181013
+         UPDATED=20200202
            SHORT="Reopen files at your last edit position in Vim"
 
 cat << EOF

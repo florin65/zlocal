@@ -1,0 +1,14 @@
+          MODULE=cfm
+         VERSION=0.4.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/WillEccles/cfm/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:fe85e9f1c99f44c50ec43d526675489f3d5084a9e82efb8f00e6dc7912e2e883
+        WEB_SITE=https://github.com/WillEccles/cfm/
+         ENTERED=20200206
+         UPDATED=20200206
+           SHORT="Simple and fast TUI file manager"
+
+cat << EOF
+Cactus File Manager (cfm) is a TUI file manager with the goal of being simple,
+easy, and bloat-free, utilizing Vi-inspired keybinds.
+EOF

@@ -1,11 +1,11 @@
           MODULE=osh
-         VERSION=0.6.o
+         VERSION=0.7.0
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=https://www.oilshell.org/download/
       SOURCE_VFY=sha256:
         WEB_SITE=https://www.oilshell.org/
          ENTERED=20171026
-         UPDATED=20190714
+         UPDATED=20200128
            SHORT="Oil is a new Unix shell"
 
 cat << EOF

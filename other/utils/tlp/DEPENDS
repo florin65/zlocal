@@ -4,8 +4,6 @@ depends pciutils
 depends usbutils
 depends util-linux
 
-optional_depends ethtool  "" "" "disable Wake On Lan"
-optional_depends pm-utils "" "" "for HAL support"
-
+optional_depends ethtool        "" "" "disable Wake On Lan"
 optional_depends smartmontools  "" "" "display SMART data in tlp-stat"
-optional_depends NetworkManager "" "" "for NetworkManager support"
+optional_depends NetworkManager "" "" "for Radio Device Wizard - power management"

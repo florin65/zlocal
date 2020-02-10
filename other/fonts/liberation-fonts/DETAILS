@@ -1,13 +1,13 @@
           MODULE=liberation-fonts
-         VERSION=2.00.5
+         VERSION=2.1.0
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=https://github.com/liberationfonts/liberation-fonts/files/2926167/
-     SOURCE_VFY=sha256:af351ce9f4d6630ffa047bce0dca7dc58f93b5545325f18d1b92332e46be94a8
-        WEB_SITE=https://github.com/liberationfonts/liberation-fonts/
+ SOURCE_URL_FULL=https://github.com/liberationfonts/liberation-fonts/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:a7761e42b43dfd0b4580f411829062ef98a6de6c2bafe0bfaf3041eb057d9107
+        WEB_SITE=http://www.redhat.com/promo/fonts
          ENTERED=20070516
-         UPDATED=20190305
-           SHORT="Some RedHat GPL exception licensed fonts"
-ARCHIVE=off
+         UPDATED=20200210
+           SHORT="some RedHat GPL exception licensed fonts"
+
 cat << EOF
 There are three sets: Sans (a substitute for Arial, Albany, Helvetica,
 Nimbus Sans L, and Bitstream Vera Sans), Serif (a substitute for Times

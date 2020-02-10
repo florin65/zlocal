@@ -1,5 +1,6 @@
 OPTS+=" --enable-shared \
         --enable-ipv6 \
+        --enable-optimizations \
         --with-system-ffi \
         --with-system-expat \
         --with-computed-gotos \

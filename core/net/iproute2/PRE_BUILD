@@ -5,4 +5,4 @@ if ! in_depends $MODULE db; then
 fi &&
 
 # do not treat warnings as errors
-sedit 's/-Werror//' Makefile
+sed -i 's/-Werror//' Makefile

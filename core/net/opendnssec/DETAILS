@@ -1,0 +1,15 @@
+          MODULE=opendnssec
+         VERSION=2.1.6
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://dist.opendnssec.org/source/
+      SOURCE_VFY=sha256:
+        WEB_SITE=https://www.opendnssec.org/
+         ENTERED=20200223
+         UPDATED=20200223
+           SHORT="Turn-key solution for DNSSEC"
+
+cat << EOF
+OpenDNSSEC is a policy-based zone signer that automates the process of keeping
+track of DNSSEC keys and the signing of zones. The goal of the project is to
+make DNSSEC easy to deploy.
+EOF

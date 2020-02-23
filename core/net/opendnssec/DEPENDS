@@ -1,0 +1,3 @@
+depends ldns
+depends libxml2
+depends sqlite

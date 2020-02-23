@@ -1,4 +1,0 @@
-if module_installed openrc; then
-   lin -c openrc-wpa_supplicant
-fi
-

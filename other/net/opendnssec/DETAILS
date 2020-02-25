@@ -2,7 +2,7 @@
          VERSION=2.1.6
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=https://dist.opendnssec.org/source/
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:b2c0caa673b8cfef73585dedf276997f5ca69bb3d523ce4e080f70dfcb23c56c
         WEB_SITE=https://www.opendnssec.org/
          ENTERED=20200223
          UPDATED=20200223

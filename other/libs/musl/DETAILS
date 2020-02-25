@@ -1,11 +1,11 @@
       MODULE=musl
-     VERSION=1.1.24
+     VERSION=1.2.0
       SOURCE=$MODULE-$VERSION.tar.gz
   SOURCE_URL=http://www.musl-libc.org/releases/
-  SOURCE_VFY=sha256:1370c9a812b2cf2a7d92802510cca0058cc37e66a7bedd70051f0a34015022a3
+  SOURCE_VFY=sha256:c6de7b191139142d3f9a7b5b702c9cae1b5ee6e7f57e582da9328629408fd4e8
     WEB_SITE=http://www.musl-libc.org/
      ENTERED=20150918
-     UPDATED=20191014
+     UPDATED=20200224
        SHORT="Lightweight implementation of C standard library"
 
 cat << EOF

@@ -1,3 +1,0 @@
-if module_installed openrc-kmod; then
-   lrm openrc-kmod
-fi

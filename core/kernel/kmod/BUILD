@@ -1,17 +1,19 @@
-OPTS+=" --exec-prefix=/usr \
-        --sbindir=/usr/bin \
-        --with-zlib \
+OPTS+=" --with-zlib \
+        --with-xz \
         --with-openssl"
 
-default_build &&
+./configure --prefix=     \
+            --libdir=/lib \
+            --datarootdir=/usr/share \
+            --includedir=/usr/include \
+            $OPTS  &&
+
+default_make &&
 
 install -dm755 /{etc,usr/lib}/{depmod,modprobe}.d &&
 
 # add symlinks to kmod
-ln -sf /usr/bin/kmod /usr/bin/lsmod &&
+ln -sf /bin/kmod "/bin/lsmod"  &&
 for tool in {ins,rm,dep}mod mod{info,probe}; do
-  ln -sf /usr/bin/kmod /usr/bin/$tool
-done &&
-
-# install depmod.d file for search/ dir
-install -Dm645 $SCRIPT_DIRECTORY/depmod-search.conf /usr/lib/depmod.d/search.conf
+  ln -sf /bin/kmod "/sbin/$tool"
+done

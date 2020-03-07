@@ -16,7 +16,7 @@ plugin_depmod_post_build()
   debug_msg "plugin_depmod_post_build ($@)"
 
   # Find installed kernel modules and then run depmod
-  parse_iw | grep "^/usr/lib/modules/.*/" | cut -d/ -f4 | sort | uniq | while read kversion; do
+  parse_iw | grep "^/lib/modules/.*/" | cut -d/ -f4 | sort | uniq | while read kversion; do
     debug_msg "Running depmod for kernel $kversion"
     depmod -a $kversion
   done

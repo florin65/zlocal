@@ -7,13 +7,22 @@ fi
 OPTS+=" runstatedir=/run        \
         --localstatedir=/var    \
         --disable-static        \
+        --disable-debug         \
         --disable-tests         \
+        --disable-selinux       \
         --disable-asserts       \
         --disable-libaudit      \
+        --disable-apparmor      \
+        --disable-containers    \
         --disable-verbose-mode  \
         --disable-ducktype-docs \
-        --enable-user-session   \
-        --with-dbus-user=messagebus   \
+        --disable-installed-tests  \
+        --enable-user-session      \
+        --enable-ld-version-script \
+        --without-test-user        \
+        --without-dbus-test-dir    \
+        --without-test-socket-dir  \
+        --with-dbus-user=messagebus \
         --with-session-socket-dir=/tmp \
         --with-system-pid-file=/run/dbus.pid \
         --with-console-auth-dir=/run/console/ \

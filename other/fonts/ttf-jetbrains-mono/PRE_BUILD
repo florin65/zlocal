@@ -1,3 +1,5 @@
-default_pre_build &&
+mkdir -p $SOURCE_DIRECTORY &&
+
 cd $SOURCE_DIRECTORY &&
+
 unpack $SOURCE

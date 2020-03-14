@@ -9,11 +9,13 @@ optional_depends libX11 \
 optional_depends doxygen \
                  "--enable-doxygen-docs" \
                  "--disable-doxygen-docs" \
-                 "for Doxygen documentation support" n
+                 "for Doxygen documentation support"\
+                 "n"
 
 optional_depends xmlto \
                  "--enable-xml-docs" \
                  "--disable-xml-docs" \
-                 "for XML documentation support" n
+                 "for XML documentation support"\
+                 "n"
 
-optional_depends docbook-xsl "" "" "for XSL documentation support" n
+optional_depends docbook-xsl "" "" "for XSL documentation support" "n"

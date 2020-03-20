@@ -3,14 +3,7 @@ optional_depends ncurses \
                  "--without-ncurses" \
                  "build ncurses based apps"
 
-if ! module_installed openrc; then
-  optional_depends systemd \
-                   "--with-systemd" \
-                   "--without-systemd" \
-                   "support systemd mechanics"
-else
-  optional_depends elogind \
-                   "--with-elogind" \
-                   "--without-elogind" \
-                   "support for elogind"
-fi
+optional_depends systemd \
+                 --with-systemd \
+                 --without-systemd \
+                 "support systemd mechanics"

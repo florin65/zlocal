@@ -1,6 +1,6 @@
 prepare_install &&
 
-INSTPTH=/usr/share/vim/vimfiles/autoload
+INSTPTH=/usr/share/vim/vimfiles
 
 mkdir -p $INSTPTH &&
-cp -f autoload/vital.vim $INSTPTH
+cp -fr -t $INSTPTH autoload doc plugin

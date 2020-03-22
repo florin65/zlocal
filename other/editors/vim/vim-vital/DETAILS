@@ -1,12 +1,11 @@
           MODULE=vim-vital
-         VERSION=0.9.0
+         VERSION=git
           SOURCE=$MODULE-$VERSION.tar.gz
- SOURCE_URL_FULL=https://github.com/haya14busa/vim-operator-flashy/archive/v$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/vim-operator-flashy-$VERSION
-      SOURCE_VFY=sha256:a8f30fd050e1838774dc1409bf59d95db547f7b74e54456199b066425d2a3a86
-        WEB_SITE=https://github.com/haya14busa/vim-operator-flashy
-         ENTERED=20171229
-         UPDATED=20171229
+ SOURCE_URL_FULL=git+https://github.com/vim-jp/vital.vim/
+#      SOURCE_VFY=sha256:
+        WEB_SITE=https://github.com/vim-jp/vital.vim/
+         ENTERED=20200322
+         UPDATED=20200320
            SHORT="Vim vital function"
 
 cat << EOF

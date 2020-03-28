@@ -1,0 +1,4 @@
+default_pre_build &&
+
+# replace vendored jinja2.vim with python-jinja's jinja.vim
+sedit s/jinja2/jinja/g' ftdetect/ansible.vim syntax/ansible.vim

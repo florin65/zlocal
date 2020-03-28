@@ -1,14 +1,14 @@
           MODULE=Font-Awesome
-         VERSION=5.12.1
+         VERSION=5.13.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/FortAwesome/Font-Awesome/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:218060ed286d88de951ac6d6f79677498e12db230e2313bc80644a4f50b206b6
+      SOURCE_VFY=sha256:37af63f2a6bdc01029f00c0c76d661a4b721c9f5cb1401a5d3b9f388d0c25f53
         WEB_SITE=https://github.com/FortAwesome/Font-Awesome/
          ENTERED=20180617
-         UPDATED=20200210
+         UPDATED=20200324
            SHORT="Iconic TTF font"
 ARCHIVE=off
 cat << EOF
-Get vector icons and social logos on your website with Font Awesome, the webâs
+Get vector icons and social logos on your website with Font Awesome, the web
 most popular icon set and toolkit.
 EOF

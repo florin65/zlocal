@@ -1,2 +1,5 @@
+depends python-jinja
 depends vim
 depends ansible
+
+optional_depends vim-ultisnips "" "" "for ansible snippets"

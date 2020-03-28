@@ -12,6 +12,10 @@ done &&
 
 cd UltiSnips &&
 
-python generate.py &&
+python generate.py --style 'dictionary' --sort &&
 
-install -D -m644 ansible.snippets $INST_PATH/snippets/ansible.snippets
+install -vDm 644 indent/*.vim -t "$INST-PATH/indent/" &&
+install -vDm 644 ftdetect/*.vim -t "$INST_PATH/ftdetect/" &&
+install -vDm 644 ftplugin/*.vim -t "$INST-PATH/ftplugin/" &&
+install -vDm 644 syntax/ansible*.vim -t "$INST-PATH/syntax/" &&
+install -D -m644 ansible.snippets "$INST_PATH/snippets/ansible.snippets"

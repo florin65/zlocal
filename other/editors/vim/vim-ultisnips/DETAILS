@@ -1,0 +1,15 @@
+          MODULE=vim-ultisnips
+         VERSION=3.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/ultisnips-$VERSION
+ SOURCE_URL_FULL=https://github.com/SirVer/ultisnips/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:550365cdf6bf030b9e5b77e511b4e6b1427660ea6a117c4b6bb77afcb950c4ce
+        WEB_SITE=https://github.com/SirVer/ultisnips/
+         ENTERED=20200328
+         UPDATED=20200328
+           SHORT="TextMate-style snippets for Vim"
+
+cat << EOF
+UltiSnips is the ultimate solution for snippets in Vim. It has many features,
+speed being one of them.
+EOF

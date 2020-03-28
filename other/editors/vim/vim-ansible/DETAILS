@@ -1,12 +1,12 @@
           MODULE=vim-ansible
-         VERSION=1.0
+         VERSION=2.1
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/pearofducks/ansible-vim/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:1f5045fff26e114d3b51750e239288ec1d64ff79e2b9404ce6174fbd11513970
+      SOURCE_VFY=sha256:
         WEB_SITE=https://github.com/pearofducks/ansible-vim/
          ENTERED=20170816
-         UPDATED=20170816
-           SHORT="A vim syntax plugin for Ansible 2.0"
+         UPDATED=20200328
+           SHORT="A vim syntax plugin for Ansible"
 
 cat << EOF
 A vim plugin for syntax highlighting Ansible's common filetypes.

@@ -1,12 +1,12 @@
           MODULE=ttf-jetbrains-mono
-         VERSION=1.0.4
+         VERSION=1.0.5
           SOURCE=JetBrainsMono-$VERSION.zip
 #SOURCE_DIRECTORY=$BUILD_DIRECTORY/JetBrainsMono-$VERSION
       SOURCE_URL=https://github.com/JetBrains/JetBrainsMono/releases/download/v$VERSION/
-      SOURCE_VFY=sha256:737acc16715dbf911e833dd80fa27c49b2264c11800b0202f91b8745afa34a04
+      SOURCE_VFY=sha256:4ea0eaf943764cd5ab011524266c12704420ba4e57da03daa0456145946022eb
         WEB_SITE=https://www.jetbrains.com/lp/mono/
          ENTERED=20200116
-         UPDATED=20200314
+         UPDATED=20200330
            SHORT="Typeface for developers, by JetBrains"
 ARCHIVE=off
 cat << EOF

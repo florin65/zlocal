@@ -1,0 +1,13 @@
+         MODULE=levee
+        VERSION=4.0
+         SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_URL_FULL=https://github.com/Orc/levee/archive/v$VERSION.tar.gz
+     SOURCE_VFY=sha256:3a625efa3d852008eb821f52b30667e16101ca36099711ff513767ceeb527f79
+       WEB_SITE=http://www.pell.portland.or.us/~orc/Code/levee/
+        ENTERED=20200404
+        UPDATED=20200404
+          SHORT="A small, modal text editor based on vi"
+
+cat << EOF
+A tiny, fast, and someone erratic vi clone.
+EOF

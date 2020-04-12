@@ -1,4 +1,7 @@
+add_priv_user dhcpcd:dhcpcd -s /usr/bin/false &&
+
 OPTS+=" --rundir=/run \
+        --privsepuser=dhcpcd \
         --dbdir=/var/lib/dhcpcd"
 
 OPTS+=" --sbindir=/usr/bin"

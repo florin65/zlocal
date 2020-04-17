@@ -1,12 +1,12 @@
           MODULE=vnote
-         VERSION=2.7.2
+         VERSION=2.9.1
           SOURCE=$MODULE-$VERSION-src.tar.gz
  SOURCE_URL_FULL=https://github.com/tamlok/vnote/archive/v$VERSION.tar.gz
    MODULE_PREFIX=${KDE_PREFIX:-/usr}
       SOURCE_VFY=sha256:
         WEB_SITE=https://tamlok.github.io/vnote/en_us/
          ENTERED=20190903
-         UPDATED=20190903
+         UPDATED=20200414
            SHORT="A note-taking application, especially for Markdown"
 
 cat << EOF

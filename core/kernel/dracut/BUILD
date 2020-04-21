@@ -13,7 +13,7 @@ default_build &&
 # Removing modules we don't support
 rm -rf /usr/lib/dracut/modules.d/{01fips,02fips-aesni,80cms,95dasd,95dasd_mod,95fcoe,95zfcp,95znet} &&
 
-# Remove the systemd related ones too
+# Remove the systemd related ones too if systemd is not installed
 if ! module_installed systemd; then
    rm -rf /usr/lib/dracut/modules.d/{00systemd,01systemd-init,02systemd-networkd,98dracut-systemd}
 fi

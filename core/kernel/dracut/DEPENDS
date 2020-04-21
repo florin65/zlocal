@@ -4,23 +4,25 @@ depends coreutils
 depends util-linux
 depends gzip
 depends bzip2
-depends xz
 depends kmod
 depends libcap
+depends procps
 depends %UDEV
+depends xz
 
 if ! module_installed openrc; then
-  optional_depends systemd-sysv "" "" "for systemd support"
+   optional_depends systemd-sysv "" "" "for systemd support"
 fi
 
+optional_depends elfutils    "" "" "for binaries stripping support"
+optional_depends lvm2        "" "" "for Linux Volume Management support"
+optional_depends mdadm       "" "" "for software raid support"
 optional_depends btrfs-progs "" "" "for btrfs filesystem support"
 optional_depends xfsprogs    "" "" "for XFS filesystem support"
 optional_depends jfsutils    "" "" "for JFS filesystem support"
-optional_depends cryptsetup  "" "" "for cryptsetup support"
-optional_depends open-iscsi  "" "" "for iSCSI support"
-optional_depends lvm2        "" "" "for Linux Volume Management support"
-optional_depends mdadm       "" "" "for software raid support"
 optional_depends rsyslog     "" "" "for syslog support"
 optional_depends syslog-ng   "" "" "for syslog-ng support"
+optional_depends cryptsetup  "" "" "for cryptsetup support"
+optional_depends open-iscsi  "" "" "for iSCSI support"
 
 optional_depends asciidoc    "" "--disable-documentation" "for man pages"

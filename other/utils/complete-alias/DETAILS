@@ -1,0 +1,16 @@
+          MODULE=complete-alias
+         VERSION=1.7.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/cykerway/complete-alias/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:df3d1fb826e67f42793ff8ab1489c2b4059db03fbc9affd82dfd53d7d9079f9a
+        WEB_SITE=https://github.com/cykerway/complete-alias/
+         ENTERED=20200417
+         UPDATED=20200417
+           SHORT="Bash shell alias completion"
+
+cat << EOF
+automagical shell alias completion:
+ - works with all common aliases, even self-aliases;
+ - one completion function, for all aliases;
+ - alias completion as easy as type-and-tab.
+EOF

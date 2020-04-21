@@ -1,7 +1,8 @@
+# The zig CMakeLists uses build type Debug if not set
+# override it back to None so makepkg env vars are respected
 OPTS=" -DCMAKE_BUILD_TYPE=None \
        -DCMAKE_INSTALL_PREFIX=/usr \
-       -DZIG_FORCE_EXTERNAL_LLD=ON \
-       -DZIG_SKIP_INSTALL_LIB_FILES=ON"
+       -DZIG_PREFER_CLANG_CPP_DYLIB=ON"
 
 #-DZIG_LIBC_LIB_DIR=$(dirname $(cc -print-file-name=crt1.o)) \
 #       -DZIG_LIBC_STATIC_LIB_DIR=$(dirname $(cc -print-file-name=crtbegin.o)) \

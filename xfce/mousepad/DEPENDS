@@ -1,3 +1,0 @@
-depends dbus-glib
-depends desktop-file-utils
-depends gtksourceview

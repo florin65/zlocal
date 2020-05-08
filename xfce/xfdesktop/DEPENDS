@@ -1,9 +1,0 @@
-depends xfconf
-depends dbus-glib
-depends exo
-depends garcon
-depends libnotify
-depends libwnck3
-depends hicolor-icon-theme
-
-optional_depends Thunar "" "" "for desktop file icon support"

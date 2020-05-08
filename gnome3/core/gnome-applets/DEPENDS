@@ -1,7 +1,0 @@
-depends autoconf-archive
-depends libgtop
-depends upower
-depends tracker
-depends gnome-settings-daemon
-
-#depends cpupower

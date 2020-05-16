@@ -1,11 +1,11 @@
           MODULE=procs
-         VERSION=0.8.8
+         VERSION=0.10.3
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/dalance/procs/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:359da9e463448f17f062c2847b02e7d41162190a8fa153ff7390a6b0f1e1e25d
+      SOURCE_VFY=sha256:
         WEB_SITE=https://github.com/dalance/procs/
          ENTERED=20190825
-         UPDATED=201825
+         UPDATED=20200512
            SHORT="A modern ps written in Rust"
 
 cat << EOF

@@ -10,29 +10,34 @@ rm -rf /usr/share/terminfo &&
 # system!
 unset CC CXX &&
 
-OPTS+=" PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig"
+OPTS+=" PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig" &&
 
 set -x &&
 ./configure  --build=$BUILD                           \
              --prefix=/usr                            \
              --libdir=/usr/lib                        \
              --mandir=/usr/share/man                  \
+             --disable-termcap                        \
+             --enable-widec                           \
              --enable-pc-files                        \
              --enable-colorfgbg                       \
              --without-ada                            \
              --without-debug                          \
              --with-normal                            \
              --with-shared                            \
+	     --with-cxx-shared                        \
+             --with-cxx-binding                       \
              --with-manpage-format=gzip               \
-             --with-terminfo-dirs=/usr/share/terminfo \
+	     --with-terminfo-dirs=/usr/share/terminfo \
              $OPTS                                   &&
 
-#             --disable-termcap                        \
 
 default_make &&
 
 # Do not break some essential apps like gawk
-#ln -sf libncurses.so.6 libncurses.so.5 &&
+ln -sf libncursesw.so.6 /usr/lib/libncurses.so &&
+ln -sf libncurses.so /usr/lib/libncurses.so.6 &&
+ln -sf libncurses.so /usr/lib/libncurses.so.5 &&
 
 devoke_installwatch &&
 
@@ -49,6 +54,7 @@ set -x &&
              --libdir=/usr/lib                        \
              --includedir=/usr/include/ncursesw       \
              --mandir=/usr/share/man                  \
+             --disable-termcap                        \
              --enable-colorfgbg                       \
              --enable-widec                           \
              --enable-pc-files                        \
@@ -56,16 +62,21 @@ set -x &&
              --without-debug                          \
              --with-normal                            \
              --with-shared                            \
+	     --with-cxx-shared                        \
+             --with-cxx-binding                       \
              --with-manpage-format=gzip               \
              --with-terminfo-dirs=/usr/share/terminfo \
             $OPTS                                    &&
-
-#             --disable-termcap                        \
 
 set +x &&
 default_make &&
 
 # Do not break some essential apps like gawk
-#ln -sf libncurses.so.6 libncurses.so.5 &&
+ln -sf /usr/lib/libncursesw.so.6 /usr/lib/libncurses.so &&
+ln -sf /usr/lib/libncurses.so /usr/lib/libncurses.so.6 &&
+ln -sf /usr/lib/libncurses.so /usr/lib/libncurses.so.5 &&
+
+# some packages look for -lcurses during build
+ln -sf /usr/lib/libncurses.so /usr/lib/libcurses.so
 
 gather_docs ANNOUNCE TODO

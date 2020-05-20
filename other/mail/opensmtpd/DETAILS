@@ -1,16 +1,15 @@
           MODULE=opensmtpd
-         VERSION=6.4.2p1
+         VERSION=6.7.0p1
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=https://www.opensmtpd.org/archives/
-      SOURCE_VFY=sha256:6d71155b15fa4ef0198d10dfb7b1905845c9d36d4a02321245a99da80002fb5d
+      SOURCE_VFY=sha256:c13f5dd7b9cb9421eabb62068537d90b0441cdb3ca2e5c1e753d7aee01b90bb9
         WEB_SITE=https://www.opensmtpd.org/
-         ENTERED=20190901
-         UPDATED=20190901
+         ENTERED=20200520
+         UPDATED=20200520
            SHORT="Free implementation of the server-side SMTP protocol"
 
 cat << EOF
 OpenSMTPD is a FREE implementation of the server-side SMTP protocol as defined
-by RFC 5321, with some additional standard extensions.
-It allows ordinary machines to exchange emails with other systems speaking the
-SMTP protocol.
+by RFC 5321, with some additional standard extensions. It allows ordinary
+machines to exchange emails with other systems speaking the SMTP protocol.
 EOF

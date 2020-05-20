@@ -1,16 +1,17 @@
           MODULE=libasr
-         VERSION=1.0.2
+         VERSION=1.0.4
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=https://www.opensmtpd.org/archives/
-      SOURCE_VFY=sha256:a6f5d1c6306938156da3427525572b9b16c1e6be6c69845d390bb63f41a58b34
+ SOURCE_URL_FULL=https://github.com/OpenSMTPD/libasr/archive/${VERSION}.tar.gz
+      SOURCE_VFY=sha256:1e93e90e852002d58fb228e9a80e7d1673845aaf55bf01182c9db35d67f549f9
         WEB_SITE=https://www.opensmtpd.org/
-         ENTERED=20190901
-         UPDATED=20190901
-           SHORT="A free, simple and portable asynchronous resolver library"
+         ENTERED=20200520
+         UPDATED=20200520
+           SHORT="Free, simple and portable asynchronous resolver library"
 
 cat << EOF
 libasr is a free, simple and portable asynchronous resolver library.
 It allows to run dns queries and perform hostname resolutions in a fully
-asynchronous fashion. The implementation is thread-less, fork-less, and does
-not make use of signals or other "tricks" that might get in the developer's way.
+asynchronous fashion. The implementation is thread-less, fork-less, and
+does not make use of signals or other "tricks" that might get in the
+developer's way.
 EOF

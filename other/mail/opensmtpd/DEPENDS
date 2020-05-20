@@ -1,4 +1,18 @@
 depends libasr
-depends Linux-PAM
-depends openssl
+depends libevent
+depends zlib
 
+optional_depends openssl \
+                 "--with-cflags=-I/usr/include/openssl" \
+                 "" \
+                 "for SSL support (choose openssl or libressl only)"
+
+optional_depends libressl \
+                 "--with-cflags=-I/usr/include/libressl \
+                   -L/usr/lib/libressl -Wl,-rpath=/usr/lib/libressl" \
+                 "" \
+                 "for libressl support (choose libressl or openssl only)"
+
+optional_depends Linux-PAM "--with-auth-pam" "" "for PAM support"
+
+#optional_depends opensmtpd-filter-rspamd "" "" "for rspamd integration"

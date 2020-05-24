@@ -2,7 +2,10 @@ if [[ "$(arch)" == "x86_64" ]]; then
   EFI_ARCH=x86_64
 else
   EFI_ARCH=ia32
-fi
+fi &&
+
+# build uses LDFLAGS with `ld` binary, so trim lunar's options
+export LDFLAGS="$(echo $LDFLAGS | sed 's/-Wl,//g; s/-O1,//g')" &&
 
 make lib gnuefi inc apps &&
 prepare_install &&

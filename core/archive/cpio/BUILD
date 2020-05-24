@@ -1,4 +1,7 @@
-OPTS+=" --mandir=/usr/share/man"
+CFLAGS+=' -fcommon' # fix the compilation with gcc 10.x
+
+OPTS+=" --exec-prefix=/usr \
+        --mandir=/usr/share/man"
 
 default_build &&
 

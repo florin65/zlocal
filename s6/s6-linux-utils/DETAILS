@@ -1,11 +1,11 @@
           MODULE=s6-linux-utils
-         VERSION=2.5.1.0
+         VERSION=2.5.1.2
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://www.skarnet.org/software/$MODULES/
       SOURCE_VFY=sha256:
         WEB_SITE=http://www.skarnet.org/software/s6-linux-utils/
          ENTERED=20190306
-         UPDATED=20190930
+         UPDATED=20200523
            SHORT="Tiny Linux-specific utilities"
 
 cat << EOF

@@ -1,11 +1,11 @@
           MODULE=s6-dns
-         VERSION=2.3.1.0
+         VERSION=2.3.2.0
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://www.skarnet.org/software/$MODULE/
       SOURCE_VFY=sha256:
         WEB_SITE=http://www.skarnet.org/software/s6-dns/
          ENTERED=20190306
-         UPDATED=20190930
+         UPDATED=20200523
            SHORT="A suite of DNS client programs and libraries"
 
 cat << EOF

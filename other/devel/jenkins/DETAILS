@@ -1,5 +1,5 @@
           MODULE=jenkins
-         VERSION=2.236
+         VERSION=2.237
           SOURCE=$MODULE-$VERSION.war
  SOURCE_URL_FULL=http://mirrors.jenkins-ci.org/war/$VERSION/jenkins.war
       SOURCE_VFY=sha256:

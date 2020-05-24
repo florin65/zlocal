@@ -1,11 +1,11 @@
           MODULE=vim-kolor
-         VERSION=1.4.1
+         VERSION=1.4.2
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/zeis/vim-kolor/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:f297313538760ba23579d80c9f830f6e6c588189fbb6c03c89dbb95e1ee52aac
+      SOURCE_VFY=sha256:7f54f37a38a7f20895b611dfe505d0c31010653d9c6b76ded3fa65af688bb85c
         WEB_SITE=http://github.com/zeis/vim-kolor/
          ENTERED=20170306
-         UPDATED=20170306
+         UPDATED=20200523
            SHORT="Vim color scheme with high text readability"
 
 cat << EOF

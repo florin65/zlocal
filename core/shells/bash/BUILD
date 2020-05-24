@@ -4,8 +4,7 @@ OPTS+=" --bindir=/usr/bin \
         --enable-readline \
         --disable-profiling \
         --with-curses \
-        --without-bash-malloc \
-        --with-installed-readline"
+        --without-bash-malloc"
 
 default_build &&
 

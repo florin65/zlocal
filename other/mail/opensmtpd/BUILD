@@ -1,3 +1,5 @@
+add_priv_user smtpq:smtpq -d /var/empty -s /usr/bin/false &&
+
 OPTS+=" --with-path-mbox=/var/spool/mail \
         --with-path-empty=/var/empty \
         --with-path-socket=/run \

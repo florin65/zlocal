@@ -1,11 +1,11 @@
           MODULE=i3keys
-         VERSION=0.0.6
+         VERSION=0.0.12
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/RasmusLindroth/i3keys/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:1ad8fff2ef3d903c1d9bd64169227e350b2036f1b1a6b06ad96dd76ec0b1e433
+      SOURCE_VFY=sha256:da625fccb2a5c1dfdd14116f121d6f8c5f5ae653ecdc525cd6b1ad516df3437e
         WEB_SITE=https://github.com/RasmusLindroth/i3keys/
          ENTERED=20190711
-         UPDATED=20190711
+         UPDATED=20200530
            SHORT="Lists used and unused keys in your i3wm config"
 
 cat <<EOF

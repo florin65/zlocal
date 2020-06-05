@@ -1,12 +1,12 @@
           MODULE=bison
-         VERSION=3.6.2
+         VERSION=3.6.3
           SOURCE=$MODULE-$VERSION.tar.xz
    SOURCE_URL[0]=$GNU_URL/$MODULE
    SOURCE_URL[1]=ftp://ftp.gnu.org/pub/gnu/$MODULE
-      SOURCE_VFY=sha256:4a164b5cc971b896ce976bf4b624fab7279e0729cf983a5135df7e4df0970f6e
+      SOURCE_VFY=sha256:06db793651de9dd5f0a85a6fe4bdbca413c0806bf2432377523da96ca0b4b73d
         WEB_SITE=http://www.gnu.org/software/bison/bison.html
          ENTERED=20010922
-         UPDATED=20200517
+         UPDATED=20200604
            SHORT="A replacement for the parser generator yacc"
 
 cat << EOF

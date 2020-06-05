@@ -1,11 +1,11 @@
           MODULE=tpm
-         VERSION=1.3.2
+         VERSION=1.3.3
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/nmeum/$MODULE/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:9ea145e7f731c50ba3a8dfa252c7d0b31cd5b12b03db33dd95d7d8ebb53d4e6b
+      SOURCE_VFY=sha256:85930c86b13a08c706c2845a4b09138b43e160ae43e3f5e81021241f31f463ad
         WEB_SITE=http://github.com/nmeum/tpm/
          ENTERED=20150617
-         UPDATED=20190324
+         UPDATED=20200529
            SHORT="A tiny password manager"
 
 cat << EOF

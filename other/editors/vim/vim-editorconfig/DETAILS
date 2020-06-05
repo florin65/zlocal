@@ -1,12 +1,12 @@
           MODULE=vim-editorconfig
-         VERSION=0.3.3
+         VERSION=1.1.1
           SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/editorconfig-vim-$VERSION
  SOURCE_URL_FULL=http://github.com/editorconfig/editorconfig-vim/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:fd579672c426a089835e9bc57a1fd5fc18dba77c014b67141153372e83c92c57
+      SOURCE_VFY=sha256:eb8be206659e6fb3bab9df66fe9b80c14265325e3d9a4bbaad7c63058c2ba558
         WEB_SITE=http://github.com/editorconfig/editorconfig-vim/
          ENTERED=20170319
-         UPDATED=20170319
+         UPDATED=20200604
            SHORT="EditorConfig plugin for Vim"
 
 cat << EOF

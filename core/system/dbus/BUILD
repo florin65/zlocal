@@ -4,8 +4,8 @@ else
   OPTS+=" --disable-inotify"
 fi
 
-OPTS+=" runstatedir=/run        \
-        --localstatedir=/var    \
+OPTS+=" --runstatedir=/run \
+        --localstatedir=/var \
 	--libexecdir=/usr/lib/dbus-1.0 \
         --disable-static        \
         --disable-debug         \

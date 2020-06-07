@@ -7,7 +7,7 @@
       SOURCE_VFY=sha256:ccc459de3d710e066ab9e12d2f119bd164a08c9341ca24ba22c9adaa179eedd0
         WEB_SITE=http://www.gnu.org/software/automake
          ENTERED=20010922
-         UPDATED=20200322
+         UPDATED=20200607
            SHORT="Generate GNU coding standards compliant Makefiles"
 
 cat << EOF

@@ -18,26 +18,20 @@ set -x &&
              --libdir=/usr/lib                        \
              --mandir=/usr/share/man                  \
              --disable-termcap                        \
-             --enable-widec                           \
              --enable-pc-files                        \
              --enable-colorfgbg                       \
              --without-ada                            \
              --without-debug                          \
              --with-normal                            \
              --with-shared                            \
-	     --with-cxx-shared                        \
-             --with-cxx-binding                       \
              --with-manpage-format=gzip               \
-	     --with-terminfo-dirs=/usr/share/terminfo \
+             --with-terminfo-dirs=/usr/share/terminfo \
              $OPTS                                   &&
-
 
 default_make &&
 
 # Do not break some essential apps like gawk
-ln -sf libncursesw.so.6 /usr/lib/libncurses.so &&
-ln -sf libncurses.so /usr/lib/libncurses.so.6 &&
-ln -sf libncurses.so /usr/lib/libncurses.so.5 &&
+ln -sf libncurses.so.6 /lib/libncurses.so.5 &&
 
 devoke_installwatch &&
 
@@ -51,7 +45,7 @@ unset CC CXX &&
 set -x &&
 ./configure  --build=$BUILD                           \
              --prefix=/usr                            \
-             --libdir=/usr/lib                        \
+             --libdir=/lib                            \
              --includedir=/usr/include/ncursesw       \
              --mandir=/usr/share/man                  \
              --disable-termcap                        \
@@ -62,8 +56,6 @@ set -x &&
              --without-debug                          \
              --with-normal                            \
              --with-shared                            \
-	     --with-cxx-shared                        \
-             --with-cxx-binding                       \
              --with-manpage-format=gzip               \
              --with-terminfo-dirs=/usr/share/terminfo \
             $OPTS                                    &&
@@ -72,11 +64,6 @@ set +x &&
 default_make &&
 
 # Do not break some essential apps like gawk
-ln -sf /usr/lib/libncursesw.so.6 /usr/lib/libncurses.so &&
-ln -sf /usr/lib/libncurses.so /usr/lib/libncurses.so.6 &&
-ln -sf /usr/lib/libncurses.so /usr/lib/libncurses.so.5 &&
-
-# some packages look for -lcurses during build
-ln -sf /usr/lib/libncurses.so /usr/lib/libcurses.so
+ln -sf libncurses.so.6 /lib/libncurses.so.5 &&
 
 gather_docs ANNOUNCE TODO

@@ -1,3 +1,5 @@
+export CFLAGS="$CFLAGS -fcommon"
+
 default_build &&
 
 #the lines below arfe for the "automake" and "aclocal" symlinks, needed by some sources

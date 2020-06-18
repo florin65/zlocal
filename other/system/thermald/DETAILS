@@ -1,13 +1,13 @@
           MODULE=thermald
-         VERSION=1.9.1
+         VERSION=2.2
           SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/thermal_daemon-$VERSION
  SOURCE_URL_FULL=http://github.com/01org/thermal_daemon/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:aaf5ffdc12344eef2417b41b433094bb30e4ebf321f0140b090f97bfcf24ea1f
+      SOURCE_VFY=sha256:d23042e84dbd8a81c32fdc7bef3e2524b75ec68184a9ae3a324f54de382ea23f
         WEB_SITE=http://01.org/linux-thermal-daemon/
          ENTERED=20180304
-         UPDATED=20191206
-           SHORT="The Linux Thermal Daemon program"
+         UPDATED=20200617
+           SHORT="The Linux Thermal Daemon program"2.2
 
 cat << EOF
 A Linux user mode daemon to system developers, reducing time to market with

@@ -1,3 +1,4 @@
+depends autoconf-archive
 depends dbus-glib
 depends libxml2
 depends %UDEV

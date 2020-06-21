@@ -1,0 +1,17 @@
+          MODULE=courier
+         VERSION=1.0.14
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/courier/courier/$VERSION/
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.courier-mta.org/imap/
+         ENTERED=20200621
+         UPDATED=20200620
+           SHORT="An integrated mail/groupware server"
+
+cat << EOF
+The Courier mail transfer agent (MTA) is an integrated mail/groupware server
+based on open commodity protocols, such as ESMTP, IMAP, POP3, LDAP, SSL, and
+HTTP. Courier provides ESMTP, IMAP, POP3, webmail, and mailing list services
+within a single, consistent, framework. Individual components can be enabled
+or disabled at will.
+EOF

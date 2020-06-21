@@ -1,0 +1,10 @@
+depends courier-authlib
+depends courier-unicode
+depends gamin
+depends expect
+depends gdbm
+depends pcre
+depends libidn
+depends mime-types
+
+optional_depends openldap "" "" "fort LDAP support"

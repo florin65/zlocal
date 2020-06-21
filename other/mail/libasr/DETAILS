@@ -11,7 +11,6 @@
 cat << EOF
 libasr is a free, simple and portable asynchronous resolver library.
 It allows to run dns queries and perform hostname resolutions in a fully
-asynchronous fashion. The implementation is thread-less, fork-less, and
-does not make use of signals or other "tricks" that might get in the
-developer's way.
+asynchronous fashion. The implementation is thread-less, fork-less, and does
+not make use of signals or other "tricks" that might get in the developer's way.
 EOF

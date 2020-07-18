@@ -1,4 +1,7 @@
 prepare_install &&
 
-install -D -m0644 plugin/better-whitespace.vim /usr/share/vim/vimfiles/plugin/better-whitespace.vim
-install -D -m0644 doc/better-whitespace.txt /usr/share/doc/$MODULE/better-whitespace.txt
+mkdir -p /usr/share/vim/vimfiles/plugin/ &&
+install -D -m 644 plugin/better-whitespace.vim /usr/share/vim/vimfiles/plugin/ &&
+
+mkdir -p /usr/share/doc/$MODULE/ &&
+install -D -m 644 doc/better-whitespace.txt /usr/share/doc/$MODULE/

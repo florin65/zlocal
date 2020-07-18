@@ -1,3 +1,4 @@
 prepare_install &&
 
-install -Dm644 colors/kolor.vim /usr/share/vim/vimfiles/colors/kolor.vim
+mkdir -p /usr/share/vim/vimfiles/colors &&
+install -m 644 colors/kolor.vim /usr/share/vim/vimfiles/colors/

@@ -2,6 +2,6 @@ prepare_install &&
 
 INSTPTH=/usr/share/vim/vimfiles
 
-install -Dm0644 doc/supertab.txt $INSTPTH/doc/supertab.txt
-install -Dm0644 plugin/supertab.vim $INSTPTH/plugin/supertab.vim
-
+mkdir -p $INSTPTH/{doc,plugin} &&
+install -Dm 644 doc/supertab.txt $INSTPTH/doc/ &&
+install -Dm 644 plugin/supertab.vim $INSTPTH/plugin/

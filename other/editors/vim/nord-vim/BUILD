@@ -1,10 +1,14 @@
+INST_PTH=/usr/share/vim/vimfile
+
 prepare_install &&
 
+mkdir -p "$INST_PTH"/{colors,autoload/airline/lightline} &&
+
 # nord colorscheme
-install -Dm644 colors/nord.vim /usr/share/vim/vimfiles/colors/nord.vim
+install -m 644 colors/nord.vim "$INST_PTH"/colors/ &&
 
 # nord colorscheme for airline
-install -Dm644 autoload/airline/themes/nord.vim /usr/share/vim/vimfiles/autoload/airline/themes/nord.vim
+install -m 644 autoload/airline/themes/nord.vim "$INST_PTH"/autoload/airline/themes/ &&
 
-# nord clolorcscheme for lightline
-install -Dm644 autoload/lightline/colorscheme/nord.vim /usr/share/vim/vimfiles/autoload/lightline/colorscheme/nord.vim
+# nord colorscheme for lightline
+install -m 644 autoload/lightline/colorscheme/nord.vim "$INST_PTH"/autoload/lightline/colorscheme/

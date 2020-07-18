@@ -1,0 +1,14 @@
+          MODULE=vim-wal
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+ SOURCE_URL_FULL=git+https://github.com/dylanaraps/wal.vim
+#      SOURCE_VFY=sha256:
+        WEB_SITE=https://github.com/dylanaraps/wal.vim/
+         ENTERED=20200711
+         UPDATED=20200711
+           SHORT="A vim colorscheme for use with pywal"
+
+cat << EOF
+A vim colorscheme for use with pywal.
+EOF

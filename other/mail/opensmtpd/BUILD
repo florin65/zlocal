@@ -1,6 +1,9 @@
 add_priv_user smtpq:smtpq -d /var/empty -s /usr/bin/false &&
 
-OPTS+=" --with-path-mbox=/var/spool/mail \
+OPTS+=" --sbindir=/usr/bin"
+
+OPTS+=" --sysconfdir=/etc/smtpd \
+        --with-path-mbox=/var/spool/mail \
         --with-path-empty=/var/empty \
         --with-path-socket=/run \
         --with-user-smtpd=smtpd \

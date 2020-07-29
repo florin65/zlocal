@@ -2,11 +2,7 @@ default_pre_build &&
 
 sedit 's|{INSTALL} -m 555|{INSTALL} -m 755|' Makefile.pre.in &&
 
-# Fix a bug
-sedit "s|^#.* /usr/local/bin/python|#!/usr/bin/python|" Lib/cgi.py &&
-
-# Speed up LTO
-sedit "s|-flto |-flto=4 |g" configure configure.ac
+sed -i -e "s|^#.* /usr/local/bin/python|#!/usr/bin/python|" Lib/cgi.py &&
 
 # Ensure that we link against system libraries
 rm -rf Modules/{expat,zlib} &&

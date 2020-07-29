@@ -1,34 +1,33 @@
-OPTS+=" --enable-raw        \
-        --enable-vipw       \
+OPTS+=" --enable-agetty     \
+        --enable-chfn-chsh  \
         --enable-fsck       \
         --enable-mesg       \
-        --enable-write      \
         --enable-partx      \
+        --enable-raw        \
         --enable-rename     \
-        --enable-agetty     \
-        --enable-newgrp     \
-        --enable-chfn-chsh  \
         --enable-schedutils \
+        --enable-vipw       \
+        --enable-newgrp     \
+        --enable-write      \
         --disable-kill      \
         --disable-static    \
         --enable-fs-paths-extra=/usr/bin"
 
-OPTS+=" --bindir=/usr/bin \
-        --libdir=/usr/lib \
-        --sbindir=/usr/bin"
+default_config &&
+make ${MAKES:+-j${MAKES}} &&
+mkdir _pkg &&
+make install DESTDIR=$(cd _pkg && pwd) &&
+mv _pkg/sbin/sulogin _pkg/usr/sbin &&
+chmod 700 _pkg/usr/bin/wall &&
+chmod 4711 _pkg/usr/bin/{newgrp,ch{sh,fn}} &&
+if module_installed systemd; then
+  sedit '/ListenStream/ aRuntimeDirectory=uuidd' _pkg/usr/lib/systemd/system/uuidd.socket
+fi &&
 
-default_build &&
+cd _pkg &&
+prepare_install &&
+find . -depth -print0 | cpio -0pdmuv / &&
 
-# allow only the root user to use wall command
-chmod 700 /usr/bin/wall &&
-
-chmod 4711 /usr/bin/{newgrp,ch{sh,fn}} &&
 install -g0 -o0 -m755 $SCRIPT_DIRECTORY/make-issue /usr/bin/make-issue &&
 install -Dm644 $SCRIPT_DIRECTORY/60-rfkill.rules /usr/lib/udev/rules.d/60-rfkill.rules &&
-
-if module_installed systemd; then
-  sedit '/ListenStream/ aRuntimeDirectory=uuidd' /usr/lib/systemd/system/uuidd.socket
-fi
-
-# for sysvinit comptibility
 ln -sf /usr/bin/last /usr/bin/lastb

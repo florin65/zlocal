@@ -1,12 +1,12 @@
           MODULE=youtube-dl
-         VERSION=2020.06.16.1
+         VERSION=2020.07.28
           SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE
       SOURCE_URL=http://yt-dl.org/downloads/$VERSION/
 #      SOURCE_VFY=sha256:
         WEB_SITE=http://rg3.github.io/youtube-dl/
          ENTERED=20150125
-         UPDATED=20200616
+         UPDATED=20200728
            SHORT="A command-line program to download videos from YouTube"
 
 cat <<EOF

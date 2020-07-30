@@ -7,4 +7,3 @@ sedit 's|GNU/Linux|Linux|' util/grub.d/10_linux.in &&
 sedit 's#en@cyrillic en@greek##g' po/LINGUAS &&
 
 ./autogen.sh
-

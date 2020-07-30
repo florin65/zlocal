@@ -1,5 +1,4 @@
-CFLAGS+=" -Wno-error"i
+OPTS+=" -DENABLE-RDRAND=OFF \
+        -DENABLE-THREADING=ON"
 
-OPTS+="  --disable-static --enable-rdrand --enable-threading"
-
-default_build
+default_cmake_build

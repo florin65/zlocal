@@ -22,7 +22,7 @@ OPTS+=" --prefix=/usr \
         --with-bootdir=/boot \
         --with-grubdir=grub \
         --disable-silent-rules \
-        --disable-werror"
+        --disable-werror" &&
 
 GRUB_BIOS=$SOURCE_DIRECTORY/grub-bios &&
 mkdir -p $GRUB_BIOS &&
@@ -50,4 +50,3 @@ make bashcompletiondir=/usr/share/bash-completion/completions install &&
 
 # Clean up some debug files etc
 (rm -f /usr/lib/grub/{i386-pc,${_EFI_ARCH}-efi}/{*.module,*.image,kernel.exec,gdb_grub,gmodule.pl} || true)
-

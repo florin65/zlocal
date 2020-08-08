@@ -1,12 +1,12 @@
           MODULE=sudo-ttf
-         VERSION=0.42
+         VERSION=0.50
           SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/sudo-font-$VERSION
  SOURCE_URL_FULL=https://github.com/jenskutilek/sudo-font/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:9aa6fbacaa5e019436004d0a57317f990e662b9a69d3eab492520f7f81f72558
+      SOURCE_VFY=sha256:7420fe8c89040587000fa50a482a26dfc7cf1f00e56301213b4a17d2646ef037
         WEB_SITE=https://www.kutilek.de/sudo-font/
          ENTERED=20191021
-         UPDATED=20200224
+         UPDATED=20200805
            SHORT="A font for programmers and command line users"
 ARCHIVE=off
 cat << EOF

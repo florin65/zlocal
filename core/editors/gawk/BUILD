@@ -1,31 +1,29 @@
-# make a backup for gawk app
-cp -f /usr/bin/gawk /usr/bin/gawk.old &&
 
 OPTS+="--build=$BUILD \
        --prefix=/usr \
-       --bindir=/usr/bin \
        --mandir=/usr/share/man \
        --infodir=/usr/share/info \
+       --without-readline \
        ac_cv_func_working_mktime=yes"
 
-# make it build without readline support
-#if module_installed readline; then
-#   OPTS+=" --with-readline"
-#else
-   OPTS+=" --without-readline"
-#fi
+# make a backup for gawk app
+ if [ -f "/bin/gawk" ]; then
+   cp -f /bin/gawk /usr/bin/gawk.old
+ else
+   cp -f /usr/bin/gawk{,.old}
+ fi &&
 
 default_config &&
 make &&
 prepare_install &&
 
 # restore backup gawk app
-mv /usr/bin/gawk.old /usr/bin/gawk &&
-ln -sf /usr/bin/gawk /usr/bin/awk &&
+mv /usr/bin/gawk{.old,} &&
+ln -sf /usr/bin/{g,}awk
 
 make install &&
 
-ln -sf /usr/bin/gawk /usr/bin/awk &&
+ln -sf /usr/bin/{g,}awk &&
 rm -f /usr/bin/{,p}gawk-* &&
 
 mv /etc/profile.d/gawk.{sh,rc} &&

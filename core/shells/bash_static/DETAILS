@@ -1,6 +1,6 @@
           MODULE=bash_static
          VERSION=5.0
-        PATCHLVL=016
+        PATCHLVL=018
           SOURCE=bash-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/bash-$VERSION
    SOURCE_URL[0]=$GNU_URL/${MODULE%_static}
@@ -9,7 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/bash-$VERSION
       SOURCE_VFY=sha256:b4a80f2ac66170b2913efbfb9f2594f1f76c7b1afd11f799e22035d63077fb4d
         WEB_SITE=http://tiswww.case.edu/php/chet/bash_static/bashtop.html
          ENTERED=20020615
-         UPDATED=20200213
+         UPDATED=20200811
            SHORT="A static bash build for rescue purposes"
 
 cat << EOF

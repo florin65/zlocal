@@ -1,14 +1,16 @@
           MODULE=vim-zig
          VERSION=git
           SOURCE=$MODULE-$VERSION.tar.gz
-#SOURCE_DIRECTORY=$BUILD_DIRECTORY/main-$VERSION
-SOURCE_URL_FULL=git+https://github.com/zig-lang/zig.vim
+ SOURCE_URL_FULL=git+https://github.com/ziglang/zig.vim
 #      SOURCE_VFY=sha256:
-        WEB_SITE=https://github.com/zig-lang/zig.vim
-         ENTERED=20180126
-         UPDATED=20180126
-           SHORT="Vim configuration for Zig"
+        WEB_SITE=https://github.com/ziglang/zig.vim/
+         ENTERED=20200817
+         UPDATED=20200817
+           SHORT="File detection and syntax highlighting for zig"
 
 cat << EOF
 File detection and syntax highlighting for the zig programming language.
+This plugin enables automatic code formatting on save by default using zig fmt.
+To disable it, you can use this configuration in vimrc:
+   let g:zig_fmt_autosave = 0
 EOF

@@ -1,0 +1,15 @@
+          MODULE=vim-fzf
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=git+https://github.com/junegunn/fzf.vim
+#      SOURCE_VFY=sha256:
+        WEB_SITE=https://github.com/junegunn/fzf.vim/
+         ENTERED=20200816
+         UPDATED=20200816
+           SHORT="Vim plugin that integrates fzf, the fuzzy file finder"
+
+cat << EOF
+A bundle of fzf-based commands and mappings.
+Each command in fzf.vim is backed by a Vim function. You can override a command
+or define a variation of it by calling its corresponding function.
+EOF

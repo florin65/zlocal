@@ -1,0 +1,13 @@
+          MODULE=vim-sxhkdrc
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=git+https://github.com/baskerville/vim-sxhkdrc/
+#      SOURCE_VFY=sha256:
+        WEB_SITE=https://github.com/baskerville/vim-sxhkdrc/
+         ENTERED=20200816
+         UPDATED=20200816
+           SHORT="Vim syntax for sxhkd's configuration files"
+
+cat << EOF
+Vim syntax for sxhkd's configuration files.
+EOF

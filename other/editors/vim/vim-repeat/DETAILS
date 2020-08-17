@@ -1,0 +1,16 @@
+          MODULE=vim-repeat
+         VERSION=1.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/tpope/vim-repeat/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:2bf7435dfdb7c6bfa87df228aaad4823698d9f00ca454f8f5d1903c63716f3ca
+        WEB_SITE=https://github.com/tpope/vim-repeat/
+         ENTERED=20200817
+         UPDATED=20200817
+           SHORT="Enable repeating supported plugin maps with ."
+
+cat << EOF
+If you've ever tried using the . command after a plugin map, you were likely
+disappointed to discover it only repeated the last native command inside that
+map, rather than the map as a whole. That disappointment ends today.
+Repeat.vim remaps . in a way that plugins can tap into it.
+EOF

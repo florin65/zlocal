@@ -1,0 +1,23 @@
+          MODULE=vim-sslsecure
+         VERSION=1.1.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/sslsecure.vim-${VERSION}
+ SOURCE_URL_FULL=https://github.com/chr4/sslsecure.vim/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:e4a24f69edd2967efdeaa687848843d78ae036b3db8be21d78ea2fbf09e3b90c
+        WEB_SITE=https://github.com/chr4/sslsecure.vim/
+         ENTERED=20200817
+         UPDATED=20200817
+           SHORT="Highlight insecure SSL configuration in vim"
+
+cat << EOF
+Plugin for the Vim editor, that marks insecure SSL/TLS cipher suites and
+protocol as errors.When configuring or programming SSL/TLS servers, at some
+point a SSL/TLS cipher suite and a list of supported protocols have to be
+chosen.
+Features:
+  Mark insecure SSL ciphers as errors
+  Mark insecure SSL protocols as errors
+  Works with all configuration files (web servers, mail servers, ...)
+  Works with all source code (independently on the used programming language)
+  Works on top of regular syntax highlighting.
+EOF

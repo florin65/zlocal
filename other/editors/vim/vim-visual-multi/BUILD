@@ -1,9 +1,8 @@
 prepare_install &&
 
-INSTPTH=/usr/share/vim/vimfiles
+INSTPTH=/usr/share/vim/vimfiles/pack/$MODULE/start/$MODULE
 
-find . -type d -exec chmod 755 '{}' \;
-for _dir in autoload/tablemode doc ftplugin plugin ; do
+for _dir in autoload autoload/vm/{,maps,special} doc plugin python ; do
      install -dm755 "$INSTPTH/$_dir"
      for _file in "$_dir"/* ; do
          install -Dm644 "$_file" "$INSTPTH/$_file"

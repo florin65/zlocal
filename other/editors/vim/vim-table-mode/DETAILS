@@ -1,11 +1,11 @@
           MODULE=vim-table-mode
-         VERSION=4.6.7
+         VERSION=4.7.2
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/dhruvasagar/vim-table-mode/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:e6267fe3643e86213cf134e5f0c070dc8822c25a8f88966a33dd841cb51eb0dd
+      SOURCE_VFY=sha256:94ae08def49964cf298a6bd72a94cb05d81f2a969ebbb6bc268ab4823a398ef3
         WEB_SITE=http://github.com/dhruvasagar/vim-table-mode/
          ENTERED=20160425
-         UPDATED=20161221
+         UPDATED=20200816
            SHORT="Vim Table Mode for instant table creation"
 
 cat << EOF

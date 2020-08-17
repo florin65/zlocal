@@ -1,0 +1,13 @@
+          MODULE=vim-easy-align
+         VERSION=2.10.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/junegunn/vim-easy-align/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:c6a4e0a360aa8e642f5c628ae273bfbe7e513a394302eef8c668e16949bd2cbb
+        WEB_SITE=https://github.com/junegunn/vim-easy-align/
+         ENTERED=20200816
+         UPDATED=20200816
+           SHORT="Vim alignment plugin"
+
+cat << EOF
+A simple, easy-to-use Vim alignment plugin.
+EOF

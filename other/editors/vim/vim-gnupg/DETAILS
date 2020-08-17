@@ -1,0 +1,18 @@
+          MODULE=vim-gnupg
+         VERSION=2.6.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/jamessan/vim-gnupg/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:6e9d75febd13cc533153e5e01b00593fa91f8bbcf1ec19a9029dd994e2f65508
+        WEB_SITE=https://github.com/jamessan/vim-gnupg/
+         ENTERED=20200816
+         UPDATED=20200816
+           SHORT="Plugin for transparent editing of gpg encrypted files"
+
+cat << EOF
+This script implements transparent editing of gpg encrypted files.
+The filename must have a ".gpg", ".pgp" or ".asc" suffix. When opening such a
+file the content is decrypted, when opening a new file the script will ask for
+the recipients of the encrypted file. The file content will be encrypted to all
+recipients before it is written. The script turns off viminfo and swapfile to
+increase security.
+EOF

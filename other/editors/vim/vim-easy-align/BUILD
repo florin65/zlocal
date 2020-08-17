@@ -2,10 +2,9 @@ prepare_install &&
 
 INSTPTH=/usr/share/vim/vimfiles
 
-find . -type d -exec chmod 755 '{}' \;
-for _dir in autoload/tablemode doc ftplugin plugin ; do
+for _dir in autoload plugin doc ; do
      install -dm755 "$INSTPTH/$_dir"
-     for _file in "$_dir"/* ; do
+     for _file in "$_dir"/easy_align.* ; do
          install -Dm644 "$_file" "$INSTPTH/$_file"
      done
 done

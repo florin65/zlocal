@@ -1,0 +1,34 @@
+          MODULE=vim-visual-multi
+         VERSION=0.5.7
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/mg979/vim-visual-multi/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:48e978ef127604ef437b04ae5afc2cbe9831ef568900ec2e584746154a6f8602
+        WEB_SITE=https://github.com/mg979/vim-visual-multi/
+         ENTERED=20200816
+         UPDATED=20200816
+           SHORT="Multiple cursors plugin for vim"
+
+cat << EOF
+It's called vim-visual-multi in analogy with visual-block, but the plugin works
+mostly from normal mode.
+Basic usage:
+  select words with Ctrl-N (like Ctrl-d in Sublime Text/VS Code)
+  create cursors vertically with Ctrl-Down/Ctrl-Up
+  select one character at a time with Shift-Arrows
+  press n/N to get next/previous occurrence
+  press [/] to select next/previous cursor
+  press q to skip current and get next occurrence
+  press Q to remove current cursor/selection
+  start insert mode with i,a,I,A
+Two main modes:
+  in cursor mode commands work as they would in normal mode
+  in extend mode commands work as they would in visual mode
+  press Tab to switch between «cursor» and «extend» mode
+Most vim commands work as expected (motions, r to replace characters, ~ to
+change case, etc). Additionally you can:
+  run macros/ex/normal commands at cursors
+  align cursors
+  transpose selections
+  add patterns with regex, or from visual mode
+And more... of course, you can enter insert mode and autocomplete will work.
+EOF

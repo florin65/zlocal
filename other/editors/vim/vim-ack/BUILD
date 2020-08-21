@@ -1,10 +1,10 @@
-INST_PTH=/usr/share/vim/vinfiles
-
 prepare_install &&
 
-mkdir -p "$INST_PTH"/{autoload,doc,ftpplugin,plugin} &&
+INSTPTH=/usr/share/vim/vimfiles
 
-install -m 644 plugin/ack.vim "$INST_PTH"/plugin/ &&
-install -Dm644 ftplugin/*.vim "$INST_PTH"/ftplugin/ &&
-install -m 644 autoload/ack.vim "$INST_PTH"/autoload/ &&
-install -m 644 doc/ack*.txt /usr/share/vim/vimfiles/doc/
+for _dir in autoload doc ftplugin plugin ; do
+     install -dm755 "$INSTPTH/$_dir"
+     for _file in "$_dir"/* ; do
+         install -Dm644 "$_file" "$INSTPTH/$_file"
+     done
+done

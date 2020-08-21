@@ -8,7 +8,7 @@
        SOURCE_VFY=sha256:a15720dd741d7538dd2645f9f516d193636ae4300ff7dbc8bfca757bf166490a
      SOURCE2_VFY=sha256:b2b3e2b913fd5f4fa5c27efecdbb14132189a0d74d198f0e43a337108e9484cf
           ENTERED=20021106
-          UPDATED=20200524
+          UPDATED=20200817
             SHORT="Essential utilities for IP networks"
 
 cat << EOF

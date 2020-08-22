@@ -12,10 +12,10 @@ LD_PRELOAD= cp .config $CONFIG_CACHE/.config.current
 rm -f arch/${MYARCH}/boot/bzImage
 
 make ${MAKES:+-j$MAKES} bzImage
-make ${MAKES:+-j$MAKES} INSTALL_MOD_PATH=/usr modules
+make ${MAKES:+-j$MAKES} modules
 backup_mods_krnl $FULL_VERSION
 prepare_install
-make INSTALL_MOD_PATH=/usr modules_install
+make modules_install
 
 cp arch/${MYARCH}/boot/bzImage /boot/vmlinuz-$FULL_VERSION-$(arch)
 cp System.map /boot/System.map-$FULL_VERSION-$(arch)

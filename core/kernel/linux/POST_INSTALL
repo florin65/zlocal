@@ -4,7 +4,8 @@ FULL_VERSION=$(echo $VERSION | cut -d . -f 1,2).${PATCH_VERSION:-0}
 update_bootloader $FULL_VERSION $VERSION
 
 #  Reinstall packages that add their own kernel modules
+
 lin -c kernel-reqs
 
-# Create /sys
+# create /sys
 mkdir -p /sys

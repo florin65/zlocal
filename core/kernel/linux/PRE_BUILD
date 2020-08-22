@@ -1,6 +1,6 @@
 # Bail if we're not running a core with kernel functions
 
-if [ ! -e $FUNCTIONS/kernel.lunar ]; then
+if [ ! -e $FUNCTIONS/kernel.lunar ] ; then
   message "${PROBLEM_COLOR}Bailing out, ${DEFAULT_COLOR}Lunar code version too old"
   message "${PROBLEM_COLOR}Update core ${MODULE_COLOR}(lin lunar)${DEFAULT_COLOR} to install this kernel"
   exit 1
@@ -31,8 +31,8 @@ fi &&
 
 if [ -f $CONFIG_CACHE/.config.current ]; then
   cp $CONFIG_CACHE/.config.current $SOURCE_DIRECTORY/.config;
-elif [ -f $CONFIG_CACHE/.config.stable ]; then
-  cp $CONFIG_CACHE/.config.stable $SOURCE_DIRECTORY/.config;
+elif [ -f $CONFIG_CACHE/.config.2.6.stable ]; then
+  cp $CONFIG_CACHE/.config.2.6.stable $SOURCE_DIRECTORY/.config;
 fi &&
 
 while

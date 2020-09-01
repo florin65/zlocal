@@ -2,7 +2,7 @@
 # API functions if debug is entirely disabled
 OPTS+=" -D fam=false \
         -D selinux=disabled \
-        -D installed_tests=false \
+        -D installed_tests=false"
 
 # Do not install gdbus-codegen, it's part of gdbus-codegen module
 sedit '/install.*true/s;true;false;' gio/gdbus-2.0/codegen/meson.build &&

@@ -1,8 +1,0 @@
-mkdir -p $SOURCE_DIRECTORY &&
-
-cd $SOURCE_DIRECTORY
-
-for _database_name in GeoLite2-{City,Country,ASN}; do
-  tar --strip-components=1 -xf $SOURCE_CACHE/${_database_name}_$VERSION.tar.gz \
-      --wildcards */${_database_name}.mmdb
-done

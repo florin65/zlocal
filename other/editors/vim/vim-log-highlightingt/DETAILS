@@ -1,0 +1,21 @@
+          MODULE=vim-log-highlighting
+         VERSION=1.0.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/MTDL9/vim-log-highlighting/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:
+        WEB_SITE=https://github.com/MTDL9/vim-log-highlighting/
+         ENTERED=20200823
+         UPDATED=20200823
+           SHORT="Syntax highlighting for generic log files"
+
+cat << EOF
+Provides syntax highlighting for generic log files in VIM.
+Some of the highlighted elements are:
+ Dates and times
+ Common log level keywords like ERROR, INFO, DEBUG
+ Numbers, booleans and strings
+ URLs and file paths
+ IP and MAC addresses
+ SysLog format columns
+ XML Tags
+EOF

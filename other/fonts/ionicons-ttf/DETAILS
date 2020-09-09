@@ -1,12 +1,12 @@
           MODULE=ionicons-ttf
-         VERSION=4.6.2
+         VERSION=5.0.0
           SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/ionicons-$VERSION
- SOURCE_URL_FULL=https://github.com/ionic-team/ionicons/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:fae86345ddeda1449ecb016010e473f5e036c2f8c0ac6514d141998f8934ea05
+ SOURCE_URL_FULL=https://github.com/ionic-team/ionicons/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:8a92b14554cecb043d371351590b66d8f848655c1ad9187ca0458e2017601572
         WEB_SITE=https://ionicons.com/
          ENTERED=20161230
-         UPDATED=20190730
+         UPDATED=20200906
            SHORT="Font from the Ionic mobile framework"
 ARCHIVE=off
 cat << EOF

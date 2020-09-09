@@ -1,8 +1,0 @@
-depends alsa-utils
-depends libX11
-depends rustc
-depends dbus
-depends gdk-pixbuf
-depends libnotify
-
-optional_depends upower "" "" "for battery status display"

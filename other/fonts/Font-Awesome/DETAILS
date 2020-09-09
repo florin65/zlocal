@@ -1,11 +1,11 @@
           MODULE=Font-Awesome
-         VERSION=5.13.1
+         VERSION=5.14.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/FortAwesome/Font-Awesome/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:26cae227514f3f77f9a43ad4e4f6a383702e08a5ec2a2fcb055cd35e033b7dd2
+      SOURCE_VFY=sha256:706a5bec081feaf06669bd57c40a8e452765b7bc4103c72635627cf57fe656d0
         WEB_SITE=https://github.com/FortAwesome/Font-Awesome/
          ENTERED=20180617
-         UPDATED=20200619
+         UPDATED=20200906
            SHORT="Iconic TTF font"
 ARCHIVE=off
 cat << EOF

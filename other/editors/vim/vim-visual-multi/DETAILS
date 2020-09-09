@@ -1,11 +1,11 @@
           MODULE=vim-visual-multi
-         VERSION=0.5.7
+         VERSION=0.5.8
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/mg979/vim-visual-multi/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:48e978ef127604ef437b04ae5afc2cbe9831ef568900ec2e584746154a6f8602
+      SOURCE_VFY=sha256:6fe2345306c751ab9f84ff5f99ba77a79d0db391d38992904b40f0abc538dbc7
         WEB_SITE=https://github.com/mg979/vim-visual-multi/
          ENTERED=20200816
-         UPDATED=20200816
+         UPDATED=202009-7
            SHORT="Multiple cursors plugin for vim"
 
 cat << EOF

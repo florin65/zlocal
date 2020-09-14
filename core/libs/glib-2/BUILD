@@ -4,10 +4,9 @@ OPTS+=" -D fam=false \
         -D selinux=disabled \
         -D installed_tests=false"
 
-# Do not install gdbus-codegen, it's part of gdbus-codegen module
-sedit '/install.*true/s;true;false;' gio/gdbus-2.0/codegen/meson.build &&
-
 # Fix SUN-JDK segfault: https://bugzilla.gnome.org/show_bug.cgi?id=755609
-LDFLAGS+=" -Wl,-z,nodelete" &&
+LDFLAGS+=" -Wl,-z,nodelete"
 
+# Do not install gdbus-codegen, it's part of gdbus-codegen module
+sedit '/install_dir/d' gio/gdbus-2.0/codegen/meson.build &&
 default_meson_build

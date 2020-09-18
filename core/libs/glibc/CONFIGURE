@@ -12,8 +12,8 @@ unpack_localedata() {
   message "Extracting locale data .. this might take a second .."
 
   # Extract the localedata directory from the source tarball
-  tar -C /tmp \
-      --strip-components=1 \
+  tar -C /tmp               \
+      --strip-components=1  \
       -xJf $SOURCE_CACHE/$SOURCE "${SOURCE/.tar.xz/}/localedata"
 }
 
@@ -22,25 +22,25 @@ remove_temporary_files() {
 }
 
 make_locales_checklist() {
-  # Copy and modify the supported locales file so we can treat it like
+  # Copy and modify the supported locales file so we can treat it like 
   # a normal bash script
   cp $ORIGINAL_SUPPORTED $COPIED_SUPPORTED &&
-  sedit 's/SUPPORTED-LOCALES=/SUPPORTED_LOCALES="/g' $COPIED_SUPPORTED &&
+  sed -i -e 's/SUPPORTED-LOCALES=/SUPPORTED_LOCALES="/g' $COPIED_SUPPORTED &&
   echo '"' >> $COPIED_SUPPORTED &&
-
-  # Execute the modified supported locales file to get a list of
+  
+  # Execute the modified supported locales file to get a list of 
   # supported variables in the $SUPPORTED_LOCALES variable
   . $COPIED_SUPPORTED &&
-
+  
   # For each locale, extract name, title and charmap information
   for locale in $SUPPORTED_LOCALES; do
-    locale_base=$(echo $locale | sedit 's:\/.*$::g;s:\..*$::g')
+    locale_base=$(echo $locale | sed -e 's:\/.*$::g;s:\..*$::g')
 
     # This is a bit tricky and slow but it does the job
     if [[ -e $LOCALEDATA_DIR/locales/$locale_base ]]; then
       title=$(cat $LOCALEDATA_DIR/locales/$locale_base | grep ^title)
       title=$(echo $title | awk -F"\"" '{ $1 = ""; print }')
-      title=$(echo $title | sedit 's/^[ \t]*//;s/[ \t]*$//')
+      title=$(echo $title | sed -e 's/^[ \t]*//;s/[ \t]*$//')
     else
       title=""
     fi

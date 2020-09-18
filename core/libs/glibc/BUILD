@@ -1,8 +1,9 @@
 # optimize -O2
-CFLAGS+=" -O2"
+CFLAGS+=" -O2" &&
 
 # The fortify compiler option cause the build to fail
 bad_flags -D_FORTIFY_SOURCE=2 &&
+
 # 32bit build fails with -Os due to a ebp inline assembly problem
 # (note: This problem might be obsolete)
 bad_flags -Os &&
@@ -11,15 +12,15 @@ mkdir -p $SOURCE_DIRECTORY/tmp &&
 
 export CC_OPTS=( Pipe ) &&
 
-if [ -n "$MAKES" ] && [ "$MAKES" -gt 1 ]; then
-  sedit "s/# PARALLELMFLAGS = -j 4/PARALLELMFLAGS = -j $MAKES/" Makefile.in
+if [ -n "$MAKES" ] && [ "$MAKES" -gt 1 ] ; then
+   sedit "s/# PARALLELMFLAGS = -j 4/PARALLELMFLAGS = -j $MAKES/" Makefile.in
 fi &&
 
-export CC=gcc &&
+export CC=gcc  &&
 
 # Don't fully strip libc
-if [[ "$LDFLAGS" == *-s* ]]; then
-    STRIP=y
+if [[ "$LDFLAGS" == *-s* ]] ; then
+   STRIP=y
 fi &&
 unset LDFLAGS &&
 
@@ -27,86 +28,86 @@ INSTALL_ROOT=$SOURCE_DIRECTORY/glibcroot &&
 mkdir -p $INSTALL_ROOT &&
 cd $INSTALL_ROOT &&
 
-OPTS+=" --libdir=/usr/lib \
-        --sbindir=/usr/bin \
-        --exec-prefix=/usr"
-
-../configure --prefix=/usr              \
-             --infodir=/usr/share/info  \
-             --mandir=/usr/share/man    \
-             --host=$BUILD              \
-             --build=$BUILD             \
-             --with-bugurl=https://github.com/lunar-linux/moonbase-core/issues \
+../configure --prefix=/usr             \
+             --infodir=/usr/share/info \
+             --mandir=/usr/share/man   \
+             --host=$BUILD             \
+             --build=$BUILD            \
+             --with-elf                \
+             --with-tls                \
+             --with-__thread           \
              --with-headers=/usr/include \
-             --with-elf                 \
-             --with-__thread            \
-             --with-tls                 \
-             --without-gd               \
-             --without-cvs              \
-             --enable-cet               \
-             --enable-shared            \
-             --enable-add-ons           \
-             --enable-bind-now          \
-             --enable-obsolete-rpc      \
-             --enable-obsolete-nsl      \
-             --enable-kernel=3.2        \
-             --enable-lock-elision      \
-             --disable-timezone-tools   \
-             --disable-multi-arch       \
-             --disable-profile          \
-             --disable-werror           \
+             --with-bugurl=https://github.com/lunar-linux/moonbase-core/issues \
+             --without-gd             \
+             --without-cvs            \
+             --enable-cet             \
+             --enable-shared          \
+             --enable-add-ons         \
+             --enable-bind-now        \
+             --enable-obsolete-rpc    \
+             --enable-obsolete-nsl    \
+             --enable-lock-elision    \
+             --enable-stack-protector=strong \
+             --disable-werror         \
+             --disable-profile        \
+             --disable-systemtap      \
+             --disable-multi-arch     \
+             --disable-timezone-tools \
+             --enable-stackguard-randomization \
              $OPTS &&
 
-#             --enable-stackguard-randomization \
-#             --enable-stack-protector=strong \
+#             --enable-kernel=3.2        \
 
 # build libraries with hardening disabled
 echo "build-programs=no" >> configparms &&
 make &&
 
 # Re-enable hardening
-sedit '/build-programs=/s;no;yes;'   configparms &&
-echo "CC += -D_FORTIFY_SOURCE=2"  >> configparms &&
+sedit '/build-programs=/s;no;yes;' configparms &&
+echo "CC += -D_FORTIFY_SOURCE=2" >> configparms &&
 echo "CXX += -D_FORTIFY_SOURCE=2" >> configparms &&
 make &&
 
 # Preserve the old glibc temporarily
-LD=/usr/lib/ld-linux.so.2        &&
-GLIBC=/usr/lib/libc.so.6         &&
-DL=/usr/lib/libdl.so.2           &&
-M=/usr/lib/libm.so.6             &&
-RT=/usr/lib/librt.so.1           &&
-PTHREAD=/usr/lib/libpthread.so.0 &&
-NSS=/usr/lib/libnss_files.so.2   &&
-UTIL=/usr/lib/libutil.so.1       &&
-NSL=/usr/lib/libnsl.so.1         &&
-CRYPT=/usr/lib/libcrypt.so.1     &&
-MVEC=/usr/lib/libmvec.so.1       &&
+LD=/lib/ld-linux.so.2         &&
+GLIBC=/lib/libc.so.6          &&
+DL=/lib/libdl.so.2            &&
+M=/lib/libm.so.6              &&
+RT=/lib/librt.so.1            &&
+PTHREAD=/lib/libpthread.so.0  &&
+NSS=/lib/libnss_files.so.2    &&
+UTIL=/lib/libutil.so.1        &&
+NSL=/lib/libnsl.so.1          &&
+CRYPT=/lib/libcrypt.so.1      &&
+MVEC=/lib/libmvec.so.1        &&
 
-cp $LD /usr/lib/ld-lunar.so              &&
-cp $GLIBC /usr/lib/libc-lunar.so         &&
-cp $DL /usr/lib/libdl-lunar.so           &&
-cp $M /usr/lib/libm-lunar.so             &&
-cp $RT /usr/lib/librt-lunar.so           &&
-cp $PTHREAD /usr/lib/libpthread-lunar.so &&
-cp $NSS /usr/lib/libnss_files-lunar.so   &&
-cp $UTIL /usr/lib/libutil-lunar.so       &&
-cp $NSL /usr/lib/libnsl-lunar.so         &&
-cp $CRYPT /usr/lib/libcrypt-lunar.so     &&
-cp $MVEC /usr/lib/libmvec-lunar.so
+cp $LD /lib/ld-lunar.so               &&
+cp $GLIBC /lib/libc-lunar.so          &&
+cp $DL /lib/libdl-lunar.so            &&
+cp $M /lib/libm-lunar.so              &&
+cp $RT /lib/librt-lunar.so            &&
+cp $PTHREAD /lib/libpthread-lunar.so  &&
+cp $NSS /lib/libnss_files-lunar.so    &&
+cp $UTIL /lib/libutil-lunar.so        &&
+cp $NSL /lib/libnsl-lunar.so          &&
+cp $CRYPT /lib/libcrypt-lunar.so      &&
 
 # Setup links for libraries
-sln /usr/lib/ld-lunar.so $LD              &&
-sln /usr/lib/libc-lunar.so $GLIBC         &&
-sln /usr/lib/libdl-lunar.so $DL           &&
-sln /usr/lib/libm-lunar.so $M             &&
-sln /usr/lib/librt-lunar.so $RT           &&
-sln /usr/lib/libpthread-lunar.so $PTHREAD &&
-sln /usr/lib/libnss_files-lunar.so $NSS   &&
-sln /usr/lib/libutil-lunar.so $UTIL       &&
-sln /usr/lib/libnsl-lunar.so $NSL         &&
-sln /usr/lib/libcrypt-lunar.so $CRYPT     &&
-sln /usr/lib/libmvec-lunar.so $MVEC
+sln /lib/ld-lunar.so $LD               &&
+sln /lib/libc-lunar.so $GLIBC          &&
+sln /lib/libdl-lunar.so $DL            &&
+sln /lib/libm-lunar.so $M              &&
+sln /lib/librt-lunar.so $RT            &&
+sln /lib/libpthread-lunar.so $PTHREAD  &&
+sln /lib/libnss_files-lunar.so $NSS    &&
+sln /lib/libutil-lunar.so $UTIL        &&
+sln /lib/libnsl-lunar.so $NSL          &&
+sln /lib/libcrypt-lunar.so $CRYPT      &&
+
+if [ -f "$MVEC" ]; then
+   cp $MVEC /lib/libmvec-lunar.so &&
+   sln /lib/libmvec-lunar.so $MVEC
+fi &&
 
 # clean hack to make sure gnu/stubs.h gets refreshed
 rm -f /usr/include/gnu/stubs.h &&
@@ -114,18 +115,18 @@ rm -f /usr/include/gnu/stubs.h &&
 # This removes the old glibc
 prepare_install &&
 
-# And now we install the new glibc
+# And now we install the new
 make install &&
 
 # Now optionally perform debug symbol stripping only
-if [ "$STRIP" == "y" ]; then
-  for FN in ld-$MAJOR.so \
-      lib{anl,BrokenLocale,c,crypt,dl,m,nsl,util,pthread,resolv}-$MAJOR.so \
-      libnss_{compat,files,hesiod,nis,nisplus}-$MAJOR.so \
-      lib{memusage,pcprofile,SegFault,thread_db-1.0}.so; do
-    strip -S /usr/lib/$FN
-  done  &&
-  for FN in "/usr/lib/gconv/*.so"; do
+if [ "$STRIP" == "y" ] ; then
+   for FN in ld-$MAJOR.so \
+       lib{anl,BrokenLocale,c,crypt,dl,m,nsl,util,pthread,resolv}-$MAJOR.so \
+       libnss_{compat,files,hesiod,nis,nisplus}-$MAJOR.so \
+       lib{memusage,pcprofile,SegFault,thread_db-1.0}.so ; do
+      strip -S /lib/$FN
+   done &&
+  for FN in "/usr/lib/gconv/*.so" ; do
     strip -S $FN
   done
 fi &&
@@ -135,37 +136,39 @@ rm -f /etc/ld.so.cache 2>/dev/null &&
 ldconfig &&
 
 # Remove the temporary libc
-rm /usr/lib/{ld,lib{c,dl,m,rt,pthread,nss_files,util,nsl,crypt,mvec}}-lunar.so &&
+rm /lib/{ld,lib{c,dl,m,rt,pthread,nss_files,util,nsl,crypt}}-lunar.so &&
+
+if [ -f /lib/libmvec-lunar.so ]; then
+   rm /lib/libmvec-lunar.so
+fi &&
 
 if [ ! -e /etc/nscd.conf ]; then
-  install -m644 $SOURCE_DIRECTORY/nscd/nscd.conf /etc/nscd.conf
+   install -m644 $SOURCE_DIRECTORY/nscd/nscd.conf /etc/nscd.conf
 fi &&
+
 if [ ! -e /etc/gai.conf ]; then
-  install -m644 $SOURCE_DIRECTORY/posix/gai.conf /etc/gai.conf
+    install -m644 $SOURCE_DIRECTORY/posix/gai.conf /etc/gai.conf
 fi &&
 
 # Generate locale info
 if [ -z "$GLIBC_LOCALES" ]; then
-  make localedata/install-locales
+    make localedata/install-locales
 else
-  devoke_installwatch &&
-  for LOCALE in $GLIBC_LOCALES; do
-    INPUTFILE=$(echo $LOCALE | cut -d/ -f1 | sed -e 's:\..*$::g') &&
-    OUTPUTFILE=$(echo $LOCALE | cut -d/ -f1) &&
-    CHARMAP=$(echo  $LOCALE | cut -d/ -f2)   &&
-    mkdir -p /usr/lib/locale/$OUTPUTFILE     &&
-    echo "localedef -i $INPUTFILE -f $CHARMAP $OUTPUTFILE" &&
-    localedef -i $INPUTFILE -f $CHARMAP $OUTPUTFILE
-  done &&
-  invoke_installwatch &&
-  touch /usr/lib/locale/locale-archive
+    devoke_installwatch  &&
+    for LOCALE in $GLIBC_LOCALES; do
+      INPUTFILE=$(echo $LOCALE | cut -d/ -f1 | sed -e 's:\..*$::g') &&
+      OUTPUTFILE=$(echo $LOCALE | cut -d/ -f1) &&
+      CHARMAP=$(echo  $LOCALE | cut -d/ -f2)   &&
+      mkdir -p /usr/lib/locale/$OUTPUTFILE     &&
+      echo "localedef -i $INPUTFILE -f $CHARMAP $OUTPUTFILE" &&
+      localedef -i $INPUTFILE -f $CHARMAP $OUTPUTFILE
+    done &&
+    invoke_installwatch &&
+    touch /usr/lib/locale/locale-archive
 fi &&
 
 # Touch undetected symlinks
-touch -c -h $LD $GLIBC $DL $M $RT $PTHREAD $NSS $UTIL $NSL $CRYPT $MVEC /usr/lib/lib{BrokenLocale.so.1,anl.so.1,nss_compat.so.2,nss_db.so.2,nss_dns.so.2,nss_hesiod.so.2,nss_nis.so.2,nss_nisplus.so.2,resolv.so.2,thread_db.so.1} &&
-touch -c -h /usr/lib/lib{BrokenLocale,anl,crypt,dl,m,nsl,nss_compat,nss_db,nss_dns,nss_files,nss_hesiod,nss_nis,nss_nisplus,resolv,rt,thread_db,util}.so &&
+touch -c -h $LD $GLIBC $DL $M $RT $PTHREAD $NSS $UTIL $NSL $CRYPT $MVEC /lib/lib{BrokenLocale.so.1,anl.so.1,cidn.so.1,nss_compat.so.2,nss_db.so.2,nss_dns.so.2,nss_hesiod.so.2,nss_nis.so.2,nss_nisplus.so.2,resolv.so.2,thread_db.so.1} &&
+touch -c -h /usr/lib/lib{BrokenLocale,anl,cidn,crypt,dl,m,nsl,nss_compat,nss_db,nss_dns,nss_files,nss_hesiod,nss_nis,nss_nisplus,resolv,rt,thread_db,util}.so &&
 
-ldconfig &&
-
-# glibc 2.26 have removed xlocale.h. Some modules need it.
-ln -sf /usr/include/locale.h /usr/include/xlocale.h
+ldconfig

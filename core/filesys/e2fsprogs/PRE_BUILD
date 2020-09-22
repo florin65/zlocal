@@ -1,4 +1,6 @@
 default_pre_build &&
 
-#the dvi documentation fails to build with current texlive
-sedit 's/$(DVI)/#/' doc/Makefile.in
+if ! module_installed sysvinit; then
+   # Remove unnecessary init.d directory
+   sedit '/init\.d/s|^|#|' misc/Makefile.in
+fi

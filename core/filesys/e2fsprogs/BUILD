@@ -1,16 +1,16 @@
 # libcom_err.a(error_message.o): relocation R_X86_64_32 against `.bss' can not be used when making a shared object; recompile with -fPIC
-CFLAGS+=" -fPIC"
+CFLAGS+=" -fPIC" &&
 
-OPTS+=" --libdir=/usr/lib \
-        --sbindir=/usr/bin"
+#the dvi documentation fails to build with current texlive
+sedit 's/$(DVI)/#/' doc/Makefile.in &&
 
 OPTS+=" --build=$BUILD      \
-       --with-root-prefix= \
+        --with-root-prefix= \
         --enable-elf-shlibs \
         --disable-libuuid   \
         --disable-uuidd     \
         --disable-libblkid  \
-        --disable-fsck"
+        --disable-fsck"    &&
 
 default_build &&
 

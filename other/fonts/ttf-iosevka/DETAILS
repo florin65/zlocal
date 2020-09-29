@@ -1,11 +1,11 @@
           MODULE=ttf-iosevka
-         VERSION=3.6.1
+         VERSION=3.6.2
           SOURCE=$MODULE-$VERSION.zip
       SOURCE_URL=https://github.com/be5invis/Iosevka/releases/download/v${VERSION}/
-      SOURCE_VFY=sha256:5c6c37740e5e7252b8f68976031adec887ed803f8ea4beab50491a03c69c9961
+      SOURCE_VFY=sha256:363c01db6a6477169c78ea5b0231916dbf10b840549b931aa3b9336fd8b56551
         WEB_SITE=https://github.com/be5invis/Iosevka/
          ENTERED=20200906
-         UPDATED=20200920
+         UPDATED=20200927
            SHORT="TTF fonts for coding, terminal use and technical documents"
 ARCHIVE=off
 cat << EOF

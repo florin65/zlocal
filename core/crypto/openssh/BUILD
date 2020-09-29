@@ -1,15 +1,10 @@
+# don't allow root login by default
+sedit 's/#PermitRootLogin yes/PermitRootLogin no/' sshd_config &&
+
 add_priv_user sshd:sshd &&
 
-OPTS+=" --sbindir=/usr/bin"
-
-OPTS+=" --exec_prefix=/usr \
-        --sysconfdir=/etc/ssh \
-        --with-ssl-engine \
-        --with-pid-dir=/run \
-        --with-md5-passwords \
-        --with-default-path=/usr/local/bin:/usr/bin"
-
-default_build &&
+OPTS=$OPTS" --sysconfdir=/etc/ssh --with-md5-passwords" &&
+default_build  &&
 
 # create /var/empty
 mkdir -p /var/empty &&

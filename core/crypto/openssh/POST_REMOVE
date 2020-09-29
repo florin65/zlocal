@@ -1,3 +1,0 @@
-if module_installed openrc-openssh; then
-   lrm openrc-openssh
-fi

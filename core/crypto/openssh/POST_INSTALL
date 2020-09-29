@@ -1,8 +1,0 @@
-sed -e '/^#UsePAM no$/c UsePAM yes' \
-	-e '/^#ChallengeResponseAuthentication yes$/c ChallengeResponseAuthentication no' \
-	-e '/^#PrintMotd yes$/c PrintMotd no # pam does that' \
-	-i /etc/ssh/sshd_config &&
-
-if module_installed openrc; then
-   lin -c openrc-openssh
-fi

@@ -1,0 +1,16 @@
+          MODULE=conspy
+         VERSION=1.16
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/$MODULE/$MODULE-$VERSION-1/
+      SOURCE_VFY=sha256:ee5ef648ea08d20d9062db22e7bf62a7b7261af02053f916016d1b80a66a5609
+        WEB_SITE=http://conspy.sourceforge.net/
+         ENTERED=20201001
+         UPDATED=20201001
+           SHORT="Remote control of Linux virtual consoles"
+
+cat << EOF
+Conspy allows a (possibly remote) user to see what is displayed on a Linux
+virtual console, and send keystrokes to it. conspy asks the Linux kernel for
+the virtual console's frame buffer. That is, it gets an image of what is
+displayed on the screen and makes your terminal look the same.
+EOF

@@ -1,8 +1,8 @@
           MODULE=kitty
-         VERSION=0.18.3
+         VERSION=0.19.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/kovidgoyal/kitty/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:efcd8972987f5a3085bb69670635e1f331b519bd5e41545c2a4c10a7ce6627ba
+      SOURCE_VFY=sha256:
         WEB_SITE=https://sw.kovidgoyal.net/kitty/
             TYPE=python3
          ENTERED=20190110

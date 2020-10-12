@@ -1,7 +1,7 @@
             MODULE=vim-indent-guides
            VERSION=1.7
             SOURCE=$MODULE-$VERSION.tar.gz
-   SOURCE_URL_FULL=http://github.com/nathanaelkane/vim-indent-guides/archive/$VERSION.tar.gz
+   SOURCE_URL_FULL=https://www.vim.org/scripts/download_script.php?src_id=19601
         SOURCE_VFY=sha256:2995514b55f162ee0a238aec8b4bba0d33f3a187442977ad8f2f17d8f99efd62
           WEB_SITE=https://github.com/nathanaelkane/vim-indent-guides/
            ENTERED=20160425

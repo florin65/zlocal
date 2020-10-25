@@ -1,3 +1,0 @@
-depends python
-
-optional_depends readline "" "" "for interactive features"

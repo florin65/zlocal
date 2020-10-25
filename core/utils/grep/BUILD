@@ -1,5 +1,3 @@
-OPTS+="  --without-included-regex"
-
 if [ "$USE_PERL" == "y" ]; then
   OPTS=$OPTS" --enable-perl-regexp"
 else
@@ -16,7 +14,6 @@ if [ "$USE_NLS" == "y" ]; then
   OPTS=$OPTS" --enable-nls"
 else
   OPTS=$OPTS" --disable-nls"
-fi
+if
 
-sedit "s/SYMLINK=\"ln -s\"/SYMLINK=\"ln -sf\"/" configure &&
 default_build

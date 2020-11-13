@@ -1,0 +1,18 @@
+          MODULE=youtube-dlc
+         VERSION=2020.11.11-3
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/yt-dlc-$VERSION
+  SOURCE_URL_FULL=https://github.com/blackjack4494/yt-dlc/archive/${VERSION}.tar.gz
+      SOURCE_VFY=sha256:649f8ba9a6916ca45db0b81fbcec3485e79895cec0f29fd25ec33520ffffca84
+        WEB_SITE=https://github.com/blackjack4494/yt-dlc
+         ENTERED=20201101
+         UPDATED=20201112
+           SHORT="Fork of youtube-dl"
+
+cat <<EOF
+youtube-dl is a small command-line program to download videos from YouTube.com
+and a few more sites.
+youtube-dlc is a fork of youtube-dl with the intention of getting features
+tested by the community merged in the tool faster, since youtube-dl's
+development seems to be slowing down.
+EOF

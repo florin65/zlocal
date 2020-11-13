@@ -1,0 +1,12 @@
+--- ./Makefile.orig	2020-11-08 19:08:15.853667511 +0200
++++ ./Makefile	2020-11-08 19:07:59.420196585 +0200
+@@ -326,6 +326,9 @@
+ version.h: $(topdir)/version $(topdir)/version.pl
+ 	$(PERL) $(topdir)/version.pl $< $@ '#define < @'
+ 
++MANDIR="/usr/share/man"
++SBINDIR="/usr/sbin"
++
+ local-install: installer
+ 	mkdir -m 755 -p $(INSTALLROOT)$(BINDIR)
+ 	install -m 755 -c $(INSTALL_BIN) $(INSTALLROOT)$(BINDIR)

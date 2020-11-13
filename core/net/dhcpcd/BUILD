@@ -1,13 +1,9 @@
-add_priv_user dhcpcd:dhcpcd -s /usr/bin/false &&
-
-OPTS+=" --rundir=/run \
+OPTS+=" --runstatedir=/run \
         --privsepuser=dhcpcd \
         --dbdir=/var/lib/dhcpcd"
-
-OPTS+=" --sbindir=/usr/bin"
 
 default_build &&
 
 # Set Options in /etc/dhcpcd.conf
-# Disable ip4vll
+# Disable ip4vall
 echo noipv4ll >> /etc/dhcpcd.conf

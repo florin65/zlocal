@@ -50,9 +50,9 @@ plugin_kernel_updatebootloader_syslinux() {
 
   TMP=$(temp_create)
   IFS=$'\n'
-  while read LINE; do
+  while read LINE ; do
     if [ -z "$DONE" ]; then
-      if echo "$LINE" | grep -q "^\s*label"; then
+      if echo "$LINE" | grep -q "^\s*label" ; then
         # insert
         entry "vmlinuz-$1-$(arch)" "$2" "$BOOTDIR" "$ROOTPART" >> $TMP
         DONE="x"
@@ -64,7 +64,7 @@ plugin_kernel_updatebootloader_syslinux() {
   cp $TMP /boot/extlinux/extlinux.conf
   temp_destroy $TMP
 
-  if query "Edit syslinux configuration manually ?" n; then
+  if query "Edit syslinux configuration manually ?" n ; then
     edit_file /boot/extlinux/extlinux.conf
   fi
 

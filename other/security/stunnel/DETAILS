@@ -1,12 +1,12 @@
            MODULE=stunnel
-         VERSION=5.56
+         VERSION=5.57
           SOURCE=$MODULE-$VERSION.tar.gz
    SOURCE_URL[0]=https://www.stunnel.org/downloads/archive/5.x/
    SOURCE_URL[1]=ftp://ftp.stunnel.org/$MODULE
-      SOURCE_VFY=sha256:7384bfb356b9a89ddfee70b5ca494d187605bb516b4fff597e167f97e2236b22
+      SOURCE_VFY=sha256:
         WEB_SITE=http://stunnel.mirt.net
          ENTERED=20011108
-         UPDATED=20191227
+         UPDATED=20201128
         SHORT="A multiplatform SSL tunneling proxy"
 
 cat << EOF

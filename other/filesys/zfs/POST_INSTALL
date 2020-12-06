@@ -1,4 +1,4 @@
-/usr/bin/depmod -a
+depmod -a &&
 
 if module_installed openrc; then
   lin -c openrc-zfs

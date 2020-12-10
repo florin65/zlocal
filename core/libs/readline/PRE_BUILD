@@ -1,7 +1,4 @@
-cd $BUILD_DIRECTORY &&
-unpack $SOURCE &&
-
-cd $SOURCE_DIRECTORY &&
+default_pre_build &&
 
 # Real and working fix for readline major version upgrade
 if module_installed readline ; then
@@ -11,27 +8,4 @@ if module_installed readline ; then
    LD_LIBRARY_PATH=/tmp/old.libraries:$LD_LIBRARY_PATH
    OUR_OLD_READLINE_VVV=$(lvu installed readline | sed -r 's/([0-9]+).+/\1/') &&
    set_module_config OUR_OLD_READLINE_VVV "$OUR_OLD_READLINE_VVV"
-fi &&
-
-# Apply the official patches
-if [[ $((10#${PATCHLVL})) -gt 0 ]]; then
-
-  # get the RSA Key for patches verification
-###>  gpg2 --no-default-keyring --keyring vendors.gpg --keyserver pgp.mit.edu --recv-key $RSAIDKEY &&
-
-  for (( _p=1; _p<=$((10#${PATCHLVL})); _p++ )); do
-    SOURCE2=$MODULE${VERSION//.}-$(printf "%03d" $_p) &&
-    PATCH2_URL=http://ftp.gnu.org/gnu/$MODULE/$MODULE-$VERSION-patches/$SOURCE2 &&
-    wget $PATCH2_URL{,.sig} &&
-###>    gpg2 --verify --verbose --keyring vendors.gpg ./$SOURCE2.sig &&
-    message "Applying patch "$SOURCE2 &&
-    patch -p0 -i $SOURCE2
-  done
-
-fi &&
-
-# remove RPATH from shared objects
-sedit 's|-Wl,-rpath,$(libdir) ||g' support/shobj-conf
-
-### use this command in order to get the value of RSAIDKEY
-### gpg2 --verify <file.sig>
+fi

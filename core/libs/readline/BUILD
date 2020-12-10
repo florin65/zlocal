@@ -5,10 +5,8 @@
 # needed at init time! If you move it you could break your
 # system!
 
-[[ $(arch) == x86_64 ]] && CFLAGS+=" -fPIC"
-
-./configure --prefix=/usr \
-            --libdir=/usr/lib \
+./configure --libdir=/lib \
+            --prefix=/usr \
             --mandir=/usr/share/man \
             --infodir=/usr/share/info \
             --disable-static &&

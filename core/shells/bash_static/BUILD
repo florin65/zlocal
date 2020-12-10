@@ -5,7 +5,7 @@ OPTS+=" --bindir=/usr/bin \
 	--disable-readline \
         --disable-profiling \
         --enable-static-link \
-        --without-bash-malloc"
+        --without-bash-mallocx"
 
 default_config &&
 make version.h &&

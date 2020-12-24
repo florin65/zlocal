@@ -1,0 +1,14 @@
+          MODULE=cantarell-fonts
+         VERSION=0.301
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://download.gnome.org/sources/${MODULE}/${VERSION}/
+      SOURCE_VFY=sha256:3d35db0ac03f9e6b0d5a53577591b714238985f4cfc31a0aa17f26cd74675e83
+        WEB_SITE=http://abattis.org/cantarell
+         ENTERED=20130217
+         UPDATED=20201223
+         ARCHIVE=off
+           SHORT="Cantarell font family"
+
+cat << EOF
+The Cantarell font family.
+EOF

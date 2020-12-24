@@ -1,11 +1,11 @@
           MODULE=elogind
-         VERSION=243.4
+         VERSION=246.9
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/elogind/elogind/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:f1098745863138e6270ea22e78a39baef9a0356b48246c5a53b34211992dc7db
+      SOURCE_VFY=sha256:70c71c621ff91ef3a97a9cfa8b1c051ca6de5748ae952dcec0abdacc8dd3d439
         WEB_SITE=https://github.com/elogind/elogind
          ENTERED=20180106
-         UPDATED=20201120
+         UPDATED=20201219
            SHORT="The systemd logind project extracted as a standalone package"
 
 cat << EOF

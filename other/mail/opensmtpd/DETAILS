@@ -1,11 +1,11 @@
           MODULE=opensmtpd
-         VERSION=6.7.1p1
+         VERSION=6.8.0p2
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=https://www.opensmtpd.org/archives/
-      SOURCE_VFY=sha256:7478e918b41e734a39ad082df55cb2607f0933a506fab2c3dd3554a95cdf08ca
+      SOURCE_VFY=sha256:51bf05312fe56764748faab9e63170bfbb7c7d84a37c4117b62b2681eb3a4d17
         WEB_SITE=https://www.opensmtpd.org/
          ENTERED=20200520
-         UPDATED=20200523
+         UPDATED=20201224
            SHORT="Free implementation of the server-side SMTP protocol"
 
 cat << EOF

@@ -1,2 +1,0 @@
-optional_depends curl      "" "" "for curl support"
-optional_depends freetype2 "" "" "for ttf support"

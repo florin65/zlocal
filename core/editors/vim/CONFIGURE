@@ -1,1 +1,2 @@
 mquery MULTIBYTE "Enable multibyte/unicode support" y "--enable-multibyte" "--disable-multibyte"
+mquery MOUSE     "Enable system mouse support" y "--enable-sysmouse" "--disable-sysmouse"

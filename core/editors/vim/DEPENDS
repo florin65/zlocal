@@ -17,7 +17,7 @@ optional_depends python2 \
                  "n"
 
 optional_depends perl \
-                 "--enable-perlinterp=yes" \
+                 "--enable-perlinterp=dynamic" \
                  "--disable-perlinterp" \
                  "for Perl interpreter support"
 
@@ -38,12 +38,14 @@ optional_depends tcl \
                  "n"
 
 optional_depends gtk+-3 \
-                 "--enable-gui=gtk3" "" \
+                 "--enable-gui=gtk3" \
+                 "--disable-gtk3-check" \
                  "for GTK 3.x Graphical User Interface support" \
                  "n"
 
 optional_depends gtk+-2 \
-                 "--enable-gui=gtk2" "" \
+                 "--enable-gui=gtk2" \
+                 "--disable-gtk2-check" \
                  "for GTK 2.x Graphical User Interface support" \
                  "n"
 

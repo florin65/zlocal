@@ -2,10 +2,10 @@
          VERSION=1.0.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/MTDL9/vim-log-highlighting/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:
+      SOURCE_VFY=sha256:a8d9bab261c39f203e4336f14ee07df30af58a1184cdea8e4cc445a23b7d6d89
         WEB_SITE=https://github.com/MTDL9/vim-log-highlighting/
          ENTERED=20200823
-         UPDATED=20200823
+         UPDATED=20210116
            SHORT="Syntax highlighting for generic log files"
 
 cat << EOF

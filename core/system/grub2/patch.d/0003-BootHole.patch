@@ -927,7 +927,7 @@ diff --git a/grub-core/fs/btrfs.c b/grub-core/fs/btrfs.c
 index 63f9657a6..4b8380439 100644
 --- a/grub-core/fs/btrfs.c
 +++ b/grub-core/fs/btrfs.c
-@@ -415,7 +415,7 @@ lower_bound (struct grub_btrfs_data *data,
+@@ -413,7 +413,7 @@ lower_bound (struct grub_btrfs_data *data,
      {
        desc->allocated = 16;
        desc->depth = 0;
@@ -936,7 +936,7 @@ index 63f9657a6..4b8380439 100644
        if (!desc->data)
  	return grub_errno;
      }
-@@ -754,7 +754,7 @@ raid56_read_retry (struct grub_btrfs_data *data,
+@@ -752,7 +752,7 @@ raid56_read_retry (struct grub_btrfs_data *data,
    grub_err_t ret = GRUB_ERR_OUT_OF_MEMORY;
    grub_uint64_t i, failed_devices;
  
@@ -945,7 +945,7 @@ index 63f9657a6..4b8380439 100644
    if (!buffers)
      goto cleanup;
  
-@@ -2167,7 +2167,7 @@ grub_btrfs_embed (grub_device_t device __attribute__ ((unused)),
+@@ -2160,7 +2160,7 @@ grub_btrfs_embed (grub_device_t device __attribute__ ((unused)),
    *nsectors = 64 * 2 - 1;
    if (*nsectors > max_nsectors)
      *nsectors = max_nsectors;

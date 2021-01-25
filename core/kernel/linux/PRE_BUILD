@@ -4,7 +4,7 @@ if [ ! -e $FUNCTIONS/kernel.lunar ] ; then
   message "${PROBLEM_COLOR}Bailing out, ${DEFAULT_COLOR}Lunar code version too old"
   message "${PROBLEM_COLOR}Update core ${MODULE_COLOR}(lin lunar)${DEFAULT_COLOR} to install this kernel"
   exit 1
-fi &&
+fi
 
 mk_source_dir $SOURCE_DIRECTORY &&
 rm -f /usr/src/linux

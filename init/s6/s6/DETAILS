@@ -1,11 +1,11 @@
           MODULE=s6
-         VERSION=2.9.2.0
+         VERSION=2.10.2.0
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://skarnet.org/software/$MODULE/
-      SOURCE_VFY=sha256:363db72af8fffba764b775c872b0749d052805b893b07888168f59a841e9dddd
+      SOURCE_VFY=sha256:60a69caf14bcea28aa69bc64b1fb7ed0f6c65ae1f20d1e78a553f25141cbf877
         WEB_SITE=http://skarnet.org/software/s6/
          ENTERED=20190306
-         UPDATED=20200617
+         UPDATED=20210112
            SHORT="A suite of programs, designed to allow process supervision"
 
 cat << EOF

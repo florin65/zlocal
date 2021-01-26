@@ -1,11 +1,11 @@
           MODULE=skalibs
-         VERSION=2.10.0.0
+         VERSION=2.10.0.1
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://www.skarnet.org/software/skalibs/
-      SOURCE_VFY=sha256:c1acf81f47cad74174e18fe85b6b6d16bde11093f50ce99ad35c19d8d78d5d88
+      SOURCE_VFY=sha256:
         WEB_SITE=http://www.skarnet.org/software/skalibs/
          ENTERED=20190306
-         UPDATED=20210112
+         UPDATED=20210126
            SHORT="A general-purpose utility library for secure, small C development"
 
 cat << EOF

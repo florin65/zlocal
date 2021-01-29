@@ -1,4 +1,5 @@
 depends e2fsprogs
+depends pkgconf
 
 optional_depends lvm2 \
                  "--enable-device-mapper" \

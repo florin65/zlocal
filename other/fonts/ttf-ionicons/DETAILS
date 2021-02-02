@@ -1,0 +1,14 @@
+          MODULE=ttf-ionicons
+         VERSION=5.4.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/ionic-team/ionicons/archive/v${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/ionicons-$VERSION
+      SOURCE_VFY=sha256:8fa82d2d771a4ebfe8ea5610e99081983a63a5956c936ee33a1047bdf45b19f2
+        WEB_SITE=https://ionicons.com/
+         ENTERED=20210131
+         UPDATED=20210131
+           SHORT="Font from the Ionic mobile framework"
+ARCHIVE=off
+cat << EOF
+Premium designed icons for use in web, iOS, Android, and desktop apps. Support for SVG and web font. Completely open source, MIT licensed and built by Ionic
+EOF

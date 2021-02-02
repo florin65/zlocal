@@ -1,6 +1,0 @@
-default_pre_build &&
-
-if ! module_installed sysvinit; then
-   # Remove unnecessary init.d directory
-   sedit '/init\.d/s|^|#|' misc/Makefile.in
-fi

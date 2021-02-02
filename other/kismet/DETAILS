@@ -1,0 +1,19 @@
+          MODULE=kismet
+         VERSION=2020-12-R3
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://www.kismetwireless.net/code/
+      SOURCE_VFY=sha256:52a8eddd560688693552bcd8ff033f662a1a57b47650d6434c5e2c6d83e2bb33
+        WEB_SITE=http://www.kismetwireless.net/
+         ENTERED=20040207
+         UPDATED=20210130
+      MAINTAINER=ratler@lunar-linux.org
+           SHORT="An 802.11 layer2 wireless network sniffer"
+
+cat << EOF
+Kismet is an 802.11 layer2 wireless network detector, sniffer, and intrusion
+detection system. Kismet will work with any wireless card which support raw
+monitoring (rfmon) mode, and can sniff 802.11b, 802.11a, and 802.11g traffic.
+Kismet is fully passive and undetectable when in operation. Kismet automatically
+tracks all networks in range and is able to detect (or infer) hidden networks,
+attack attempts, find rogue access points and find unauthorised users.
+EOF

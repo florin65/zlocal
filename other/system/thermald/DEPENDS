@@ -1,4 +1,8 @@
 depends autoconf-archive
 depends dbus-glib
 depends libxml2
+depends libevdev
+depends upowet
 depends %UDEV
+
+optional_depends gtk-doc "" "" "for documentation install" "n"

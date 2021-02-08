@@ -1,6 +1,7 @@
 CXXFLAGS+=" -std=c++14"
 
-OPTS+=" --sbindir=/usr/bin"
+OPTS+=" --sbindir=/usr/bin 
+        --with-dbus-sys-dir=/usr/share/dbus-1/system.d"
 
 default_build &&
 

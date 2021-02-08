@@ -17,5 +17,5 @@ optional_depends json-c \
 
 optional_depends mongo \
                  "--enable-mongodb --with-mongoc=system" \
-                 "--disable-mongodb --disable-legacy-mongodb-options" \
+                 "--disable-mongodb" \
                  "for MongoDB support"

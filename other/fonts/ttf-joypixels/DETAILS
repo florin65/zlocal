@@ -1,0 +1,15 @@
+          MODULE=ttf-joypixels
+         VERSION=6.5.0
+          SOURCE=joypixels-android.ttf
+      SOURCE_URL=https://cdn.joypixels.com/arch-linux/font/${VERSION}/
+      SOURCE_VFY=sha256:06596a2dad8c8f540dc8f3c838ca54f6d8f7847238c9a261f7eadb0531f8d0ec
+        WEB_SITE=https://www.joypixels.com/emoji/
+         ENTERED=20210215
+         UPDATED=20210215
+           SHORT="Emoji as a Service"
+ARCHIVE=off
+cat << EOF
+JoyPixels includes more than 3,500 originally crafted icon designs and is 100%
+unicode 13.1 compatible. We offer the largest selection of files ranging from
+png, svg, iconjar, sprites, and fonts.
+EOF

@@ -1,11 +1,27 @@
 # make sure the luser has the source for this one!
 WANT_VERSION= download_module wget &&
 
-./config --prefix=/usr         \
+# mark stack as non-executable
+./config --prefix=/usr \
          --openssldir=/etc/ssl \
-         shared                \
-         no-ssl3               \
-         no-ssl3-method        \
+         shared \
+         no-rc2 \
+         no-rc4 \
+         no-ssl2 \
+         no-ssl3 \
+         no-tls1 \
+         no-tls1_1 \
+         no-tls1_2 \
+         no-idea \
+         no-seed \
+         no-deprecated \
+         no-ssl3-method \
+         no-tls1-method \
+         no-tls1_1-method \
+         no-tls1_2-method \
+         enable-tls1_3 \
+         $(arch | grep -q x86_64 && echo enable-ec_nistp_64_gcc_128) \
+         "-Wa,--noexecstack" \
          $OPTS
 
 sedit "/^CC/d" Makefile &&

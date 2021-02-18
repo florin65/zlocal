@@ -1,7 +1,12 @@
 OPTS+=" --exec-prefix=/usr \
         --sysconfdir=/etc  \
         --sbindir=/usr/bin \
-        --disable-static"
+        --disable-static \
+        --enable-watch8bit"
+
+if module_installed eloging; then
+   OPTS+=" --with-elogind"
+fi
 
 default_build &&
 

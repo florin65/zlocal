@@ -1,0 +1,16 @@
+          MODULE=ttf-weather-icons
+         VERSION=2.0.12
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/erikflowers/weather-icons/archive/${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/weather-icons-$VERSION
+      SOURCE_VFY=sha256:e6a0693ec10ba423f26b7e6abcbf67ea7bec69fc0afaabb0ddd62799cdc91223
+        WEB_SITE=https://erikflowers.github.io/weather-icons/
+         ENTERED=20210220
+         UPDATED=20210220
+           SHORT="Icon font with 222 weather themed icons"
+ARCHIVE=off
+cat << EOF
+Weather Icons is the only icon font and CSS with 222 weather themed icons, ready
+to be dropped right into Bootstrap, or any project that needs high quality
+weather, maritime, and meteorological based icons!
+EOF

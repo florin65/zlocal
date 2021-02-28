@@ -1,3 +1,0 @@
-if module_installed openrc-dbus; then
-   lrm openrc-dbus
-fi

@@ -1,11 +1,11 @@
           MODULE=s6-linux-init
-         VERSION=1.0.6.0
+         VERSION=1.0.6.1
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://www.skarnet.org/software/$MODULES/
       SOURCE_VFY=sha256:
         WEB_SITE=http://www.skarnet.org/software/s6-linux-utils/
          ENTERED=20190306
-         UPDATED=20210112
+         UPDATED=20210218
            SHORT="Tiny Linux-specific utilities"
 
 cat << EOF

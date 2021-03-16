@@ -1,17 +1,18 @@
           MODULE=sysfsutils
-         VERSION=2.1.0
+         VERSION=2.1.1
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=$SFORGE_URL/linux-diag/
-      SOURCE_VFY=sha256:e865de2c1f559fff0d3fc936e660c0efaf7afe662064f2fb97ccad1ec28d208a
+ SOURCE_URL_FULL=https://github.com/linux-ras/sysfsutils/archive/v${VERSION}.tar.gz
+      SOURCE_VFY=sha256:f7f669d27c997d3eb3f3e014b4c0aa1aa4d07ce4d6f9e41fa835240f2bf38810
         WEB_SITE=http://linux-diag.sourceforge.net/Sysfsutils.html
          ENTERED=20040103
-         UPDATED=20060906
+         UPDATED=20210306
           SHORT="System utilities based on sysfs"
 
 cat << EOF
 sysfsutils is a set of utilities built upon sysfs, a new virtual
 filesystem in Linux kernel versions 2.5+ that exposes a system's
 device tree.
+
 sysfsutils includes the following:
  * libsysfs - The library's purpose is to provide a consistent and
               stable interface for querying system device information

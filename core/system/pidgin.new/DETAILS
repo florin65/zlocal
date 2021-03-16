@@ -1,0 +1,19 @@
+          MODULE=pidgin
+         VERSION=2.14.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:f132e18d551117d9e46acce29ba4f40892a86746c366999166a3862b51060780
+        WEB_SITE=http://pidgin.im
+         ENTERED=20070506
+         UPDATED=20201213
+           SHORT="A multi-protocol instant messaging application"
+
+cat << EOF
+Pidgin is an instant messaging program. You can talk to your friends using AIM,
+ICQ, Jabber/XMPP, MSN Messenger, Yahoo!, Bonjour, Gadu-Gadu, IRC, Novell
+GroupWise Messenger, QQ, Lotus Sametime, SILC, SIMPLE, MySpaceIM, and Zephyr.
+
+Pidgin can log in to multiple accounts on multiple IM networks simultaneously.
+This means that you can be chatting with friends on AIM, talking to a friend on
+Yahoo Messenger, and sitting in an IRC channel all at the same time.
+EOF

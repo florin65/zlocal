@@ -1,0 +1,14 @@
+          MODULE=picom
+         VERSION=7.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/yshui/picom/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:
+        WEB_SITE=https://github.com/yshui/picom/
+         ENTERED=20200113
+         UPDATED=20200113
+           SHORT="X compositor that may fix tearing issues"
+
+cat << EOF
+This is forked from the original Compton because it seems to have become
+unmaintained.
+EOF

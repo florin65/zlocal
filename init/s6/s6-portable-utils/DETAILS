@@ -1,11 +1,11 @@
           MODULE=s6-portable-utils
-         VERSION=2.2.3.1
+         VERSION=2.2.3.2
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://www.skarnet.org/software/$MODULE/
       SOURCE_VFY=sha256:43e68a9abec873b337baeee92075a1c2e22cdfffd595cb91475fdcb10b6441cf
         WEB_SITE=http://www.skarnet.org/software/s6-portable-utils/
          ENTERED=20190306
-         UPDATED=20210112
+         UPDATED=20210418
            SHORT="Tiny portable generic utilities"
 
 cat << EOF

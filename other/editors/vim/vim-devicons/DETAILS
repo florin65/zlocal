@@ -1,11 +1,11 @@
           MODULE=vim-devicons
-         VERSION=0.8.5
+         VERSION=0.11.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/ryanoasis/vim-devicons/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:1e47dd21d2f12f2e531f9a0131d45e566de7dd01c3c354c7b51ccb974dff2ae4
+      SOURCE_VFY=sha256:
         WEB_SITE=http://github.com/ryanoasis/vim-devicons/
          ENTERED=20161120
-         UPDATED=20161120
+         UPDATED=20210405
            SHORT="Adds file type glyphs/icons to many popular Vim plugins"
 
 cat << EOF

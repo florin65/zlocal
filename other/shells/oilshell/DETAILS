@@ -1,12 +1,12 @@
           MODULE=oilshell
-         VERSION=0.8.5
+         VERSION=0.8.8
           SOURCE=oil-$VERSION.tar.xz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/oil-$VERSION
       SOURCE_URL=https://www.oilshell.org/download/
-      SOURCE_VFY=sha256:3be0c8acd6abe1f21eb86b84618f27196ee5eed78d5b73173a100144300217fc
+      SOURCE_VFY=sha256:27d68dbb0ef6aae7e8558e959db7690ada5c23a18023b38dd745c6109baa89e2
         WEB_SITE=http://www.oilshell.org/
          ENTERED=20200523
-         UPDATED=20201125
+         UPDATED=20210321
            SHORT="Oil, a new unix shell"
 
 cat << EOF

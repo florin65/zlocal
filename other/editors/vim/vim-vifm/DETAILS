@@ -1,12 +1,12 @@
           MODULE=vim-vifm
-         VERSION=0.9.1
+         VERSION=0.11
           SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/vifm.vim-$VERSION
 SOURCE_URL_FULL=https://github.com/vifm/vifm.vim/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:bfd819ea355d71a6f27147b781153967843023e820e661b17bf77224d7e95e2a
+      SOURCE_VFY=sha256:1dcd7d540c590c80b16f14ead3a1de86bce1d6de7a9d557f41ac29133261bb27
         WEB_SITE=http://github.com/Shougo/vimproc.vim/
          ENTERED=20160426
-         UPDATED=20181029
+         UPDATED=20210418
            SHORT="Vim plugin that allows use of vifm as a file picker"
 
 cat << EOF

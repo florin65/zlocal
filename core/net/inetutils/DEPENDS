@@ -1,7 +1,7 @@
 depends ncurses
 depends readline
 
-optional_depends Linux-PAM \
-                 "--with-pam" \
-                 "--without-pam" \
+optional_depends "Linux-PAM"      \
+                 "--with-pam"     \
+                 "--without-pam"  \
                  "to enable Linux PAM support"

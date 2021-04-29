@@ -1,3 +1,0 @@
-if module_installed openrc-inetutils; then
-   lrm openrc-inetutils
-fi

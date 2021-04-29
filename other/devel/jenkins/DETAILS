@@ -1,19 +1,11 @@
           MODULE=jenkins
-<<<<<<< HEAD
-          VERSION=2.288
-=======
-          VERSION=2.284
->>>>>>> eed5f9ae467029d56dc43f4938d9f02915a0087f
+          VERSION=2.290
           SOURCE=$MODULE-$VERSION.war
  SOURCE_URL_FULL=http://mirrors.jenkins-ci.org/war/$VERSION/jenkins.war
       SOURCE_VFY=sha256:
         WEB_SITE=http://jenkins-ci.org/
          ENTERED=20141027
-<<<<<<< HEAD
-         UPDATED=20210415
-=======
-         UPDATED=20210316
->>>>>>> eed5f9ae467029d56dc43f4938d9f02915a0087f
+         UPDATED=20210429
            SHORT="Extendable continuous integration server"
          ARCHIVE=off
        LDD_CHECK=off

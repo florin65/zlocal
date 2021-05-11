@@ -5,7 +5,11 @@
       SOURCE_VFY=sha256:17dbe347a40b6fc52909e014158a1af41ab74914f3b03ab70df3eb265098f0e3
         WEB_SITE=https://github.com/be5invis/Iosevka/
          ENTERED=20200906
+<<<<<<< HEAD
          UPDATED=20210505
+=======
+         UPDATED=20210504
+>>>>>>> f7aed7351d720e5065abd8c178ce9501436e9ced
            SHORT="TTF fonts for coding, terminal use and technical documents"
 ARCHIVE=off
 cat << EOF

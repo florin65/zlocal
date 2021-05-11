@@ -1,9 +1,5 @@
           MODULE=linux
-<<<<<<< HEAD
-         VERSION=5.11.15
-=======
-         VERSION=5.11.8
->>>>>>> eed5f9ae467029d56dc43f4938d9f02915a0087f
+         VERSION=5.12.2
             BASE=$(echo $VERSION | cut -d. -f1,2)
           SOURCE=$MODULE-$BASE.tar.xz
 if [ -n "$(echo $VERSION | cut -d. -f3)" ] ; then
@@ -13,18 +9,11 @@ fi
    SOURCE_URL[1]=https://www.kernel.org/pub/linux/kernel/v5.x/
   SOURCE2_URL[0]=$KERNEL_URL/pub/linux/kernel/v5.x/
   SOURCE2_URL[1]=https://www.kernel.org/pub/linux/kernel/v5.x/
-      SOURCE_VFY=sha256:04f07b54f0d40adfab02ee6cbd2a942c96728d87c1ef9e120d0cb9ba3fe067b4
-<<<<<<< HEAD
-     SOURCE2_VFY=sha256:c6e3d81d5c3e70a2fcc2dd2e622761d3b12b36fdc7d168d47831ac215eed142b
+      SOURCE_VFY=sha256:7d0df6f2bf2384d68d0bd8e1fe3e071d64364dcdc6002e7b5c87c92d48fac366
+     SOURCE2_VFY=sha256:d77076db69357a0b4c4868273f21f987f0c88c194865f43b17e21edd78add561
          WEB_SITE=https://www.kernel.org
          ENTERED=20111121
-         UPDATED=20210416
-=======
-     SOURCE2_VFY=sha256:dffcabb33733c58344243d722f77f0b38616796b7ecb287892ccb975c91de077
-         WEB_SITE=https://www.kernel.org
-         ENTERED=20111121
-         UPDATED=20210321
->>>>>>> eed5f9ae467029d56dc43f4938d9f02915a0087f
+         UPDATED=20210507
            SHORT="The core of a Linux GNU Operating System"
      KEEP_SOURCE=on
            TMPFS=off

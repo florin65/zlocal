@@ -1,11 +1,11 @@
           MODULE=OpenIPMI
-         VERSION=2.0.26
+         VERSION=2.0.31
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=https://sourceforge.net/projects/openipmi/files/OpenIPMI%202.0%20Library/
-      SOURCE_VFY=sha256:83986368c30a1158303435ad5a2b1bd3c6a39664b46d10fc0b8f9d2a78e2f524
+      SOURCE_VFY=sha256:
         WEB_SITE=http://openipmi.sourceforge.net/
          ENTERED=20170326
-         UPDATED=20181228
+         UPDATED=20210530
            SHORT="Full-function IPMI system"
 
 cat << EOF

@@ -1,11 +1,11 @@
           MODULE=vim-ansible
-         VERSION=2.1
+         VERSION=3.1
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/pearofducks/ansible-vim/archive/$VERSION.tar.gz
       SOURCE_VFY=sha256:
         WEB_SITE=https://github.com/pearofducks/ansible-vim/
          ENTERED=20170816
-         UPDATED=20200328
+         UPDATED=20210516
            SHORT="A vim syntax plugin for Ansible"
 
 cat << EOF

@@ -1,11 +1,11 @@
           MODULE=vim-gnupg
-         VERSION=2.6.1
+         VERSION=2.7.1
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/jamessan/vim-gnupg/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:6e9d75febd13cc533153e5e01b00593fa91f8bbcf1ec19a9029dd994e2f65508
+      SOURCE_VFY=sha256:c74e0d6e868ea17ed2de9faa01fdcadb0056944c8ed5bab5ef8f1fe8fda3880b
         WEB_SITE=https://github.com/jamessan/vim-gnupg/
          ENTERED=20200816
-         UPDATED=20200816
+         UPDATED=20210619
            SHORT="Plugin for transparent editing of gpg encrypted files"
 
 cat << EOF

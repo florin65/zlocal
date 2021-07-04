@@ -1,8 +1,15 @@
           MODULE=ttf-iosevka
-         VERSION=7.2.3
+         VERSION=7.2.5
           SOURCE=$MODULE-$VERSION.zip
       SOURCE_URL=https://github.com/be5invis/Iosevka/releases/download/v${VERSION}/
-      SOURCE_VFY=sha256:22c81dd0ee177e0dbe4b14765ca2c7deb7118a310756ecf9e3475fbea2253667
+      SOURCE_VFY=sha256:cdff5ab16f846d77b72e22e6902fafff27fadc7b57173ab59f87ec71735526f6
         WEB_SITE=https://github.com/be5invis/Iosevka/
          ENTERED=20200906
-         UPDATED=20210701
+         UPDATED=20210704
+           SHORT="TTF fonts for coding, terminal use and technical documents"
+ARCHIVE=off
+cat << EOF
+Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi-
+proportional typeface family, designed for writing code, using in terminals,
+and preparing technical documents.
+EOF

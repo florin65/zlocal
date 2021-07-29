@@ -6,7 +6,7 @@
         WEB_SITE=https://github.com/be5invis/Iosevka/
          ENTERED=20200906
          UPDATED=20210727
-           SHORT="TTF fonts for coding, terminal use and technical documents"
+          SHORT="TTF fonts for coding, terminal use and technical documents"
 ARCHIVE=off
 cat << EOF
 Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi-

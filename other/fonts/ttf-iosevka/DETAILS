@@ -1,12 +1,12 @@
           MODULE=ttf-iosevka
-         VERSION=8.0.2
+         VERSION=9.0.1
           SOURCE=$MODULE-$VERSION.zip
       SOURCE_URL=https://github.com/be5invis/Iosevka/releases/download/v${VERSION}/
-      SOURCE_VFY=sha256:f554b09cfdcf5c16343fb2d21220a72ec1d798b31d5dd10f339e3f1dae64b58e
+      SOURCE_VFY=sha256:c101553b66269c5dc6bb062545ec6ec6873faaa27c2e703436115275e2a97b06
         WEB_SITE=https://github.com/be5invis/Iosevka/
          ENTERED=20200906
-         UPDATED=20210727
-          SHORT="TTF fonts for coding, terminal use and technical documents"
+         UPDATED=20210804
+           SHORT="TTF fonts for coding, terminal use and technical documents"
 ARCHIVE=off
 cat << EOF
 Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi-

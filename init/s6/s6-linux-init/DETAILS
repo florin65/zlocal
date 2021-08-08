@@ -3,11 +3,12 @@
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://www.skarnet.org/software/$MODULES/
       SOURCE_VFY=sha256:
-        WEB_SITE=http://www.skarnet.org/software/s6-linux-utils/
+        WEB_SITE=http://www.skarnet.org/software/s6-linux-init/
          ENTERED=20190306
          UPDATED=20210418
-           SHORT="Tiny Linux-specific utilities"
+           SHORT="A tool to automate the creation of suitable stage 1 init binaries for s6"
 
 cat << EOF
-s6-linux-utils is a set of minimalistic Linux-specific system utilities.
+s6-linux-init is a set of minimalistic tools used to create a s6-based init
+system, including a /sbin/init binary, on a Linux kernel.
 EOF

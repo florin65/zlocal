@@ -30,6 +30,8 @@ make VIRMLOC=/etc install &&
 # add a vi symlink if the file is missing
 ln -sf /usr/bin/vim /usr/bin/vi &&
 
+cp -f $SCRIPT_DIRECTORY/vimrc /usr/share/vim/vim${MAJOR//./}/sample.vimrc &&
+
 #  install rc files
 install -Dm 644 "${SCRIPT_DIRECTORY}"/lunar.vim /usr/share/vim/vimfiles/ &&
 if [ -f /etc/vimrc ]; then

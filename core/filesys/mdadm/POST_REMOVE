@@ -1,3 +1,0 @@
-if module_installed openrc-mdadm; then
-   lrm openrc-mdadm
-fi

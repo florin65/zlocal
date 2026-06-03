@@ -1,0 +1,17 @@
+          MODULE=vim-gruvbox
+         VERSION=2.2.0
+          SOURCE=gruvbox-${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/gruvbox-${VERSION}
+ SOURCE_URL_FULL=https://github.com/gruvbox-community/gruvbox/archive/v${VERSION}.tar.gz
+      SOURCE_VFY=sha256:7f6b7607f2e5bad59c2f5331a187592fc9a05c2dc6ef6aefd38d98dd793fe64c
+        WEB_SITE=https://github.com/gruvbox-community/gruvbox/
+         ENTERED=20200525
+         UPDATED=2200525
+           SHORT="A Vim colorscheme"
+
+cat << EOF
+Designed as a bright theme with pastel 'retro groove' colors and light/dark
+mode switching in the way of solarized. The main focus when developing gruvbox
+is to keep colors easily distinguishable, contrast enough and still pleasant
+for the eyes.
+EOF

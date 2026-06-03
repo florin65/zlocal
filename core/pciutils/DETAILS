@@ -1,0 +1,26 @@
+          MODULE=pciutils
+         VERSION=3.15.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+         SOURCE2=pci.ids.bz2
+      SOURCE_URL=$KERNEL_URL/pub/software/utils/$MODULE/
+     SOURCE2_URL=http://pci-ids.ucw.cz/v2.2/
+      SOURCE_VFY=sha256:c02940f430841ecf158d5d9a50007afc4d5353c8678a2455003ca0b2c4e9f5ff
+        WEB_SITE=http://mfj.ucw.cz/pciutils.html
+         ENTERED=20020125
+         UPDATED=20260601
+           PSAFE=no
+           SHORT="The setpci and lspci utils"
+
+cat << EOF
+The PCI Utilities package contains a library for portable access to PCI
+bus configuration space and several utilities based on this library.
+Current version works only on Linux, but it can be easily extended to
+work on other systems as well.
+The utilities include: (See manual pages for more details)
+  lspci:  displays detailed information about all PCI busses and
+          devices in the system, replacing the original /proc/pci
+          interface.
+  setpci: allows to read from and write to PCI device
+          configuration registers. For example, you can adjust
+          the latency timers with it.
+EOF

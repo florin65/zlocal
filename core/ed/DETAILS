@@ -1,0 +1,15 @@
+          MODULE=ed
+         VERSION=1.22.5
+          SOURCE=$MODULE-$VERSION.tar.lz
+   SOURCE_URL[0]=$GNU_URL/$MODULE
+   SOURCE_URL[1]=http://fossies.org/linux/privat/
+     SOURCE_VFY=sha256:56e107ddc2f29dad6690376c15bf9751509e1ee3b8241710e44edbe5c3a158cc
+        WEB_SITE=http://www.gnu.org/software/ed/ed.html
+         ENTERED=20010922
+         UPDATED=20260411
+           SHORT="A line-oriented text editor"
+
+cat << EOF
+ed is a line-oriented text editor. It is used to create, display, modify
+and otherwise manipulate text files.
+EOF

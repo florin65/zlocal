@@ -1,0 +1,5 @@
+default_pre_build &&
+
+if ! in_depends $MODULE db; then
+  sedit '/+= arpd/d' misc/Makefile
+fi

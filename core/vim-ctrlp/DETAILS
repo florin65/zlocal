@@ -1,0 +1,21 @@
+          MODULE=vim-ctrlp
+         VERSION=1.81
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/ctrlp.vim-$VERSION
+ SOURCE_URL_FULL=http://github.com/ctrlpvim/ctrlp.vim/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:9de452e7c3c2e1831007fdc69149368f9169837681ff46a09e1bca8cbdbebf93 
+        WEB_SITE=http://github.com/ctrlpvim/ctrlp.vim/
+         ENTERED=20170325
+         UPDATED=20250708
+           SHORT="Fuzzy file, buffer, mru, tag, etc finder"
+
+cat << EOF
+Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
+  Written in pure Vimscript for MacVim, gVim and Vim 7.0+.
+  Full support for Vim's regexp as search patterns.
+  Built-in Most Recently Used (MRU) files monitoring.
+  Built-in project's root finder.
+  Open multiple files at once.
+  Create new files and directories.
+  Extensible.
+EOF

@@ -1,0 +1,16 @@
+          MODULE=vim-identline
+         VERSION=git
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=git://github.com/Yggdroot/indentLine/
+#      SOURCE_VFY=sha256:
+        WEB_SITE=http://github.com/Yggdroot/indentLine/
+         ENTERED=20170106
+         UPDATED=20170106
+           SHORT="Display the vim indentation levels with thin vertical lines"
+
+cat << EOF
+This plugin is used for displaying thin vertical lines at each indentation
+level for code indented with spaces. For code indented with tabs I think
+there is no need to support it, because you can use :set list lcs=tab:\|\
+(here is a space).
+EOF

@@ -1,0 +1,16 @@
+    MODULE=ccache
+   VERSION=4.13.6
+    SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_URL=https://github.com/ccache/ccache/releases/download/v$VERSION/
+SOURCE_VFY=sha256:d42ace95dec14583fb8af19ed117919995bd910376f52d9b6f546046b792dfb7
+  WEB_SITE=https://ccache.dev/
+   ENTERED=20020701
+   UPDATED=20260514
+     SHORT="A compiler cache"
+
+cat << EOF
+ccache is a compiler cache. It acts as a caching pre-processor to C/C++
+compilers, using the -E compiler switch and a hash to detect when a
+compilation can be satisfied from cache.
+This often results in a 5 to 10 times speedup in common compilations.
+EOF

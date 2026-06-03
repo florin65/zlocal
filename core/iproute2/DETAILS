@@ -1,0 +1,17 @@
+          MODULE=iproute2
+         VERSION=6.19.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://mirrors.kernel.org/pub/linux/utils/net/$MODULE/
+      SOURCE_VFY=sha256:9332213d35480b647086a70c302de8568de83455a98774d35de216c4ce191006
+        WEB_SITE=https://wiki.linuxfoundation.org/networking/iproute2
+         ENTERED=20021106
+         UPDATED=20260219
+           SHORT="Professional tools to control networking in Linux kernels"
+
+cat << EOF
+Most Linux distributions, and most UNIX's, currently use the venerable arp,
+ifconfig and route commands. While these tools work, they show some unexpected
+behaviour under Linux 2.2 and up. For example, GRE tunnels are an integral part
+of routing these days, but require completely different tools. With iproute2,
+tunnels are an integral part of the tool set.
+EOF

@@ -1,0 +1,4 @@
+depends perl
+depends Devel-CheckLib
+depends File-ShareDir-Install
+depends expat

@@ -1,0 +1,15 @@
+          MODULE=which
+         VERSION=2.25
+          SOURCE=$MODULE-$VERSION.tar.gz
+   SOURCE_URL[0]=$GNU_URL/$MODULE/
+   SOURCE_URL[1]=ftp://ftp.gnu.org/pub/gnu/$MODULE/
+      SOURCE_VFY=sha256:1cb83e4f702e60b8211ab5ec4c2afbab1b1dec80209456a7d2faf7584ed225ea
+        WEB_SITE=https://savannah.gnu.org/projects/$MODULE/
+         ENTERED=20011101
+         UPDATED=20260601
+           SHORT="Which finds the executable/alias"
+
+cat << EOF
+The which program searches through the $PATH & environment
+to find out which executable are the one casuing the problem ;^)
+EOF

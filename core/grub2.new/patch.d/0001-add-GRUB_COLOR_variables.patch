@@ -1,0 +1,28 @@
+*** ./util/grub-mkconfig.in	2022-08-10 10:10:34.514691765 +0900
+--- ./util/grub-mkconfig.in	2022-08-10 10:12:21.398303209 +0900
+***************
+*** 206,209 ****
+--- 206,211 ----
+    GRUB_DEVICE_BOOT_UUID \
+    GRUB_DISABLE_OS_PROBER \
++   GRUB_COLOR_NORMAL \
++   GRUB_COLOR_HIGHLIGHT \
+    GRUB_FS \
+    GRUB_FONT \
+*** ./util/grub.d/00_header.in	2022-08-10 10:10:34.501356734 +0900
+--- ./util/grub.d/00_header.in	2022-08-10 10:13:36.317844083 +0900
+***************
+*** 126,129 ****
+--- 126,137 ----
+  EOF
+  
++ if [ x$GRUB_COLOR_NORMAL != x ] && [ x$GRUB_COLOR_HIGHLIGHT != x ] ; then
++     cat << EOF
++ set menu_color_normal=$GRUB_COLOR_NORMAL
++ set menu_color_highlight=$GRUB_COLOR_HIGHLIGHT
++ 
++ EOF
++ fi
++ 
+  serial=0;
+  gfxterm=0;

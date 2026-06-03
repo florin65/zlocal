@@ -1,0 +1,15 @@
+          MODULE=kbd
+         VERSION=2.10.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://www.kernel.org/pub/linux/utils/$MODULE/
+      SOURCE_VFY=sha256:6e5ca4f8d76ee9e3a8db700b667f13e12aac9933828a64e1aaad93d26be9b479
+        WEB_SITE=https://kbd-project.org
+         ENTERED=20040217
+         UPDATED=20260601
+           SHORT="kbd allows you to configure and manipulate Linux consoles"
+
+cat << EOF
+The kbd package allows you to set-up and manipulate the Linux console
+(ie. text screen and keyboard), and manipulate console-font files.
+This package contains keytable files and keyboard utilities.
+EOF

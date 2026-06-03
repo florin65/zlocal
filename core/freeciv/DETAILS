@@ -1,0 +1,22 @@
+          MODULE=freeciv
+         VERSION=3.2.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-R3_2_4
+ SOURCE_URL_FULL=https://github.com/freeciv/freeciv/archive/refs/tags/R3_2_4.tar.gz
+      SOURCE_VFY=sha256:30bb7b92562e39df5c5e4ea10ec0dbcc49ae5548a4e15bb0797e2593671e0194
+        WEB_SITE=http://www.freeciv.org/
+         ENTERED=20010922
+         UPDATED=20260329
+           SHORT="Reimplementation of Civilization"
+
+cat << EOF
+Freeciv is a multiuser reimplementation for Unix/X of the famous Microprose game
+of Civilization. By default, the game is an improved Civ II, but this can be
+customized; modpacks for near-100% compatibility with Civ I and Civ II are
+included. Multiuser gameplay is real-time: in each turn, all human players move
+concurrently.
+The game is designed to remain fairly playable even on poor network connections.
+Freeciv can also be played on standalone machines, and its AI players are a good
+challenge for beginners. The source code comes with the server, two X clients,
+and non-X clients for MS Windows and Amiga.
+EOF

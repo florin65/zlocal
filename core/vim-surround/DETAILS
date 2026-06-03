@@ -1,0 +1,15 @@
+          MODULE=vim-surround
+         VERSION=2.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/tpope/vim-surround/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:e8fdc95650e0c3ca61890f6607a21dd01e763a0f2d177f15547afd0adb83ec73
+        WEB_SITE=http://github.com/tpope/vim-surround/
+         ENTERED=20170430
+         UPDATED=20170430
+           SHORT="Vim mappings to easily delete, change, and add paired surroundings"
+
+cat << EOF
+Surround.vim is all about "surroundings": parentheses, brackets, quotes, XML
+tags, and more. The plugin provides mappings to easily delete, change and add
+such surroundings in pairs.
+EOF

@@ -1,3 +1,0 @@
-depends efivar
-depends pciutils
-depends zlib

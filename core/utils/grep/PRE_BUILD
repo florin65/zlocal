@@ -1,3 +1,0 @@
-default_pre_build &&
-
-sedit "s/SYMLINK=\"ln -s\"/SYMLINK=\"ln -sf\"/" configure

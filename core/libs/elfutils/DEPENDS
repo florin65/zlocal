@@ -1,6 +1,0 @@
-depends zlib
-depends curl
-optional_depends bzip2 "--with-bzlib" "--without-bzlib" "for bzlib compression support" "y"
-optional_depends xz    "--with-lzma"  "--without-lzma"  "for lzma/xz compression support" "y"
-
-optional_depends valgrind "-with-valgrind" "-without-valgrind" "for valgrind support" "n"

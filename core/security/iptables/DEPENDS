@@ -1,9 +1,0 @@
-depends libpcap
-depends pkgconf
-
-optional_depends libnetfilter_conntrack "" "" "for netfilter communication support"
-
-optional_depends libnftnl \
-                 "--enable-nftables" \
-                 "--disable-nftables" \
-                 "for iptables-compat over nftables support"

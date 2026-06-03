@@ -1,1 +1,0 @@
-mquery PYOPTIMIZE "Enable expensive optimizations (PGO, maybe LTO, etc)?" n "--enable-optimizations --with-lto" ""

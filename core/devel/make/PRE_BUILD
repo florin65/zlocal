@@ -1,6 +1,0 @@
-default_pre_build &&
-
-# use guile 2.2.x
-sedit 's|guile-1.8|guile-2.2|g' configure.ac &&
-
-autoreconf -fi

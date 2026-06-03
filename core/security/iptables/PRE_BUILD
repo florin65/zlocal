@@ -1,4 +1,0 @@
-default_pre_build &&
-
-# use system one
-rm include/linux/types.h

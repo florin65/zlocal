@@ -1,3 +1,0 @@
-default_pre_build &&
-
-sedit "s:c_rehash \.:( \0 || openssl certhash . ):;/run-parts/s: -- : :" sbin/update-ca-certificates

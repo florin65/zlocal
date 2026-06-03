@@ -1,7 +1,0 @@
-depends readline
-depends util-linux
-
-optional_depends gettext \
-                 "--enable-gettext=yes" \
-                 "--enable-gettext=no" \
-                 "for alternate language support"

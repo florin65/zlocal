@@ -1,5 +1,0 @@
-case $RUN_LILO in
-  y|Y)  /usr/bin/lilo ;;
-esac &&
-
-true

@@ -1,4 +1,0 @@
-depends fuse
-depends libarchive
-depends autoconf
-depends automake

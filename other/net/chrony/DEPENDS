@@ -1,6 +1,0 @@
-depends nss
-depends libcap
-depends readline
-depends libedit
-depends nettle
-depends libseccomp

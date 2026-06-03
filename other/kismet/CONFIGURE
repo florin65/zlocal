@@ -1,1 +1,0 @@
-mquery SUIDINSTALL "Install kismet with the suid root bit set? (not recommened!)" n

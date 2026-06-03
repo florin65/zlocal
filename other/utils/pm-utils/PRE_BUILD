@@ -1,4 +1,0 @@
-default_pre_build &&
-
-# Do not fail build if symlink already exist
-sedit 's/ln -s/ln -sf/g' man/Makefile.* src/Makefile.*

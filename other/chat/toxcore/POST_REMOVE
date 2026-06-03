@@ -1,3 +1,0 @@
-if module_installed openrc-toxcore; then
-   lrm openrc-toxcore
-fi

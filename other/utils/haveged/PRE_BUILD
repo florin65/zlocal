@@ -1,3 +1,0 @@
-default_pre_build &&
-
-sedit 's/@SBIN_DIR@/\/usr\/bin/' init.d/service.fedora

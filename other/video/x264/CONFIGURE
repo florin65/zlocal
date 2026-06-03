@@ -1,1 +1,0 @@
-mquery TEN_BITS "Enable bit-depth 10 (default is 8 bits)?" n

@@ -1,4 +1,0 @@
-default_pre_build &&
-
-# fix a typo
-sedit "s:ducumentation:documentation:" src/fuseiso.c

@@ -1,4 +1,0 @@
-default_pre_build &&
-
-sedit 's:-Werror::' Makefile &&
-sedit 's:_BSD_SOURCE:_DEFAULT_SOURCE:' Makefile

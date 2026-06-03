@@ -1,2 +1,0 @@
-depends libnl3
-depends openssl

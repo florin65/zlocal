@@ -1,7 +1,0 @@
-depends git
-depends nasm
-
-#circular depend with ffmpeg
-#depends ffmpeg
-
-optional_depends l-smash "" "" "for mp4 support"

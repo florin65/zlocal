@@ -1,3 +1,0 @@
-depends cmake
-depends libvpx
-depends openssl

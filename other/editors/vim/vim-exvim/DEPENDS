@@ -1,6 +1,0 @@
-depends ctags
-depends cscope
-depends gawk
-depends graphviz
-depends idutils
-depends source-highlight

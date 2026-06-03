@@ -1,3 +1,0 @@
-depends openrc
-depends socat
-depends qemu

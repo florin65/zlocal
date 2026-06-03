@@ -1,3 +1,0 @@
-if module_installed openrc-xinetd; then
-   lrm openrc-xinetd
-fi

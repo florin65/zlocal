@@ -1,4 +1,0 @@
-depends iproute2
-depends libsodium
-depends pkgconfig
-depends meson

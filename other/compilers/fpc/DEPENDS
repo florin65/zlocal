@@ -1,3 +1,0 @@
-depends ncurses
-depends expat
-depends fpc-bin

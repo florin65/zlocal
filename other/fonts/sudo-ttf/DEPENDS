@@ -1,3 +1,0 @@
-depends fontconfig
-depends font-util
-depends mkfontdir

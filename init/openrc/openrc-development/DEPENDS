@@ -1,5 +1,0 @@
-depends openrc-jenkins
-depends openrc-git
-depends openrc-mysql
-depends openrc-postgresql
-depends openrc-distcc

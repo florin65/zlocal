@@ -1,5 +1,0 @@
-depends iptables
-depends openssh
-depends python-six
-
-optional_depends Sphinx "" "" "for man page install"

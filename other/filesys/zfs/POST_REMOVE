@@ -1,3 +1,0 @@
-if module_installed openrc-zfs; then
-   lrm openrc-zfs
-fi

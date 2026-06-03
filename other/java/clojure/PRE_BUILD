@@ -1,3 +1,0 @@
-default_pre_build &&
-
-sedit 's,PREFIX,/usr/share/java/clojure,g' clojure

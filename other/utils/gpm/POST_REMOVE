@@ -1,3 +1,0 @@
-if module_installed openrc-gpm; then
-   lrm openrc-gpm
-fi

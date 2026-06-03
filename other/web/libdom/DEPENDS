@@ -1,3 +1,0 @@
-depends expat
-depends libhubbub
-depends libwapcaplet

@@ -1,3 +1,0 @@
-default_pre_build &&
-
-sedit 's/go build/go build -gcflags "all=-trimpath=${PWD}" -asmflags "all=-trimpath=${PWD}" -ldflags "-extldflags ${LDFLAGS}"/g' Makefile

@@ -1,3 +1,0 @@
-if module_installed openrc-glibc; then
-   lrm openrc-glibc
-fi

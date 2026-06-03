@@ -1,4 +1,0 @@
-depends krb5
-depends popt
-depends libxslt
-depends ding-libs

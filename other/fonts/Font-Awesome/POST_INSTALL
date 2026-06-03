@@ -1,2 +1,0 @@
-message "Running fc-cache -f"
-fc-cache -f

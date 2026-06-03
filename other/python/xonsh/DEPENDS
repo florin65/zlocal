@@ -1,6 +1,0 @@
-depends python-ply
-depends python-pygments
-depends python-prompt_toolkit
-
-optional_depends Sphinx "" "" "for documentation support"
-

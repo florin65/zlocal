@@ -1,1 +1,0 @@
-mquery STATIC "Build Busybox as a static executable?" n "" ""

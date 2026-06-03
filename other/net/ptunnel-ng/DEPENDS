@@ -1,3 +1,0 @@
-depends git
-
-optional_depends libpcap "" "--disable-pcap" "for libpcap support"

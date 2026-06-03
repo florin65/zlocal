@@ -1,3 +1,0 @@
-default_pre_build &&
-
-sedit 's|qtpass-icon|qtpass|' ${MODULE}.desktop

@@ -1,3 +1,0 @@
-default_pre_build &&
-
-tar xf $SOURCE_CACHE/$SOURCE2

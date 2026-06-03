@@ -1,3 +1,0 @@
-depends dbus-glib
-depends libwnck3
-depends libnotify

@@ -1,3 +1,0 @@
-if module_installed openrc-syslog-ng; then
-   lrm openrc-syslog-ng
-fi

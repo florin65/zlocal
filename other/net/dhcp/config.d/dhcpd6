@@ -1,4 +1,0 @@
-# Lunar configuration file for dhcpd
-# /etc/config.d/dhcpd
-#
-DHCPD_ARGS="-q eth0"

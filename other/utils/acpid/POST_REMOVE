@@ -1,3 +1,0 @@
-if module_installed openrc-acpid; then
-   lrm openrc-acpid
-fi

@@ -1,3 +1,0 @@
-depends python2-setuptools
-depends python2-nose
-depends mongodb

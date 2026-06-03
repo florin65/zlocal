@@ -1,5 +1,0 @@
-depends gdbm
-depends ncurses
-depends popt
-depends swig
-depends net-snmp

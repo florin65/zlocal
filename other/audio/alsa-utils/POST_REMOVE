@@ -1,3 +1,0 @@
-if module_installed openrc-alsa-utils; then
-   lrm openrc-alsa-utils
-fi

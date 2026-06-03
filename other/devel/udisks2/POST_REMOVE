@@ -1,3 +1,0 @@
-if module_installed openrc-udisks2; then
-   lrm openrc-udisks2
-fi

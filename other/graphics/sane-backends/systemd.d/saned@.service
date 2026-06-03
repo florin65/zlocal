@@ -1,6 +1,0 @@
-[Unit]
-Description=Scanner Service
-
-[Service]
-ExecStart=/usr/bin/saned -a usb
-StandardInput=socket

@@ -1,5 +1,0 @@
-mkdir -p /var/log/xinetd
-
-if module_installed openrc; then
-  lin -c openrc-xinetd
-fi

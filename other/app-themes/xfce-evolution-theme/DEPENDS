@@ -1,4 +1,0 @@
-depends murrine
-depends elementary-xfce
-
-optional_depends noto-fonts "" "" "for noto fonts"

@@ -1,3 +1,0 @@
-depends libnl3
-depends ncurses
-depends libconfuse

@@ -1,6 +1,0 @@
-default_pre_build &&
-
-sedit "s:root_sbin_P:bin_P:" Makefile.am Makefile.in &&
-sedit "s:sbin_P:bin_P:" Makefile.am Makefile.in &&
-
-autoreconf -fi

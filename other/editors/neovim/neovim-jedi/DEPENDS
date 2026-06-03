@@ -1,4 +1,0 @@
-depends neovim
-depends python-jedi
-
-optional_depends neovim-supertab "" "" "for tab completion"

@@ -1,3 +1,0 @@
-if module_installed openrc-bluez; then
-   lrm openrc-bluez
-fi

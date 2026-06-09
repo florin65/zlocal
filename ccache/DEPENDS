@@ -1,4 +1,0 @@
-depends zstd
-depends perl
-depends cmake
-depends xxhash

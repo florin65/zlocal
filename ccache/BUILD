@@ -1,3 +1,0 @@
-export OPTS=" -DREDIS_STORAGE_BACKEND=OFF -DENABLE_TESTING=OFF "
-
-default_cmake_build

@@ -1,7 +1,0 @@
-depends bison
-depends perl
-
-optional_depends netpbm     "" "" "for pnmtopng support"
-optional_depends pspdfutils "" "" "for groff's HTML backend support"
-
-optional_depends libXaw "--with-x" "" "for gxditview install" "n"

@@ -1,1 +1,0 @@
-mquery DAEMON  "Install the daemon support?"   n "-DENABLE_DAEMON=ON" "-DENABLE_DAEMON=OFF"

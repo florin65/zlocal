@@ -1,6 +1,0 @@
-default_pre_build &&
-
-autoreconf -fvi &&
-
-sedit "s:\$(datadir)/icons:/usr/share/icons:" data/icons/Makefile.in
-

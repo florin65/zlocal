@@ -1,3 +1,0 @@
-default_pre_build &&
-
-sedit '/^CPUAccounting=/d' scrub/{xfs_*.service.in,system-xfs_scrub.slice}

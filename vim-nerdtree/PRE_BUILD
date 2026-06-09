@@ -1,3 +1,0 @@
-default_pre_build &&
-
-sedit 's|\[s:rootNERDTreePath,|["/usr/share/doc/vim-nerdtree",|' autoload/nerdtree.vim

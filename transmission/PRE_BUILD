@@ -1,3 +1,0 @@
-default_pre_build &&
-
-sedit '/^Icon=/ s/$/-qt/' qt/transmission-qt.desktop

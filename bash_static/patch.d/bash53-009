@@ -18,7 +18,7 @@ Patch (apply with `patch -p0'):
 *** ./bash-20250807/lib/readline/input.c	Tue Jul  8 15:37:13 2025
 --- ./lib/readline/input.c	Fri Aug 22 15:04:05 2025
 ***************
-*** 976,984 ****
+*** 972,980 ****
         if (rl_signal_event_hook)
   	(*rl_signal_event_hook) ();
 ! #if defined (READLINE_CALLBACKS)

@@ -2,10 +2,10 @@ bad_flags -malign-double "-s "
 
 OPTS+=" --bindir=/usr/bin \
         --with-curses \
-	--disable-readline \
+	    --disable-readline \
         --disable-profiling \
         --enable-static-link \
-        --without-bash-mallocx"
+        --without-bash-malloc"
 
 GLIBC_MINOR_VERSION=$(lvu installed glibc | cut -f2 -d.)
 

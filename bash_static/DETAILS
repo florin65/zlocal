@@ -1,5 +1,5 @@
           MODULE=bash_static
-         VERSION=5.3.9
+         VERSION=5.3.15
     BASE_VERSION=${VERSION%.*}
           SOURCE=bash-$BASE_VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/bash-$BASE_VERSION
@@ -9,7 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/bash-$BASE_VERSION
       SOURCE_VFY=sha256:0d5cd86965f869a26cf64f4b71be7b96f90a3ba8b3d74e27e8e9d9d5550f31ba
         WEB_SITE=http://tiswww.case.edu/php/chet/bash_static/bashtop.html
          ENTERED=20020615
-         UPDATED=20251212
+         UPDATED=20260611
            SHORT="A static bash build for rescue purposes"
 
 cat << EOF

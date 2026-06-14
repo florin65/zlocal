@@ -1,0 +1,18 @@
+          MODULE=glib-2
+         VERSION=2.88.1
+          SOURCE=${MODULE%-*}-$VERSION.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${MODULE%-*}-$VERSION
+      SOURCE_URL=$GNOME_URL/sources/glib/${VERSION%.*}
+      SOURCE_VFY=sha256:51ab804c56f6eab3e5045c774d1290ac5e4c923d4f9a3d8e33123bee45c1840e
+        WEB_SITE=http://library.gnome.org/devel/glib
+        REPLACES=gdbus-codegen
+         ENTERED=20020313
+         UPDATED=20260502
+           SHORT="A library of useful C routines for trees, hashes, and lists"
+
+cat << EOF
+GLib is the low-level core library that forms the basis for projects such as
+GTK+ and GNOME. It provides data structure handling for C, portability wrappers,
+and interfaces for such runtime functionality as an event loop, threads, dynamic
+loading, and an object system.
+EOF

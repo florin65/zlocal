@@ -70,7 +70,7 @@ EOF
 fi
 
 systemd-sysusers
-udevadm hwdb --update
+systemd-hwdb --usr update
 journalctl --update-catalog
 
 lunar fix python

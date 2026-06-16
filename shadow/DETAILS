@@ -1,0 +1,18 @@
+    MODULE=shadow
+   VERSION=4.19.4
+    SOURCE=$MODULE-$VERSION.tar.xz
+SOURCE_URL=https://github.com/shadow-maint/shadow/releases/download/$VERSION/
+SOURCE_VFY=sha256:ce57a313e315a0a7cb04a8f50cc20753e994e487bbe9b78a2a824ca75cb486c0
+  WEB_SITE=http://packages.qa.debian.org/s/shadow.html
+MAINTAINER=ratler@lunar-linux.org
+   ENTERED=20010922
+   UPDATED=20260312
+     SHORT="Contains the shadow password file utilities"
+PSAFE=no
+
+cat << EOF
+The Shadow password file utilities package includes the programs
+necessary to convert traditional V7 UNIX password files to the SVR4
+shadow password format, and additional tools to maintain password and
+group files (that work with both shadow and non-shadow passwords).
+EOF

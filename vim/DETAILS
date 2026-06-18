@@ -1,12 +1,12 @@
            MODULE=vim
-          VERSION=9.2.0663
+          VERSION=9.2.0670
             MAJOR=91
            SOURCE=$MODULE-$VERSION.tar.gz
   SOURCE_URL_FULL=https://github.com/vim/vim/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:7eb2a5ed3423d1f56b1eeb8731f24346e461736f709043338cec8ddd06f0a404
+      SOURCE_VFY=sha256:9d2056e4d1b574bf1347953eed378ad3002d831dc209ffa6bb35ad032d5b9397
          WEB_SITE=https://github.com/vim/vim/
           ENTERED=20010922
-          UPDATED=20260617
+          UPDATED=20260619
             SHORT="Improved version of vi"
 
 cat << EOF

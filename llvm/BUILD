@@ -37,9 +37,6 @@ cmake --build $MODULE-$VERSION &&
 prepare_install &&
 cmake --install $MODULE-$VERSION &&
 
-# Remove documentation sources
-rm -r /usr/share/doc/llvm/html/{_sources,.buildinfo} &&
-
 # Needed by other projects, applications
 pushd utils/lit &&
 unset OPTS &&

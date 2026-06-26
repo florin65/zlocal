@@ -1,11 +1,11 @@
     MODULE=nano
-   VERSION=9.0
+   VERSION=9.1
     SOURCE=$MODULE-$VERSION.tar.xz
 SOURCE_URL=https://www.nano-editor.org/dist/v9/
-SOURCE_VFY=sha256:9f384374b496110a25b73ad5a5febb384783c6e3188b37063f677ac908013fde
+SOURCE_VFY=sha256:5f47764274cb7532349ce0aa20ec10f1e8e851a6e9fa3eb66812c43d196db042
   WEB_SITE=https://www.nano-editor.org
    ENTERED=20010922
-   UPDATED=20260411
+   UPDATED=20260626
      SHORT="Superior clone of the pico text editor"
 
 cat << EOF

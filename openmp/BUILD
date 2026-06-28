@@ -4,10 +4,10 @@ OPTS+=" -DCMAKE_INSTALL_PREFIX=/usr \
 
 cd openmp &&
 
-cmake -B $MODULE-$VERSION -S . -G Ninja $OPTS &&
-cmake --build $MODULE-$VERSION &&
+cmake -S . -B build -G Ninja $OPTS &&
+cmake --build build -v &&
 
 prepare_install &&
 
-cmake --install $MODULE-$VERSION
+cmake --install build
 

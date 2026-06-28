@@ -1,0 +1,15 @@
+          MODULE=json-c
+         VERSION=0.19
+         VSUFFIX=20260627
+          SOURCE=$MODULE-$VERSION-$VSUFFIX.tar.gz
+      SOURCE_URL=https://github.com/json-c/json-c/archive
+      SOURCE_VFY=sha256:f17a6d7d265cf840dfd8f0f46a606d98c6b5b26dc7cfe27275d1546a213086c8
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$MODULE-$VERSION-$VSUFFIX
+        WEB_SITE=https://github.com/json-c/json-c
+         ENTERED=20111005
+         UPDATED=20260628
+           SHORT="A JSON implementation in C"
+
+cat << EOF
+A JSON implementation in C.
+EOF

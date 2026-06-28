@@ -29,12 +29,12 @@ OPTS+=" -DCMAKE_BUILD_TYPE=Release \
 
 cd clang &&
 
-cmake -B $MODULE-$VERSION -S . -G Ninja $OPTS &&
-cmake --build $MODULE-$VERSION &&
+cmake -S . -B build -G Ninja $OPTS &&
+cmake --build build -v &&
 
 prepare_install &&
 
-cmake --install $MODULE-$VERSION &&
+cmake --install build &&
 
 # Move bash completion
 bash_completion_destdir="/usr/share/bash-completion/completions"

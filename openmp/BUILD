@@ -1,3 +1,6 @@
+export CC=/usr/bin/clang
+export CXX=/usr/bin/clang++
+
 OPTS+=" -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_BUILD_TYPE=Release \
         -DLIBOMP_INSTALL_ALIASES=OFF"

@@ -1,6 +1,7 @@
 depends docutils
-depends cmake
 depends curl
+depends cmake
+depends ninja
 
 # Cyclic dependency here
 #depends python-psutil

@@ -25,7 +25,7 @@ OPTS+=" -DCMAKE_BUILD_TYPE=Release \
         -DCLANG_DEFAULT_PIE_ON_LINUX=ON \
         -DCLANG_CONFIG_FILE_SYSTEM_DIR=/etc/clang \
         -DLLVM_BINUTILS_INCDIR=/usr/include \
-        -Wno-dev"
+        -Wno-dev" &&
 
 cd clang &&
 

@@ -27,7 +27,7 @@ OPTS+=" -DCMAKE_BUILD_TYPE=Release \
         -DCLANG_DEFAULT_PIE_ON_LINUX=ON \
         -DSPHINX_WARNINGS_AS_ERRORS=OFF \
         -DCLANG_CONFIG_FILE_SYSTEM_DIR=/etc/clang \
-        -Wno-dev"
+        -Wno-dev" &&
 
 cd llvm &&
 

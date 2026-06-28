@@ -3,7 +3,7 @@ OPTS+="
   -DCMAKE_INSTALL_PREFIX=/usr
   -DCMAKE_SKIP_INSTALL_RPATH=ON
   -DBUILD_SHARED_LIBS=ON
-  -DLLVM_DIR=/usr/lib/cmake/llvm"
+  -DLLVM_DIR=/usr/lib/cmake/llvm" &&
 
 cd lld &&
 

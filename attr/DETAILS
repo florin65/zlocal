@@ -1,0 +1,14 @@
+          MODULE=attr
+         VERSION=2.6.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://download.savannah.nongnu.org/releases/attr/
+      SOURCE_VFY=sha256:6c8a2148a7b85043b68492bce43316b0e2e214fc4e628c7ede078e76e216330b
+        WEB_SITE=http://oss.sgi.com/projects/xfs
+         ENTERED=20020531
+         UPDATED=20260630
+           SHORT="Extended Attribute (EA) support"
+
+cat << EOF
+Currently, support for extended attributes is implemented on Linux by the ext2,
+ext3, ext4, XFS, JFS and reiserfs filesystems.
+EOF

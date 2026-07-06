@@ -1,0 +1,13 @@
+          MODULE=bash-completion
+         VERSION=2.18.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://github.com/scop/bash-completion/releases/download/$VERSION/
+      SOURCE_VFY=sha256:88bcf85124f77f74f2f2f8bcd16ac4382d807a827ede742a64940c7116aea33f
+        WEB_SITE=http://github.com/scop/bash-completion/
+         ENTERED=20120406
+         UPDATED=20260706
+           SHORT="Completion for the bash shell"
+
+cat << EOF
+Completion for the bash shell.
+EOF

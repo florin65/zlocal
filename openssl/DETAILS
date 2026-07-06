@@ -1,5 +1,5 @@
        MODULE=openssl
-      VERSION=3.6.3
+      VERSION=4.0.1
        SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE2=Makefile.openssl-certs
 SOURCE_URL[0]=https://github.com/$MODULE/$MODULE/releases/download/${MODULE}-${VERSION}/
@@ -8,11 +8,11 @@ SOURCE_URL[2]=http://www.dentarthurdent.com/transfer/openssl
 SOURCE_URL[3]=ftp://ftp.infoscience.co.jp/pub/Crypto/SSL/openssl/source
 SOURCE_URL[4]=ftp://ftp.duth.gr/pub/OpenSSL/source
   SOURCE2_URL=$PATCH_URL
-   SOURCE_VFY=sha256:243a86649cf6f23eeb6a2ff2456e09e5d77dd9018a54d3d96b0c6bdd6ba6c7f1
+   SOURCE_VFY=sha256:2db3f3a0d6ea4b59e1f094ace2c8cd536dffb87cdc39084c5afa1e6f7f37dd09
   SOURCE2_VFY=sha256:9b44b0bfac91672a3249e70484d036924ca528b4f704ff7ef2a9b46413d2afab
      WEB_SITE=http://www.openssl.org
       ENTERED=20010922
-      UPDATED=20260611
+      UPDATED=20260706
         SHORT="A library for providing encrypted transport layers"
 PSAFE="no"
 

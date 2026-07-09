@@ -1,0 +1,20 @@
+          MODULE=timezone-data
+           TZONE=c
+         VERSION=2026$TZONE
+          SOURCE=tzdata$VERSION.tar.gz
+         SOURCE2=tzcode$VERSION.tar.gz
+   SOURCE_URL[0]=https://www.iana.org/time-zones/repository/releases
+   SOURCE_URL[1]=$MIRROR_URL
+  SOURCE2_URL[0]=https://www.iana.org/time-zones/repository/releases
+  SOURCE2_URL[1]=$MIRROR_URL
+      SOURCE_VFY=sha256:e4a178a4477f3d0ea77cc31828ff72aa38feff8d61aa13e7e99e142e9d902be4
+     SOURCE2_VFY=sha256:b1cffc3ace4c4c7cd0efba2f7add86ec3d0b79da48bcf03582671fd3c8feace8
+        WEB_SITE=ftp://munnari.oz.au/pub
+         ENTERED=20070203
+         UPDATED=20260709
+           SHORT="Timezone data and utilities"
+
+cat << EOF
+Timezone-data contains the timezone data (/usr/share/zoneinfo/*) and various
+timezone related utilities (tzselect/zic/zdump).
+EOF

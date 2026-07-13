@@ -1,0 +1,3 @@
+default_pre_build &&
+
+sedit 's:(localstatedir)/locatedb:(localstatedir)/cache/locate/locatedb:g' locate/Makefile.in

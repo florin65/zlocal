@@ -1,0 +1,14 @@
+    MODULE=xfsprogs
+   VERSION=7.1.1
+    SOURCE=$MODULE-$VERSION.tar.xz
+SOURCE_URL=https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/
+SOURCE_VFY=sha256:063edc31ba8e85c95c7faf9be465a04898bba7c6e622fdd9b146eed4ca5415e8
+  WEB_SITE=https://xfs.wiki.kernel.org
+   ENTERED=20020110
+   UPDATED=20260718
+     SHORT="Required utilities for the XFS file system"
+PSAFE=no
+
+cat << EOF
+xfsprogs - The XFS file system utilities and libraries.
+EOF

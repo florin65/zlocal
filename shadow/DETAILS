@@ -1,12 +1,12 @@
     MODULE=shadow
-   VERSION=4.19.4
+   VERSION=4.20.0
     SOURCE=$MODULE-$VERSION.tar.xz
 SOURCE_URL=https://github.com/shadow-maint/shadow/releases/download/$VERSION/
-SOURCE_VFY=sha256:ce57a313e315a0a7cb04a8f50cc20753e994e487bbe9b78a2a824ca75cb486c0
+SOURCE_VFY=sha256:239781632846db3b01901028147fb4b57e6f2d5330ca63ce104b21d9b3e6031f
   WEB_SITE=http://packages.qa.debian.org/s/shadow.html
 MAINTAINER=ratler@lunar-linux.org
    ENTERED=20010922
-   UPDATED=20260312
+   UPDATED=20260801
      SHORT="Contains the shadow password file utilities"
 PSAFE=no
 

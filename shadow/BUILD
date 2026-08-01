@@ -39,7 +39,8 @@ make DESTDIR=$SOURCE_DIRECTORY/__shadowdest/ -C man install &&
 # util-linux install these apps in Lunar
 #cp $SOURCE_DIRECTORY/__shadowdest/usr/bin/login /tmp/ &&
 rm $SOURCE_DIRECTORY/__shadowdest/usr/bin/{login,chfn,chsh,nologin} &&
-rm $SOURCE_DIRECTORY/__shadowdest/usr/sbin/{vigr,vipw,logoutd} &&
+#rm $SOURCE_DIRECTORY/__shadowdest/usr/sbin/{vigr,vipw,logoutd} &&
+rm $SOURCE_DIRECTORY/__shadowdest/usr/sbin/{vigr,vipw} &&
 mv $SOURCE_DIRECTORY/__shadowdest/usr/bin/{newgrp,sg} &&
 mv -f $SOURCE_DIRECTORY/__shadowdest/usr/{sbin/*,bin/} &&
 rm -rf $SOURCE_DIRECTORY/__shadowdest/usr/sbin &&
@@ -49,12 +50,12 @@ find $SOURCE_DIRECTORY/__shadowdest/usr/share/man \
      '(' -name 'chsh.1'    -o \
          -name 'chfn.1'    -o \
          -name 'login.1'   -o \
-         -name 'logoutd.8' -o \
          -name 'nologin.8' -o \
          -name 'su.1'      -o \
          -name 'vigr.8'    -o \
          -name 'vipw.8'   ')' \
       -delete &&
+#         -name 'logoutd.8' -o \
 
 # Now install the cleaned up files from DESTDIR
 

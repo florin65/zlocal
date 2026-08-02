@@ -1,0 +1,15 @@
+    MODULE=cryptsetup
+   VERSION=2.8.7
+    SOURCE=$MODULE-$VERSION.tar.xz
+SOURCE_URL=https://mirrors.kernel.org/pub/linux/utils/cryptsetup/v${VERSION%.*}
+SOURCE_VFY=sha256:e776f0d381e86ca61042c457069491fe8e0ac286780c7c3b1e4f9921abc961da
+  WEB_SITE=https://gitlab.com/cryptsetup/cryptsetup
+   ENTERED=20050309
+   UPDATED=20260803
+     SHORT="Device-mapper crypto userspace setup tool"
+
+cat << EOF
+Using device-mapper's dmsetup directly is too complicated for most people.
+Cryptsetup is being written to behave like one of the patched losetup's out
+there.
+EOF

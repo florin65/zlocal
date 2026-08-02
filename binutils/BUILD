@@ -40,10 +40,12 @@ rm $dstdir/usr/lib/lib{bfd,opcodes}.so &&
 echo "INPUT ( /usr/lib/libbfd.a -liberty -lz -ldl )" > $dstdir/usr/lib/libbfd.so &&
 echo "INPUT ( /usr/lib/libopcodes.a -lbfd )" > $dstdir/usr/lib/libopcodes.so
 
-# This part fails on i686, so check the arch
+# Merge lib64 into lib if lib64 is a real directory (not a symlink)
 if [[ "$(uname -m)" == "x86_64" || "$(uname -m)" == "aarch64" ]]; then
-	mv $dstdir/usr/lib64/* $dstdir/usr/lib/ &&
-	rmdir $dstdir/usr/lib64
+  if [ -d "$dstdir/usr/lib64" ] && [ ! -L "$dstdir/usr/lib64" ]; then
+    mv $dstdir/usr/lib64/* $dstdir/usr/lib/ &&
+    rmdir $dstdir/usr/lib64
+  fi
 fi &&
 
 prepare_install &&

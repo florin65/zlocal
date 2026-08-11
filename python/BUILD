@@ -1,14 +1,21 @@
 OPTS+=" --enable-shared \
         --enable-ipv6 \
+        --enable-optimizations \
+        --with-lto \
         --with-system-expat \
         --with-computed-gotos \
-        --without-ensurepip"
+        --without-ensurepip \
+        --with-tzpath=/usr/share/zoneinfo"
 
 _BASEVER=${VERSION%.*}
 _PYDESTDIR=$SOURCE_DIRECTORY/__pythondest3
 mkdir -p $_PYDESTDIR &&
 
 default_config &&
+
+# PGO should be done with -O3   CFLAGS="${CFLAGS/-O2/-O3} -ffat-lto-objects"
+CFLAGS="${CFLAGS/-O2/-O3} -ffat-lto-objects"
+
 make build_all EXTRA_CFLAGS="$CFLAGS" &&
 
 # Avoid rebuild on make install
@@ -23,6 +30,7 @@ ln -sf pydoc3 "$_PYDESTDIR"/usr/bin/pydoc &&
 ln -sf python${_BASEVER}.1 "$_PYDESTDIR"/usr/share/man/man1/python.1 &&
 ln -sf python-${_BASEVER}.pc "$_PYDESTDIR"/usr/lib/pkgconfig/python3.pc &&
 
+# Some useful "stuff"
 install -dm755 "$_PYDESTDIR"/usr/lib/python${_BASEVER}/Tools/{i18n,scripts} &&
 install -m755 $SOURCE_DIRECTORY/Tools/i18n/{msgfmt,pygettext}.py "$_PYDESTDIR"/usr/lib/python${_BASEVER}/Tools/i18n/ &&
 install -m755 $SOURCE_DIRECTORY/Tools/scripts/{README,*.py} "$_PYDESTDIR"/usr/lib/python${_BASEVER}/Tools/scripts/ &&

@@ -14,14 +14,22 @@ optional_depends libedit \
 
 optional_depends ldns \
                  "--with-ldns" "" \
-                 "for DNSSEC support"
+                 "for DNSSEC support" \
+                 "n"
 
 optional_depends heimdal \
                  "--with-kerberos5=/usr" "" \
-                 "Heimdal Kerberos5/GSSAPI support"
+                 "for Heimdal Kerberos5/GSSAPI support" \
+                 "n"
+
+optional_depends libfido2 \
+                 "--with-security-key-builtin" "" \
+                 "for FIDO/U2F devices support over USB or NFC" \
+                 "n"
 
 optional_depends xauth \
                  "--with-xauth=/usr/bin/xauth" "" \
-                 "X11 forwarding support"
+                 "X11 forwarding support" \
+                 "n"
 
-optional_depends x11-ssh-askpass "" "" "for passphrase input in X11"
+optional_depends x11-ssh-askpass "" "" "for passphrase input in X11" "n"

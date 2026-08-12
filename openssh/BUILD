@@ -1,6 +1,9 @@
 add_priv_user sshd:sshd &&
 
-OPTS=$OPTS" --sysconfdir=/etc/ssh" &&
+OPTS+=" --sysconfdir=/etc/ssh \
+        --with-ssl-engine \
+        --without-zlib-version-check" &&
+
 default_build  &&
 
 # create /var/empty

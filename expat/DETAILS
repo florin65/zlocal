@@ -1,11 +1,11 @@
     MODULE=expat
-   VERSION=2.8.2
+   VERSION=2.8.3
     SOURCE=$MODULE-$VERSION.tar.bz2
 SOURCE_URL=https://github.com/libexpat/libexpat/releases/download/R_${VERSION//./_}/
-SOURCE_VFY=sha256:69e7f52417d85b1c2b7fe855e176eec55d0b2d7d92d691372d833a1c7df7923b
+SOURCE_VFY=sha256:b4cc2483927d5e90bf8c40b44a6b95b368b42a8a96e25883fce188b48a92b670
   WEB_SITE=https://libexpat.github.io/
    ENTERED=20010928
-   UPDATED=20260626
+   UPDATED=20260812
      SHORT="XML parsing library"
 
 cat << EOF

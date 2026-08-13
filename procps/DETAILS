@@ -1,0 +1,16 @@
+          MODULE=procps
+         VERSION=4.0.7
+          SOURCE=$MODULE-v$VERSION.tar.bz2
+      SOURCE_URL=https://gitlab.com/procps-ng/procps/-/archive/v$VERSION
+      SOURCE_VFY=sha256:707d4d43c78b1ff9d0286a4839465e78fa1a82896ec97d3508765b31a808b4b2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-v$VERSION
+        WEB_SITE=https://gitlab.com/procps-ng/procps/
+         ENTERED=20010922
+         UPDATED=20260813
+           SHORT="Utilities for monitoring your system and its processes"
+
+cat << EOF
+procps is a package of utilities which report on the state of the system,
+including the states of running processes, amount of memory available and
+currently-logged-in users.
+EOF

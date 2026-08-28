@@ -1,14 +1,14 @@
           MODULE=pkgconf
-         VERSION=3.0.5
+         VERSION=3.0.6
           SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${MODULE}-${MODULE}-${VERSION}
      SOURCE_URL=https://github.com/pkgconf/pkgconf/archive/
-      SOURCE_VFY=sha256:245d441b9d8f7b74390e060cb9db1a326c26f1b96b1a6c3216b54a5d5439367a
+      SOURCE_VFY=sha256:a32d9dd8fc3d1179d0755df471a561842a0f2475013da9c5cf86e38215a61380
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$MODULE-$VERSION
         WEB_SITE=https://git.dereferenced.org/pkgconf/pkgconf/
         REPLACES=pkgconfig
          ENTERED=20180619
-         UPDATED=20260802
+         UPDATED=20260828
            SHORT="Package compiler and linker metadata toolkit"
 
 cat << EOF

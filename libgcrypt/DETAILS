@@ -1,0 +1,14 @@
+         MODULE=libgcrypt
+        VERSION=1.12.3
+         SOURCE=$MODULE-$VERSION.tar.bz2
+     SOURCE_URL=https://www.gnupg.org/ftp/gcrypt/libgcrypt/
+     SOURCE_VFY=sha256:98d1b0b3202d2b03fa754a35aa3cbbfcf526a3260d8d2ee213748001b1043006
+       WEB_SITE=https://directory.fsf.org/wiki/Security/libgcrypt
+        ENTERED=20020212
+        UPDATED=20260829
+          SHORT="General purpose crypto library"
+
+cat << EOF
+Libgcrypt is a general purpose crypto library based on the code used
+in GnuPG.
+EOF

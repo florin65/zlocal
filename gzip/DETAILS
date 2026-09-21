@@ -1,0 +1,18 @@
+          MODULE=gzip
+         VERSION=1.15
+          SOURCE=$MODULE-$VERSION.tar.xz
+   SOURCE_URL[0]=$GNU_URL/$MODULE
+   SOURCE_URL[1]=http://www.funet.fi/pub/gnu/alpha/gnu/$MODULE
+      SOURCE_VFY=sha256:9aa0cc780dec156b8282844833b342ab7cb08c25d2cd9a1869cdd0df31deff48
+        WEB_SITE=https://www.gzip.org
+         ENTERED=20010922
+         UPDATED=20260921
+           SHORT="Compression utility designed to replace compress"
+
+cat << EOF
+gzip - Compresses and decompresses files
+A compression utility designed to replace compress. Much better
+compression and freedom from patented algorithms are its main advantages
+over compress. Gzip decompresses files created by gzip, compress, or
+pack; it detects the input format automatically.
+EOF

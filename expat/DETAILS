@@ -1,0 +1,13 @@
+        MODULE=expat
+       VERSION=2.8.5
+        SOURCE=$MODULE-$VERSION.tar.bz2
+    SOURCE_URL=https://github.com/libexpat/libexpat/releases/download/R_${VERSION//./_}/
+    SOURCE_VFY=sha256:952c03c33a6b337f12dae7a9b0f9dee86f867550d35c994d6bdaaddd37dc8454
+      WEB_SITE=https://libexpat.github.io/
+       ENTERED=20010928
+       UPDATED=20260923
+         SHORT="XML parsing library"
+
+cat << EOF
+Expat is a fast, non-validating, stream-oriented XML parsing library.
+EOF

@@ -1,0 +1,15 @@
+        MODULE=userspace-rcu
+       VERSION=0.15.7
+        SOURCE=$MODULE-$VERSION.tar.bz2
+    SOURCE_URL=https://lttng.org/files/urcu/
+    SOURCE_VFY=sha256:2556b83adc0f9b3ac8024e613e17d014d04c4c49110604ce55fcb14eae32edd3
+      WEB_SITE=https://lttng.org/urcu/
+      ENTERED=20150626
+      UPDATED=20260923
+        SHORT="Userspace RCU (read-copy-update) library"
+
+cat << EOF
+Liburcu is a LGPLv2.1 userspace RCU (read-copy-update) library. This data
+synchronization library provides read-side access which scales linearly with
+the number of cores.
+EOF

@@ -1,12 +1,12 @@
-    MODULE=ntfs-3g
-   VERSION=2026.7.7
-    SOURCE=${MODULE}-$VERSION.tar.gz
-SOURCE_URL=https://github.com/tuxera/ntfs-3g/archive/$VERSION/
-SOURCE_VFY=sha256:7742bfe3399a7b2f677fea8aa193dc21d38112d77ae8beb0fb66aaf550f72c1d
-  WEB_SITE=http://www.tuxera.com/community/ntfs-3g-download
-   ENTERED=20070621
-   UPDATED=20260716
-     SHORT="NTFS driver for Linux"
+        MODULE=ntfs-3g
+       VERSION=2026.9.18
+        SOURCE=${MODULE}-$VERSION.tar.gz
+    SOURCE_URL=https://github.com/tuxera/ntfs-3g/archive/$VERSION/
+    SOURCE_VFY=sha256:764b1cde7e90c40a8e32fb016fbea47422d9e23aa6ff79740426e994d316ddba
+      WEB_SITE=http://www.tuxera.com/community/ntfs-3g-download
+       ENTERED=20070621
+       UPDATED=20260927
+         SHORT="NTFS driver for Linux"
 
 cat << EOF
 The NTFS-3G driver is an open source, freely available read/write NTFS driver

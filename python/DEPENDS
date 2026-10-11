@@ -5,18 +5,17 @@ depends expat
 depends pkgconf
 depends zlib
 
-optional_depends db   "" "" "for db support"
+optional_depends db "" "" "for db support"
 
 optional_depends gdbm \
-                 "--with-dbmliborder=gdbm:ndbm" \
-                 "" "for gdbm support"
+                 "--with-dbmliborder=gdbm:ndbm" "" \
+                 "for gdbm support"
 
 optional_depends sqlite \
-                 "--enable-loadable-sqlite-extensions" \
-                 "" "for sqlite support"
+                 "--enable-loadable-sqlite-extensions" "" \
+                 "for sqlite support"
 
 optional_depends mpdecimal \
-                 "--with-system-libmpdec" \
-                 "" \
+                 "--with-system-libmpdec" "" \
                  "use system mpdecimal instead of mpdecimal bundled with python" \
                  "n"

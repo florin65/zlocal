@@ -1,0 +1,15 @@
+          MODULE=openmp
+         VERSION=23.1.2
+          SOURCE=llvm-project-$VERSION.src.tar.xz
+      SOURCE_URL=https://github.com/llvm/llvm-project/releases/download/llvmorg-$VERSION
+      SOURCE_VFY=sha256:c98bbef08a2b4c2613cd50e9aa9ae7b69b1fe6c16b2c40373bc0ab6116fdf78a
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/llvm-project-${VERSION}.src
+        WEB_SITE=https://www.llvm.org/
+         ENTERED=20090128
+         UPDATED=20261012
+           SHORT="LLVM's implementation of OpenMP"
+
+cat << EOF
+The OpenMP subproject of LLVM contains the components required to build an
+executable OpenMP program that are outside the compiler itself.
+EOF

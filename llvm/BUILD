@@ -1,5 +1,10 @@
 TARGETS="${TARGETS:=X86;AMDGPU;BPF}" &&
 
+if module_installed clang; then
+  export CC=clang
+  export CXX=clang++
+fi &&
+
 OPTS+=" -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_INSTALL_DOCDIR=share/doc \
@@ -27,7 +32,7 @@ OPTS+=" -DCMAKE_BUILD_TYPE=Release \
         -DCLANG_DEFAULT_PIE_ON_LINUX=ON \
         -DSPHINX_WARNINGS_AS_ERRORS=OFF \
         -DCLANG_CONFIG_FILE_SYSTEM_DIR=/etc/clang \
-        -Wno-dev" &&
+        -Wno-dev"
 
 cd llvm &&
 

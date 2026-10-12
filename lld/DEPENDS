@@ -1,0 +1,9 @@
+depends llvm
+depends ninja
+depends cmake
+
+optional_depends Sphinx \
+                 "-DLLVM_ENABLE_SPHINX=ON" \
+                 "-DLLVM_ENABLE_SPHINX=OFF" \
+                 "for documentation install" \
+                 "n"

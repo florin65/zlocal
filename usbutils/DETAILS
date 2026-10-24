@@ -1,0 +1,15 @@
+          MODULE=usbutils
+         VERSION=020
+          SOURCE=$MODULE-$VERSION.tar.xz
+         SOURCE2=usb.ids.gz
+      SOURCE_URL=$KERNEL_URL/pub/linux/utils/usb/$MODULE
+     SOURCE2_URL=http://www.linux-usb.org
+      SOURCE_VFY=sha256:20287d68fcd9ebb50a05ba0645a4af7583bd8dfc7307215ba121e4bc6d057aa1
+        WEB_SITE=http://kerneltrap.org/node/4649
+         ENTERED=20030108
+         UPDATED=20261024
+           SHORT="The pciutils of usb"
+
+cat << EOF
+The pciutils of usb.
+EOF

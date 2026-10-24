@@ -1,0 +1,18 @@
+        MODULE=patch
+       VERSION=2.8.1
+        SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL[0]=$GNU_URL/$MODULE
+ SOURCE_URL[1]=ftp://ftp.gnu.org/pub/gnu/$MODULE
+    SOURCE_VFY=sha256:0f7b43c7ea450c5d3e9eaf8301177628bc0171d580b2bd6a72822409767144ff
+      WEB_SITE=http://www.gnu.org/software/patch/patch.html
+       ENTERED=20010922
+       UPDATED=20261024
+         SHORT="Patch applies a patch to a file"
+
+cat << EOF
+patch - Applies a patch to a file
+GNU version of Larry Wall's program that takes "diff's" output and
+applies it to an original file to generate a modified version of that
+file. Normally, the patched versions are put in place of the originals.
+Backups can be made.
+EOF

@@ -1,4 +1,0 @@
-depends elfutils
-depends cmake
-depends clang
-depends libffi

@@ -1,0 +1,24 @@
+depends zlib
+depends xz
+depends automake
+depends libtool
+depends %OSSL
+depends meson
+
+optional_depends zstd \
+                 "-Dzstd=enabled" \
+                 "-Dzstd=disabled" \
+                 "for zstd compression support" \
+                 "n"
+
+optional_depends scdoc \
+                 "-Dmanpages=true" \
+                 "-Dmanpages=false" \
+                 "for building man pages" \
+                 "n"
+
+optional_depends gtk-doc \
+                 "-Ddocs=true" \
+                 "-Ddocs=false" \
+                 "for building documentation" \
+                 "n"

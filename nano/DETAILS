@@ -1,12 +1,12 @@
-    MODULE=nano
-   VERSION=9.2
-    SOURCE=$MODULE-$VERSION.tar.xz
-SOURCE_URL=https://www.nano-editor.org/dist/v9/
-SOURCE_VFY=sha256:05ecb99247b782e8a5b3a25ed4101dd034b0236902f7449bc9795b717642f7e9
-  WEB_SITE=https://www.nano-editor.org
-   ENTERED=20010922
-   UPDATED=20260731
-     SHORT="Superior clone of the pico text editor"
+        MODULE=nano
+       VERSION=9.3
+        SOURCE=$MODULE-$VERSION.tar.xz
+    SOURCE_URL=https://www.nano-editor.org/dist/v9/
+    SOURCE_VFY=sha256:a9affc52c9596ee0682bcdd4ceb3c0b235eb221d83d733dfd9b0dff45897cb0d
+      WEB_SITE=https://www.nano-editor.org
+       ENTERED=20010922
+       UPDATED=20261101
+         SHORT="Superior clone of the pico text editor"
 
 cat << EOF
 The nano project was started because of a few problems with the wonderfully

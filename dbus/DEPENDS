@@ -1,0 +1,6 @@
+depends meson
+depends expat
+depends pkgconf
+depends python
+
+optional_depends libcap-ng "" "" "for additional posix cababilites support"

@@ -1,5 +1,7 @@
 default_pre_build &&
 
+autoreconf -fiv &&
+
 if ! module_installed help2man; then
   # avoid building the man page
   sedit '/doc \\/d' Makefile.in

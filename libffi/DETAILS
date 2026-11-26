@@ -1,0 +1,23 @@
+        MODULE=libffi
+       VERSION=3.8.2
+        SOURCE=$MODULE-$VERSION.tar.gz
+    SOURCE_URL=https://github.com/libffi/libffi/releases/download/v$VERSION
+    SOURCE_VFY=sha256:a699fda2b090c4b46cb79cf60c4dacfce480eb05742c0de66acf3af174a47f92
+      WEB_SITE=http://sourceware.org/libffi
+       ENTERED=20091102
+       UPDATED=20261123
+         SHORT="A high level programming interface library"
+
+cat << EOF
+The libffi library provides a portable, high level programming
+interface to various calling conventions. This allows a programmer to
+call any function specified by a call interface description at
+run-time.
+FFI stands for Foreign Function Interface. A foreign function interface
+is the popular name for the interface that allows code written in one
+language to call code written in another language. The libffi library
+really only provides the lowest, machine dependent layer of a fully
+featured foreign function interface. A layer must exist above libffi
+that handles type conversions for values passed between the two
+languages.
+EOF

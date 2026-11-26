@@ -5,7 +5,7 @@
     SOURCE_VFY=sha256:a699fda2b090c4b46cb79cf60c4dacfce480eb05742c0de66acf3af174a47f92
       WEB_SITE=http://sourceware.org/libffi
        ENTERED=20091102
-       UPDATED=20261123
+       UPDATED=20261126
          SHORT="A high level programming interface library"
 
 cat << EOF
